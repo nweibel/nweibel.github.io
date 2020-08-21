@@ -1,0 +1,1206 @@
+
+
+
+<!doctype html>
+<html lang="fr" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="informatique, NSI, SNT">
+      
+      
+      
+        <meta name="author" content="Nathalie Weibel">
+      
+      <link rel="shortcut icon" href="../../images/favicon.png">
+      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-5.5.7">
+    
+    
+      
+        <title>Opérateurs - Carnets.info</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.b8ac9624.min.css">
+      
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.28f3ef9a.min.css">
+      
+      
+        
+        
+        <meta name="theme-color" content="#009688">
+      
+    
+    
+    
+      
+        <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sarala:300,400,400i,700%7CRoboto+Mono&display=fallback">
+        <style>body,input{font-family:"Sarala",-apple-system,BlinkMacSystemFont,Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono",SFMono-Regular,Consolas,Menlo,monospace}</style>
+      
+    
+    
+    
+    
+      
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="teal" data-md-color-accent="light-blue">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#operateurs" class="md-skip">
+          Aller au contenu
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+      <header class="md-header" data-md-component="header">
+  <nav class="md-header-nav md-grid" aria-label="Header">
+    <a href="../.." title="Carnets.info" class="md-header-nav__button md-logo" aria-label="Carnets.info">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 2l-5 4.5v11l5-4.5V2M6.5 5C4.55 5 2.45 5.4 1 6.5v14.66c0 .25.25.5.5.5.1 0 .15-.07.25-.07 1.35-.65 3.3-1.09 4.75-1.09 1.95 0 4.05.4 5.5 1.5 1.35-.85 3.8-1.5 5.5-1.5 1.65 0 3.35.31 4.75 1.06.1.05.15.03.25.03.25 0 .5-.25.5-.5V6.5c-.6-.45-1.25-.75-2-1V19c-1.1-.35-2.3-.5-3.5-.5-1.7 0-4.15.65-5.5 1.5V6.5C10.55 5.4 8.45 5 6.5 5z"/></svg>
+
+    </a>
+    <label class="md-header-nav__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2z"/></svg>
+    </label>
+    <div class="md-header-nav__title" data-md-component="header-title">
+      
+        <div class="md-header-nav__ellipsis">
+          <span class="md-header-nav__topic md-ellipsis">
+            Carnets.info
+          </span>
+          <span class="md-header-nav__topic md-ellipsis">
+            
+              Opérateurs
+            
+          </span>
+        </div>
+      
+    </div>
+    
+      <label class="md-header-nav__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0116 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 019.5 16 6.5 6.5 0 013 9.5 6.5 6.5 0 019.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+      </label>
+      
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Rechercher" placeholder="Rechercher" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" data-md-state="active">
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0116 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 019.5 16 6.5 6.5 0 013 9.5 6.5 6.5 0 019.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </label>
+      <button type="reset" class="md-search__icon md-icon" aria-label="Clear" data-md-component="search-reset" tabindex="-1">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg>
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+        
+      
+      
+        
+          
+
+  
+
+<nav class="md-tabs md-tabs--active" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-tabs__inner md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  <li class="md-tabs__item">
+    
+      <a href="../.." class="md-tabs__link">
+        Accueil
+      </a>
+    
+  </li>
+
+      
+        
+      
+        
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="../../nsi_premiere/qcm_nsi/" class="md-tabs__link">
+          NSI-première
+        </a>
+      
+    </li>
+  
+
+      
+        
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="../../snt/snt/" class="md-tabs__link">
+          SNT
+        </a>
+      
+    </li>
+  
+
+      
+        
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="../pep8/" class="md-tabs__link md-tabs__link--active">
+          Python
+        </a>
+      
+    </li>
+  
+
+      
+        
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="../../microbit/decouvrir_microbit/" class="md-tabs__link">
+          micro:bit
+        </a>
+      
+    </li>
+  
+
+      
+        
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="../../calepyn/calepyn/" class="md-tabs__link">
+          Calepyns
+        </a>
+      
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    <nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Carnets.info" class="md-nav__button md-logo" aria-label="Carnets.info">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 2l-5 4.5v11l5-4.5V2M6.5 5C4.55 5 2.45 5.4 1 6.5v14.66c0 .25.25.5.5.5.1 0 .15-.07.25-.07 1.35-.65 3.3-1.09 4.75-1.09 1.95 0 4.05.4 5.5 1.5 1.35-.85 3.8-1.5 5.5-1.5 1.65 0 3.35.31 4.75 1.06.1.05.15.03.25.03.25 0 .5-.25.5-.5V6.5c-.6-.45-1.25-.75-2-1V19c-1.1-.35-2.3-.5-3.5-.5-1.7 0-4.15.65-5.5 1.5V6.5C10.55 5.4 8.45 5 6.5 5z"/></svg>
+
+    </a>
+    Carnets.info
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../.." title="Accueil" class="md-nav__link">
+      Accueil
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../../memomd/" title="Mémo Markdown" class="md-nav__link">
+      Mémo Markdown
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-3" type="checkbox" id="nav-3">
+    
+    <label class="md-nav__link" for="nav-3">
+      NSI-première
+      <span class="md-nav__icon md-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8.59 16.58L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.42z"/></svg>
+      </span>
+    </label>
+    <nav class="md-nav" aria-label="NSI-première" data-md-level="1">
+      <label class="md-nav__title" for="nav-3">
+        <span class="md-nav__icon md-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+        </span>
+        NSI-première
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../nsi_premiere/qcm_nsi/" title="QCM NSI" class="md-nav__link">
+      QCM NSI
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-4" type="checkbox" id="nav-4">
+    
+    <label class="md-nav__link" for="nav-4">
+      SNT
+      <span class="md-nav__icon md-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8.59 16.58L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.42z"/></svg>
+      </span>
+    </label>
+    <nav class="md-nav" aria-label="SNT" data-md-level="1">
+      <label class="md-nav__title" for="nav-4">
+        <span class="md-nav__icon md-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+        </span>
+        SNT
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../snt/snt/" title="bientôt" class="md-nav__link">
+      bientôt
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-5" type="checkbox" id="nav-5" checked>
+    
+    <label class="md-nav__link" for="nav-5">
+      Python
+      <span class="md-nav__icon md-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8.59 16.58L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.42z"/></svg>
+      </span>
+    </label>
+    <nav class="md-nav" aria-label="Python" data-md-level="1">
+      <label class="md-nav__title" for="nav-5">
+        <span class="md-nav__icon md-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+        </span>
+        Python
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../pep8/" title="Bonnes pratiques" class="md-nav__link">
+      Bonnes pratiques
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+      
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        Opérateurs
+        <span class="md-nav__icon md-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 9h14V7H3v2m0 4h14v-2H3v2m0 4h14v-2H3v2m16 0h2v-2h-2v2m0-10v2h2V7h-2m0 6h2v-2h-2v2z"/></svg>
+        </span>
+      </label>
+    
+    <a href="./" title="Opérateurs" class="md-nav__link md-nav__link--active">
+      Opérateurs
+    </a>
+    
+      
+<nav class="md-nav md-nav--secondary" aria-label="Table des matières">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </span>
+      Table des matières
+    </label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#operateurs-arithmetiques" class="md-nav__link">
+    Opérateurs arithmétiques
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#operateurs-de-comparaison-ou-relationnels" class="md-nav__link">
+    Opérateurs de comparaison (ou relationnels)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#operateurs-logiques" class="md-nav__link">
+    Opérateurs logiques
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#operateurs-binaires-ou-bit-a-bit" class="md-nav__link">
+    Opérateurs binaires (ou bit à bit)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#operateurs-daffectation" class="md-nav__link">
+    Opérateurs d'affectation
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#operateurs-speciaux" class="md-nav__link">
+    Opérateurs spéciaux
+  </a>
+  
+    <nav class="md-nav" aria-label="Opérateurs spéciaux">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#operateur-didentite" class="md-nav__link">
+    Opérateur d'identité
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#operateur-dappartenance" class="md-nav__link">
+    Opérateur d'appartenance
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+    
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-5-3" type="checkbox" id="nav-5-3">
+    
+    <label class="md-nav__link" for="nav-5-3">
+      Boucles
+      <span class="md-nav__icon md-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8.59 16.58L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.42z"/></svg>
+      </span>
+    </label>
+    <nav class="md-nav" aria-label="Boucles" data-md-level="2">
+      <label class="md-nav__title" for="nav-5-3">
+        <span class="md-nav__icon md-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+        </span>
+        Boucles
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../boucles_bornees/" title="Boucles bornées" class="md-nav__link">
+      Boucles bornées
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../boucles_non_bornees/" title="Boucles non bornées" class="md-nav__link">
+      Boucles non bornées
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../boucles_bornees_imbriquees/" title="❓Boucles bornées imbriquées" class="md-nav__link">
+      ❓Boucles bornées imbriquées
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-6" type="checkbox" id="nav-6">
+    
+    <label class="md-nav__link" for="nav-6">
+      micro:bit
+      <span class="md-nav__icon md-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8.59 16.58L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.42z"/></svg>
+      </span>
+    </label>
+    <nav class="md-nav" aria-label="micro:bit" data-md-level="1">
+      <label class="md-nav__title" for="nav-6">
+        <span class="md-nav__icon md-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+        </span>
+        micro:bit
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../microbit/decouvrir_microbit/" title="Découvrir micro:bit" class="md-nav__link">
+      Découvrir micro:bit
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../microbit/microbit/" title="bientôt" class="md-nav__link">
+      bientôt
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-7" type="checkbox" id="nav-7">
+    
+    <label class="md-nav__link" for="nav-7">
+      Calepyns
+      <span class="md-nav__icon md-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8.59 16.58L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.42z"/></svg>
+      </span>
+    </label>
+    <nav class="md-nav" aria-label="Calepyns" data-md-level="1">
+      <label class="md-nav__title" for="nav-7">
+        <span class="md-nav__icon md-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+        </span>
+        Calepyns
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../calepyn/calepyn/" title="En vrac" class="md-nav__link">
+      En vrac
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary" aria-label="Table des matières">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </span>
+      Table des matières
+    </label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#operateurs-arithmetiques" class="md-nav__link">
+    Opérateurs arithmétiques
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#operateurs-de-comparaison-ou-relationnels" class="md-nav__link">
+    Opérateurs de comparaison (ou relationnels)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#operateurs-logiques" class="md-nav__link">
+    Opérateurs logiques
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#operateurs-binaires-ou-bit-a-bit" class="md-nav__link">
+    Opérateurs binaires (ou bit à bit)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#operateurs-daffectation" class="md-nav__link">
+    Opérateurs d'affectation
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#operateurs-speciaux" class="md-nav__link">
+    Opérateurs spéciaux
+  </a>
+  
+    <nav class="md-nav" aria-label="Opérateurs spéciaux">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#operateur-didentite" class="md-nav__link">
+    Opérateur d'identité
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#operateur-dappartenance" class="md-nav__link">
+    Opérateur d'appartenance
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                
+                  
+                
+                
+                <h1 id="operateurs">Opérateurs</h1>
+<p>Les opérateurs sont des symboles ou des mots réservés, utilisés pour réaliser des <em>opérations</em>  entre des <em>opérandes</em>.<br />
+Un opérande est une variable, un littéral ou bien une expression.<br />
+Une expression est une suite valide d'opérateurs et d'opérandes.</p>
+<h2 id="operateurs-arithmetiques">Opérateurs arithmétiques</h2>
+<div class="admonition info">
+<p class="admonition-title"> Remarque</p>
+<p>Seul le cas d'opérandes à valeurs numériques est envisagé ici. </p>
+</div>
+<div class="tabbed-set" data-tabs="1:7"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><label for="__tabbed_1_1">+</label><div class="tabbed-content">
+<p><strong>Addition</strong><br />
+L'expression <code>a + b</code> a pour valeur la somme des deux opérandes <code>a</code> et <code>b</code>.</p>
+<p><div class="highlight"><pre><span></span><code><span class="n">a</span> <span class="o">=</span> <span class="mi">10</span>
+<span class="n">b</span> <span class="o">=</span> <span class="mi">3</span>
+<span class="n">a</span> <span class="o">+</span> <span class="n">b</span>
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><span class="mi">13</span>
+</code></pre></div></p>
+</div>
+<input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><label for="__tabbed_1_2">- </label><div class="tabbed-content">
+<p><strong>Soustraction</strong><br />
+ L'expression <code>a - b</code> a pour valeur la différence des deux opérandes <code>a</code> et <code>b</code>.
+<div class="highlight"><pre><span></span><code><span class="n">a</span> <span class="o">=</span> <span class="mi">10</span>
+<span class="n">b</span> <span class="o">=</span> <span class="mi">3</span>
+<span class="n">a</span> <span class="o">-</span> <span class="n">b</span>
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><span class="mi">7</span>
+</code></pre></div></p>
+</div>
+<input id="__tabbed_1_3" name="__tabbed_1" type="radio" /><label for="__tabbed_1_3">&#42;  &#20; </label><div class="tabbed-content">
+<p><strong>Multiplication</strong><br />
+L'expression <code>a * b</code> a pour valeur le produit des deux opérandes  <code>a</code> et <code>b</code>. 
+<div class="highlight"><pre><span></span><code><span class="n">a</span> <span class="o">=</span> <span class="mi">10</span>
+<span class="n">b</span> <span class="o">=</span> <span class="mi">3</span>
+<span class="n">a</span> <span class="o">*</span> <span class="n">b</span>
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><span class="mi">30</span>
+</code></pre></div></p>
+</div>
+<input id="__tabbed_1_4" name="__tabbed_1" type="radio" /><label for="__tabbed_1_4">&#47; &#20; </label><div class="tabbed-content">
+<p><strong>Division</strong><br />
+L'expression <code>a / b</code> a pour valeur le quotient décimal dans la division  de <code>a</code> par <code>b</code>.
+<div class="highlight"><pre><span></span><code><span class="n">a</span> <span class="o">=</span> <span class="mi">10</span>
+<span class="n">b</span> <span class="o">=</span> <span class="mi">3</span>
+<span class="n">a</span> <span class="o">/</span> <span class="n">b</span>
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><span class="mf">3.3333333333333335</span>
+</code></pre></div></p>
+</div>
+<input id="__tabbed_1_5" name="__tabbed_1" type="radio" /><label for="__tabbed_1_5">%</label><div class="tabbed-content">
+<p><strong>Modulo</strong><br />
+  L'expression <code>a % b</code> a pour valeur le reste dans la division entière  de <code>a</code> par <code>b</code>.<br />
+<div class="highlight"><pre><span></span><code><span class="n">a</span> <span class="o">=</span> <span class="mi">10</span>
+<span class="n">b</span> <span class="o">=</span> <span class="mi">3</span>
+<span class="n">a</span> <span class="o">%</span> <span class="n">b</span>
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><span class="mi">1</span>
+</code></pre></div></p>
+</div>
+<input id="__tabbed_1_6" name="__tabbed_1" type="radio" /><label for="__tabbed_1_6">&#47;&#47; &#20;</label><div class="tabbed-content">
+<p><strong>Division entière</strong><br />
+L'expression <code>a // b</code> a pour valeur  le quotient dans la division entière  de <code>a</code> par <code>b</code>.
+<div class="highlight"><pre><span></span><code><span class="n">a</span> <span class="o">=</span> <span class="mi">10</span>
+<span class="n">b</span> <span class="o">=</span> <span class="mi">3</span>
+<span class="n">a</span> <span class="o">//</span> <span class="n">b</span>
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><span class="mi">3</span>
+</code></pre></div></p>
+</div>
+<input id="__tabbed_1_7" name="__tabbed_1" type="radio" /><label for="__tabbed_1_7">&#42;&#42;</label><div class="tabbed-content">
+<p><strong>Exposant</strong> <br />
+  L'expression <code>a ** b</code> a pour valeur <code>a</code>exposant <code>b</code> : a <sup>b </sup>. 
+<div class="highlight"><pre><span></span><code><span class="n">a</span> <span class="o">=</span> <span class="mi">10</span>
+<span class="n">b</span> <span class="o">=</span> <span class="mi">3</span>
+<span class="n">a</span> <span class="o">**</span> <span class="n">b</span>
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><span class="mi">1000</span>
+</code></pre></div></p>
+</div>
+</div>
+<h2 id="operateurs-de-comparaison-ou-relationnels">Opérateurs de comparaison (ou relationnels)</h2>
+<p>Les opérateurs de comparaison sont utilisés pour comparer les valeurs de deux opérandes. L'expression s'écrit sous la forme d'une relation (de comparaison) : elle vaut  <code>True</code>si les valeurs des opérandes vérifient la relation et <code>False</code> sinon.</p>
+<div class="tabbed-set" data-tabs="2:6"><input checked="checked" id="__tabbed_2_1" name="__tabbed_2" type="radio" /><label for="__tabbed_2_1"> ==</label><div class="tabbed-content">
+<p>signifie "est égal à ".<br />
+Exemple : <code>2 * 3 == 5</code>vaut <code>False</code></p>
+</div>
+<input id="__tabbed_2_2" name="__tabbed_2" type="radio" /><label for="__tabbed_2_2"> !=</label><div class="tabbed-content">
+<p>signifie "n'est pas égal à ".  <br />
+Exemple : <code>2 * 3 != 5</code> vaut <code>True</code>  </p>
+</div>
+<input id="__tabbed_2_3" name="__tabbed_2" type="radio" /><label for="__tabbed_2_3"> &gt;</label><div class="tabbed-content">
+<p>signifie "est supérieur à ".<br />
+Exemple : <code>2 * 3 &gt; 5</code> vaut <code>True</code>  </p>
+</div>
+<input id="__tabbed_2_4" name="__tabbed_2" type="radio" /><label for="__tabbed_2_4"> &gt;=</label><div class="tabbed-content">
+<p>signifie "est supérieur ou égal à ".<br />
+Exemple : <code>2 * 3 &gt;= 5</code> vaut <code>True</code>  </p>
+</div>
+<input id="__tabbed_2_5" name="__tabbed_2" type="radio" /><label for="__tabbed_2_5"> &lt;</label><div class="tabbed-content">
+<p>signifie "est inférieur à ". <br />
+Exemple : <code>2 * 3 &lt; 5</code> vaut <code>False</code>  </p>
+</div>
+<input id="__tabbed_2_6" name="__tabbed_2" type="radio" /><label for="__tabbed_2_6"> &lt;=</label><div class="tabbed-content">
+<p>signifie "est inférieur ou égal à ". <br />
+Exemple : <code>2 * 3 &lt; 5</code> vaut <code>False</code>  </p>
+</div>
+</div>
+<h2 id="operateurs-logiques">Opérateurs logiques</h2>
+<div class="admonition info">
+<p class="admonition-title"> Remarque</p>
+<p>Seul le cas d'opérandes à valeurs booléennes est envisagé ici. </p>
+</div>
+<div class="tabbed-set" data-tabs="3:3"><input checked="checked" id="__tabbed_3_1" name="__tabbed_3" type="radio" /><label for="__tabbed_3_1">and</label><div class="tabbed-content">
+<p>ET logique<br />
+L'expression <code>a and b</code> vaut <code>True</code> si (et seulement si) les deux opérandes <code>a</code> et <code>b</code> valent <code>True</code>.<br />
+Exemple : 
+<code>2 * 3 &gt; 5 and 2 + 3 == 5</code> vaut <code>True</code>  </p>
+</div>
+<input id="__tabbed_3_2" name="__tabbed_3" type="radio" /><label for="__tabbed_3_2">or</label><div class="tabbed-content">
+<p>OU logique<br />
+L'expression  <code>a or b</code> vaut <code>True</code> si (et seulement si) au moins l'un des deux opérandes  <code>a</code> et <code>b</code> vaut <code>True</code>.<br />
+Exemple : 
+ <code>2 * 3 &lt; 5 and 2 + 3 == 5</code> vaut <code>True</code>    </p>
+</div>
+<input id="__tabbed_3_3" name="__tabbed_3" type="radio" /><label for="__tabbed_3_3">not</label><div class="tabbed-content">
+<p>NON logique :  opérateur unaire<sup id="fnref2:1"><a class="footnote-ref" href="#fn:1">1</a></sup>. <br />
+L'expression <code>not a</code> vaut <code>True</code> si <code>a</code>vaut <code>False</code>; elle vaut <code>False</code>sinon.     <br />
+Exemple : 
+ <code>not (2 * 3 &lt; 5)</code> vaut <code>True</code> </p>
+</div>
+</div>
+<h2 id="operateurs-binaires-ou-bit-a-bit">Opérateurs binaires (ou bit à bit)</h2>
+<div class="tabbed-set" data-tabs="4:6"><input checked="checked" id="__tabbed_4_1" name="__tabbed_4" type="radio" /><label for="__tabbed_4_1"> &amp; </label><div class="tabbed-content">
+<p>Et bit à bit <br />
+<code>a &amp; b</code> : on détermine le résultat bit à bit à l'aide d'un ET logique entre les bits de l'écriture binaire de <code>a</code>et <code>b</code>.<br />
+Exemple : 
+<div class="highlight"><pre><span></span><code><span class="n">a</span> <span class="o">=</span> <span class="mi">240</span>   <span class="c1"># soit 1111 0000 en binaire</span>
+<span class="n">b</span> <span class="o">=</span> <span class="mi">170</span>   <span class="c1"># soit 1010 1010 en binaire</span>
+<span class="n">a</span> <span class="o">&amp;</span> <span class="n">b</span>
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><span class="mi">160</span>       <span class="c1"># soit 1010 0000 en binaire</span>
+</code></pre></div></p>
+</div>
+<input id="__tabbed_4_2" name="__tabbed_4" type="radio" /><label for="__tabbed_4_2"> | </label><div class="tabbed-content">
+<p>Ou bit à bit  <br />
+<code>a | b</code> : on détermine le résultat bit à bit à l'aide d'un OU logique entre les bits de l'écriture binaire de <code>a</code>et <code>b</code>.<br />
+Exemple : 
+<div class="highlight"><pre><span></span><code><span class="n">a</span> <span class="o">=</span> <span class="mi">240</span>   <span class="c1"># soit 1111 0000 en binaire</span>
+<span class="n">b</span> <span class="o">=</span> <span class="mi">170</span>   <span class="c1"># soit 1010 1010 en binaire</span>
+<span class="n">a</span> <span class="o">|</span> <span class="n">b</span>
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><span class="mi">250</span>       <span class="c1"># soit 1111 1010 en binaire</span>
+</code></pre></div></p>
+</div>
+<input id="__tabbed_4_3" name="__tabbed_4" type="radio" /><label for="__tabbed_4_3"> ^ </label><div class="tabbed-content">
+<p>Ou exclusif bit à bit (xor) <br />
+<code>a ^ b</code> : on détermine le résultat bit à bit à l'aide d'un OU exclusif (XOR) entre les bits de l'écriture binaire de <code>a</code>et <code>b</code>.<br />
+Exemple : 
+<div class="highlight"><pre><span></span><code><span class="n">a</span> <span class="o">=</span> <span class="mi">240</span>   <span class="c1"># soit 1111 0000 en binaire</span>
+<span class="n">b</span> <span class="o">=</span> <span class="mi">170</span>   <span class="c1"># soit 1010 1010 en binaire</span>
+<span class="n">a</span> <span class="o">^</span> <span class="n">b</span>
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><span class="mi">90</span>        <span class="c1"># soit 0101 1010 en binaire</span>
+</code></pre></div></p>
+</div>
+<input id="__tabbed_4_4" name="__tabbed_4" type="radio" /><label for="__tabbed_4_4"> ~  </label><div class="tabbed-content">
+<p>Inversion bit à bit (opérateur unaire<sup id="fnref:1"><a class="footnote-ref" href="#fn:1">1</a></sup>)<br />
+<code>~ a</code> : on détermine le résultat bit à bit à l'aide d'un NON sur les bits de l'écriture binaire de <code>a</code>.<br />
+Exemple : 
+<div class="highlight"><pre><span></span><code><span class="n">a</span> <span class="o">=</span> <span class="mi">240</span>   <span class="c1"># soit 1111 0000 en binaire</span>
+<span class="o">~</span> <span class="n">a</span>
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><span class="mi">15</span>        <span class="c1"># soit 0000 1111 en binaire</span>
+</code></pre></div></p>
+</div>
+<input id="__tabbed_4_5" name="__tabbed_4" type="radio" /><label for="__tabbed_4_5"> &gt;&gt; </label><div class="tabbed-content">
+<p>Décalage bit à bit droite<br />
+<code>a &gt;&gt; b</code> : on détermine le résultat en décalant les bits de l'écriture binaire de <code>a</code> de <code>b</code> rangs vers la droite.      <br />
+Exemple : 
+<div class="highlight"><pre><span></span><code><span class="n">a</span> <span class="o">=</span> <span class="mi">48</span>   <span class="c1"># soit 0011 0000 en binaire</span>
+<span class="n">a</span> <span class="o">&gt;&gt;</span> <span class="mi">2</span>
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><span class="mi">12</span>       <span class="c1"># soit 0000 1100  en binaire</span>
+</code></pre></div></p>
+</div>
+<input id="__tabbed_4_6" name="__tabbed_4" type="radio" /><label for="__tabbed_4_6"> &lt;&lt; </label><div class="tabbed-content">
+<p>Décalage bit à bit gauche <br />
+<code>a &lt;&lt; b</code> : on détermine le résultat en décalant les bits de l'écriture binaire de <code>a</code> de <code>b</code> rangs vers la gauche.   <br />
+Exemple : 
+<div class="highlight"><pre><span></span><code><span class="n">a</span> <span class="o">=</span> <span class="mi">48</span>   <span class="c1"># soit 0011 0000 en binaire</span>
+<span class="n">a</span> <span class="o">&lt;&lt;</span> <span class="mi">2</span>
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><span class="mi">192</span>      <span class="c1"># soit 1100 0000 en binaire</span>
+</code></pre></div></p>
+</div>
+</div>
+<h2 id="operateurs-daffectation">Opérateurs d'affectation</h2>
+<p>Les opérateurs d’affectation sont utilisés pour attribuer une valeur à une variable.
+La variable est l'opérande de gauche. La valeur est l'opérande de droite : il est évalué avant l'affectation. </p>
+<p>En dehors de l'affectation à l'aide du symbole <code>=</code>,  les autres opérateurs combinent une opération arithmérique ou binaire et une affectation de valeur à une variable, préalablement initialisée. </p>
+<div class="tabbed-set" data-tabs="5:13"><input checked="checked" id="__tabbed_5_1" name="__tabbed_5" type="radio" /><label for="__tabbed_5_1"> = </label><div class="tabbed-content">
+<p>Exemples : <br />
+<code>x = 2</code> : affecte à <code>x</code>la valeur <code>2</code>.<br />
+<code>x = 2*3 + 5</code> : affecte à <code>x</code> la valeur <code>11</code>. <br />
+<code>x = y</code> : affecte à <code>x</code>la valeur de <code>y</code> (qui doit avoir été initialisée préalablement)</p>
+</div>
+<input id="__tabbed_5_2" name="__tabbed_5" type="radio" /><label for="__tabbed_5_2">+= </label><div class="tabbed-content">
+<p>Exemple : <br />
+<code>x += 2</code> : augmente la valeur de <code>x</code> de <code>2</code>.<br />
+Équivalent à <code>x = x + 2</code></p>
+</div>
+<input id="__tabbed_5_3" name="__tabbed_5" type="radio" /><label for="__tabbed_5_3">-= </label><div class="tabbed-content">
+<p>Exemple : <br />
+<code>x -= 2</code> : diminue la valeur de <code>x</code> de <code>2</code>. <br />
+Équivalent à <code>x = x - 2</code></p>
+</div>
+<input id="__tabbed_5_4" name="__tabbed_5" type="radio" /><label for="__tabbed_5_4"> *= </label><div class="tabbed-content">
+<p>Exemple : <br />
+<code>x *= 2</code> : multiplie la valeur de <code>x</code> par <code>2</code>.<br />
+Équivalent à <code>x = x * 2</code></p>
+</div>
+<input id="__tabbed_5_5" name="__tabbed_5" type="radio" /><label for="__tabbed_5_5"> /= </label><div class="tabbed-content">
+<p>Exemple : <br />
+<code>x /= 2</code> : divise la valeur de <code>x</code> par <code>2</code>.<br />
+Équivalent à <code>x = x / 2</code></p>
+</div>
+<input id="__tabbed_5_6" name="__tabbed_5" type="radio" /><label for="__tabbed_5_6"> %= </label><div class="tabbed-content">
+<p>Exemple : <br />
+<code>x %= 2</code> : remplace <code>x</code> par le reste de la division de la valeur de <code>x</code>par <code>2</code>.  <br />
+ Équivalent à <code>x = x % 2</code></p>
+</div>
+<input id="__tabbed_5_7" name="__tabbed_5" type="radio" /><label for="__tabbed_5_7"> //= </label><div class="tabbed-content">
+<p>Exemple : <br />
+<code>x //= 2</code> : divise la valeur de <code>x</code> par <code>2</code> (quotient entier).<br />
+Équivalent à <code>x = x // 2</code></p>
+</div>
+<input id="__tabbed_5_8" name="__tabbed_5" type="radio" /><label for="__tabbed_5_8"> **= </label><div class="tabbed-content">
+<p>Exemple : <br />
+<code>x **= 2</code> : élève <code>x</code> à la puissance <code>2</code>.<br />
+Équivalent à <code>x = x ** 2</code></p>
+</div>
+<input id="__tabbed_5_9" name="__tabbed_5" type="radio" /><label for="__tabbed_5_9"> &amp;= </label><div class="tabbed-content">
+<p>Exemple : <br />
+<code>x &amp;= 2</code>  <br />
+Équivalent à <code>x = x &amp; 2</code></p>
+</div>
+<input id="__tabbed_5_10" name="__tabbed_5" type="radio" /><label for="__tabbed_5_10"> |= </label><div class="tabbed-content">
+<p>Exemple : <br />
+<code>x |= 2</code> <br />
+Équivalent à <code>x = x | 2</code></p>
+</div>
+<input id="__tabbed_5_11" name="__tabbed_5" type="radio" /><label for="__tabbed_5_11"> ^= </label><div class="tabbed-content">
+<p>Exemple : <br />
+<code>x ^= 2</code><br />
+Équivalent à <code>x = x ^ 2</code></p>
+</div>
+<input id="__tabbed_5_12" name="__tabbed_5" type="radio" /><label for="__tabbed_5_12"> &gt;&gt;= </label><div class="tabbed-content">
+<p>Exemple : <br />
+<code>x &gt;&gt;= 2</code> <br />
+Équivalent à <code>x = x &gt;&gt; 2</code></p>
+</div>
+<input id="__tabbed_5_13" name="__tabbed_5" type="radio" /><label for="__tabbed_5_13"> &lt;&lt;= </label><div class="tabbed-content">
+<p>Exemple : <br />
+<code>x &lt;&lt;= 2</code> <br />
+Équivalent à <code>x = x &lt;&lt; 2</code></p>
+</div>
+</div>
+<h2 id="operateurs-speciaux">Opérateurs spéciaux</h2>
+<p>(is, is not, in, not in)</p>
+<p>Le langage Python offre des types d'opérateurs spéciaux, tels que l'opérateur d'identité ou l'opérateur d'appartenance.</p>
+<h3 id="operateur-didentite">Opérateur d'identité</h3>
+<p><code>is</code> et <code>is not</code> sont les opérateurs d'identité en Python. Ils permettent de vérifier si deux valeurs (ou variables) référencent (ou non) le même emplacement mémoire. <br />
+Deux variables de même valeur ne sont pas nécessairement identiques.</p>
+<div class="tabbed-set" data-tabs="6:2"><input checked="checked" id="__tabbed_6_1" name="__tabbed_6" type="radio" /><label for="__tabbed_6_1"> is </label><div class="tabbed-content">
+<p><code>a is b</code> vaut   <code>True</code> si les opérandes  <code>a</code>et <code>b</code> référencent le même objet.
+Exemple : 
+<div class="highlight"><pre><span></span><code><span class="n">tableau1</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">]</span> 
+<span class="n">tableau2</span> <span class="o">=</span> <span class="n">tableau1</span>
+<span class="n">tableau1</span> <span class="ow">is</span> <span class="n">tableau2</span>
+</code></pre></div>
+<div class="highlight"><pre><span></span><code>True
+</code></pre></div></p>
+</div>
+<input id="__tabbed_6_2" name="__tabbed_6" type="radio" /><label for="__tabbed_6_2"> is not</label><div class="tabbed-content">
+<p><code>a is not b</code> vaut   <code>True</code> si les opérandes  <code>a</code>et <code>b</code> ne référencent pas le même objet.
+Exemple : 
+<div class="highlight"><pre><span></span><code><span class="n">tableau1</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">]</span> 
+<span class="n">tableau2</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">]</span>
+<span class="n">tableau1</span> <span class="ow">is</span> <span class="ow">not</span> <span class="n">tableau2</span>
+</code></pre></div>
+<div class="highlight"><pre><span></span><code>True
+</code></pre></div></p>
+</div>
+</div>
+<h3 id="operateur-dappartenance">Opérateur d'appartenance</h3>
+<p><code>in</code> et <code>not in</code> sont les opérateurs d'appartenance en Python. Ils sont utilisés pour vérifier si une valeur est présente (ou non) dans une séquence (chaîne, liste, tuple, set et dictionnaire).</p>
+<div class="tabbed-set" data-tabs="7:2"><input checked="checked" id="__tabbed_7_1" name="__tabbed_7" type="radio" /><label for="__tabbed_7_1"> in </label><div class="tabbed-content">
+<p><code>a in b</code> vaut   <code>True</code> si l'opérande <code>a</code>se trouve dans la séquence <code>b</code>.
+ Exemple : 
+ <div class="highlight"><pre><span></span><code><span class="n">tableau</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">]</span> 
+<span class="n">a</span> <span class="o">=</span> <span class="mi">2</span>
+<span class="n">a</span> <span class="ow">in</span> <span class="n">tableau</span>
+</code></pre></div>
+ <div class="highlight"><pre><span></span><code>True
+</code></pre></div></p>
+</div>
+<input id="__tabbed_7_2" name="__tabbed_7" type="radio" /><label for="__tabbed_7_2"> not in </label><div class="tabbed-content">
+<p><code>a not in b</code> vaut <code>True</code> si l'opérande <code>a</code>ne se trouve pas dans la séquence <code>b</code>.
+ Exemple : 
+ <div class="highlight"><pre><span></span><code><span class="n">tableau</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">]</span> 
+<span class="n">a</span> <span class="o">=</span> <span class="mi">4</span>
+<span class="n">a</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">tableau</span>
+</code></pre></div>
+ <div class="highlight"><pre><span></span><code>True
+</code></pre></div></p>
+</div>
+</div>
+<div class="footnote">
+<hr />
+<ol>
+<li id="fn:1">
+<p>opérateur ne nécessitant qu'un opérande&#160;<a class="footnote-backref" href="#fnref:1" title="Jump back to footnote 1 in the text">&#8617;</a><a class="footnote-backref" href="#fnref2:1" title="Jump back to footnote 1 in the text">&#8617;</a></p>
+</li>
+</ol>
+</div>
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+      </main>
+      
+        
+<footer class="md-footer">
+  
+    <div class="md-footer-nav">
+      <nav class="md-footer-nav__inner md-grid" aria-label="Footer">
+        
+          <a href="../pep8/" title="Bonnes pratiques" class="md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+            <div class="md-footer-nav__button md-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+            </div>
+            <div class="md-footer-nav__title">
+              <div class="md-ellipsis">
+                <span class="md-footer-nav__direction">
+                  Précédent
+                </span>
+                Bonnes pratiques
+              </div>
+            </div>
+          </a>
+        
+        
+          <a href="../boucles_bornees/" title="Boucles bornées" class="md-footer-nav__link md-footer-nav__link--next" rel="next">
+            <div class="md-footer-nav__title">
+              <div class="md-ellipsis">
+                <span class="md-footer-nav__direction">
+                  Suivant
+                </span>
+                Boucles bornées
+              </div>
+            </div>
+            <div class="md-footer-nav__button md-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    </div>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+        Made with
+        <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+          Material for MkDocs
+        </a>
+      </div>
+      
+  <div class="md-footer-social">
+    
+      
+      
+        
+        
+      
+      <a href="https://github.com/nweibel" target="_blank" rel="noopener" title="github.com" class="md-footer-social__link">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 512"><path d="M186.1 328.7c0 20.9-10.9 55.1-36.7 55.1s-36.7-34.2-36.7-55.1 10.9-55.1 36.7-55.1 36.7 34.2 36.7 55.1zM480 278.2c0 31.9-3.2 65.7-17.5 95-37.9 76.6-142.1 74.8-216.7 74.8-75.8 0-186.2 2.7-225.6-74.8-14.6-29-20.2-63.1-20.2-95 0-41.9 13.9-81.5 41.5-113.6-5.2-15.8-7.7-32.4-7.7-48.8 0-21.5 4.9-32.3 14.6-51.8 45.3 0 74.3 9 108.8 36 29-6.9 58.8-10 88.7-10 27 0 54.2 2.9 80.4 9.2 34-26.7 63-35.2 107.8-35.2 9.8 19.5 14.6 30.3 14.6 51.8 0 16.4-2.6 32.7-7.7 48.2 27.5 32.4 39 72.3 39 114.2zm-64.3 50.5c0-43.9-26.7-82.6-73.5-82.6-18.9 0-37 3.4-56 6-14.9 2.3-29.8 3.2-45.1 3.2-15.2 0-30.1-.9-45.1-3.2-18.7-2.6-37-6-56-6-46.8 0-73.5 38.7-73.5 82.6 0 87.8 80.4 101.3 150.4 101.3h48.2c70.3 0 150.6-13.4 150.6-101.3zm-82.6-55.1c-25.8 0-36.7 34.2-36.7 55.1s10.9 55.1 36.7 55.1 36.7-34.2 36.7-55.1-10.9-55.1-36.7-55.1z"/></svg>
+      </a>
+    
+      
+      
+        
+        
+      
+      <a href="https://twitter.com/nathalieweibel" target="_blank" rel="noopener" title="twitter.com" class="md-footer-social__link">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"/></svg>
+      </a>
+    
+  </div>
+
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    
+      <script src="../../assets/javascripts/vendor.d1f5a259.min.js"></script>
+      <script src="../../assets/javascripts/bundle.d5fec882.min.js"></script><script id="__lang" type="application/json">{"clipboard.copy": "Copier dans le presse-papier", "clipboard.copied": "Copi\u00e9 dans le presse-papier", "search.config.lang": "fr", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.result.placeholder": "Taper pour d\u00e9marrer la recherche", "search.result.none": "Aucun document trouv\u00e9", "search.result.one": "1 document trouv\u00e9", "search.result.other": "# documents trouv\u00e9s"}</script>
+      
+      <script>
+        app = initialize({
+          base: "../..",
+          features: ["tabs"],
+          search: Object.assign({
+            worker: "../../assets/javascripts/worker/search.fae956e7.min.js"
+          }, typeof search !== "undefined" && search)
+        })
+      </script>
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+      
+    
+  </body>
+</html>
