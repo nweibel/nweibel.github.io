@@ -215,7 +215,7 @@
     <li class="md-tabs__item">
       
         <a href="../../calepyn/calepyn/" class="md-tabs__link">
-          Calepyns
+          Jupyter
         </a>
       
     </li>
@@ -304,6 +304,18 @@
   <li class="md-nav__item">
     <a href="../../nsi_premiere/qcm_nsi/" title="QCM NSI" class="md-nav__link">
       QCM NSI
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../nsi_premiere/tour_de_cartes/" title="Tour de cartes" class="md-nav__link">
+      Tour de cartes
     </a>
   </li>
 
@@ -570,10 +582,52 @@
           
 
 
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-5-3-3" type="checkbox" id="nav-5-3-3">
+    
+    <label class="md-nav__link" for="nav-5-3-3">
+      Questions
+      <span class="md-nav__icon md-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8.59 16.58L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.42z"/></svg>
+      </span>
+    </label>
+    <nav class="md-nav" aria-label="Questions" data-md-level="3">
+      <label class="md-nav__title" for="nav-5-3-3">
+        <span class="md-nav__icon md-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+        </span>
+        Questions
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
   <li class="md-nav__item">
-    <a href="../boucles_bornees_imbriquees/" title="❓Boucles bornées imbriquées" class="md-nav__link">
-      ❓Boucles bornées imbriquées
+    <a href="../boucles_bornees_questions/" title="Boucles bornées" class="md-nav__link">
+      Boucles bornées
     </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../boucles_bornees_imbriquees_questions/" title="Boucles bornées imbriquées" class="md-nav__link">
+      Boucles bornées imbriquées
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
   </li>
 
         
@@ -651,17 +705,17 @@
       <input class="md-nav__toggle md-toggle" data-md-toggle="nav-7" type="checkbox" id="nav-7">
     
     <label class="md-nav__link" for="nav-7">
-      Calepyns
+      Jupyter
       <span class="md-nav__icon md-icon">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8.59 16.58L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.42z"/></svg>
       </span>
     </label>
-    <nav class="md-nav" aria-label="Calepyns" data-md-level="1">
+    <nav class="md-nav" aria-label="Jupyter" data-md-level="1">
       <label class="md-nav__title" for="nav-7">
         <span class="md-nav__icon md-icon">
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
         </span>
-        Calepyns
+        Jupyter
       </label>
       <ul class="md-nav__list" data-md-scrollfix>
         
@@ -672,8 +726,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../../calepyn/calepyn/" title="En vrac" class="md-nav__link">
-      En vrac
+    <a href="../../calepyn/calepyn/" title="Calepyns" class="md-nav__link">
+      Calepyns
     </a>
   </li>
 
@@ -821,7 +875,7 @@
 <p>Les noms des constantes sont à écrire avec des lettres <em>capitales</em> et le tiret bas.</p>
 <h3 id="classes">Classes</h3>
 <p>Les noms des classes sont à écrire avec des lettres <em>minuscules</em> avec <em>majuscules</em> en début de mot.</p>
-<div class="admonition example">
+<div class="admonition abstract">
 <p class="admonition-title">Exemples</p>
 <div class="tabbed-set" data-tabs="1:4"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><label for="__tabbed_1_1">Variables</label><div class="tabbed-content">
 <div class="highlight"><pre><span></span><code><span class="n">compteur</span>
@@ -863,7 +917,7 @@ Ainsi les caractères <code>;</code>, <code>:</code> et <code>,</code> s'écrive
 <p>Il est recommandé de toujours entourer les opérateurs suivants (<code>=</code>, <code>+=</code>, <code>-=</code>,<code>*=</code>, <code>/=</code>, <code>==</code>, <code>!=</code>, <code>&gt;=</code>, <code>not</code>, <code>in</code>, <code>and</code>, <code>or</code>, etc.) d'un espace avant et d'un espace après l'opérateur. </p>
 <p>Les opérateurs suivants (<code>+</code>, <code>-</code>, <code>*</code>, <code>/</code>) sont à entourer en règle générale d'un espace avant et d'un espace après l'opérateur. 
 Lorsqu'une expression comporte des opérations de différentes priorités, on peut réserver les espaces à l'opérateur de plus faible priorité.</p>
-<details class="example" open="open"><summary>Exemples</summary><div class="highlight"><pre><span></span><code><span class="n">compteur</span> <span class="o">=</span> <span class="mi">0</span>
+<details class="abstract" open="open"><summary>Exemples</summary><div class="highlight"><pre><span></span><code><span class="n">compteur</span> <span class="o">=</span> <span class="mi">0</span>
 <span class="n">compteur</span> <span class="o">=</span> <span class="n">compteur</span> <span class="o">+</span> <span class="mi">1</span>
 <span class="n">compteur</span> <span class="o">+=</span> <span class="mi">1</span>
 <span class="n">x</span> <span class="o">=</span> <span class="mi">2</span><span class="o">*</span><span class="n">x</span> <span class="o">+</span> <span class="mi">1</span>
@@ -877,7 +931,7 @@ Lorsqu'une expression comporte des opérations de différentes priorités, on pe
 <li>avant les parenthèses, accolades et crochets fermants ;</li>
 <li>juste avant la parenthèse ouvrante d'une fonction ou le crochet ouvrant d'une liste ou d'un dictionnaire.</li>
 </ul>
-<details class="example" open="open"><summary>Exemples</summary><div class="highlight"><pre><span></span><code><span class="n">ma_fonction</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
+<details class="abstract" open="open"><summary>Exemples</summary><div class="highlight"><pre><span></span><code><span class="n">ma_fonction</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
 <span class="n">mon_dictionnaire</span> <span class="o">=</span> <span class="p">{</span><span class="s2">&quot;valeur&quot;</span><span class="p">:</span> <span class="mi">42</span><span class="p">,</span> <span class="s2">&quot;type&quot;</span><span class="p">:</span> <span class="s2">&quot;réponse&quot;</span><span class="p">}</span>
 <span class="n">mon_tableau</span> <span class="o">=</span> <span class="p">(</span><span class="s1">&#39;a&#39;</span><span class="p">,</span> <span class="s1">&#39;ab&#39;</span><span class="p">,</span> <span class="s1">&#39;ac&#39;</span><span class="p">)</span>
 <span class="n">mon_tableau</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
@@ -887,7 +941,7 @@ Lorsqu'une expression comporte des opérations de différentes priorités, on pe
 </details>
 <h2 id="4-docstrings">4. Docstrings</h2>
 <p>Une <em>docstring</em> (« chaîne de documentation » en français) est un texte qui documente un élément du code comme par exemple les fonctions. Elle est située en début de définition, indentée comme le code, et se compose de trois guillemets ouvrants, puis du commentaire rédigé sous forme de phrases complètes et enfin de trois guillements fermants. Toutes les fonctions et classes devraient disposer d'une <em>docstring</em>.</p>
-<details class="example" open="open"><summary>Exemples</summary><div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">est_premier</span><span class="p">(</span><span class="n">nombre</span><span class="p">):</span> 
+<details class="abstract" open="open"><summary>Exemples</summary><div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">est_premier</span><span class="p">(</span><span class="n">nombre</span><span class="p">):</span> 
     <span class="sd">&quot;&quot;&quot;   </span>
 <span class="sd">    nombre est un entier</span>
 <span class="sd">    est_premier(nombre) vaut True si nombre est premier, et False sinon </span>
