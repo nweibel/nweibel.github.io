@@ -575,8 +575,62 @@
 
 
   <li class="md-nav__item">
+    <a href="../boucles_non_bornees_questions/" title="Boucles non bornées" class="md-nav__link">
+      Boucles non bornées
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
     <a href="../boucles_bornees_imbriquees_questions/" title="Boucles bornées imbriquées" class="md-nav__link">
       Boucles bornées imbriquées
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-5-3-4" type="checkbox" id="nav-5-3-4">
+    
+    <label class="md-nav__link" for="nav-5-3-4">
+      Exercices
+      <span class="md-nav__icon md-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8.59 16.58L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.42z"/></svg>
+      </span>
+    </label>
+    <nav class="md-nav" aria-label="Exercices" data-md-level="3">
+      <label class="md-nav__title" for="nav-5-3-4">
+        <span class="md-nav__icon md-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+        </span>
+        Exercices
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../boucles_bornees_exercices/" title="Boucles bornées" class="md-nav__link">
+      Boucles bornées
     </a>
   </li>
 
@@ -687,6 +741,18 @@
   </li>
 
         
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../calepyn/doctest/" title="Doctest" class="md-nav__link">
+      Doctest
+    </a>
+  </li>
+
+        
       </ul>
     </nav>
   </li>
@@ -762,6 +828,29 @@
                 
                 
                 <h1 id="boucles-bornees">Boucles bornées</h1>
+<p>Les boucles bornées servent à exécuter certaines instructions d'un programme de manière répétitive, un nombre prédéfini de fois. </p>
+<p>Par exemple pour répéter quatre fois un bloc d'instructions, on peut écrire : </p>
+<div class="highlight"><pre><span></span><code>    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">4</span><span class="p">):</span>
+        <span class="n">bloc</span> <span class="n">d</span><span class="s1">&#39;instructions </span>
+</code></pre></div>
+
+<div class="admonition abstract">
+<p class="admonition-title">Exemple :</p>
+<p><div class="highlight"><pre><span></span><code><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">4</span><span class="p">):</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Bienvenue !&quot;</span><span class="p">)</span>
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><span class="n">Bienvenue</span> <span class="err">!</span>
+<span class="n">Bienvenue</span> <span class="err">!</span>
+<span class="n">Bienvenue</span> <span class="err">!</span>
+<span class="n">Bienvenue</span> <span class="err">!</span>
+</code></pre></div></p>
+</div>
+<p>En première approche, on peut se contenter de la syntaxe : <br />
+<div class="highlight"><pre><span></span><code><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">n</span><span class="p">)</span> <span class="p">:</span>
+    <span class="n">bloc</span> <span class="n">d</span><span class="s1">&#39;instructions</span>
+</code></pre></div>
+pour  répéter <code>n</code> fois un bloc d'instructions.<br />
+Mais les deux instructions que cette syntaxe combine : <code>for ... in</code> et <code>range()</code> permettent de nombreuses possibilités.</p>
 <h2 id="linstruction-for">L'instruction for</h2>
 <p>La boucle bornée (ou instruction <code>for</code>)  permet d’itérer sur les éléments d’une séquence (liste, chaine de caractères, etc.) dans l'ordre dans lequel les éléments apparaissent dans la séquence.   </p>
 <div class="admonition abstract">
@@ -776,12 +865,13 @@
 </code></pre></div></p>
 </div>
 <p>La syntaxe de la boucle <code>for</code>est : </p>
-<div class="highlight"><pre><span></span><code><span class="k">for</span> <span class="n">iterateur</span> <span class="ow">in</span> <span class="n">sequence</span><span class="p">:</span>
+<p><div class="highlight"><pre><span></span><code><span class="k">for</span> <span class="n">iterateur</span> <span class="ow">in</span> <span class="n">sequence</span><span class="p">:</span>
     <span class="n">instructions</span>
 </code></pre></div>
-
+L'itérateur est une variable à laquelle il faut donner un nom, et qui prend successivement les valeurs de la séquence. <br />
+Le bloc d'instructions à exécuter dans le corps de la boucle est à indenter.</p>
 <h2 id="la-fonction-range">La fonction range()</h2>
-<p>Pour itérer sur une suite de nombres, on utilise la fonction native <code>range()</code>. </p>
+<p>Pour itérer sur une suite de nombres, on utilise la fonction  <code>range()</code>. </p>
 <div class="admonition abstract">
 <p class="admonition-title">Exemple :</p>
 <p><div class="highlight"><pre><span></span><code><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">4</span><span class="p">):</span>
@@ -791,13 +881,14 @@
 <span class="mi">1</span> <span class="mi">1</span>
 <span class="mi">2</span> <span class="mi">4</span>
 <span class="mi">3</span> <span class="mi">9</span>
-</code></pre></div></p>
+</code></pre></div>
+Ici <code>i</code>prend successivement les valeurs 0, 1, 2, puis 3 et pour chaque valeur de <code>i</code>on affiche <code>i</code>et son carré.</p>
 </div>
 <p>La syntaxe générale est <code>range(debut, fin, pas)</code>.  </p>
-<p>La liste des valeurs générées commence avec la valeur <code>debut</code>;  les valeurs suivantes sont générées en augmentant de la valeur <code>pas</code> et la liste s'arrête dès qu'elle atteint ou dépasse la valeur <code>fin</code>.</p>
+<p>La liste des valeurs générées commence avec la valeur <code>debut</code>;  les valeurs suivantes sont générées en augmentant de la valeur <code>pas</code> et la liste s'arrête  juste avant d'atteindre ou dépasser la valeur <code>fin</code>.</p>
 <p><code>debut</code> est un paramètre facultatif : sa valeur par défaut est <code>0</code>.<br />
 <code>pas</code> est aussi un paramètre facultatif. Il vaut <code>1</code>par défaut ; il faut donner les 3 paramètres de <code>range()</code> pour modifier sa valeur.    </p>
-<p>La syntaxe <code>range(valeur)</code> est donc équivalente à <code>range(0, valeur, 1)</code> et génère la liste les entiers de 0 à <code>valeur</code> - 1 .</p>
+<p>La syntaxe <code>range(valeur)</code> est donc équivalente à <code>range(0, valeur, 1)</code> et génère la liste les entiers de 0 à <code>valeur</code> - 1.</p>
 <div class="admonition abstract">
 <p class="admonition-title">Exemple :</p>
 <p><code>range(10)</code> génère la liste 0, 1, 2, 3, 4, 5, 6, 7, 8, 9  </p>
@@ -835,7 +926,7 @@
 </code></pre></div></p>
 </div>
 <h2 id="iterer-sur-plusieurs-sequences">Itérer sur plusieurs séquences</h2>
-<p>Pour faire une boucle sur deux séquences ou plus en même temps, les éléments peuvent associés en utilisant la fonction <code>zip()</code> :</p>
+<p>Pour faire une boucle sur deux séquences ou plus en même temps, les éléments peuvent être associés en utilisant la fonction <code>zip()</code> :</p>
 <div class="admonition abstract">
 <p class="admonition-title">Exemple :</p>
 <p><div class="highlight"><pre><span></span><code><span class="n">couleurs</span> <span class="o">=</span>  <span class="p">[</span><span class="s1">&#39;anthracite&#39;</span><span class="p">,</span> <span class="s1">&#39;blanc&#39;</span><span class="p">,</span> <span class="s1">&#39;cyan&#39;</span><span class="p">]</span>

@@ -504,6 +504,13 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#boucle-infinie" class="md-nav__link">
+    Boucle infinie
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -554,8 +561,62 @@
 
 
   <li class="md-nav__item">
+    <a href="../boucles_non_bornees_questions/" title="Boucles non bornées" class="md-nav__link">
+      Boucles non bornées
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
     <a href="../boucles_bornees_imbriquees_questions/" title="Boucles bornées imbriquées" class="md-nav__link">
       Boucles bornées imbriquées
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-5-3-4" type="checkbox" id="nav-5-3-4">
+    
+    <label class="md-nav__link" for="nav-5-3-4">
+      Exercices
+      <span class="md-nav__icon md-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8.59 16.58L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.42z"/></svg>
+      </span>
+    </label>
+    <nav class="md-nav" aria-label="Exercices" data-md-level="3">
+      <label class="md-nav__title" for="nav-5-3-4">
+        <span class="md-nav__icon md-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+        </span>
+        Exercices
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../boucles_bornees_exercices/" title="Boucles bornées" class="md-nav__link">
+      Boucles bornées
     </a>
   </li>
 
@@ -666,6 +727,18 @@
   </li>
 
         
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../calepyn/doctest/" title="Doctest" class="md-nav__link">
+      Doctest
+    </a>
+  </li>
+
+        
       </ul>
     </nav>
   </li>
@@ -703,6 +776,13 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#boucle-infinie" class="md-nav__link">
+    Boucle infinie
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -721,23 +801,41 @@
                 
                 <h1 id="boucles-non-bornees">Boucles non bornées</h1>
 <h2 id="linstruction-while">L'instruction while</h2>
-<p>La boucle non bornée (ou instruction <code>while</code>)  permet de répéter un bloc d'instructions tant qu'une expression (boolénne) est vraie.</p>
+<p>La boucle non bornée (ou boucle <code>while</code>) permet de répéter un bloc d'instructions tant qu'une expression (boolénne) est vraie.</p>
 <p>La syntaxe de la boucle <code>while</code>est : </p>
-<div class="highlight"><pre><span></span><code><span class="k">while</span> <span class="n">expression</span><span class="p">:</span>
-    <span class="n">instructions</span> <span class="n">à</span> <span class="n">répéter</span>
+<p><div class="highlight"><pre><span></span><code><span class="k">while</span> <span class="n">expression</span><span class="p">:</span>
+    <span class="n">bloc</span> <span class="n">d</span><span class="s1">&#39;instructions à répéter</span>
 </code></pre></div>
-
+où <code>expression</code> a pour valeur <code>True</code> ou <code>False</code>.</p>
+<p>Le bloc d'instructions est à indenter. </p>
 <p>On utilise généralement cette boucle lorsqu'on ne connait pas le nombre d'itérations au préalable.</p>
 <div class="admonition abstract">
 <p class="admonition-title">Exemple :</p>
-<p><div class="highlight"><pre><span></span><code><span class="k">while</span> <span class="n">mot</span> <span class="ow">in</span> <span class="n">liste_mots</span><span class="p">:</span>
-    <span class="nb">print</span><span class="p">(</span><span class="n">mot</span><span class="p">)</span>
+<p>La boucle suivante permet d'afficher la plus petite puissance de 2 supérieure à <code>nombre</code>.</p>
+<p><div class="highlight"><pre><span></span><code><span class="n">nombre</span> <span class="o">=</span> <span class="mi">999</span>
+<span class="n">valeur</span> <span class="o">=</span> <span class="mi">1</span>
+<span class="k">while</span> <span class="n">valeur</span> <span class="o">&lt;</span> <span class="n">nombre</span><span class="p">:</span>
+    <span class="n">valeur</span> <span class="o">=</span> <span class="n">valeur</span> <span class="o">*</span> <span class="mi">2</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">valeur</span><span class="p">)</span>
 </code></pre></div>
-<div class="highlight"><pre><span></span><code><span class="n">anthracite</span>
-<span class="n">blanc</span>
-<span class="n">cyan</span>
+<div class="highlight"><pre><span></span><code>1024
 </code></pre></div></p>
 </div>
+<h2 id="boucle-infinie">Boucle infinie</h2>
+<p>Les boucles <code>while</code> présentent un risque de boucle infinie. 
+Pour que la boucle prenne fin, il faut s'assurer que l'expression qui conditionne l'exécution du corps de la boucle prendra la valeur <code>False</code>, éventuellement après de très nombreuses étapes. Il faut donc s’assurer que la valeur de cette expression est bien modifiée par les instructions du corps de la boucle (ou par un événement).</p>
+<div class="admonition abstract">
+<p class="admonition-title">Exemple :</p>
+<p>La boucle suivante ne se termine jamais : la variable <code>valeur</code> n'est jamais modifiée dans le corps de la boucle. Seule une action de l’utilisateur peut interrompre l'exécution du programme.</p>
+<div class="highlight"><pre><span></span><code><span class="n">compteur</span> <span class="o">=</span> <span class="mi">0</span>
+<span class="n">valeur</span> <span class="o">=</span> <span class="mi">0</span>
+<span class="k">while</span> <span class="n">valeur</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
+    <span class="n">compteur</span> <span class="o">=</span> <span class="n">compteur</span> <span class="o">+</span> <span class="mi">1</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">compteur</span><span class="p">)</span>
+</code></pre></div>
+
+</div>
+<p>À l'inverse, si l'expression qui conditionne l'exécution du corps de la boucle a pour valeur <code>False</code> dès le départ, le corps de la boucle n’est jamais exécuté.     </p>
                 
               
               

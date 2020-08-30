@@ -666,6 +666,13 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#question-52" class="md-nav__link">
+    Question 5.2
+  </a>
+  
+</li>
+        
       </ul>
     </nav>
   
@@ -684,8 +691,62 @@
 
 
   <li class="md-nav__item">
+    <a href="../boucles_non_bornees_questions/" title="Boucles non bornées" class="md-nav__link">
+      Boucles non bornées
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
     <a href="../boucles_bornees_imbriquees_questions/" title="Boucles bornées imbriquées" class="md-nav__link">
       Boucles bornées imbriquées
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-5-3-4" type="checkbox" id="nav-5-3-4">
+    
+    <label class="md-nav__link" for="nav-5-3-4">
+      Exercices
+      <span class="md-nav__icon md-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8.59 16.58L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.42z"/></svg>
+      </span>
+    </label>
+    <nav class="md-nav" aria-label="Exercices" data-md-level="3">
+      <label class="md-nav__title" for="nav-5-3-4">
+        <span class="md-nav__icon md-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+        </span>
+        Exercices
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../boucles_bornees_exercices/" title="Boucles bornées" class="md-nav__link">
+      Boucles bornées
     </a>
   </li>
 
@@ -792,6 +853,18 @@
   <li class="md-nav__item">
     <a href="../../calepyn/calepyn/" title="Calepyns" class="md-nav__link">
       Calepyns
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../calepyn/doctest/" title="Doctest" class="md-nav__link">
+      Doctest
     </a>
   </li>
 
@@ -952,6 +1025,13 @@
           <li class="md-nav__item">
   <a href="#question-51" class="md-nav__link">
     Question 5.1
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#question-52" class="md-nav__link">
+    Question 5.2
   </a>
   
 </li>
@@ -1121,7 +1201,7 @@ Parmi les 4 programmes suivants, lesquels permettent d'afficher la somme des val
 <li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> D</li>
 </ul>
 </div>
-<input id="__tabbed_3_2" name="__tabbed_3" type="radio" /><label for="__tabbed_3_2">Solution</label><div class="tabbed-content">
+<input id="__tabbed_3_2" name="__tabbed_3" type="radio" /><label for="__tabbed_3_2">Solutions</label><div class="tabbed-content">
 <ul class="task-list">
 <li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> A</li>
 <li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> B</li>
@@ -1185,7 +1265,6 @@ Parmi les 4 programmes suivants, lesquels permettent d'afficher la somme des val
  Enfin, l'affichage de la somme n'est à réaliser qu'après le parcours complet des dix entiers. </p>
 </div>
 </div>
-<hr />
 <h2 id="3-calculs-en-boucle">3. Calculs en boucle</h2>
 <h4 id="question-31">Question 3.1</h4>
 <div class="admonition question">
@@ -1366,25 +1445,25 @@ Quelle serait la valeur de la variable <code>reponse</code> à l'issue de l'exé
 </div>
 <p>Boucle A : 
 <div class="highlight"><pre><span></span><code><span class="n">t</span> <span class="o">=</span> <span class="n">Turtle</span><span class="p">()</span>
-<span class="k">for</span> <span class="n">loop</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">6</span><span class="p">)</span> <span class="p">:</span>
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">6</span><span class="p">)</span> <span class="p">:</span>
     <span class="n">t</span><span class="o">.</span><span class="n">forward</span><span class="p">(</span><span class="mi">100</span><span class="p">)</span>
     <span class="n">t</span><span class="o">.</span><span class="n">left</span><span class="p">(</span><span class="mi">60</span><span class="p">)</span>
 </code></pre></div></p>
 <p>Boucle B : 
 <div class="highlight"><pre><span></span><code><span class="n">t</span> <span class="o">=</span> <span class="n">Turtle</span><span class="p">()</span>
-<span class="k">for</span> <span class="n">loop</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">7</span><span class="p">)</span> <span class="p">:</span>
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">7</span><span class="p">)</span> <span class="p">:</span>
     <span class="n">t</span><span class="o">.</span><span class="n">forward</span><span class="p">(</span><span class="mi">100</span><span class="p">)</span>
     <span class="n">t</span><span class="o">.</span><span class="n">left</span><span class="p">(</span><span class="mi">60</span><span class="p">)</span>
 </code></pre></div></p>
 <p>Boucle C : 
 <div class="highlight"><pre><span></span><code><span class="n">t</span> <span class="o">=</span> <span class="n">Turtle</span><span class="p">()</span>
-<span class="k">for</span> <span class="n">loop</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">6</span><span class="p">)</span> <span class="p">:</span>
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">6</span><span class="p">)</span> <span class="p">:</span>
     <span class="n">t</span><span class="o">.</span><span class="n">forward</span><span class="p">(</span><span class="mi">100</span><span class="p">)</span>
     <span class="n">t</span><span class="o">.</span><span class="n">left</span><span class="p">(</span><span class="mi">120</span><span class="p">)</span>
 </code></pre></div></p>
 <p>Boucle D : 
 <div class="highlight"><pre><span></span><code><span class="n">t</span> <span class="o">=</span> <span class="n">Turtle</span><span class="p">()</span>
-<span class="k">for</span> <span class="n">loop</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">7</span><span class="p">)</span> <span class="p">:</span>
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">7</span><span class="p">)</span> <span class="p">:</span>
     <span class="n">t</span><span class="o">.</span><span class="n">forward</span><span class="p">(</span><span class="mi">100</span><span class="p">)</span>
     <span class="n">t</span><span class="o">.</span><span class="n">left</span><span class="p">(</span><span class="mi">120</span><span class="p">)</span>
 </code></pre></div></p>
@@ -1407,6 +1486,61 @@ Quelle serait la valeur de la variable <code>reponse</code> à l'issue de l'exé
 <input id="__tabbed_10_3" name="__tabbed_10" type="radio" /><label for="__tabbed_10_3">Arguments</label><div class="tabbed-content">
 <p>La figure comporte 6 côtés et <code>range(6)</code> génèrera les entiers de 0 à 5, soit 6 entiers. 
 Les angles "internes" de la figure sont de 120°, la tortue doit donc pivoter de 180 - 120 = 60° entre 2 tracés.</p>
+</div>
+</div>
+<h4 id="question-52">Question 5.2</h4>
+<div class="admonition question">
+<p class="admonition-title">Question</p>
+<p>Parmi les boucles suivantes, laquelle permet de faire tracer à la tortue la figure ci-dessous ?        </p>
+<p><img alt="étoile" src="../../images/etoile.png" /></p>
+</div>
+<p>Le programme commence par les instructions suivantes : 
+<div class="highlight"><pre><span></span><code><span class="n">t</span> <span class="o">=</span> <span class="n">Turtle</span><span class="p">()</span>
+<span class="c1"># déplacement sans tracé</span>
+<span class="n">t</span><span class="o">.</span><span class="n">penup</span><span class="p">()</span>
+<span class="n">t</span><span class="o">.</span><span class="n">setposition</span><span class="p">(</span><span class="mi">75</span><span class="p">,</span> <span class="mi">150</span><span class="p">)</span>
+<span class="n">t</span><span class="o">.</span><span class="n">pendown</span><span class="p">()</span>
+</code></pre></div>
+Puis se termine par l'une des boucles suivantes : </p>
+<p>Boucle A : 
+<div class="highlight"><pre><span></span><code><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">5</span><span class="p">)</span> <span class="p">:</span>
+        <span class="n">t</span><span class="o">.</span><span class="n">forward</span><span class="p">(</span><span class="mi">250</span><span class="p">)</span>
+        <span class="n">t</span><span class="o">.</span><span class="n">right</span><span class="p">(</span><span class="mi">72</span><span class="p">)</span>
+</code></pre></div></p>
+<p>Boucle B : 
+<div class="highlight"><pre><span></span><code><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">5</span><span class="p">)</span> <span class="p">:</span>
+        <span class="n">t</span><span class="o">.</span><span class="n">forward</span><span class="p">(</span><span class="mi">250</span><span class="p">)</span>
+        <span class="n">t</span><span class="o">.</span><span class="n">right</span><span class="p">(</span><span class="mi">144</span><span class="p">)</span>
+</code></pre></div></p>
+<p>Boucle C : 
+<div class="highlight"><pre><span></span><code><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">6</span><span class="p">)</span> <span class="p">:</span>
+        <span class="n">t</span><span class="o">.</span><span class="n">forward</span><span class="p">(</span><span class="mi">250</span><span class="p">)</span>
+        <span class="n">t</span><span class="o">.</span><span class="n">left</span><span class="p">(</span><span class="mi">36</span><span class="p">)</span>
+</code></pre></div></p>
+<p>Boucle D : 
+<div class="highlight"><pre><span></span><code><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">6</span><span class="p">)</span> <span class="p">:</span>
+        <span class="n">t</span><span class="o">.</span><span class="n">forward</span><span class="p">(</span><span class="mi">250</span><span class="p">)</span>
+        <span class="n">t</span><span class="o">.</span><span class="n">left</span><span class="p">(</span><span class="mi">72</span><span class="p">)</span>
+</code></pre></div></p>
+<div class="tabbed-set" data-tabs="11:3"><input checked="checked" id="__tabbed_11_1" name="__tabbed_11" type="radio" /><label for="__tabbed_11_1">Propositions de réponses</label><div class="tabbed-content">
+<ul class="task-list">
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> A</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> B</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> C</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> D</li>
+</ul>
+</div>
+<input id="__tabbed_11_2" name="__tabbed_11" type="radio" /><label for="__tabbed_11_2">Solution</label><div class="tabbed-content">
+<ul class="task-list">
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> A</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> B</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> C</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> D</li>
+</ul>
+</div>
+<input id="__tabbed_11_3" name="__tabbed_11" type="radio" /><label for="__tabbed_11_3">Arguments</label><div class="tabbed-content">
+<p>La figure comporte 5 côtés et <code>range(5)</code> génèrera les entiers de 0 à 4, soit 5 entiers. 
+Les angles "internes" des pointes de l'étoile sont de 36°, la tortue doit donc pivoter de 180 - 36 = 144° entre 2 tracés.</p>
 </div>
 </div>
                 
@@ -1442,13 +1576,13 @@ Les angles "internes" de la figure sont de 120°, la tortue doit donc pivoter de
           </a>
         
         
-          <a href="../boucles_bornees_imbriquees_questions/" title="Boucles bornées imbriquées" class="md-footer-nav__link md-footer-nav__link--next" rel="next">
+          <a href="../boucles_non_bornees_questions/" title="Boucles non bornées" class="md-footer-nav__link md-footer-nav__link--next" rel="next">
             <div class="md-footer-nav__title">
               <div class="md-ellipsis">
                 <span class="md-footer-nav__direction">
                   Suivant
                 </span>
-                Boucles bornées imbriquées
+                Boucles non bornées
               </div>
             </div>
             <div class="md-footer-nav__button md-icon">
