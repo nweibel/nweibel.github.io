@@ -544,6 +544,33 @@
   
 
 
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-4-4" type="checkbox" id="nav-4-4" checked>
+    
+    <label class="md-nav__link" for="nav-4-4">
+      Instructions conditionnelles
+      <span class="md-nav__icon md-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8.59 16.58L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.42z"/></svg>
+      </span>
+    </label>
+    <nav class="md-nav" aria-label="Instructions conditionnelles" data-md-level="2">
+      <label class="md-nav__title" for="nav-4-4">
+        <span class="md-nav__icon md-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+        </span>
+        Instructions conditionnelles
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+  
+
+
   <li class="md-nav__item md-nav__item--active">
     
     <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
@@ -591,10 +618,88 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#linstruction-if-elif-else" class="md-nav__link">
+    L'instruction if … elif … else
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
     
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../instructions_conditionnelles_questions/" title="Questions" class="md-nav__link">
+      Questions
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-4-5" type="checkbox" id="nav-4-5">
+    
+    <label class="md-nav__link" for="nav-4-5">
+      Fonctions
+      <span class="md-nav__icon md-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8.59 16.58L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.42z"/></svg>
+      </span>
+    </label>
+    <nav class="md-nav" aria-label="Fonctions" data-md-level="2">
+      <label class="md-nav__title" for="nav-4-5">
+        <span class="md-nav__icon md-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+        </span>
+        Fonctions
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../fonctions/" title="Fonctions" class="md-nav__link">
+      Fonctions
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../fonctions_questions/" title="Questions" class="md-nav__link">
+      Questions
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
   </li>
 
         
@@ -750,6 +855,13 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#linstruction-if-elif-else" class="md-nav__link">
+    L'instruction if … elif … else
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -767,7 +879,7 @@
                 
                 
                 <h1 id="instructions-conditionnelles">Instructions conditionnelles</h1>
-<p>Les instructions conditionnelles permettent de sélectionner le bloc d'instructions à exécuter selon la valeur d'une expression booléenne.</p>
+<p>Les instructions conditionnelles permettent de <strong>sélectionner le bloc d'instructions à exécuter</strong> selon la valeur d'une expression booléenne.</p>
 <h2 id="linstruction-if">L'instruction if</h2>
 <p>La syntaxe de l'instruction <code>if</code> est : </p>
 <p><div class="highlight"><pre><span></span><code><span class="k">if</span> <span class="n">expression</span><span class="p">:</span>
@@ -784,7 +896,7 @@ Dans tous les cas, si le bloc <code>bloc_instructions_2</code> existe, il est ex
     <span class="n">nb</span> <span class="o">=</span> <span class="n">nb</span> <span class="o">*</span> <span class="mi">2</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">nb</span><span class="p">,</span> <span class="s2">&quot;est un nombre pair&quot;</span><span class="p">)</span>
 </code></pre></div>
-<div class="highlight"><pre><span></span><code><span class="mi">34</span> <span class="n">est</span> <span class="n">un</span> <span class="n">nombre</span> <span class="n">pair</span>
+<div class="highlight"><pre><span></span><code>34 est un nombre pair
 </code></pre></div></p>
 <p><code>nb % 2 != 0</code> est une expression qui vaut <code>True</code> lorsque <code>nb</code> vaut 17. L'instruction <code>nb = nb * 2</code> est exécutée, ce qui affecte à <code>nb</code> la valeur 34. </p>
 </div>
@@ -795,7 +907,7 @@ Dans tous les cas, si le bloc <code>bloc_instructions_2</code> existe, il est ex
     <span class="n">nb</span> <span class="o">=</span> <span class="n">nb</span> <span class="o">*</span> <span class="mi">2</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">nb</span><span class="p">,</span> <span class="s2">&quot;est un nombre pair&quot;</span><span class="p">)</span>
 </code></pre></div>
-<div class="highlight"><pre><span></span><code><span class="mi">18</span> <span class="n">est</span> <span class="n">un</span> <span class="n">nombre</span> <span class="n">pair</span>
+<div class="highlight"><pre><span></span><code>18 est un nombre pair
 </code></pre></div></p>
 <p><code>nb % 2 != 0</code> est une expression qui vaut <code>False</code> lorsque <code>nb</code> vaut 18. L'instruction <code>nb = nb * 2</code> est ignorée et la valeur de <code>nb</code> n'est pas modifiée. </p>
 </div>
@@ -810,7 +922,10 @@ Dans tous les cas, si le bloc <code>bloc_instructions_2</code> existe, il est ex
 où <code>expression</code> a pour valeur <code>True</code> ou <code>False</code>.  </p>
 <ul>
 <li>Lorsque <code>expression</code> a pour valeur <code>True</code>, le bloc <code>bloc_instructions_1</code> est exécuté, et le bloc <code>bloc_instructions_2</code> est ignoré.</li>
-<li>Lorsque <code>expression</code> a pour valeur <code>False</code>, le bloc <code>bloc_instructions_1</code> est ignoré, et le bloc <code>bloc_instructions_2</code> est exécuté.</li>
+<li>Lorsque <code>expression</code> a pour valeur <code>False</code>, le bloc <code>bloc_instructions_1</code> est ignoré, et le bloc <code>bloc_instructions_2</code> est exécuté.  </li>
+</ul>
+<p>On exécute donc <em>soit</em> le bloc <code>bloc_instructions_1</code>, <em>soit</em> le bloc <code>bloc_instructions_2</code>, mais jamais les 2.  </p>
+<ul>
 <li>Dans tous les cas, si le bloc <code>bloc_instructions_3</code> existe, il est exécuté ensuite.  </li>
 </ul>
 <div class="admonition abstract">
@@ -821,9 +936,53 @@ où <code>expression</code> a pour valeur <code>True</code> ou <code>False</code
 <span class="k">else</span> <span class="p">:</span> 
     <span class="nb">print</span><span class="p">(</span><span class="n">nb</span><span class="p">,</span> <span class="s2">&quot;est un nombre  impair&quot;</span><span class="p">)</span>
 </code></pre></div>
-<div class="highlight"><pre><span></span><code><span class="mi">5</span> <span class="n">est</span> <span class="n">un</span> <span class="n">nombre</span> <span class="n">impair</span>
+<div class="highlight"><pre><span></span><code>5 est un nombre impair
 </code></pre></div></p>
 <p><code>nb % 2 == 0</code> est une expression qui vaut <code>False</code> lorsque <code>nb</code> vaut 5. L'instruction <code>print(nb, "est un nombre pair")</code> est ignorée mais <code>print(nb, "est un nombre  impair")</code> est exécutée.</p>
+</div>
+<h2 id="linstruction-if-elif-else">L'instruction <code>if … elif … else</code></h2>
+<p>Lorsque l'on souhaite disposer de plus d'une alternative, l'instruction <code>if … elif … else</code> permet de conditionner l'exécution de plusieurs blocs d'instructions par la valeur de plusieurs expressions booléennes.</p>
+<p><code>elif</code> est équivalent à <code>else if</code>. On peut ajouter autant de clauses <code>elif</code> que nécessaires. </p>
+<p>La syntaxe de l'instruction <code>if … elif … else</code> est : </p>
+<p><div class="highlight"><pre><span></span><code><span class="k">if</span> <span class="n">expression1</span><span class="p">:</span>
+    <span class="n">bloc_instructions_1</span>
+<span class="k">elif</span> <span class="n">expression2</span> <span class="p">:</span> 
+    <span class="n">bloc_instructions_2</span>
+<span class="k">else</span><span class="p">:</span> 
+    <span class="n">bloc_instructions_3</span>
+<span class="n">bloc_instructions_4</span>
+</code></pre></div>
+où <code>expression1</code> et <code>expression2</code> ont pour valeur <code>True</code> ou <code>False</code>.  </p>
+<ul>
+<li>Lorsque <code>expression1</code> a pour valeur <code>True</code>, le bloc <code>bloc_instructions_1</code> est exécuté, et les blocs <code>bloc_instructions_2</code> et <code>bloc_instructions_3</code> sont ignorés.</li>
+<li>Lorsque <code>expression1</code> a pour valeur <code>False</code>:  <ul>
+<li>le bloc <code>bloc_instructions_1</code> est ignoré, </li>
+<li>si <code>expression2</code> a pour valeur <code>True</code>, le bloc <code>bloc_instructions_2</code> est exécuté, et le bloc <code>bloc_instructions_3</code> est ignoré ;</li>
+<li>si <code>expression2</code> a pour valeur <code>False</code>, le bloc <code>bloc_instructions_2</code> est ignoré, et le bloc <code>bloc_instructions_3</code> est exécuté.  </li>
+</ul>
+</li>
+</ul>
+<p>On exécute donc <em>soit</em> le bloc <code>bloc_instructions_1</code>, <em>soit</em> le bloc <code>bloc_instructions_2</code>, <em>soit</em> le bloc <code>bloc_instructions_3</code>, mais toujours un seul parmi les 3.  </p>
+<ul>
+<li>Dans tous les cas, si le bloc <code>bloc_instructions_4</code> existe, il est exécuté ensuite.  </li>
+</ul>
+<div class="admonition abstract">
+<p class="admonition-title">Exemple : </p>
+<p><div class="highlight"><pre><span></span><code><span class="n">nb</span> <span class="o">=</span> <span class="mi">15</span>
+<span class="k">if</span> <span class="n">nb</span> <span class="o">&lt;=</span> <span class="mi">10</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">nb</span><span class="p">,</span> <span class="s2">&quot;est inférieur ou égal à 10&quot;</span><span class="p">)</span>
+<span class="k">elif</span> <span class="n">nb</span> <span class="o">&gt;=</span> <span class="mi">20</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">nb</span><span class="p">,</span> <span class="s2">&quot;est supérieur ou égal à 20&quot;</span><span class="p">)</span>
+<span class="k">else</span> <span class="p">:</span> 
+    <span class="nb">print</span><span class="p">(</span><span class="n">nb</span><span class="p">,</span> <span class="s2">&quot;est strictement compris entre 10 et 20&quot;</span><span class="p">)</span>
+</code></pre></div>
+<div class="highlight"><pre><span></span><code>15 est strictement compris entre 10 et 20
+</code></pre></div></p>
+<p><code>nb &lt;= 10</code> est une expression qui vaut <code>False</code> lorsque <code>nb</code> vaut 15.<br />
+L'instruction <code>print(nb, "est inférieur ou égal à 10")</code> est ignorée.<br />
+<code>nb &gt;= 20</code> est une expression qui vaut <code>False</code> lorsque <code>nb</code> vaut 15.<br />
+L'instruction <code>print(nb, "est supérieur ou égal à 20")</code> est aussi ignorée.  </p>
+<p>L'instruction <code>print(nb, "est strictement compris entre 10 et 20")</code> est donc exécutée.</p>
 </div>
                 
               
@@ -858,13 +1017,13 @@ où <code>expression</code> a pour valeur <code>True</code> ou <code>False</code
           </a>
         
         
-          <a href="../../microbit/decouvrir_microbit/" title="Découvrir micro:bit" class="md-footer-nav__link md-footer-nav__link--next" rel="next">
+          <a href="../instructions_conditionnelles_questions/" title="Questions" class="md-footer-nav__link md-footer-nav__link--next" rel="next">
             <div class="md-footer-nav__title">
               <div class="md-ellipsis">
                 <span class="md-footer-nav__direction">
                   Suivant
                 </span>
-                Découvrir micro:bit
+                Questions
               </div>
             </div>
             <div class="md-footer-nav__button md-icon">
