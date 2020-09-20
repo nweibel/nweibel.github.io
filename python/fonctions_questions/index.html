@@ -671,11 +671,11 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#1-affichage" class="md-nav__link">
-    1. Affichage
+  <a href="#1-fonctions-et-mathematiques" class="md-nav__link">
+    1. Fonctions et mathématiques
   </a>
   
-    <nav class="md-nav" aria-label="1. Affichage">
+    <nav class="md-nav" aria-label="1. Fonctions et mathématiques">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
@@ -909,11 +909,11 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#1-affichage" class="md-nav__link">
-    1. Affichage
+  <a href="#1-fonctions-et-mathematiques" class="md-nav__link">
+    1. Fonctions et mathématiques
   </a>
   
-    <nav class="md-nav" aria-label="1. Affichage">
+    <nav class="md-nav" aria-label="1. Fonctions et mathématiques">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
@@ -1013,7 +1013,7 @@
                 
                 
                 <h1 id="questions-fonctions">Questions : fonctions</h1>
-<h2 id="1-affichage">1. Affichage</h2>
+<h2 id="1-fonctions-et-mathematiques">1. Fonctions et mathématiques</h2>
 <h4 id="question-11">Question 1.1</h4>
 <div class="admonition question">
 <p class="admonition-title">Question</p>
@@ -1071,29 +1071,35 @@ La syntaxe de la D est particulière, mais usuelle en Python.</p>
 <h4 id="question-12">Question 1.2</h4>
 <div class="admonition question">
 <p class="admonition-title">Question</p>
-<p><code class="highlight"><span class="n">mots</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;système&#39;</span><span class="p">,</span> <span class="s1">&#39;systématique&#39;</span><span class="p">,</span> <span class="s1">&#39;systémique&#39;</span><span class="p">]</span></code></p>
-<p>Parmi les 4 boucles suivantes, lesquelles permettent d'afficher chaque mot de la liste <code>mots</code> ainsi que  son nombre de lettres ?</p>
-<div class="highlight"><pre><span></span><code><span class="n">système</span> <span class="n">comporte</span> <span class="mi">7</span> <span class="n">lettres</span>
-<span class="n">systématique</span> <span class="n">comporte</span> <span class="mi">12</span> <span class="n">lettres</span>
-<span class="n">systémique</span> <span class="n">comporte</span> <span class="mi">10</span> <span class="n">lettres</span>
-</code></pre></div>
-
+<p>Parmi les 4 fonctions suivantes, lesquelles permettent de renvoyer la liste des valeurs de la table de multiplcation d'un entier (c'est à dire les produits de cet entier par les entiers de 1 à 10) ?</p>
 </div>
-<p>Boucle A : 
-<div class="highlight"><pre><span></span><code><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">mots</span><span class="p">)):</span>
-    <span class="nb">print</span><span class="p">(</span><span class="n">mots</span><span class="p">[</span><span class="n">i</span><span class="p">],</span> <span class="s2">&quot;comporte&quot;</span><span class="p">,</span> <span class="n">i</span><span class="p">,</span> <span class="s2">&quot;lettres&quot;</span><span class="p">)</span>
+<p>Fonction A : 
+<div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">table_multiplication</span><span class="p">(</span><span class="n">n</span><span class="p">):</span>
+    <span class="n">table</span> <span class="o">=</span> <span class="p">[]</span>
+    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">11</span><span class="p">):</span>
+        <span class="n">table</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">n</span><span class="o">*</span><span class="n">i</span><span class="p">)</span>
+    <span class="k">return</span> <span class="n">table</span>
 </code></pre></div></p>
-<p>Boucle B : 
-<div class="highlight"><pre><span></span><code><span class="k">for</span> <span class="n">mot</span> <span class="ow">in</span> <span class="n">mots</span><span class="p">:</span>
-    <span class="nb">print</span><span class="p">(</span><span class="n">mot</span><span class="p">,</span> <span class="s2">&quot;comporte&quot;</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="n">mot</span><span class="p">),</span> <span class="s2">&quot;lettres&quot;</span><span class="p">)</span>
+<p>Fonction B : 
+<div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">table_multiplication</span><span class="p">(</span><span class="n">n</span><span class="p">):</span>
+    <span class="n">table</span> <span class="o">=</span> <span class="p">[]</span>
+    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">11</span><span class="p">):</span>
+        <span class="n">table</span> <span class="o">=</span> <span class="n">table</span> <span class="o">+</span> <span class="n">n</span><span class="o">*</span><span class="n">i</span>
+    <span class="k">return</span> <span class="n">table_multiplication</span>
 </code></pre></div></p>
-<p>Boucle C : 
-<div class="highlight"><pre><span></span><code><span class="k">for</span> <span class="n">mot</span> <span class="ow">in</span> <span class="n">mots</span><span class="p">:</span>
-    <span class="nb">print</span><span class="p">(</span><span class="n">mots</span><span class="p">[</span><span class="n">i</span><span class="p">],</span> <span class="s2">&quot;comporte&quot;</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="n">mot</span><span class="p">[</span><span class="n">i</span><span class="p">]),</span> <span class="s2">&quot;lettres&quot;</span><span class="p">)</span>
+<p>Fonction C : 
+<div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">table_multiplication</span><span class="p">(</span><span class="n">n</span><span class="p">):</span>
+    <span class="n">table</span> <span class="o">=</span> <span class="p">[]</span>
+    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">10</span><span class="p">):</span>
+        <span class="n">table</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">n</span><span class="o">*</span><span class="n">i</span><span class="p">)</span>
+    <span class="k">return</span> <span class="n">table</span>
 </code></pre></div></p>
-<p>Boucle D : 
-<div class="highlight"><pre><span></span><code><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">mots</span><span class="p">)):</span>
-    <span class="nb">print</span><span class="p">(</span><span class="n">mots</span><span class="p">[</span><span class="n">i</span><span class="p">],</span> <span class="s2">&quot;comporte&quot;</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="n">mot</span><span class="p">[</span><span class="n">i</span><span class="p">]),</span> <span class="s2">&quot;lettres&quot;</span><span class="p">)</span>
+<p>Fonction D : 
+<div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">table_multiplication</span><span class="p">(</span><span class="n">n</span><span class="p">):</span>
+    <span class="n">table</span> <span class="o">=</span> <span class="p">[]</span>
+    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">11</span><span class="p">):</span>
+        <span class="n">table</span> <span class="o">=</span> <span class="n">table</span> <span class="o">+</span> <span class="p">[</span><span class="n">n</span><span class="o">*</span><span class="n">i</span><span class="p">]</span>
+    <span class="k">return</span> <span class="n">table</span>
 </code></pre></div></p>
 <div class="tabbed-set" data-tabs="2:3"><input checked="checked" id="__tabbed_2_1" name="__tabbed_2" type="radio" /><label for="__tabbed_2_1">Propositions de réponses</label><div class="tabbed-content">
 <ul class="task-list">
@@ -1105,15 +1111,16 @@ La syntaxe de la D est particulière, mais usuelle en Python.</p>
 </div>
 <input id="__tabbed_2_2" name="__tabbed_2" type="radio" /><label for="__tabbed_2_2">Solutions</label><div class="tabbed-content">
 <ul class="task-list">
-<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> A</li>
-<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> B</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> A</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> B</li>
 <li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> C</li>
 <li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> D</li>
 </ul>
 </div>
 <input id="__tabbed_2_3" name="__tabbed_2" type="radio" /><label for="__tabbed_2_3">Arguments</label><div class="tabbed-content">
-<p>La solution B parcourt directement les éléments de la liste <code>mots</code> et affiche leur valeur et leur nombre de lettres, à l'aide de la fonction <code>len()</code>. <br />
-  La solution D parcourt la liste à l'aide des indices des éléments, et affiche leur valeur et leur nombre de lettres. </p>
+<p>La proposition B essaie d'utiliser le symbole <code>+</code> entre une liste et un entier, ce qui provoque une erreur. Par ailleurs elle renvoie la fonction plutôt que la liste, ce qui ne répond pas à la question posée.
+ La fonction C n'utilise pas les bons entiers : <code>range(10)</code>engendre les entiers de 0 à 9, et non de 1 à 10.
+ Les fonctions A et D sont correctes. </p>
 </div>
 </div>
 <h2 id="2-avec-le-symbole">2. Avec le symbole <code>+</code></h2>
