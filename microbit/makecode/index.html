@@ -771,22 +771,9 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#programmation-par-blocs" class="md-nav__link">
-    Programmation par blocs
+  <a href="#interface-de-programmation-par-blocs" class="md-nav__link">
+    Interface de programmation par blocs
   </a>
-  
-    <nav class="md-nav" aria-label="Programmation par blocs">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#interface" class="md-nav__link">
-    Interface
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
       
@@ -794,6 +781,33 @@
   <a href="#le-simulateur" class="md-nav__link">
     Le simulateur
   </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#sauvegarder-son-programme" class="md-nav__link">
+    Sauvegarder son programme
+  </a>
+  
+    <nav class="md-nav" aria-label="Sauvegarder son programme">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#methode-classique" class="md-nav__link">
+    Méthode classique
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#methode-webusb" class="md-nav__link">
+    Méthode WebUSB
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -831,7 +845,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../mc_radio.md" title="Parcours Radio" class="md-nav__link">
+    <a href="../mc_radio/" title="Parcours Radio" class="md-nav__link">
       Parcours Radio
     </a>
   </li>
@@ -862,18 +876,6 @@
   <li class="md-nav__item">
     <a href="../python/" title="Programmer la carte avec Python" class="md-nav__link">
       Programmer la carte avec Python
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../vittascience/" title="Programmer la carte sur Vittascience" class="md-nav__link">
-      Programmer la carte sur Vittascience
     </a>
   </li>
 
@@ -963,22 +965,9 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#programmation-par-blocs" class="md-nav__link">
-    Programmation par blocs
+  <a href="#interface-de-programmation-par-blocs" class="md-nav__link">
+    Interface de programmation par blocs
   </a>
-  
-    <nav class="md-nav" aria-label="Programmation par blocs">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#interface" class="md-nav__link">
-    Interface
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
       
@@ -986,6 +975,33 @@
   <a href="#le-simulateur" class="md-nav__link">
     Le simulateur
   </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#sauvegarder-son-programme" class="md-nav__link">
+    Sauvegarder son programme
+  </a>
+  
+    <nav class="md-nav" aria-label="Sauvegarder son programme">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#methode-classique" class="md-nav__link">
+    Méthode classique
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#methode-webusb" class="md-nav__link">
+    Méthode WebUSB
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -1027,22 +1043,36 @@
                 
                 
                 <h1 id="programmer-la-carte-avec-lediteur-blocs-de-makecode-pour-microbit">Programmer la carte avec l'éditeur Blocs de MakeCode pour micro:bit</h1>
-<h2 id="programmation-par-blocs">Programmation par blocs</h2>
-<h3 id="interface">Interface</h3>
-<p>Cette <a href="https://makecode.microbit.org/#">interface</a>, développée par MakeCode en partenariat avec micro:bit, se trouve en ligne et s'utilise directement dans un navigateur. Elle est sans doute idéale pour débuter : aucun pré-requis n'est nécessaire, et on peut paramétrer l'affichage en français.  </p>
-<p><img alt="" src="../../images/makecode_interface.png" />
-L'utilisateur manipule et emboite des blocs pour créer son programme. Celui-ci est ensuite à télécharger pour être copié dans la carte micro:bit. Le format du fichier téléchargé est <code>.hex</code>: c'est à la fois le fichier à copier dans la carte pour qu'elle l'exécute et celui à sauvegarder pour ouvrir ultérieurement le programme dans l'éditeur. </p>
-<p>Depuis la version 243 du <a href="../decouvrir_microbit/#mettre-a-jour-le-firmware-de-la-carte-microbit">firmware</a>, les navigateurs basés sur Chrome (versions 65 et +) proposent d'appairer la carte, permettant le téléchargement du programme en un clic, en utilisant la norme <a href="../decouvrir_microbit/#utiliser-la-fonctionnalite-webusb">WebUSB</a>.</p>
-<p>Le navigateur conserve par défaut les données des programmes réalisés et une ouverture ultérieure de l'éditeur affiche le dernier programme par défaut.</p>
+<h2 id="interface-de-programmation-par-blocs">Interface de programmation par blocs</h2>
+<p>Cette <a href="https://makecode.microbit.org/#">interface</a>, développée par MakeCode en partenariat avec micro:bit, se trouve en ligne et s'utilise directement dans un navigateur.
+Elle est sans doute idéale pour débuter : aucun pré-requis n'est nécessaire, et on peut paramétrer l'affichage en français.  </p>
+<p><img alt="" src="../../images/makecode_interface.png" /><br />
+L'utilisateur manipule et emboite des blocs pour créer son programme. Le simulateur affiche le fonctionnement du programme.  </p>
 <h2 id="le-simulateur">Le simulateur</h2>
-<p>Cette interface dispose d'un simulateur de la carte micro:bit qui permet d'observer le fonctionnement du programme et effectuer les premières corrections. Les données des capteurs peuvent être simulées également, avec des curseurs manipulables à la souris. </p>
+<p>L'interface MakeCode dispose d'un simulateur de la carte micro:bit qui permet d'observer le fonctionnement du programme et d'effectuer les premières corrections. Les données des capteurs peuvent être simulées également, avec des curseurs manipulables à la souris, et on peut simuler le fait de secouer la carte.</p>
 <p><img alt="" src="../../images/microbitgif.gif" /></p>
+<h2 id="sauvegarder-son-programme">Sauvegarder son programme</h2>
+<p>Le navigateur conserve par défaut les données des programmes réalisés et une ouverture ultérieure de l'éditeur affiche le dernier programme par défaut.</p>
+<h3 id="methode-classique">Méthode classique</h3>
+<p>Le programme réalisé est à télécharger pour être copié dans la carte micro:bit. Lui donner un nom puis cliquer sur <em>Télécharger</em>.<br />
+Le format du fichier téléchargé est <code>.hex</code>: c'est à la fois le fichier à copier dans la carte pour qu'elle l'exécute et celui à sauvegarder dans ses documents personnels pour ouvrir ultérieurement le programme dans l'éditeur. </p>
+<p>Lorsque la carte est connectée à l'ordinateur par port USB elle apparaît sous le nom MICROBIT. Aucun pilote n'est nécessaire. Copier-coller le programme <code>.hex</code> téléchargé sur la carte : une led orange clignote pendant le chargement.
+Après le transfert, la carte micro:bit s’éjecte de l’ordinateur puis se reconnecte. Le fichier téléchargé n'apparait pas sur la carte dans le gestionnaire de fichiers comme sur une clé USB, mais le programme doit s'exécuter directement sur la carte après le transfert. </p>
+<h3 id="methode-webusb">Méthode WebUSB</h3>
+<p>Depuis la version 243 du <a href="../decouvrir_microbit/#mettre-a-jour-le-firmware-de-la-carte-microbit">firmware</a>, les navigateurs basés sur Chrome (versions 65 et +) proposent d'<em>appairer</em> la carte, permettant le téléchargement du programme en un clic, en utilisant la norme <a href="../decouvrir_microbit/#utiliser-la-fonctionnalite-webusb">WebUSB</a>.</p>
 <h2 id="le-mode-debug">Le mode Debug</h2>
-<p>Ce mode permet d'exécuter le programme pas à pas, ou de placer des points d'arrêt dans l'exécution du programme, et d'observer l'évolution du fonctionnement ou lets valeurs des variables. </p>
+<p>Ce mode s'active en cliquant sur l'icône <img alt="" src="../../images/mc_bug.png" />. 
+Il permet :<br />
+- d'exécuter le programme pas à pas ou au ralenti, en mettant en évidence l'instruction exécutée<br />
+- de placer des points d'arrêt dans le programme : lorsqu'une instruction marquée d'un point est sur le point d'être exécutée, le programme s'interrompt<br />
+-d'afficher les valeurs des variables.  </p>
+<p>Il est très utile pour déceler les bugs d'un programme ou pour expliquer le fonctionnement d'un programme correct.</p>
+<p><img alt="" src="../../images/mc_debug.gif" /></p>
 <h2 id="le-mode-multi">Le mode Multi</h2>
-<p>Ce mode permet l'affichage de deux interfaces de programmation : il est très utile pour connecter et programmer deux cartes avec des programmes différents. Par exemple, si une carte doit émettre un signal radio et une autre le réceptionner. 
+<p>Ce <a href="https://makecode.microbit.org/---multi#">mode</a> permet l'affichage de deux interfaces de programmation : il est très utile pour connecter et programmer deux cartes avec des programmes différents. Par exemple, si une carte doit émettre un signal radio et une autre le réceptionner. 
 <img alt="" src="../../images/mb_multi.png" />
 <img alt="" src="../../images/microbitgif3.gif" /></p>
+<p>Lors de l'appairage des cartes, les identifiants complets des cartes sont affichés pour les différencier. </p>
 <h2 id="references">Références</h2>
 <p>Cliquer sur les logos pour accéder à la documentation micro:bit sur chaque type de blocs.  </p>
 <table>
@@ -1124,13 +1154,13 @@ L'utilisateur manipule et emboite des blocs pour créer son programme. Celui-ci 
           </a>
         
         
-          <a href="../scratch/" title="Programmer la carte avec Scratch" class="md-footer-nav__link md-footer-nav__link--next" rel="next">
+          <a href="../mc_radio/" title="Parcours Radio" class="md-footer-nav__link md-footer-nav__link--next" rel="next">
             <div class="md-footer-nav__title">
               <div class="md-ellipsis">
                 <span class="md-footer-nav__direction">
                   Suivant
                 </span>
-                Programmer la carte avec Scratch
+                Parcours Radio
               </div>
             </div>
             <div class="md-footer-nav__button md-icon">
