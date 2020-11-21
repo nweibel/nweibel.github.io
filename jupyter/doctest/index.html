@@ -19,7 +19,7 @@
     
     
       
-        <title>Calepyns - Carnets.info</title>
+        <title>Doctest - Carnets.info</title>
       
     
     
@@ -65,6 +65,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#effectuer-des-tests-automatises-avec-doctest-dans-un-notebook-jupyter" class="md-skip">
+          Aller au contenu
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -89,7 +94,7 @@
           </span>
           <span class="md-header-nav__topic md-ellipsis">
             
-              Calepyns
+              Doctest
             
           </span>
         </div>
@@ -174,7 +179,7 @@
   
     <li class="md-tabs__item">
       
-        <a href="./" class="md-tabs__link md-tabs__link--active">
+        <a href="../calepyn/" class="md-tabs__link md-tabs__link--active">
           Jupyter
         </a>
       
@@ -637,18 +642,11 @@
           
           
 
-  
 
-
-  <li class="md-nav__item md-nav__item--active">
-    
-    <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
-    
-    
-    <a href="./" title="Calepyns" class="md-nav__link md-nav__link--active">
+  <li class="md-nav__item">
+    <a href="../calepyn/" title="Calepyns" class="md-nav__link">
       Calepyns
     </a>
-    
   </li>
 
         
@@ -656,10 +654,12 @@
           
           
 
+  
 
-  <li class="md-nav__item md-nav__item--nested">
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
     
-      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-4-2" type="checkbox" id="nav-4-2">
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-4-2" type="checkbox" id="nav-4-2" checked>
     
     <label class="md-nav__link" for="nav-4-2">
       Modules
@@ -681,11 +681,20 @@
           
           
 
+  
 
-  <li class="md-nav__item">
-    <a href="../doctest/" title="Doctest" class="md-nav__link">
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+      
+    
+    
+    <a href="./" title="Doctest" class="md-nav__link md-nav__link--active">
       Doctest
     </a>
+    
   </li>
 
         
@@ -874,7 +883,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../Programmer Thtmio avec Scratch" title="None" class="md-nav__link">
+    <a href="../../Programmer Thymio avec Scratch" title="None" class="md-nav__link">
       None
     </a>
   </li>
@@ -940,6 +949,18 @@
 
 
   <li class="md-nav__item">
+    <a href="../../nsi_premiere/defimotifs/" title="Vingt motifs" class="md-nav__link">
+      Vingt motifs
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
     <a href="../../nsi_premiere/problemes/" title="Problèmes" class="md-nav__link">
       Problèmes
     </a>
@@ -958,6 +979,21 @@
               </div>
             
             
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary" aria-label="Table des matières">
+  
+  
+    
+  
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
           
           <div class="md-content">
             <article class="md-content__inner md-typeset">
@@ -967,9 +1003,66 @@
                   
                 
                 
-                  <h1>Calepyns</h1>
-                
-                <p>Accès à mes <a href="https://www.carnets.info/calepyns/">calepyns</a>, par ordre chronologique.</p>
+                <h1 id="effectuer-des-tests-automatises-avec-doctest-dans-un-notebook-jupyter">Effectuer des tests automatisés avec doctest dans un notebook Jupyter</h1>
+<p>On peut réaliser des tests automatisés dans un fichier python grâce à la bibliothèque <a href="https://docs.python.org/fr/3.7/library/doctest.html">doctest</a>.</p>
+<p>La bibliothèque doctest permet de détecter automatiquement les tests écrits dans la <em>docstring</em>, ou chaine de documentation, de les lancer et d’afficher un rapport.
+Les valeurs à tester doivent être précédées de <code>&gt;&gt;&gt;</code>, et le résultat attendu doit être en début de ligne suivante.</p>
+<p>Voici un exemple pour la fonction <code>est_parfait</code> :
+<div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">est_parfait</span><span class="p">(</span><span class="n">n</span><span class="p">)</span> <span class="p">:</span> 
+    <span class="sd">&#39;&#39;&#39;n est un entier strictement positif</span>
+<span class="sd">    parfait(n) vaut True si l&#39;entier n est parfait ou False sinon.</span>
+<span class="sd">    Un nombre parfait est tel que la somme de ses diviseurs est égale à son double.</span>
+<span class="sd">    &gt;&gt;&gt; est_parfait(2)</span>
+<span class="sd">    False</span>
+<span class="sd">    &gt;&gt;&gt; est_parfait(6)</span>
+<span class="sd">    True</span>
+<span class="sd">    &gt;&gt;&gt; est_parfait(27)</span>
+<span class="sd">    False</span>
+<span class="sd">    &gt;&gt;&gt; est_parfait(28)</span>
+<span class="sd">    True</span>
+<span class="sd">    &#39;&#39;&#39;</span>
+
+   <span class="k">assert</span><span class="p">(</span><span class="n">n</span><span class="o">&gt;</span><span class="mi">0</span> <span class="ow">and</span> <span class="nb">type</span><span class="p">(</span><span class="n">n</span><span class="p">)</span><span class="o">==</span><span class="nb">int</span><span class="p">),</span> <span class="s2">&quot;l&#39;argument doit être un entier strictement positif&quot;</span>
+   <span class="n">diviseurs</span> <span class="o">=</span> <span class="p">[</span><span class="n">i</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="n">n</span><span class="o">+</span><span class="mi">1</span><span class="p">)</span> <span class="k">if</span> <span class="n">n</span><span class="o">%</span><span class="n">i</span> <span class="o">==</span> <span class="mi">0</span><span class="p">]</span>
+   <span class="k">return</span> <span class="nb">sum</span><span class="p">(</span><span class="n">diviseurs</span><span class="p">)</span> <span class="o">==</span> <span class="mi">2</span><span class="o">*</span><span class="n">n</span>
+</code></pre></div></p>
+<p>On exécute dans une cellule du notebook les instructions suivantes :
+<div class="highlight"><pre><span></span><code><span class="kn">import</span> <span class="nn">doctest</span>
+<span class="n">doctest</span><span class="o">.</span><span class="n">testmod</span><span class="p">()</span>
+</code></pre></div></p>
+<p>Un rapport concis des tests est alors affiché (attention, les tests sont lancés sur l’ensemble du notebook) :
+<code>TestResults(failed=0, attempted=4)</code>
+ce qui signifie ici que les 4 tests n'ont donné lieu à aucun échec.  </p>
+<p>On peut ajouter l’argument <code>verbose=True</code> en écrivant <code>doctest.testmod(verbose=True)</code>: le rapport produit est alors plus explicite.  </p>
+<div class="highlight"><pre><span></span><code><span class="n">Trying</span><span class="p">:</span>
+    <span class="n">est_parfait</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>
+<span class="n">Expecting</span><span class="p">:</span>
+    <span class="kc">False</span>
+<span class="n">ok</span>
+<span class="n">Trying</span><span class="p">:</span>
+    <span class="n">est_parfait</span><span class="p">(</span><span class="mi">6</span><span class="p">)</span>
+<span class="n">Expecting</span><span class="p">:</span>
+    <span class="kc">True</span>
+<span class="n">ok</span>
+<span class="n">Trying</span><span class="p">:</span>
+    <span class="n">est_parfait</span><span class="p">(</span><span class="mi">27</span><span class="p">)</span>
+<span class="n">Expecting</span><span class="p">:</span>
+    <span class="kc">False</span>
+<span class="n">ok</span>
+<span class="n">Trying</span><span class="p">:</span>
+    <span class="n">est_parfait</span><span class="p">(</span><span class="mi">28</span><span class="p">)</span>
+<span class="n">Expecting</span><span class="p">:</span>
+    <span class="kc">True</span>
+<span class="n">ok</span>
+<span class="mi">1</span> <span class="n">items</span> <span class="n">had</span> <span class="n">no</span> <span class="n">tests</span><span class="p">:</span>
+    <span class="n">__main__</span>
+<span class="mi">1</span> <span class="n">items</span> <span class="n">passed</span> <span class="nb">all</span> <span class="n">tests</span><span class="p">:</span>
+   <span class="mi">4</span> <span class="n">tests</span> <span class="ow">in</span> <span class="n">__main__</span><span class="o">.</span><span class="n">est_parfait</span>
+<span class="mi">4</span> <span class="n">tests</span> <span class="ow">in</span> <span class="mi">2</span> <span class="n">items</span><span class="o">.</span>
+<span class="mi">4</span> <span class="n">passed</span> <span class="ow">and</span> <span class="mi">0</span> <span class="n">failed</span><span class="o">.</span>
+<span class="n">Test</span> <span class="n">passed</span><span class="o">.</span>
+<span class="n">TestResults</span><span class="p">(</span><span class="n">failed</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">attempted</span><span class="o">=</span><span class="mi">4</span><span class="p">)</span>
+</code></pre></div>
                 
               
               
@@ -988,7 +1081,7 @@
     <div class="md-footer-nav">
       <nav class="md-footer-nav__inner md-grid" aria-label="Footer">
         
-          <a href="../../python/fonctions_questions/" title="Questions" class="md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+          <a href="../calepyn/" title="Calepyns" class="md-footer-nav__link md-footer-nav__link--prev" rel="prev">
             <div class="md-footer-nav__button md-icon">
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
             </div>
@@ -997,19 +1090,19 @@
                 <span class="md-footer-nav__direction">
                   Précédent
                 </span>
-                Questions
+                Calepyns
               </div>
             </div>
           </a>
         
         
-          <a href="../doctest/" title="Doctest" class="md-footer-nav__link md-footer-nav__link--next" rel="next">
+          <a href="../ipythonblocks/" title="ipythonblocks" class="md-footer-nav__link md-footer-nav__link--next" rel="next">
             <div class="md-footer-nav__title">
               <div class="md-ellipsis">
                 <span class="md-footer-nav__direction">
                   Suivant
                 </span>
-                Doctest
+                ipythonblocks
               </div>
             </div>
             <div class="md-footer-nav__button md-icon">
