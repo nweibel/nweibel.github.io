@@ -915,6 +915,40 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#reglage-calibrage-de-thymio" class="md-nav__link">
+    Réglage / calibrage de Thymio
+  </a>
+  
+    <nav class="md-nav" aria-label="Réglage / calibrage de Thymio">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#reglage-du-volume" class="md-nav__link">
+    Réglage du volume
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#reglage-des-vitesses-des-2-moteurs" class="md-nav__link">
+    Réglage des vitesses des 2 moteurs
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#appairage-thymio-dongle-usb" class="md-nav__link">
+    Appairage Thymio-dongle USB
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -1117,6 +1151,40 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#reglage-calibrage-de-thymio" class="md-nav__link">
+    Réglage / calibrage de Thymio
+  </a>
+  
+    <nav class="md-nav" aria-label="Réglage / calibrage de Thymio">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#reglage-du-volume" class="md-nav__link">
+    Réglage du volume
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#reglage-des-vitesses-des-2-moteurs" class="md-nav__link">
+    Réglage des vitesses des 2 moteurs
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#appairage-thymio-dongle-usb" class="md-nav__link">
+    Appairage Thymio-dongle USB
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -1151,6 +1219,53 @@ Il possède également des attaches  LEGO &#174; et un crochet pour ajouter des 
 <p>Une autre interface de programmation est également disponible : <a href="http://blockly4thymio.net">Blockly4Thymio</a>.
 Cette interface de programmation par blocs dispose d'instructions rédigées en français, faciles à appréhender, et en partie différentes du jeu d'instruction de Blockly. On trouvera par exemple des instructions permettant d'avancer d'une certaine longueur ou de tourner d'une certaine mesure d'angle. </p>
 <p><em>À noter</em> : la version 13 du firmware du Thymio ne semble pas fonctionner avec Blockly4Thymio, mais il est possible de revenir à la version 12 qui assure la <a href="http://wiki.thymio.org/fr:thymioupdate">compatibilité</a>.</p>
+<h2 id="reglage-calibrage-de-thymio">Réglage / calibrage de Thymio</h2>
+<p>Les versions 9 et suivantes du firmware permettent de réaliser des réglages sur le Thymio.
+Pour entrer dans le menu de configuration, appuyer 3 secondes sur les boutons gauche et droite d'un Thymio non connecté à un ordinateur (ni câble, ni dongle USB).
+<img alt="" src="../../images/reglages_thymio.png" /></p>
+<p>Trois nouvelles couleurs (orange, vert clair, mauve) indiquent les trois modes que l'on peut faire défiler avec les flèches gauche/droite et sélectionner avec le bouton central.</p>
+<h3 id="reglage-du-volume">Réglage du volume</h3>
+<div class="admonition warning">
+<ul>
+<li>Choisir la couleur orange du Thymio et sélectionner ce mode en appuyant sur le bouton central.</li>
+</ul>
+<p><img alt="" src="../../images/volume_thymio.png" />
+- Appuyer sur les boutons "avant" et "arrière" pour sélectionner le niveau sonore souhaité. 
+- Éteindre le Thymio pour sauvegarder le réglage.  </p>
+</div>
+<h3 id="reglage-des-vitesses-des-2-moteurs">Réglage des vitesses des 2 moteurs</h3>
+<div class="admonition question">
+<p>Ce réglage peut s'avérer nécessaire si Thymio n'avance pas "droit".</p>
+<ul>
+<li>Choisir le mode vert clair dans le menu des modes de réglage.
+Les boutons "avant" et "arrière" font bouger le robot vers l'avant et vers l'arrière à différentes vitesses suivant le nombre de pressions. Essayer d'aller à des vitesses différentes (niveau 1 et 2) pour le calibrer.</li>
+<li>Les boutons "gauche" et "droite" permettent d'augmenter ou de diminuer la correction. Si le robot va vers la droite, appuyer sur le bouton gauche pour corriger la direction jusqu'à ce qu'il aille droit, et inversement.</li>
+<li>Appuyer sur le bouton central pour arrêter les moteurs et enregistrer les valeurs de correction dans le robot.</li>
+<li>Éteindre le robot.</li>
+</ul>
+</div>
+<h3 id="appairage-thymio-dongle-usb">Appairage Thymio-dongle USB</h3>
+<div class="admonition example">
+<p>Ce réglage est à réaliser une fois lorsqu'on utilise plusieurs Thymio et que l'on souhaite que chaque Thymio communique avec un seul dongle USB.</p>
+<ul>
+<li>Commencer avec un Thymio éteint, non connecté à l’ordinateur via le câble USB.</li>
+<li>Brancher le dongle dans un port USB de l’ordinateur
+<img src="https://www.carnets.info/images/appairage_thymio.png" width = "200px"></li>
+<li>Lancer <em>WirelessThymio Network Configurator</em> (téléchargé avec Aseba ou Thymio Suite)</li>
+<li>Choisir un canal : 0, 1 ou 2</li>
+<li>Choisir un identificateur de réseau (un identificateur différent pour chaque Thymio)</li>
+<li>Ne pas modifier l'identificateur de nœud du dongle</li>
+<li>Allumer le Thymio</li>
+<li>Sur l’ordinateur, cliquer sur <strong>activer le pairage</strong></li>
+<li>Appuyer sur les flèches droite et gauche du Thymio  pendant 3 s (menu réglages) puis appuyer sur touche droite jusqu’à trouver le mode Mauve, valider avec le bouton central</li>
+<li>Le dongle USB et le Thymio doivent clignoter à la même fréquence : si c'est le cas : <ul>
+<li>Éteindre le Thymio</li>
+<li>Sur l’ordinateur, cliquer sur <strong>enregistrer dans le dongle USB</strong></li>
+</ul>
+</li>
+<li>Fermer <em>WirelessThymio Network Configurator</em>, même s’il y a un autre Thymio à configurer.</li>
+</ul>
+</div>
                 
               
               
