@@ -1,4 +1,6 @@
 
+
+
 <!doctype html>
 <html lang="fr" class="no-js">
   <head>
@@ -12,32 +14,29 @@
       
         <meta name="author" content="Nathalie Weibel">
       
-      
       <link rel="shortcut icon" href="../../images/favicon.png">
-      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-6.2.2">
+      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-5.5.7">
     
     
       
-        <title>Programmer la carte avec Python - Carnets.info</title>
+        <title>Quel éditeur ? - Carnets.info</title>
       
     
     
-      <link rel="stylesheet" href="../../assets/stylesheets/main.73f7c429.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.b8ac9624.min.css">
       
-        
-        <link rel="stylesheet" href="../../assets/stylesheets/palette.39b8e14a.min.css">
-        
-          
-          
-          <meta name="theme-color" content="#009485">
-        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.28f3ef9a.min.css">
       
-    
-    
-    
       
         
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        
+        <meta name="theme-color" content="#009688">
+      
+    
+    
+    
+      
+        <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sarala:300,400,400i,700%7CRoboto+Mono&display=fallback">
         <style>body,input{font-family:"Sarala",-apple-system,BlinkMacSystemFont,Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono",SFMono-Regular,Consolas,Menlo,monospace}</style>
       
@@ -58,10 +57,7 @@
     
     
     
-    
-    
     <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="teal" data-md-color-accent="light-blue">
-      
   
     
     <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
@@ -69,14 +65,17 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#quel-editeur" class="md-skip">
+          Aller au contenu
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
     </div>
     
-      
-
-<header class="md-header" data-md-component="header">
+      <header class="md-header" data-md-component="header">
   <nav class="md-header-nav md-grid" aria-label="Header">
     <a href="../.." title="Carnets.info" class="md-header-nav__button md-logo" aria-label="Carnets.info">
       
@@ -88,20 +87,18 @@
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2z"/></svg>
     </label>
     <div class="md-header-nav__title" data-md-component="header-title">
-      <div class="md-header-nav__ellipsis">
-        <div class="md-header-nav__topic">
-          <span class="md-ellipsis">
+      
+        <div class="md-header-nav__ellipsis">
+          <span class="md-header-nav__topic md-ellipsis">
             Carnets.info
           </span>
-        </div>
-        <div class="md-header-nav__topic">
-          <span class="md-ellipsis">
+          <span class="md-header-nav__topic md-ellipsis">
             
-              Programmer la carte avec Python
+              Quel éditeur ?
             
           </span>
         </div>
-      </div>
+      
     </div>
     
       <label class="md-header-nav__button md-icon" for="__search">
@@ -112,7 +109,7 @@
   <label class="md-search__overlay" for="__search"></label>
   <div class="md-search__inner" role="search">
     <form class="md-search__form" name="search">
-      <input type="text" class="md-search__input" name="query" aria-label="Rechercher" placeholder="Rechercher" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" data-md-state="active" required>
+      <input type="text" class="md-search__input" name="query" aria-label="Rechercher" placeholder="Rechercher" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" data-md-state="active">
       <label class="md-search__icon md-icon" for="__search">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0116 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 019.5 16 6.5 6.5 0 013 9.5 6.5 6.5 0 019.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
@@ -140,23 +137,108 @@
     
     <div class="md-container" data-md-component="container">
       
+        
       
+      
+        
+          
+
+  
+
+<nav class="md-tabs md-tabs--active" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-tabs__inner md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  <li class="md-tabs__item">
+    
+      <a href="../.." class="md-tabs__link">
+        Accueil
+      </a>
+    
+  </li>
+
+      
+        
+      
+        
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="../../python/pep8/" class="md-tabs__link">
+          Python
+        </a>
+      
+    </li>
+  
+
+      
+        
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="../../jupyter/calepyn/" class="md-tabs__link">
+          Jupyter
+        </a>
+      
+    </li>
+  
+
+      
+        
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="../decouvrir_microbit/" class="md-tabs__link md-tabs__link--active">
+          micro:bit
+        </a>
+      
+    </li>
+  
+
+      
+        
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="../../thymio/thymio/" class="md-tabs__link">
+          Thymio
+        </a>
+      
+    </li>
+  
+
+      
+        
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="../../nsi_premiere/qcm_nsi/" class="md-tabs__link">
+          NSI-première
+        </a>
+      
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
         
       
       <main class="md-main" data-md-component="main">
         <div class="md-main__inner md-grid">
           
             
-              
-              <div class="md-sidebar md-sidebar--primary" data-md-component="navigation" >
+              <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
                 <div class="md-sidebar__scrollwrap">
                   <div class="md-sidebar__inner">
-                    
-
-
-
-
-<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+                    <nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
     <a href="../.." title="Carnets.info" class="md-nav__button md-logo" aria-label="Carnets.info">
       
@@ -174,9 +256,8 @@
       
 
 
-
   <li class="md-nav__item">
-    <a href="../.." class="md-nav__link">
+    <a href="../.." title="Accueil" class="md-nav__link">
       Accueil
     </a>
   </li>
@@ -187,9 +268,8 @@
       
 
 
-
   <li class="md-nav__item">
-    <a href="../../memomd/" class="md-nav__link">
+    <a href="../../memomd/" title="Mémo Markdown" class="md-nav__link">
       Mémo Markdown
     </a>
   </li>
@@ -200,20 +280,21 @@
       
 
 
-
-  
   <li class="md-nav__item md-nav__item--nested">
     
-    
-      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-3" type="checkbox" id="nav-3" >
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-3" type="checkbox" id="nav-3">
     
     <label class="md-nav__link" for="nav-3">
       Python
-      <span class="md-nav__icon md-icon"></span>
+      <span class="md-nav__icon md-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8.59 16.58L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.42z"/></svg>
+      </span>
     </label>
     <nav class="md-nav" aria-label="Python" data-md-level="1">
       <label class="md-nav__title" for="nav-3">
-        <span class="md-nav__icon md-icon"></span>
+        <span class="md-nav__icon md-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+        </span>
         Python
       </label>
       <ul class="md-nav__list" data-md-scrollfix>
@@ -224,9 +305,8 @@
           
 
 
-
   <li class="md-nav__item">
-    <a href="../../python/pep8/" class="md-nav__link">
+    <a href="../../python/pep8/" title="Bonnes pratiques" class="md-nav__link">
       Bonnes pratiques
     </a>
   </li>
@@ -237,9 +317,8 @@
           
 
 
-
   <li class="md-nav__item">
-    <a href="../../python/operateurs/" class="md-nav__link">
+    <a href="../../python/operateurs/" title="Opérateurs" class="md-nav__link">
       Opérateurs
     </a>
   </li>
@@ -250,20 +329,21 @@
           
 
 
-
-  
   <li class="md-nav__item md-nav__item--nested">
     
-    
-      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-3-3" type="checkbox" id="nav-3-3" >
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-3-3" type="checkbox" id="nav-3-3">
     
     <label class="md-nav__link" for="nav-3-3">
       Boucles
-      <span class="md-nav__icon md-icon"></span>
+      <span class="md-nav__icon md-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8.59 16.58L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.42z"/></svg>
+      </span>
     </label>
     <nav class="md-nav" aria-label="Boucles" data-md-level="2">
       <label class="md-nav__title" for="nav-3-3">
-        <span class="md-nav__icon md-icon"></span>
+        <span class="md-nav__icon md-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+        </span>
         Boucles
       </label>
       <ul class="md-nav__list" data-md-scrollfix>
@@ -274,9 +354,8 @@
           
 
 
-
   <li class="md-nav__item">
-    <a href="../../python/boucles_bornees/" class="md-nav__link">
+    <a href="../../python/boucles_bornees/" title="Boucles bornées" class="md-nav__link">
       Boucles bornées
     </a>
   </li>
@@ -287,9 +366,8 @@
           
 
 
-
   <li class="md-nav__item">
-    <a href="../../python/boucles_non_bornees/" class="md-nav__link">
+    <a href="../../python/boucles_non_bornees/" title="Boucles non bornées" class="md-nav__link">
       Boucles non bornées
     </a>
   </li>
@@ -300,20 +378,21 @@
           
 
 
-
-  
   <li class="md-nav__item md-nav__item--nested">
     
-    
-      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-3-3-3" type="checkbox" id="nav-3-3-3" >
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-3-3-3" type="checkbox" id="nav-3-3-3">
     
     <label class="md-nav__link" for="nav-3-3-3">
       Questions
-      <span class="md-nav__icon md-icon"></span>
+      <span class="md-nav__icon md-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8.59 16.58L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.42z"/></svg>
+      </span>
     </label>
     <nav class="md-nav" aria-label="Questions" data-md-level="3">
       <label class="md-nav__title" for="nav-3-3-3">
-        <span class="md-nav__icon md-icon"></span>
+        <span class="md-nav__icon md-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+        </span>
         Questions
       </label>
       <ul class="md-nav__list" data-md-scrollfix>
@@ -324,9 +403,8 @@
           
 
 
-
   <li class="md-nav__item">
-    <a href="../../python/boucles_bornees_questions/" class="md-nav__link">
+    <a href="../../python/boucles_bornees_questions/" title="Boucles bornées" class="md-nav__link">
       Boucles bornées
     </a>
   </li>
@@ -337,9 +415,8 @@
           
 
 
-
   <li class="md-nav__item">
-    <a href="../../python/boucles_non_bornees_questions/" class="md-nav__link">
+    <a href="../../python/boucles_non_bornees_questions/" title="Boucles non bornées" class="md-nav__link">
       Boucles non bornées
     </a>
   </li>
@@ -350,9 +427,8 @@
           
 
 
-
   <li class="md-nav__item">
-    <a href="../../python/boucles_bornees_imbriquees_questions/" class="md-nav__link">
+    <a href="../../python/boucles_bornees_imbriquees_questions/" title="Boucles bornées imbriquées" class="md-nav__link">
       Boucles bornées imbriquées
     </a>
   </li>
@@ -368,20 +444,21 @@
           
 
 
-
-  
   <li class="md-nav__item md-nav__item--nested">
     
-    
-      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-3-3-4" type="checkbox" id="nav-3-3-4" >
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-3-3-4" type="checkbox" id="nav-3-3-4">
     
     <label class="md-nav__link" for="nav-3-3-4">
       Exercices
-      <span class="md-nav__icon md-icon"></span>
+      <span class="md-nav__icon md-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8.59 16.58L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.42z"/></svg>
+      </span>
     </label>
     <nav class="md-nav" aria-label="Exercices" data-md-level="3">
       <label class="md-nav__title" for="nav-3-3-4">
-        <span class="md-nav__icon md-icon"></span>
+        <span class="md-nav__icon md-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+        </span>
         Exercices
       </label>
       <ul class="md-nav__list" data-md-scrollfix>
@@ -392,9 +469,8 @@
           
 
 
-
   <li class="md-nav__item">
-    <a href="../../python/boucles_bornees_exercices/" class="md-nav__link">
+    <a href="../../python/boucles_bornees_exercices/" title="Boucles bornées" class="md-nav__link">
       Boucles bornées
     </a>
   </li>
@@ -405,9 +481,8 @@
           
 
 
-
   <li class="md-nav__item">
-    <a href="../../python/boucles_non_bornees_exercices/" class="md-nav__link">
+    <a href="../../python/boucles_non_bornees_exercices/" title="Boucles non bornées" class="md-nav__link">
       Boucles non bornées
     </a>
   </li>
@@ -428,20 +503,21 @@
           
 
 
-
-  
   <li class="md-nav__item md-nav__item--nested">
     
-    
-      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-3-4" type="checkbox" id="nav-3-4" >
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-3-4" type="checkbox" id="nav-3-4">
     
     <label class="md-nav__link" for="nav-3-4">
       Instructions conditionnelles
-      <span class="md-nav__icon md-icon"></span>
+      <span class="md-nav__icon md-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8.59 16.58L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.42z"/></svg>
+      </span>
     </label>
     <nav class="md-nav" aria-label="Instructions conditionnelles" data-md-level="2">
       <label class="md-nav__title" for="nav-3-4">
-        <span class="md-nav__icon md-icon"></span>
+        <span class="md-nav__icon md-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+        </span>
         Instructions conditionnelles
       </label>
       <ul class="md-nav__list" data-md-scrollfix>
@@ -452,9 +528,8 @@
           
 
 
-
   <li class="md-nav__item">
-    <a href="../../python/instructions_conditionnelles/" class="md-nav__link">
+    <a href="../../python/instructions_conditionnelles/" title="Instructions conditionnelles" class="md-nav__link">
       Instructions conditionnelles
     </a>
   </li>
@@ -465,9 +540,8 @@
           
 
 
-
   <li class="md-nav__item">
-    <a href="../../python/instructions_conditionnelles_questions/" class="md-nav__link">
+    <a href="../../python/instructions_conditionnelles_questions/" title="Questions" class="md-nav__link">
       Questions
     </a>
   </li>
@@ -483,20 +557,21 @@
           
 
 
-
-  
   <li class="md-nav__item md-nav__item--nested">
     
-    
-      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-3-5" type="checkbox" id="nav-3-5" >
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-3-5" type="checkbox" id="nav-3-5">
     
     <label class="md-nav__link" for="nav-3-5">
       Fonctions
-      <span class="md-nav__icon md-icon"></span>
+      <span class="md-nav__icon md-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8.59 16.58L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.42z"/></svg>
+      </span>
     </label>
     <nav class="md-nav" aria-label="Fonctions" data-md-level="2">
       <label class="md-nav__title" for="nav-3-5">
-        <span class="md-nav__icon md-icon"></span>
+        <span class="md-nav__icon md-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+        </span>
         Fonctions
       </label>
       <ul class="md-nav__list" data-md-scrollfix>
@@ -507,9 +582,8 @@
           
 
 
-
   <li class="md-nav__item">
-    <a href="../../python/fonctions/" class="md-nav__link">
+    <a href="../../python/fonctions/" title="Fonctions" class="md-nav__link">
       Fonctions
     </a>
   </li>
@@ -520,9 +594,8 @@
           
 
 
-
   <li class="md-nav__item">
-    <a href="../../python/fonctions_questions/" class="md-nav__link">
+    <a href="../../python/fonctions_questions/" title="Questions" class="md-nav__link">
       Questions
     </a>
   </li>
@@ -543,20 +616,21 @@
       
 
 
-
-  
   <li class="md-nav__item md-nav__item--nested">
     
-    
-      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-4" type="checkbox" id="nav-4" >
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-4" type="checkbox" id="nav-4">
     
     <label class="md-nav__link" for="nav-4">
       Jupyter
-      <span class="md-nav__icon md-icon"></span>
+      <span class="md-nav__icon md-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8.59 16.58L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.42z"/></svg>
+      </span>
     </label>
     <nav class="md-nav" aria-label="Jupyter" data-md-level="1">
       <label class="md-nav__title" for="nav-4">
-        <span class="md-nav__icon md-icon"></span>
+        <span class="md-nav__icon md-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+        </span>
         Jupyter
       </label>
       <ul class="md-nav__list" data-md-scrollfix>
@@ -567,9 +641,8 @@
           
 
 
-
   <li class="md-nav__item">
-    <a href="../../jupyter/calepyn/" class="md-nav__link">
+    <a href="../../jupyter/calepyn/" title="Calepyns" class="md-nav__link">
       Calepyns
     </a>
   </li>
@@ -580,20 +653,21 @@
           
 
 
-
-  
   <li class="md-nav__item md-nav__item--nested">
     
-    
-      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-4-2" type="checkbox" id="nav-4-2" >
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-4-2" type="checkbox" id="nav-4-2">
     
     <label class="md-nav__link" for="nav-4-2">
       Modules
-      <span class="md-nav__icon md-icon"></span>
+      <span class="md-nav__icon md-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8.59 16.58L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.42z"/></svg>
+      </span>
     </label>
     <nav class="md-nav" aria-label="Modules" data-md-level="2">
       <label class="md-nav__title" for="nav-4-2">
-        <span class="md-nav__icon md-icon"></span>
+        <span class="md-nav__icon md-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+        </span>
         Modules
       </label>
       <ul class="md-nav__list" data-md-scrollfix>
@@ -604,9 +678,8 @@
           
 
 
-
   <li class="md-nav__item">
-    <a href="../../jupyter/doctest/" class="md-nav__link">
+    <a href="../../jupyter/doctest/" title="Doctest" class="md-nav__link">
       Doctest
     </a>
   </li>
@@ -617,9 +690,8 @@
           
 
 
-
   <li class="md-nav__item">
-    <a href="../../jupyter/ipythonblocks/" class="md-nav__link">
+    <a href="../../jupyter/ipythonblocks/" title="ipythonblocks" class="md-nav__link">
       ipythonblocks
     </a>
   </li>
@@ -639,23 +711,24 @@
       
       
 
-
   
 
 
-  
   <li class="md-nav__item md-nav__item--active md-nav__item--nested">
-    
     
       <input class="md-nav__toggle md-toggle" data-md-toggle="nav-5" type="checkbox" id="nav-5" checked>
     
     <label class="md-nav__link" for="nav-5">
       micro:bit
-      <span class="md-nav__icon md-icon"></span>
+      <span class="md-nav__icon md-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8.59 16.58L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.42z"/></svg>
+      </span>
     </label>
     <nav class="md-nav" aria-label="micro:bit" data-md-level="1">
       <label class="md-nav__title" for="nav-5">
-        <span class="md-nav__icon md-icon"></span>
+        <span class="md-nav__icon md-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+        </span>
         micro:bit
       </label>
       <ul class="md-nav__list" data-md-scrollfix>
@@ -666,9 +739,8 @@
           
 
 
-
   <li class="md-nav__item">
-    <a href="../decouvrir_microbit/" class="md-nav__link">
+    <a href="../decouvrir_microbit/" title="La carte micro:bit" class="md-nav__link">
       La carte micro:bit
     </a>
   </li>
@@ -679,20 +751,21 @@
           
 
 
-
-  
   <li class="md-nav__item md-nav__item--nested">
     
-    
-      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-5-2" type="checkbox" id="nav-5-2" >
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-5-2" type="checkbox" id="nav-5-2">
     
     <label class="md-nav__link" for="nav-5-2">
       Programmer la carte avec MakeCode
-      <span class="md-nav__icon md-icon"></span>
+      <span class="md-nav__icon md-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8.59 16.58L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.42z"/></svg>
+      </span>
     </label>
     <nav class="md-nav" aria-label="Programmer la carte avec MakeCode" data-md-level="2">
       <label class="md-nav__title" for="nav-5-2">
-        <span class="md-nav__icon md-icon"></span>
+        <span class="md-nav__icon md-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+        </span>
         Programmer la carte avec MakeCode
       </label>
       <ul class="md-nav__list" data-md-scrollfix>
@@ -703,9 +776,8 @@
           
 
 
-
   <li class="md-nav__item">
-    <a href="../makecode/" class="md-nav__link">
+    <a href="../makecode/" title="Généralités" class="md-nav__link">
       Généralités
     </a>
   </li>
@@ -716,9 +788,8 @@
           
 
 
-
   <li class="md-nav__item">
-    <a href="../mc_radio/" class="md-nav__link">
+    <a href="../mc_radio/" title="Parcours Radio" class="md-nav__link">
       Parcours Radio
     </a>
   </li>
@@ -734,9 +805,8 @@
           
 
 
-
   <li class="md-nav__item">
-    <a href="../scratch/" class="md-nav__link">
+    <a href="../scratch/" title="Programmer la carte avec Scratch" class="md-nav__link">
       Programmer la carte avec Scratch
     </a>
   </li>
@@ -746,6 +816,32 @@
           
           
 
+  
+
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-5-4" type="checkbox" id="nav-5-4" checked>
+    
+    <label class="md-nav__link" for="nav-5-4">
+      Programmer la carte avec Python
+      <span class="md-nav__icon md-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8.59 16.58L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.42z"/></svg>
+      </span>
+    </label>
+    <nav class="md-nav" aria-label="Programmer la carte avec Python" data-md-level="2">
+      <label class="md-nav__title" for="nav-5-4">
+        <span class="md-nav__icon md-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+        </span>
+        Programmer la carte avec Python
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
 
   
 
@@ -754,11 +850,130 @@
     
     <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
     
+      
     
-    <a href="./" class="md-nav__link md-nav__link--active">
-      Programmer la carte avec Python
+    
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        Quel éditeur ?
+        <span class="md-nav__icon md-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 9h14V7H3v2m0 4h14v-2H3v2m0 4h14v-2H3v2m16 0h2v-2h-2v2m0-10v2h2V7h-2m0 6h2v-2h-2v2z"/></svg>
+        </span>
+      </label>
+    
+    <a href="./" title="Quel éditeur ?" class="md-nav__link md-nav__link--active">
+      Quel éditeur ?
     </a>
     
+      
+<nav class="md-nav md-nav--secondary" aria-label="Table des matières">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </span>
+      Table des matières
+    </label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#micropython" class="md-nav__link">
+    MicroPython
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#quel-editeur-python-utiliser" class="md-nav__link">
+    Quel éditeur Python utiliser ?
+  </a>
+  
+    <nav class="md-nav" aria-label="Quel éditeur Python utiliser ?">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#-lediteur-python-en-ligne-du-site-microbitorg" class="md-nav__link">
+    - L'éditeur Python en ligne du site microbit.org
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#-le-logiciel-mu" class="md-nav__link">
+    - le logiciel Mu
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#-lediteur-en-ligne-vittascience" class="md-nav__link">
+    - l'éditeur en ligne Vittascience
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#-lediteur-en-ligne-edublocks" class="md-nav__link">
+    - l'éditeur en ligne Edublocks
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#-lediteur-en-ligne-create-with-code" class="md-nav__link">
+    - l'éditeur en ligne Create with code
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#synthese-janvier-2020" class="md-nav__link">
+    Synthèse (janvier 2020)
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+    
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../python_mu/" title="Utiliser l'éditeur Mu" class="md-nav__link">
+      Utiliser l'éditeur Mu
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../python_leds5x5/" title="La matrice LED" class="md-nav__link">
+      La matrice LED
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
   </li>
 
         
@@ -772,20 +987,21 @@
       
 
 
-
-  
   <li class="md-nav__item md-nav__item--nested">
     
-    
-      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-6" type="checkbox" id="nav-6" >
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-6" type="checkbox" id="nav-6">
     
     <label class="md-nav__link" for="nav-6">
       Thymio
-      <span class="md-nav__icon md-icon"></span>
+      <span class="md-nav__icon md-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8.59 16.58L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.42z"/></svg>
+      </span>
     </label>
     <nav class="md-nav" aria-label="Thymio" data-md-level="1">
       <label class="md-nav__title" for="nav-6">
-        <span class="md-nav__icon md-icon"></span>
+        <span class="md-nav__icon md-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+        </span>
         Thymio
       </label>
       <ul class="md-nav__list" data-md-scrollfix>
@@ -796,9 +1012,8 @@
           
 
 
-
   <li class="md-nav__item">
-    <a href="../../thymio/thymio/" class="md-nav__link">
+    <a href="../../thymio/thymio/" title="Le robot Thymio" class="md-nav__link">
       Le robot Thymio
     </a>
   </li>
@@ -809,9 +1024,8 @@
           
 
 
-
   <li class="md-nav__item">
-    <a href="../../thymio/th_scratch/" class="md-nav__link">
+    <a href="../../thymio/th_scratch/" title="Programmer Thymio avec Scratch" class="md-nav__link">
       Programmer Thymio avec Scratch
     </a>
   </li>
@@ -827,20 +1041,21 @@
       
 
 
-
-  
   <li class="md-nav__item md-nav__item--nested">
     
-    
-      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-7" type="checkbox" id="nav-7" >
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-7" type="checkbox" id="nav-7">
     
     <label class="md-nav__link" for="nav-7">
       NSI-première
-      <span class="md-nav__icon md-icon"></span>
+      <span class="md-nav__icon md-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8.59 16.58L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.42z"/></svg>
+      </span>
     </label>
     <nav class="md-nav" aria-label="NSI-première" data-md-level="1">
       <label class="md-nav__title" for="nav-7">
-        <span class="md-nav__icon md-icon"></span>
+        <span class="md-nav__icon md-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+        </span>
         NSI-première
       </label>
       <ul class="md-nav__list" data-md-scrollfix>
@@ -851,9 +1066,8 @@
           
 
 
-
   <li class="md-nav__item">
-    <a href="../../nsi_premiere/qcm_nsi/" class="md-nav__link">
+    <a href="../../nsi_premiere/qcm_nsi/" title="QCM NSI" class="md-nav__link">
       QCM NSI
     </a>
   </li>
@@ -864,20 +1078,21 @@
           
 
 
-
-  
   <li class="md-nav__item md-nav__item--nested">
     
-    
-      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-7-2" type="checkbox" id="nav-7-2" >
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-7-2" type="checkbox" id="nav-7-2">
     
     <label class="md-nav__link" for="nav-7-2">
       Avec des grilles
-      <span class="md-nav__icon md-icon"></span>
+      <span class="md-nav__icon md-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8.59 16.58L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.42z"/></svg>
+      </span>
     </label>
     <nav class="md-nav" aria-label="Avec des grilles" data-md-level="2">
       <label class="md-nav__title" for="nav-7-2">
-        <span class="md-nav__icon md-icon"></span>
+        <span class="md-nav__icon md-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+        </span>
         Avec des grilles
       </label>
       <ul class="md-nav__list" data-md-scrollfix>
@@ -888,9 +1103,8 @@
           
 
 
-
   <li class="md-nav__item">
-    <a href="../../nsi_premiere/defimotifs/" class="md-nav__link">
+    <a href="../../nsi_premiere/defimotifs/" title="Vingt motifs" class="md-nav__link">
       Vingt motifs
     </a>
   </li>
@@ -901,9 +1115,8 @@
           
 
 
-
   <li class="md-nav__item">
-    <a href="../../nsi_premiere/fourmi_langton/" class="md-nav__link">
+    <a href="../../nsi_premiere/fourmi_langton/" title="La fourmi de Langton" class="md-nav__link">
       La fourmi de Langton
     </a>
   </li>
@@ -914,9 +1127,8 @@
           
 
 
-
   <li class="md-nav__item">
-    <a href="../../nsi_premiere/jeu_de_la_vie/" class="md-nav__link">
+    <a href="../../nsi_premiere/jeu_de_la_vie/" title="Le jeu de la vie" class="md-nav__link">
       Le jeu de la vie
     </a>
   </li>
@@ -932,9 +1144,8 @@
           
 
 
-
   <li class="md-nav__item">
-    <a href="../../nsi_premiere/melange_cartes/" class="md-nav__link">
+    <a href="../../nsi_premiere/melange_cartes/" title="Mélange Parfait" class="md-nav__link">
       Mélange Parfait
     </a>
   </li>
@@ -945,10 +1156,21 @@
           
 
 
+  <li class="md-nav__item">
+    <a href="../../nsi_premiere/problemes/" title="Problèmes" class="md-nav__link">
+      Problèmes
+    </a>
+  </li>
+
+        
+          
+          
+          
+
 
   <li class="md-nav__item">
-    <a href="../../nsi_premiere/problemes/" class="md-nav__link">
-      Problèmes
+    <a href="../../nsi_premiere/express/" title="Questions express" class="md-nav__link">
+      Questions express
     </a>
   </li>
 
@@ -965,15 +1187,206 @@
               </div>
             
             
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary" aria-label="Table des matières">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </span>
+      Table des matières
+    </label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#micropython" class="md-nav__link">
+    MicroPython
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#quel-editeur-python-utiliser" class="md-nav__link">
+    Quel éditeur Python utiliser ?
+  </a>
+  
+    <nav class="md-nav" aria-label="Quel éditeur Python utiliser ?">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#-lediteur-python-en-ligne-du-site-microbitorg" class="md-nav__link">
+    - L'éditeur Python en ligne du site microbit.org
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#-le-logiciel-mu" class="md-nav__link">
+    - le logiciel Mu
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#-lediteur-en-ligne-vittascience" class="md-nav__link">
+    - l'éditeur en ligne Vittascience
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#-lediteur-en-ligne-edublocks" class="md-nav__link">
+    - l'éditeur en ligne Edublocks
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#-lediteur-en-ligne-create-with-code" class="md-nav__link">
+    - l'éditeur en ligne Create with code
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#synthese-janvier-2020" class="md-nav__link">
+    Synthèse (janvier 2020)
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
           
           <div class="md-content">
             <article class="md-content__inner md-typeset">
               
                 
                 
-                  <h1>Programmer la carte avec Python</h1>
+                  
                 
-                <p>bientôt</p>
+                
+                <h1 id="quel-editeur">Quel éditeur ?</h1>
+<h2 id="micropython">MicroPython</h2>
+<p>La carte micro:bit peut être programmée en Python. La version de Python qui s'exécute sur la carte micro:bit s'appelle <a href="http://micropython.org/">MicroPython</a>. C'est une implémentation légère et efficace du langage de programmation Python 3 qui comprend un sous-ensemble de la bibliothèque standard Python et qui est optimisée pour s'exécuter sur des microcontrôleurs. </p>
+<p>Le site <a href="https://microbit-micropython.readthedocs.io/en/v2-docs/index.html">microbit-micropython.readthedocs.io</a> présente les instructions de référence et propose quelques projets.  </p>
+<h2 id="quel-editeur-python-utiliser">Quel éditeur Python utiliser ?</h2>
+<p>Pour écrire des programmes et les télécharger sur la carte micro:bit, plusieurs éditeurs existent. </p>
+<div class="admonition warning">
+<p class="admonition-title">Attention</p>
+<p>Le code python obtenu via les différentes interfaces n'est pas interchangeable car les modules importés peuvent différer.  </p>
+</div>
+<p>Voici une sélection parmi les interfaces disponibles :  </p>
+<h4 id="-lediteur-python-en-ligne-du-site-microbitorg">- L'éditeur Python en ligne du site <code>microbit.org</code></h4>
+<p><img alt="" src="../../images/python-microbit.png" /> </p>
+<p>L'<a href="https://python.microbit.org/v/2">éditeur Python en ligne</a> ne nécessite pas d'installation, mais ne dispose ni de l'auto-complétion ni de version en français.</p>
+<h4 id="-le-logiciel-mu">- le logiciel <code>Mu</code></h4>
+<p><img alt="" src="../../images/icones_mu/bandeau.png" />  </p>
+<p><a href="https://codewith.mu/">Mu</a> est un éditeur de code simple, multiplateforme. Cette interface dispose de l'auto-complétion et d'une indentation automatique, ainsi que d'une version en français.
+Mu propose différents modes dont l'un est destiné à la carte micro:bit. Ce mode propose l'affichage graphique des données envoyées sur le port série et une console interactive REPL (read, evaluate, print, loop).</p>
+<h4 id="-lediteur-en-ligne-vittascience">- l'éditeur en ligne <code>Vittascience</code></h4>
+<p><img alt="" src="../../images/vittascience.png" />  </p>
+<p>L' éditeur français <a href="https://fr.vittascience.com/microbit/?mode=mixed">Vittascience</a> propose l'écriture de programmes à l'aide de blocs de programmation en français, ou de code en python. Un mode hybride permet une transition de l'un vers l'autre en affichant les 2 simultanément. 
+Cet éditeur dispose de plus d'un simulateur de carte, permettant de tester son programme, même en l'absence de connexion à une carte micro:bit. On trouve aussi l'affichage graphique des données envoyées sur le port série et l'export des données. Enfin, les instructions nécessaires au fonctionnement des capteurs et actionneurs du kit Grove sont présents.
+Il est possible de se créer un compte et de sauvegarder ses programmes en ligne, de les partager, etc.</p>
+<h4 id="-lediteur-en-ligne-edublocks">- l'éditeur en ligne <code>Edublocks</code></h4>
+<p><img alt="" src="../../images/edublocks.png" /></p>
+<p>L'éditeur <a href="https://app.edublocks.org/#Python">Edublocks</a> est un projet développé par Joshua Lowe, jeune britannique. L’interface permet de programmer en Python en sélectionnant et imbriquant des blocs. On alterne d’un clic entre la version blocs et la version textuelle, mais le contenu lisible est identique dans les 2 cas. Des extensions sont disponibles pour quelques kits, mais pas pour le kit Grove.<br />
+Il est possible de se créer un compte et de sauvegarder ses programmes en ligne, de les partager, de les intégrer, etc.</p>
+<h4 id="-lediteur-en-ligne-create-with-code">- l'éditeur en ligne <code>Create with code</code></h4>
+<p>L'interface <a href="https://create.withcode.uk">create with code</a> propose un éditeur en ligne de scripts en python et comporte un simulateur de carte micro:bit.
+Il suffit d’ajouter l’instruction <code>from microbit import *</code> en début de script et de l’exécuter pour voir apparaître une fenêtre simulant la carte et ses différents capteurs et actionneurs. 
+Il est possible de se créer un compte et de sauvegarder ses programmes en ligne, de les partager, de les intégrer, etc.</p>
+<h2 id="synthese-janvier-2020">Synthèse (janvier 2020)</h2>
+<table>
+<thead>
+<tr>
+<th>éditeur</th>
+<th align="center">micro:bit</th>
+<th align="center">Mu</th>
+<th align="center">Vittascience</th>
+<th align="center">Edublocks</th>
+<th align="center">Create with code</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>En ligne</td>
+<td align="center"><img alt="✅" class="twemoji" src="https://twemoji.maxcdn.com/v/latest/svg/2705.svg" title=":white_check_mark:" /></td>
+<td align="center"><img alt="❌" class="twemoji" src="https://twemoji.maxcdn.com/v/latest/svg/274c.svg" title=":x:" /></td>
+<td align="center"><img alt="✅" class="twemoji" src="https://twemoji.maxcdn.com/v/latest/svg/2705.svg" title=":white_check_mark:" /></td>
+<td align="center"><img alt="✅" class="twemoji" src="https://twemoji.maxcdn.com/v/latest/svg/2705.svg" title=":white_check_mark:" /></td>
+<td align="center"><img alt="✅" class="twemoji" src="https://twemoji.maxcdn.com/v/latest/svg/2705.svg" title=":white_check_mark:" /></td>
+</tr>
+<tr>
+<td>Auto-complétion</td>
+<td align="center"><img alt="❌" class="twemoji" src="https://twemoji.maxcdn.com/v/latest/svg/274c.svg" title=":x:" /></td>
+<td align="center"><img alt="✅" class="twemoji" src="https://twemoji.maxcdn.com/v/latest/svg/2705.svg" title=":white_check_mark:" /></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+</tr>
+<tr>
+<td>version française</td>
+<td align="center"><img alt="❌" class="twemoji" src="https://twemoji.maxcdn.com/v/latest/svg/274c.svg" title=":x:" /></td>
+<td align="center"><img alt="✅" class="twemoji" src="https://twemoji.maxcdn.com/v/latest/svg/2705.svg" title=":white_check_mark:" /></td>
+<td align="center"><img alt="✅" class="twemoji" src="https://twemoji.maxcdn.com/v/latest/svg/2705.svg" title=":white_check_mark:" /></td>
+<td align="center"><img alt="❌" class="twemoji" src="https://twemoji.maxcdn.com/v/latest/svg/274c.svg" title=":x:" /></td>
+<td align="center"><img alt="❌" class="twemoji" src="https://twemoji.maxcdn.com/v/latest/svg/274c.svg" title=":x:" /></td>
+</tr>
+<tr>
+<td>transfert rapide sur la carte (WebUSB, flash)</td>
+<td align="center"><img alt="✅" class="twemoji" src="https://twemoji.maxcdn.com/v/latest/svg/2705.svg" title=":white_check_mark:" /></td>
+<td align="center"><img alt="✅" class="twemoji" src="https://twemoji.maxcdn.com/v/latest/svg/2705.svg" title=":white_check_mark:" /></td>
+<td align="center"><img alt="✅" class="twemoji" src="https://twemoji.maxcdn.com/v/latest/svg/2705.svg" title=":white_check_mark:" /></td>
+<td align="center"><img alt="❌" class="twemoji" src="https://twemoji.maxcdn.com/v/latest/svg/274c.svg" title=":x:" /></td>
+<td align="center"><img alt="❌" class="twemoji" src="https://twemoji.maxcdn.com/v/latest/svg/274c.svg" title=":x:" /></td>
+</tr>
+<tr>
+<td>Affichage de graphiques</td>
+<td align="center"><img alt="❌" class="twemoji" src="https://twemoji.maxcdn.com/v/latest/svg/274c.svg" title=":x:" /></td>
+<td align="center"><img alt="✅" class="twemoji" src="https://twemoji.maxcdn.com/v/latest/svg/2705.svg" title=":white_check_mark:" /></td>
+<td align="center"><img alt="✅" class="twemoji" src="https://twemoji.maxcdn.com/v/latest/svg/2705.svg" title=":white_check_mark:" /></td>
+<td align="center"></td>
+<td align="center"></td>
+</tr>
+<tr>
+<td>Simulateur</td>
+<td align="center"><img alt="❌" class="twemoji" src="https://twemoji.maxcdn.com/v/latest/svg/274c.svg" title=":x:" /></td>
+<td align="center"><img alt="❌" class="twemoji" src="https://twemoji.maxcdn.com/v/latest/svg/274c.svg" title=":x:" /></td>
+<td align="center"><img alt="✅" class="twemoji" src="https://twemoji.maxcdn.com/v/latest/svg/2705.svg" title=":white_check_mark:" /></td>
+<td align="center"><img alt="❌" class="twemoji" src="https://twemoji.maxcdn.com/v/latest/svg/274c.svg" title=":x:" /></td>
+<td align="center"><img alt="✅" class="twemoji" src="https://twemoji.maxcdn.com/v/latest/svg/2705.svg" title=":white_check_mark:" /></td>
+</tr>
+<tr>
+<td>Compte utilisateur</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+</tr>
+</tbody>
+</table>
+<p><img alt="✅" class="twemoji" src="https://twemoji.maxcdn.com/v/latest/svg/2705.svg" title=":white_check_mark:" />
+<img alt="❌" class="twemoji" src="https://twemoji.maxcdn.com/v/latest/svg/274c.svg" title=":x:" /> </p>
                 
               
               
@@ -992,7 +1405,7 @@
     <div class="md-footer-nav">
       <nav class="md-footer-nav__inner md-grid" aria-label="Footer">
         
-          <a href="../scratch/" class="md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+          <a href="../scratch/" title="Programmer la carte avec Scratch" class="md-footer-nav__link md-footer-nav__link--prev" rel="prev">
             <div class="md-footer-nav__button md-icon">
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
             </div>
@@ -1007,13 +1420,13 @@
           </a>
         
         
-          <a href="../../thymio/thymio/" class="md-footer-nav__link md-footer-nav__link--next" rel="next">
+          <a href="../python_mu/" title="Utiliser l'éditeur Mu" class="md-footer-nav__link md-footer-nav__link--next" rel="next">
             <div class="md-footer-nav__title">
               <div class="md-ellipsis">
                 <span class="md-footer-nav__direction">
                   Suivant
                 </span>
-                Le robot Thymio
+                Utiliser l'éditeur Mu
               </div>
             </div>
             <div class="md-footer-nav__button md-icon">
@@ -1062,15 +1475,15 @@
       
     </div>
     
-      <script src="../../assets/javascripts/vendor.08c56446.min.js"></script>
-      <script src="../../assets/javascripts/bundle.6ced434e.min.js"></script><script id="__lang" type="application/json">{"clipboard.copy": "Copier dans le presse-papier", "clipboard.copied": "Copi\u00e9 dans le presse-papier", "search.config.lang": "fr", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Rechercher", "search.result.placeholder": "Taper pour d\u00e9marrer la recherche", "search.result.none": "Aucun document trouv\u00e9", "search.result.one": "1 document trouv\u00e9", "search.result.other": "# documents trouv\u00e9s", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing"}</script>
+      <script src="../../assets/javascripts/vendor.d1f5a259.min.js"></script>
+      <script src="../../assets/javascripts/bundle.d5fec882.min.js"></script><script id="__lang" type="application/json">{"clipboard.copy": "Copier dans le presse-papier", "clipboard.copied": "Copi\u00e9 dans le presse-papier", "search.config.lang": "fr", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.result.placeholder": "Taper pour d\u00e9marrer la recherche", "search.result.none": "Aucun document trouv\u00e9", "search.result.one": "1 document trouv\u00e9", "search.result.other": "# documents trouv\u00e9s"}</script>
       
       <script>
         app = initialize({
           base: "../..",
-          features: ['tabs'],
+          features: ["tabs", "navigation.tabs", "navigation.expand", "navigation.sections"],
           search: Object.assign({
-            worker: "../../assets/javascripts/worker/search.8c7e0a7e.min.js"
+            worker: "../../assets/javascripts/worker/search.fae956e7.min.js"
           }, typeof search !== "undefined" && search)
         })
       </script>
