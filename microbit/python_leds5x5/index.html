@@ -653,18 +653,30 @@
           
 
 
+  <li class="md-nav__item">
+    <a href="../../jupyter/notebooks/" title="Notebooks" class="md-nav__link">
+      Notebooks
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
   <li class="md-nav__item md-nav__item--nested">
     
-      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-4-2" type="checkbox" id="nav-4-2">
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-4-3" type="checkbox" id="nav-4-3">
     
-    <label class="md-nav__link" for="nav-4-2">
+    <label class="md-nav__link" for="nav-4-3">
       Modules
       <span class="md-nav__icon md-icon">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8.59 16.58L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.42z"/></svg>
       </span>
     </label>
     <nav class="md-nav" aria-label="Modules" data-md-level="2">
-      <label class="md-nav__title" for="nav-4-2">
+      <label class="md-nav__title" for="nav-4-3">
         <span class="md-nav__icon md-icon">
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
         </span>
@@ -904,36 +916,58 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#memo" class="md-nav__link">
-    Mémo
+  <a href="#lobjet-display" class="md-nav__link">
+    L'objet display
   </a>
   
-    <nav class="md-nav" aria-label="Mémo">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
+</li>
+      
+        <li class="md-nav__item">
   <a href="#afficher-des-caracteres-des-messages" class="md-nav__link">
     Afficher des caractères, des messages
   </a>
   
 </li>
-        
-          <li class="md-nav__item">
+      
+        <li class="md-nav__item">
   <a href="#faire-defiler-des-messages" class="md-nav__link">
     Faire défiler des messages
   </a>
   
 </li>
-        
-          <li class="md-nav__item">
+      
+        <li class="md-nav__item">
+  <a href="#allumer-des-pixels" class="md-nav__link">
+    Allumer des pixels
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#afficher-des-images" class="md-nav__link">
     Afficher des images
   </a>
   
 </li>
-        
-      </ul>
-    </nav>
+      
+        <li class="md-nav__item">
+  <a href="#animer-des-images" class="md-nav__link">
+    Animer des images
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#effacer-lecran" class="md-nav__link">
+    Effacer l'écran
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#allumer-eteindre-lecran" class="md-nav__link">
+    Allumer / éteindre l'écran
+  </a>
   
 </li>
       
@@ -1178,36 +1212,58 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#memo" class="md-nav__link">
-    Mémo
+  <a href="#lobjet-display" class="md-nav__link">
+    L'objet display
   </a>
   
-    <nav class="md-nav" aria-label="Mémo">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
+</li>
+      
+        <li class="md-nav__item">
   <a href="#afficher-des-caracteres-des-messages" class="md-nav__link">
     Afficher des caractères, des messages
   </a>
   
 </li>
-        
-          <li class="md-nav__item">
+      
+        <li class="md-nav__item">
   <a href="#faire-defiler-des-messages" class="md-nav__link">
     Faire défiler des messages
   </a>
   
 </li>
-        
-          <li class="md-nav__item">
+      
+        <li class="md-nav__item">
+  <a href="#allumer-des-pixels" class="md-nav__link">
+    Allumer des pixels
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#afficher-des-images" class="md-nav__link">
     Afficher des images
   </a>
   
 </li>
-        
-      </ul>
-    </nav>
+      
+        <li class="md-nav__item">
+  <a href="#animer-des-images" class="md-nav__link">
+    Animer des images
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#effacer-lecran" class="md-nav__link">
+    Effacer l'écran
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#allumer-eteindre-lecran" class="md-nav__link">
+    Allumer / éteindre l'écran
+  </a>
   
 </li>
       
@@ -1228,8 +1284,28 @@
                 
                 
                 <h1 id="la-matrice-led">La matrice LED</h1>
-<h2 id="memo">Mémo</h2>
-<h3 id="afficher-des-caracteres-des-messages">Afficher des caractères, des messages</h3>
+<h2 id="lobjet-display">L'objet <code>display</code></h2>
+<p>La matrice LED comporte 25 LED. On peut l'utiliser pour afficher des caractères, des images, faire défiler un message, etc.  </p>
+<div class="admonition info">
+<p class="admonition-title">Info</p>
+<p>L'écran est un <em>objet</em> nommé <code>display</code>. On applique à cet objet des <em>méthodes</em> selon la syntaxe : </p>
+<p><code>display.methode(parametres)</code></p>
+<p>où <code>methode</code> est à choisir dans la liste suivante : </p>
+<ul>
+<li>clear</li>
+<li>show</li>
+<li>scroll</li>
+<li>on</li>
+<li>off</li>
+<li>is_on</li>
+<li>set_pixel</li>
+<li>get_pixel</li>
+</ul>
+<p>La complétion automatique de l'éditeur mu permet d'accéder à cette liste dès que l'on saisit <code>display.</code><br />
+<img alt="" src="../../images/mb_display_menu.png" /></p>
+</div>
+<h2 id="afficher-des-caracteres-des-messages">Afficher des caractères, des messages</h2>
+<p><img alt="" src="../../images/mb_display_a.png" />  </p>
 <table>
 <thead>
 <tr>
@@ -1252,7 +1328,8 @@
 </tr>
 </tbody>
 </table>
-<h3 id="faire-defiler-des-messages">Faire défiler des messages</h3>
+<h2 id="faire-defiler-des-messages">Faire défiler des messages</h2>
+<p><img alt="" src="../../images/mb_display_defil.png" />  </p>
 <table>
 <thead>
 <tr>
@@ -1267,7 +1344,134 @@
 </tr>
 </tbody>
 </table>
-<h3 id="afficher-des-images">Afficher des images</h3>
+<h2 id="allumer-des-pixels">Allumer des pixels</h2>
+<p><img alt="" src="../../images/mb_display_pixel.png" title="display.show(0,3,9)" />  </p>
+<div class="admonition info">
+<p class="admonition-title">Info</p>
+<ul>
+<li>Chaque pixel a des coodonnées entières, de (0,0) dans le coin supérieur gauche à (5, 5) dans le coin inférieur droit.  </li>
+<li>La luminosité de chaque pixel peut être définie, de 0 (le pixel est alors désactivé) à 9 (niveau le plus lumineux). </li>
+</ul>
+</div>
+<table>
+<thead>
+<tr>
+<th align="left">Instructions</th>
+<th align="left">Effet</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>display.set_pixel(x, y, lum)</code></td>
+<td align="left">Allume le pixel aux coordonnées (x,y) avec un niveau de luminosité <code>lum</code> (entier entre 0 et 9)</td>
+</tr>
+</tbody>
+</table>
+<h2 id="afficher-des-images">Afficher des images</h2>
+<p><img alt="" src="../../images/mb_display_coeur.png" />  </p>
+<div class="admonition info">
+<p class="admonition-title">Info</p>
+<p>Il existe des images prédéfinies que l'on peut afficher en utilisant leur nom et la syntaxe <code>Image.nom</code>
+Voici la liste des images prédéfinies, par ordre alphabétique : </p>
+<p>ANGRY - ASLEEP - BUTTERFLY - CHESSBOARD - CONFUSED - COW - DIAMOND - DIAMOND_SMALL - DUCK - FABULOUS - GHOST - GIRAFFE - HAPPY - HEART - 
+HEART_SMALL - HOUSE - MEH - MUSIC_CROTCHET - MUSIC_QUAVER - MUSIC_QUAVERS - NO - PACMAN - PITCHFORK - RABBIT - ROLLERSKATE - SAD - SILLY - SKULL - SMILE - SNAKE - SQUARE - SQUARE_SMALL - STICKFIGURE - SURPRISED - SWORD - TARGET - TORTOISE - TRIANGLE - TRIANGLE_LEFT - TSHIRT - UMBRELLA - XMAS - YES</p>
+<p>Il existe également deux séries d'images :  </p>
+<ul>
+<li>les flèches : ARROW_N, ARROW_NE, ARROW_E, ARROW_SE, ARROW_S, ARROW_SW, ARROW_W, ARROW_NW  </li>
+<li>les heures : CLOCK12, CLOCK11, CLOCK10, CLOCK9, CLOCK8, CLOCK7, CLOCK6, CLOCK5, CLOCK4, CLOCK3, CLOCK2, CLOCK1</li>
+</ul>
+</div>
+<div class="admonition info">
+<p class="admonition-title">Info</p>
+<p>On peut définir une image en affectant à chaque pixel son niveau de luminosité, soit ligne par ligne:
+<div class="highlight"><pre><span></span><code><span class="n">eclat</span> <span class="o">=</span> <span class="n">Image</span><span class="p">(</span><span class="s2">&quot;00300:&quot;</span>
+              <span class="s2">&quot;03630:&quot;</span>
+              <span class="s2">&quot;36963:&quot;</span>
+              <span class="s2">&quot;03630:&quot;</span>
+              <span class="s2">&quot;00300&quot;</span><span class="p">)</span>
+</code></pre></div>
+soit en une seule ligne : 
+<div class="highlight"><pre><span></span><code><span class="n">eclat</span> <span class="o">=</span> <span class="n">Image</span><span class="p">(</span><span class="s2">&quot;00300:03630:36963:03630:00300&quot;</span><span class="p">)</span>
+</code></pre></div></p>
+</div>
+<table>
+<thead>
+<tr>
+<th align="left">Instructions</th>
+<th align="left">Effet</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>display.show(Image.HEART)</code></td>
+<td align="left">Affiche un cœur sur la matrice LED</td>
+</tr>
+<tr>
+<td align="left"><code>display.show(mon_image)</code></td>
+<td align="left">Affiche l'image définie par la variable mon_image</td>
+</tr>
+</tbody>
+</table>
+<h2 id="animer-des-images">Animer des images</h2>
+<p><img alt="" src="../../images/mb_display_coeurs.gif" />  </p>
+<div class="admonition info">
+<p class="admonition-title">Info</p>
+<p>Pour créer une animation affichant successivement plusieurs images, créer une liste contenant toutes les images, puis afficher cette liste.
+<div class="highlight"><pre><span></span><code><span class="n">mes_images</span> <span class="o">=</span> <span class="p">[</span><span class="n">Image</span><span class="o">.</span><span class="n">HEART</span><span class="p">,</span> <span class="n">Image</span><span class="o">.</span><span class="n">HEART_SMALL</span><span class="p">]</span> 
+</code></pre></div></p>
+</div>
+<table>
+<thead>
+<tr>
+<th align="left">Instructions</th>
+<th align="left">Effet</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>display.show(mes_images, delay=400, loop=True)</code></td>
+<td align="left">Affiche en boucle les images de la liste <code>mes_images</code>, chacune étant affichée pendant 400 ms avant d'être remplacée par la suivante</td>
+</tr>
+<tr>
+<td align="left"><code>display.show(mes_images, delay=400, loop=False)</code></td>
+<td align="left">Affiche une fois chaque image de la liste <code>mes_images</code>, chacune étant affichée pendant 400 ms avant d'être remplacée par la suivante</td>
+</tr>
+</tbody>
+</table>
+<h2 id="effacer-lecran">Effacer l'écran</h2>
+<table>
+<thead>
+<tr>
+<th align="left">Instructions</th>
+<th align="left">Effet</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>display.clear()</code></td>
+<td align="left">Éteint toutes les LED en leur affectant une luminosité à 0</td>
+</tr>
+</tbody>
+</table>
+<h2 id="allumer-eteindre-lecran">Allumer / éteindre l'écran</h2>
+<table>
+<thead>
+<tr>
+<th align="left">Instructions</th>
+<th align="left">Effet</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>display.on()</code></td>
+<td align="left">Allume chaque LED avec sa propre valeur de luminosité</td>
+</tr>
+<tr>
+<td align="left"><code>display.off()</code></td>
+<td align="left">Éteint chaque LED mais n'efface pas sa propre valeur de luminosité</td>
+</tr>
+</tbody>
+</table>
                 
               
               

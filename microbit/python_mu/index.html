@@ -653,18 +653,30 @@
           
 
 
+  <li class="md-nav__item">
+    <a href="../../jupyter/notebooks/" title="Notebooks" class="md-nav__link">
+      Notebooks
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
   <li class="md-nav__item md-nav__item--nested">
     
-      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-4-2" type="checkbox" id="nav-4-2">
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-4-3" type="checkbox" id="nav-4-3">
     
-    <label class="md-nav__link" for="nav-4-2">
+    <label class="md-nav__link" for="nav-4-3">
       Modules
       <span class="md-nav__icon md-icon">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8.59 16.58L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.42z"/></svg>
       </span>
     </label>
     <nav class="md-nav" aria-label="Modules" data-md-level="2">
-      <label class="md-nav__title" for="nav-4-2">
+      <label class="md-nav__title" for="nav-4-3">
         <span class="md-nav__icon md-icon">
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
         </span>
@@ -908,6 +920,54 @@
         <li class="md-nav__item">
   <a href="#avec-une-microbit-connectee" class="md-nav__link">
     Avec une micro:bit connectée
+  </a>
+  
+    <nav class="md-nav" aria-label="Avec une micro:bit connectée">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#flasher" class="md-nav__link">
+    Flasher
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#fichiers" class="md-nav__link">
+    Fichiers
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#repl" class="md-nav__link">
+    REPL
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#graphique" class="md-nav__link">
+    Graphique
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#aspect" class="md-nav__link">
+    Aspect
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#divers" class="md-nav__link">
+    Divers
   </a>
   
 </li>
@@ -1183,6 +1243,54 @@
     Avec une micro:bit connectée
   </a>
   
+    <nav class="md-nav" aria-label="Avec une micro:bit connectée">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#flasher" class="md-nav__link">
+    Flasher
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#fichiers" class="md-nav__link">
+    Fichiers
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#repl" class="md-nav__link">
+    REPL
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#graphique" class="md-nav__link">
+    Graphique
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#aspect" class="md-nav__link">
+    Aspect
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#divers" class="md-nav__link">
+    Divers
+  </a>
+  
 </li>
       
     </ul>
@@ -1217,6 +1325,7 @@ Cette interface dispose de l'auto-complétion et d'une indentation automatique, 
 <p class="admonition-title">Remarque</p>
 <p>Ces quatre boutons nécessitent pour fonctionner qu'une carte soit connectée à l'ordinateur (par un câble USB).</p>
 </div>
+<h3 id="flasher">Flasher</h3>
 <p><img alt="" src="../../images/icones_mu/flasher.png" /><br />
 Le bouton « Flasher » place le code Python présent dans la fenêtre d'édition sur la carte micro:bit connectée. Le processus de flash prend environ 10 secondes, pendant lesquelles une LED orange clignote à l'arrière de la carte.<br />
 Après cette opération, tous les codes et données précédents ont été supprimés.  </p>
@@ -1229,6 +1338,7 @@ $ sudo open mu-editor.app
 </code></pre></div>
 
 </div>
+<h3 id="fichiers">Fichiers</h3>
 <p><img alt="" src="../../images/icones_mu/fichiers.png" />  </p>
 <div class="admonition note">
 <p class="admonition-title">Remarque</p>
@@ -1236,8 +1346,10 @@ $ sudo open mu-editor.app
 </div>
 <p>Le bouton « Fichiers » de Mu accède à un système de fichiers et facilite l'accès, le placement, l'obtention et la suppression de fichiers sur l'appareil.
 Il ouvre deux volets : le volet de gauche répertorie tous les fichiers de la carte micro:bit, le volet de droite répertorie tous les fichiers du répertoire <code>mu_code</code> sur l'ordinateur. Faire glisser les fichiers de l'un à l'autre pour les copier. Pour supprimer un fichier sur la carte, cliquer dessus avec le bouton droit de la souris et sélectionner « Supprimer ».  </p>
+<h3 id="repl">REPL</h3>
 <p><img alt="" src="../../images/icones_mu/repl.png" />  </p>
 <p>Le bouton « REPL » crée un nouveau volet entre l'éditeur de texte et le pied de page de Mu. Il s'agit d'un interpréteur interactif qui se connecte au MicroPython REPL sur la carte micro:bit. Le terme « REPL » est un acronyme qui signifie « Read, Evaluate, Print, Loop » : l'interpréteur lit les lignes de Python, évalue ce que cela peut signifier, affiche tout résultat (dans l'interpréteur ou sur la carte, selon l'instruction), puis revient en boucle pour attendre la prochaine instruction Python.</p>
+<h3 id="graphique">Graphique</h3>
 <p><img alt="" src="../../images/icones_mu/graphique.png" /><br />
 Enfin, le bouton « Graphique » ouvre le traceur de Mu. Si la carte micro:bit produit des p-uplets (tuples) de nombres via la connexion série, le traceur les affichera sous forme graphique.
 La sortie est constituée de courbes, avec le temps en abscisses et les valeurs des données en ordonnées.</p>
@@ -1246,6 +1358,13 @@ La sortie est constituée de courbes, avec le temps en abscisses et les valeurs 
 <p>Le modèle habituel pour émettre des p-uplets est de le faire dans une boucle.
 Il faut inclure une pause dans la boucle pour que le traceur fonctionne correctement. Sinon, il y a un risque que le code inonde le traceur de données, et il ne pourra pas suivre. La meilleure façon d'y parvenir est d'utiliser <code>time.sleep()</code> (mesure en secondes) ou <code>microbit.sleep()</code> (mesure en millisecondes).</p>
 </div>
+<h2 id="aspect">Aspect</h2>
+<p><img alt="" src="../../images/icones_mu/section4.png" /></p>
+<p>Les boutons de ce groupe permettent de régler quelques paramètres d'affichage (zoom, mode sombre) et notamment de vidéoprojeter du code dans de bonnes conditions.</p>
+<h2 id="divers">Divers</h2>
+<p><img alt="" src="../../images/icones_mu/section5.png" /></p>
+<p>Ce dernier groupe comporte un bouton de vérification du code, qui détecte plusieurs types d'erreurs (syntaxe, indentation, ... ) ou non-respect des recommandation de la <a href="../../python/pep8">PEP8</a>. Certains messages sont traduits en français, d'autres non. <br />
+Lorsqu'aucune erreur n'est détectée, un message l'indique en bas de la fenêtre.</p>
                 
               
               
