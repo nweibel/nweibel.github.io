@@ -941,6 +941,18 @@
   
   
     <li class="md-nav__item">
+      <a href="../python_radio/" class="md-nav__link">
+        La communication radio
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../python_grove/" class="md-nav__link">
         Le kit Grove
       </a>
@@ -998,6 +1010,13 @@
         <li class="md-nav__item">
   <a href="#cible-sur-plan-incline" class="md-nav__link">
     Cible sur plan incliné
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#jeu-de-nim-sur-un-ruban-neopixel" class="md-nav__link">
+    Jeu de Nim sur un ruban NeoPixel
   </a>
   
 </li>
@@ -1248,6 +1267,13 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#jeu-de-nim-sur-un-ruban-neopixel" class="md-nav__link">
+    Jeu de Nim sur un ruban NeoPixel
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -1263,18 +1289,30 @@
                 
                 <h1 id="defis">Défis</h1>
 <h2 id="cible-sur-plan-incline">Cible sur plan incliné</h2>
-<p><span class="item led">led</span>  <span class="item accelerometer">accéléromètre</span><br />
-<strong>Fonctionnement attendu</strong> :  </p>
+<p><span class="item led">led</span>  <span class="item accelerometer">accéléromètre</span>  </p>
+<p><strong>Fonctionnement attendu</strong> :  </p>
 <ul>
 <li>Un pixel cible, déterminé aléatoirement, clignote sur l'écran de 25 led de la micro:bit.  </li>
 <li>Le joueur "déplace" un pixel positionné initialement au centre de la carte en inclinant la carte micro:bit (avant-arrière, gauche-droite)  </li>
-<li>Lorsque les 2 pixels se superposent, la partie est gagnée : un coeur s'affiche et le jeu s'arrête.</li>
+<li>Lorsque les 2 pixels se superposent, la partie est gagnée : un cœur s'affiche et le jeu s'arrête.</li>
 </ul>
 <details class="info"><summary>Info</summary><ul>
 <li>Pour créer un pixel aléatoire, voir la page <a href="../python_leds5x5/#afficher-des-pixels-aleatoires">Les LED</a> </li>
-<li>Pour déplacer un pixel selon l'inclinaison de la carte, voir l'<a href="../python_exercices/#33-deplacer-un-pixel-avec-linclinaison-de-la-carte">exercice 3.3</a></li>
+<li>Pour déplacer un pixel selon l'inclinaison de la carte, voir l'<a href="../python_exercices/#35-deplacer-un-pixel-avec-linclinaison-de-la-carte">exercice 3.5</a></li>
 </ul>
 </details>
+<h2 id="jeu-de-nim-sur-un-ruban-neopixel">Jeu de Nim sur un ruban NeoPixel</h2>
+<p><span class="item led">led</span>  <span class="item buttons">bouton</span>    <span class="item radio">radio</span>  <span class="item grove_neopixel">neopixel</span></p>
+<p><strong>Matériel</strong> : 3 cartes micro:bit, 1 ruban neopixel  </p>
+<p><strong>Fonctionnement attendu</strong> :  </p>
+<ul>
+<li>Deux joueurs s'affrontent au jeu de Nim. Chacun joue à l'aide d'une carte micro:bit. L'un des joueurs a la couleur rouge, l'autre la couleur bleu.</li>
+<li>Le ruban NeoPixel est piloté par une 3e carte : il est totalement allumé et toutes ses leds sont éclairées en blanc. </li>
+<li>Les joueurs doivent s'approprier tour à tour entre une et trois led qui s'afficheront en rouge ou bleu selon le joueur. Celui qui s'empare de la dernière led du ruban gagne la partie.  </li>
+<li>Chacun leur tour, les joueurs appuient 1, 2 ou 3 fois sur le bouton A, et valident leur choix avec le bouton B. La carte affiche les chiffres 1, 2 ou 3 lors des appuis sur le bouton A et l'image <code>Image.YES</code> lors de la validation avec le bouton B. </li>
+<li>La valeur choisie est envoyée par radio à la carte qui pilote le ruban de led. Le nombre correspondant de led s'allume en couleur sur le ruban, en rouge ou bleu selon le joueur. </li>
+<li>Lorsque la dernière led est atteinte, le ruban fait clignoter ses led de la couleur du joueur gagnant.</li>
+</ul>
                 
               
               
