@@ -19,6 +19,11 @@ font-size: 0.7rem;}
     font-size: 0.75rem;
 }
 
+.md-typeset div.arithmatex  {
+    overflow: initial;
+}
+
+
 .item { 
 color:white;
 font-weight:bold;
