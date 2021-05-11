@@ -185,12 +185,6 @@
     "reponse4": "affiche les permissions relatives au répertoire courant",
   "answer": 3},
 
-  {"question": "<p>La commande suivante vient d'être exécutée en ligne de commande sous Linux :</p><p>cp /users/luc/interro.txt ./</p><p>Que réalise cette commande ?</p>",
-    "reponse1": "copie du fichier users vers le répertoire luc",
-    "reponse2": "copie du fichier interro.txt vers le répertoire luc",
-    "reponse3": "copie du fichier interro.txt vers le répertoire courant",
-    "reponse4": "copie du fichier interro.txt vers le répertoire users",
-    "answer": 3},
  
    {"question": "<p>Dans la console Linux, quelle commande faut-il exécuter pour obtenir la documentation sur la commande pwd ?</p>"
    ,
