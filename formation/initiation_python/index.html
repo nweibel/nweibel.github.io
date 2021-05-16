@@ -1,0 +1,2232 @@
+
+<!doctype html>
+<html lang="fr" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="informatique, NSI, SNT">
+      
+      
+      
+        <meta name="author" content="Nathalie Weibel">
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-7.1.2">
+    
+    
+      
+        <title>Initiation python - Carnets.info</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.6f955dcd.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.ef6f36e2.min.css">
+        
+      
+    
+    
+    
+      
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Sans:300,400,400i,700%7CRoboto+Mono&display=fallback">
+        <style>:root{--md-text-font-family:"PT Sans";--md-code-font-family:"Roboto Mono"}</style>
+      
+    
+    
+    
+      <link rel="stylesheet" href="../../stylesheets/extra.css">
+    
+    
+      
+        
+<script>window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)},ga.l=+new Date,ga("create","UA-171618240-1","auto"),ga("set","anonymizeIp",!0),ga("send","pageview"),document.addEventListener("DOMContentLoaded",function(){document.forms.search&&document.forms.search.query.addEventListener("blur",function(){var e;this.value&&(e=document.location.pathname,ga("send","pageview",e+"?q="+this.value))}),"undefined"!=typeof location$&&location$.subscribe(function(e){ga("send","pageview",e.pathname)})})</script>
+<script async src="https://www.google-analytics.com/analytics.js"></script>
+      
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="teal" data-md-color-accent="light-blue">
+  
+    
+    <script>function __prefix(e){return new URL("../..",location).pathname+"."+e}function __get(e,t=localStorage){return JSON.parse(t.getItem(__prefix(e)))}</script>
+    
+      <script>var palette=__get("__palette");if(null!==palette&&"object"==typeof palette.color)for(var key in palette.color)document.body.setAttribute("data-md-color-"+key,palette.color[key])</script>
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#initiation-a-python" class="md-skip">
+          Aller au contenu
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+      <header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="Carnets.info" class="md-header__button md-logo" aria-label="Carnets.info" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m19 2-5 4.5v11l5-4.5V2M6.5 5C4.55 5 2.45 5.4 1 6.5v14.66c0 .25.25.5.5.5.1 0 .15-.07.25-.07 1.35-.65 3.3-1.09 4.75-1.09 1.95 0 4.05.4 5.5 1.5 1.35-.85 3.8-1.5 5.5-1.5 1.65 0 3.35.31 4.75 1.06.1.05.15.03.25.03.25 0 .5-.25.5-.5V6.5c-.6-.45-1.25-.75-2-1V19c-1.1-.35-2.3-.5-3.5-.5-1.7 0-4.15.65-5.5 1.5V6.5C10.55 5.4 8.45 5 6.5 5z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Carnets.info
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Initiation python
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      <form class="md-header__option" data-md-component="palette">
+        
+          
+          
+          <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="teal" data-md-color-accent="light-blue" type="radio" name="__palette" id="__palette_1">
+          
+            <label class="md-header__button md-icon" title="mode sombre" for="__palette_2" hidden>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M7 10a2 2 0 0 1 2 2 2 2 0 0 1-2 2 2 2 0 0 1-2-2 2 2 0 0 1 2-2m10-3a5 5 0 0 1 5 5 5 5 0 0 1-5 5H7a5 5 0 0 1-5-5 5 5 0 0 1 5-5h10M7 9a3 3 0 0 0-3 3 3 3 0 0 0 3 3h10a3 3 0 0 0 3-3 3 3 0 0 0-3-3H7z"/></svg>
+            </label>
+          
+        
+          
+          
+          <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="teal" data-md-color-accent="light-blue" type="radio" name="__palette" id="__palette_2">
+          
+            <label class="md-header__button md-icon" title="mode clair" for="__palette_1" hidden>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 7H7a5 5 0 0 0-5 5 5 5 0 0 0 5 5h10a5 5 0 0 0 5-5 5 5 0 0 0-5-5m0 8a3 3 0 0 1-3-3 3 3 0 0 1 3-3 3 3 0 0 1 3 3 3 3 0 0 1-3 3z"/></svg>
+            </label>
+          
+        
+      </form>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+      </label>
+      
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Rechercher" placeholder="Rechercher" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" data-md-state="active" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </label>
+      <button type="reset" class="md-search__icon md-icon" aria-label="Clear" tabindex="-1">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg>
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-tabs__inner md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+
+
+  <li class="md-tabs__item">
+    <a href="../.." class="md-tabs__link">
+      Accueil
+    </a>
+  </li>
+
+      
+        
+  
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../python/pep8/" class="md-tabs__link">
+        Python
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../jupyter/memomd/" class="md-tabs__link">
+        Jupyter
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../microbit/decouvrir_microbit/" class="md-tabs__link">
+        micro:bit
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../thymio/thymio/" class="md-tabs__link">
+        Thymio
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../nsi_premiere/qcm_nsi/" class="md-tabs__link">
+        NSI-première
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+    
+  
+
+
+  
+  
+  
+    
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../interfaces_python/" class="md-tabs__link md-tabs__link--active">
+        Formation
+      </a>
+    </li>
+  
+
+  
+
+      
+    </ul>
+  </div>
+</nav>
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Carnets.info" class="md-nav__button md-logo" aria-label="Carnets.info" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m19 2-5 4.5v11l5-4.5V2M6.5 5C4.55 5 2.45 5.4 1 6.5v14.66c0 .25.25.5.5.5.1 0 .15-.07.25-.07 1.35-.65 3.3-1.09 4.75-1.09 1.95 0 4.05.4 5.5 1.5 1.35-.85 3.8-1.5 5.5-1.5 1.65 0 3.35.31 4.75 1.06.1.05.15.03.25.03.25 0 .5-.25.5-.5V6.5c-.6-.45-1.25-.75-2-1V19c-1.1-.35-2.3-.5-3.5-.5-1.7 0-4.15.65-5.5 1.5V6.5C10.55 5.4 8.45 5 6.5 5z"/></svg>
+
+    </a>
+    Carnets.info
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        Accueil
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2" type="checkbox" id="__nav_2" >
+      
+      <label class="md-nav__link" for="__nav_2">
+        Python
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="Python" data-md-level="1">
+        <label class="md-nav__title" for="__nav_2">
+          <span class="md-nav__icon md-icon"></span>
+          Python
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../python/pep8/" class="md-nav__link">
+        Bonnes pratiques
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../python/operateurs/" class="md-nav__link">
+        Opérateurs
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    
+      
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2_3" type="checkbox" id="__nav_2_3" >
+      
+      <label class="md-nav__link" for="__nav_2_3">
+        Boucles
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="Boucles" data-md-level="2">
+        <label class="md-nav__title" for="__nav_2_3">
+          <span class="md-nav__icon md-icon"></span>
+          Boucles
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2_3_1" type="checkbox" id="__nav_2_3_1" >
+      
+      <label class="md-nav__link" for="__nav_2_3_1">
+        Boucles bornées
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="Boucles bornées" data-md-level="3">
+        <label class="md-nav__title" for="__nav_2_3_1">
+          <span class="md-nav__icon md-icon"></span>
+          Boucles bornées
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../python/boucles_bornees/" class="md-nav__link">
+        Boucles bornées
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../python/boucles_bornees_questions/" class="md-nav__link">
+        Questions
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../python/boucles_bornees_exercices/" class="md-nav__link">
+        Exercices
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../python/boucles_bornees_imbriquees_questions/" class="md-nav__link">
+        Boucles bornées imbriquées
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2_3_2" type="checkbox" id="__nav_2_3_2" >
+      
+      <label class="md-nav__link" for="__nav_2_3_2">
+        Boucles non bornées
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="Boucles non bornées" data-md-level="3">
+        <label class="md-nav__title" for="__nav_2_3_2">
+          <span class="md-nav__icon md-icon"></span>
+          Boucles non bornées
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../python/boucles_non_bornees/" class="md-nav__link">
+        Boucles non bornées
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../python/boucles_non_bornees_questions/" class="md-nav__link">
+        Questions
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../python/boucles_non_bornees_exercices/" class="md-nav__link">
+        Exercices
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    
+      
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2_4" type="checkbox" id="__nav_2_4" >
+      
+      <label class="md-nav__link" for="__nav_2_4">
+        Instructions conditionnelles
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="Instructions conditionnelles" data-md-level="2">
+        <label class="md-nav__title" for="__nav_2_4">
+          <span class="md-nav__icon md-icon"></span>
+          Instructions conditionnelles
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../python/instructions_conditionnelles/" class="md-nav__link">
+        Instructions conditionnelles
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../python/instructions_conditionnelles_questions/" class="md-nav__link">
+        Questions
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    
+      
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2_5" type="checkbox" id="__nav_2_5" >
+      
+      <label class="md-nav__link" for="__nav_2_5">
+        Fonctions
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="Fonctions" data-md-level="2">
+        <label class="md-nav__title" for="__nav_2_5">
+          <span class="md-nav__icon md-icon"></span>
+          Fonctions
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../python/fonctions/" class="md-nav__link">
+        Fonctions
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../python/fonctions_questions/" class="md-nav__link">
+        Questions
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3" type="checkbox" id="__nav_3" >
+      
+      <label class="md-nav__link" for="__nav_3">
+        Jupyter
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="Jupyter" data-md-level="1">
+        <label class="md-nav__title" for="__nav_3">
+          <span class="md-nav__icon md-icon"></span>
+          Jupyter
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../jupyter/memomd/" class="md-nav__link">
+        Mémo Markdown
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../jupyter/notebooks/" class="md-nav__link">
+        Notebooks
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    
+      
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3_3" type="checkbox" id="__nav_3_3" >
+      
+      <label class="md-nav__link" for="__nav_3_3">
+        Modules
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="Modules" data-md-level="2">
+        <label class="md-nav__title" for="__nav_3_3">
+          <span class="md-nav__icon md-icon"></span>
+          Modules
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../jupyter/doctest/" class="md-nav__link">
+        Doctest
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../jupyter/ipythonblocks/" class="md-nav__link">
+        ipythonblocks
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../jupyter/memo/" class="md-nav__link">
+        Mémos
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4" type="checkbox" id="__nav_4" >
+      
+      <label class="md-nav__link" for="__nav_4">
+        micro:bit
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="micro:bit" data-md-level="1">
+        <label class="md-nav__title" for="__nav_4">
+          <span class="md-nav__icon md-icon"></span>
+          micro:bit
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../microbit/decouvrir_microbit/" class="md-nav__link">
+        La carte micro:bit
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    
+      
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4_2" type="checkbox" id="__nav_4_2" >
+      
+      <label class="md-nav__link" for="__nav_4_2">
+        Programmer la carte avec MakeCode
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="Programmer la carte avec MakeCode" data-md-level="2">
+        <label class="md-nav__title" for="__nav_4_2">
+          <span class="md-nav__icon md-icon"></span>
+          Programmer la carte avec MakeCode
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../microbit/makecode/" class="md-nav__link">
+        Généralités
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../microbit/mc_radio/" class="md-nav__link">
+        Parcours Radio
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../microbit/scratch/" class="md-nav__link">
+        Programmer la carte avec Scratch
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    
+      
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4_4" type="checkbox" id="__nav_4_4" >
+      
+      <label class="md-nav__link" for="__nav_4_4">
+        Programmer la carte avec Python
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="Programmer la carte avec Python" data-md-level="2">
+        <label class="md-nav__title" for="__nav_4_4">
+          <span class="md-nav__icon md-icon"></span>
+          Programmer la carte avec Python
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../microbit/python_editeur/" class="md-nav__link">
+        Quel éditeur ?
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../microbit/python_mu/" class="md-nav__link">
+        Utiliser l'éditeur Mu
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../microbit/python_leds5x5/" class="md-nav__link">
+        Les LED
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../microbit/python_boutons/" class="md-nav__link">
+        Les boutons
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../microbit/python_accelerometre/" class="md-nav__link">
+        L'accéléromètre
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../microbit/python_radio/" class="md-nav__link">
+        La communication radio
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../microbit/python_grove/" class="md-nav__link">
+        Le kit Grove
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../microbit/python_exercices/" class="md-nav__link">
+        Exercices
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../microbit/python_defis/" class="md-nav__link">
+        Défis
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5" type="checkbox" id="__nav_5" >
+      
+      <label class="md-nav__link" for="__nav_5">
+        Thymio
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="Thymio" data-md-level="1">
+        <label class="md-nav__title" for="__nav_5">
+          <span class="md-nav__icon md-icon"></span>
+          Thymio
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../thymio/thymio/" class="md-nav__link">
+        Le robot Thymio
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../thymio/th_scratch/" class="md-nav__link">
+        Programmer Thymio avec Scratch
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_6" type="checkbox" id="__nav_6" >
+      
+      <label class="md-nav__link" for="__nav_6">
+        NSI-première
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="NSI-première" data-md-level="1">
+        <label class="md-nav__title" for="__nav_6">
+          <span class="md-nav__icon md-icon"></span>
+          NSI-première
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../nsi_premiere/qcm_nsi/" class="md-nav__link">
+        QCM NSI
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../nsi_premiere/exposes/" class="md-nav__link">
+        Exposés
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    
+      
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_6_3" type="checkbox" id="__nav_6_3" >
+      
+      <label class="md-nav__link" for="__nav_6_3">
+        Avec des grilles
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="Avec des grilles" data-md-level="2">
+        <label class="md-nav__title" for="__nav_6_3">
+          <span class="md-nav__icon md-icon"></span>
+          Avec des grilles
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../nsi_premiere/defimotifs/" class="md-nav__link">
+        Vingt motifs
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../nsi_premiere/fourmi_langton/" class="md-nav__link">
+        La fourmi de Langton
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../nsi_premiere/jeu_de_la_vie/" class="md-nav__link">
+        Le jeu de la vie
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../nsi_premiere/jeu_cliquable/" class="md-nav__link">
+        Grille cliquable
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../nsi_premiere/melange_cartes/" class="md-nav__link">
+        Mélange Parfait
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../nsi_premiere/problemes/" class="md-nav__link">
+        Problèmes
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../nsi_premiere/express/" class="md-nav__link">
+        Questions express
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+    
+  
+  
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_7" type="checkbox" id="__nav_7" checked>
+      
+      <label class="md-nav__link" for="__nav_7">
+        Formation
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="Formation" data-md-level="1">
+        <label class="md-nav__title" for="__nav_7">
+          <span class="md-nav__icon md-icon"></span>
+          Formation
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+    
+  
+  
+    
+      
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_7_1" type="checkbox" id="__nav_7_1" checked>
+      
+      <label class="md-nav__link" for="__nav_7_1">
+        Python pour l'enseignant de mathématiques
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="Python pour l'enseignant de mathématiques" data-md-level="2">
+        <label class="md-nav__title" for="__nav_7_1">
+          <span class="md-nav__icon md-icon"></span>
+          Python pour l'enseignant de mathématiques
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../interfaces_python/" class="md-nav__link">
+        Interfaces python
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Initiation python
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        Initiation python
+      </a>
+      
+        
+<nav class="md-nav md-nav--secondary" aria-label="Table des matières">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table des matières
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#decouverte-de-la-console" class="md-nav__link">
+    Découverte de la console
+  </a>
+  
+    <nav class="md-nav" aria-label="Découverte de la console">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#operations-mathematiques" class="md-nav__link">
+    Opérations mathématiques
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#variables" class="md-nav__link">
+    Variables
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#types-de-donnees-en-python" class="md-nav__link">
+    Types de données en Python
+  </a>
+  
+    <nav class="md-nav" aria-label="Types de données en Python">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#entiers-et-flottants" class="md-nav__link">
+    Entiers et flottants
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#les-booleens" class="md-nav__link">
+    Les booléens
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#les-chaines-de-caracteres" class="md-nav__link">
+    Les chaines de caractères
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#les-listes" class="md-nav__link">
+    Les listes
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#les-p-uplets" class="md-nav__link">
+    Les p-uplets
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#lediteur" class="md-nav__link">
+    L’éditeur
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#les-fonctions" class="md-nav__link">
+    Les fonctions
+  </a>
+  
+    <nav class="md-nav" aria-label="Les fonctions">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#declaration" class="md-nav__link">
+    Déclaration
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#parametres" class="md-nav__link">
+    Paramètres
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#variable-locale" class="md-nav__link">
+    Variable locale
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#structures-de-controle" class="md-nav__link">
+    Structures de contrôle
+  </a>
+  
+    <nav class="md-nav" aria-label="Structures de contrôle">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#structure-conditionnelle" class="md-nav__link">
+    Structure conditionnelle
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#structures-de-repetition" class="md-nav__link">
+    Structures de répétition
+  </a>
+  
+    <nav class="md-nav" aria-label="Structures de répétition">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#boucles-non-bornees" class="md-nav__link">
+    Boucles non bornées
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#boucles-bornees" class="md-nav__link">
+    Boucles bornées
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../scratch_python/" class="md-nav__link">
+        Scratch & Python
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../competences/" class="md-nav__link">
+        Compétences
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../exercices_python_math/" class="md-nav__link">
+        Exercices
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary" aria-label="Table des matières">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table des matières
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#decouverte-de-la-console" class="md-nav__link">
+    Découverte de la console
+  </a>
+  
+    <nav class="md-nav" aria-label="Découverte de la console">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#operations-mathematiques" class="md-nav__link">
+    Opérations mathématiques
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#variables" class="md-nav__link">
+    Variables
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#types-de-donnees-en-python" class="md-nav__link">
+    Types de données en Python
+  </a>
+  
+    <nav class="md-nav" aria-label="Types de données en Python">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#entiers-et-flottants" class="md-nav__link">
+    Entiers et flottants
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#les-booleens" class="md-nav__link">
+    Les booléens
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#les-chaines-de-caracteres" class="md-nav__link">
+    Les chaines de caractères
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#les-listes" class="md-nav__link">
+    Les listes
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#les-p-uplets" class="md-nav__link">
+    Les p-uplets
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#lediteur" class="md-nav__link">
+    L’éditeur
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#les-fonctions" class="md-nav__link">
+    Les fonctions
+  </a>
+  
+    <nav class="md-nav" aria-label="Les fonctions">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#declaration" class="md-nav__link">
+    Déclaration
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#parametres" class="md-nav__link">
+    Paramètres
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#variable-locale" class="md-nav__link">
+    Variable locale
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#structures-de-controle" class="md-nav__link">
+    Structures de contrôle
+  </a>
+  
+    <nav class="md-nav" aria-label="Structures de contrôle">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#structure-conditionnelle" class="md-nav__link">
+    Structure conditionnelle
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#structures-de-repetition" class="md-nav__link">
+    Structures de répétition
+  </a>
+  
+    <nav class="md-nav" aria-label="Structures de répétition">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#boucles-non-bornees" class="md-nav__link">
+    Boucles non bornées
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#boucles-bornees" class="md-nav__link">
+    Boucles bornées
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content" data-md-component="content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                
+                <h1 id="initiation-a-python">Initiation à Python</h1>
+<h2 id="decouverte-de-la-console">Découverte de la console</h2>
+<!-- <iframe src=https://console.basthon.fr width=100% height=300></iframe>
+
+   [Ouvrir la console Basthon dans un nouvel onglet](https://console.basthon.fr){:target="_blank" }
+-->
+<iframe src=https://console.basthon.fr/?from=https://raw.githubusercontent.com/nweibel/jupyter/master/vide.py width=100% height=400></iframe>
+<p><a href="https://console.basthon.fr/?from=https://raw.githubusercontent.com/nweibel/jupyter/master/vide.py" target="_blank">Ouvrir la console dans un nouvel onglet</a></p>
+<p>Dans la console, on peut taper des instructions Python après les trois chevrons <code>&gt;&gt;&gt;</code>. Les instructions s’exécutent lorsqu'on tape sur <span class="keys"><kbd class="key-enter">Enter</kbd></span>.<br />
+On peut écrire une suite d’instructions en les séparant par un <span class="keys"><kbd class="key-semicolon">;</kbd></span>. Le dernier résultat peut être rappelé avec <span class="keys"><kbd class="key-underscore">_</kbd></span>.</p>
+<h3 id="operations-mathematiques">Opérations mathématiques</h3>
+<ul>
+<li>Les quatre opérations usuelles s’obtiennent avec les symboles <code>+</code>, <code>-</code>, <code>*</code>,<code>/</code>.  </li>
+<li>Le quotient d’une division euclidienne est obtenu avec le symbole <code>//</code> , et le reste avec <code>%</code>.</li>
+<li>L’exponentiation (puissance) s’obtient avec <code>**</code>.</li>
+<li>Les ordres de priorité sont les mêmes qu’en mathématiques et si besoin on peut utiliser des <span class="keys"><kbd>(</kbd></span> <span class="keys"><kbd>)</kbd></span>.</li>
+<li>Selon les <a href="../../python/pep8/">bonnes pratiques</a>, les opérateurs suivants (<code>+</code>, <code>-</code>, <code>*</code>, <code>/</code>) sont à entourer en règle générale d'un espace avant et d'un espace après l'opérateur. Lorsqu'une expression comporte des opérations de différentes priorités, on peut réserver les espaces à l'opérateur de plus faible priorité.</li>
+</ul>
+<div class="admonition tip">
+<p>Anticiper le résultat de l'exécution de chaque instruction dans la console et vérifier le résultat affiché.
+<div class="highlight"><pre><span></span><code><span class="o">&gt;&gt;&gt;</span> <span class="mi">3</span> <span class="o">+</span> <span class="mi">5</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="mi">2</span> <span class="o">+</span> <span class="mi">3</span> <span class="o">*</span> <span class="mi">5</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="mi">23</span> <span class="o">/</span> <span class="mi">4</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="mi">23</span> <span class="o">//</span> <span class="mi">4</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="mi">23</span> <span class="o">%</span> <span class="mi">4</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="mi">2</span><span class="o">**</span><span class="mi">3</span>
+</code></pre></div></p>
+</div>
+<h3 id="variables">Variables</h3>
+<p>L’affectation d’une valeur à une variable se fait à l’aide du symbole <code>=</code>, symbole non symétrique ici.
+Selon les recommandations, le nom d'une variable peut contenir des lettres minuscules et le tiret bas. Les noms explicites sont à privilégier.<br />
+Lors de l'affectation d'une valeur à une variable : 
+<div class="highlight"><pre><span></span><code><span class="n">nom_variable</span> <span class="o">=</span> <span class="n">expression</span>
+</code></pre></div>
+l'expression de droite est <em>évaluée</em> et sa valeur est affectée à la variable.  </p>
+<p>L’affichage de la valeur référencée par une variable peut se faire dans la console en écrivant simplement le nom de la variable (si cette instruction est la dernière avant exécution), ou en utilisant la fonction <code>print()</code>.</p>
+<div class="admonition tip">
+<p>Anticiper le résultat de l'exécution de chaque instruction dans la console et vérifier le résultat affiché.
+<div class="highlight"><pre><span></span><code><span class="o">&gt;&gt;&gt;</span> <span class="n">a</span> <span class="o">=</span> <span class="mi">3</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">b</span> <span class="o">=</span> <span class="n">a</span> <span class="o">+</span> <span class="mi">2</span> <span class="p">;</span> <span class="n">b</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">c</span> <span class="o">=</span> <span class="n">b</span> <span class="o">+</span> <span class="mf">1.2</span> <span class="p">;</span> <span class="n">c</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">a</span> <span class="o">=</span> <span class="mi">8</span> <span class="p">;</span> <span class="n">b</span>
+<span class="c1"># la modification de la valeur de a n&#39;entraine aucune modification</span>
+<span class="c1"># de la valeur de b (contrairement aux cellules liées d&#39;un tableur)</span>
+</code></pre></div></p>
+</div>
+<div class="admonition tip">
+<p>On peut affecter simultanément plusieurs valeurs à plusieurs variables.
+<div class="highlight"><pre><span></span><code><span class="o">&gt;&gt;&gt;</span> <span class="n">d</span><span class="p">,</span> <span class="n">e</span> <span class="o">=</span> <span class="mi">6</span><span class="p">,</span> <span class="mf">7.8</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="nb">print</span><span class="p">(</span><span class="n">d</span><span class="p">)</span> <span class="p">;</span> <span class="nb">print</span><span class="p">(</span><span class="n">e</span><span class="p">)</span>
+<span class="c1"># et cette syntaxe permet même d&#39;intervertir le contenu de deux variables</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">d</span><span class="p">,</span> <span class="n">e</span> <span class="o">=</span> <span class="n">e</span><span class="p">,</span> <span class="n">d</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="nb">print</span><span class="p">(</span><span class="n">d</span><span class="p">)</span> <span class="p">;</span> <span class="nb">print</span><span class="p">(</span><span class="n">e</span><span class="p">)</span>
+</code></pre></div></p>
+</div>
+<div class="admonition tip">
+<p>D'autres types de variables :
+<div class="highlight"><pre><span></span><code><span class="o">&gt;&gt;&gt;</span> <span class="n">f</span> <span class="o">=</span> <span class="s2">&quot;bienvenue&quot;</span> <span class="p">;</span> <span class="n">f</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">g</span> <span class="o">=</span> <span class="n">a</span> <span class="o">&lt;</span> <span class="n">b</span> <span class="p">;</span> <span class="n">g</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">h</span> <span class="o">=</span> <span class="p">(</span><span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">)</span> <span class="p">;</span> <span class="n">h</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">i</span> <span class="o">=</span> <span class="p">[</span><span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">]</span> <span class="p">;</span> <span class="n">i</span>
+</code></pre></div></p>
+</div>
+<p>La fonction <code>type()</code> permet de connaitre le type d’une valeur. Le type d’une variable est celui de la valeur qu'elle référence : il peut éventuellement changer au cours d’un programme.</p>
+<div class="admonition tip">
+<p>Rechercher à l'aide de la console le type de chacune des variables préalablement définies : <code>a</code>, <code>b</code>, <code>c</code>,<code>d</code>, <code>e</code>, <code>f</code>, <code>g</code>, <code>h</code> et <code>i</code>.</p>
+</div>
+<h2 id="types-de-donnees-en-python">Types de données en Python</h2>
+<p>Les principaux types de données en Python sont les nombres entiers, les nombres flottants, les booléens, les chaines de caractères, les listes et les p-uplets.</p>
+<h3 id="entiers-et-flottants">Entiers et flottants</h3>
+<p>Les entiers (type <code>int</code>) et flottants (type <code>float</code>) sont les deux types principaux pour les valeurs numériques réelles. Le type <code>int</code> n’est limité en taille que par la mémoire de la machine. <br />
+La fonction <code>int()</code> renvoie la troncature à l’entier d'un réel. </p>
+<p>Les flottants sont notés avec un point décimal ou en notation exponentielle. Leur précision est limitée. (Ils sont représentés sur 64 bits selon la norme IEEE 754 double précision.)</p>
+<p>Les notations contenant un point décimal, un quotient ou une écriture scientifique sont interprétées comme des flottants.
+Ainsi chacune des écritures suivantes :  <code>2.0</code>, <code>0.1</code>, <code>2/3</code>, <code>2.54e3</code>, <code>2e-3</code> correspond à un flottant. </p>
+<p>La fonction <code>float()</code> permet de convertir un entier en flottant. </p>
+<div class="admonition tip">
+<p>Observer le résultat de chaque instruction dans la console :  <br />
+<div class="highlight"><pre><span></span><code><span class="o">&gt;&gt;&gt;</span> <span class="mi">2</span><span class="o">**</span><span class="mi">10000</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="mi">10</span><span class="o">**</span><span class="mi">20</span> <span class="o">+</span> <span class="mi">10</span><span class="o">**</span><span class="mi">40</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="mf">1e20</span> <span class="o">+</span> <span class="mf">1e40</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="mi">8</span> <span class="o">/</span> <span class="mi">2</span>
+</code></pre></div></p>
+</div>
+<h3 id="les-booleens">Les booléens</h3>
+<p>Les booléens (type <code>bool</code>) sont des données qui ne peuvent prendre que deux valeurs : <code>False</code> ou <code>True</code>.<br />
+L’évaluation d’une comparaison <code>&lt;</code> ; <code>&gt;</code> ; <code>&lt;=</code> ; <code>&gt;=</code> ;<code>==</code> (test d’égalité), <code>!=</code> (test de différence) a pour valeur un booléen.</p>
+<div class="admonition tip">
+<p>Anticiper le résultat de chaque instruction dans la console et vérifier le résultat affiché. Quelques surprises sont possibles...
+<div class="highlight"><pre><span></span><code><span class="o">&gt;&gt;&gt;</span> <span class="mi">2</span> <span class="o">+</span> <span class="mi">3</span> <span class="o">==</span> <span class="mi">5</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="mf">0.2</span> <span class="o">+</span> <span class="mf">0.3</span> <span class="o">==</span> <span class="mf">0.5</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="mf">0.2</span> <span class="o">+</span> <span class="mf">0.1</span> <span class="o">==</span> <span class="mf">0.3</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">x</span> <span class="o">=</span> <span class="mi">14</span> <span class="p">;</span> <span class="n">x</span> <span class="o">%</span> <span class="mi">2</span> <span class="o">==</span> <span class="mi">0</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">x</span> <span class="o">&gt;=</span> <span class="mi">20</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="mi">12</span> <span class="o">&lt;</span> <span class="n">x</span> <span class="o">&lt;=</span> <span class="mi">20</span>
+</code></pre></div></p>
+</div>
+<h3 id="les-chaines-de-caracteres">Les chaines de caractères</h3>
+<p>Les chaines de caractères (type <code>str</code>) sont composées de caractères Unicode. Elles sont délimitées par des <code>"</code> ou des <code>’</code> (voire des triples guillemets <code>'''</code>).</p>
+<ul>
+<li>Chaque caractère de la chaine a un indice positif : le premier caractère porte l’indice 0, et les indices augmentent de gauche à droite.</li>
+<li>Chaque caractère de la chaine a un indice négatif. Le dernier caractère porte l'indice -1,  et les indices diminuent de droite à gauche.</li>
+<li>On peut accéder à la valeur d'un caractère à partir de son indice : <code>nom_chaine[indice]</code>.</li>
+<li>La fonction <code>len()</code> donne la longueur d'une chaine, c'est à dire le nombre de ses caractères.</li>
+<li>On ne peut pas modifier directement un caractère d’une chaine, mais certaines opérations sont possibles comme la concaténation (<code>+</code>), la duplication (<code>*</code>), etc.  </li>
+<li>On peut connaitre le code correspondant à un caractère avec la fonction <code>ord</code> et, réciproquement, connaitre le caractère correspondant à un entier avec la fonction <code>chr</code>.  </li>
+<li>On peut convertir un entier <code>n</code> en chaine de caractères avec la fonction <code>str(n)</code>, et convertir une chaine de caractères en entier avec la fonction <code>int()</code>.</li>
+</ul>
+<div class="admonition tip">
+<p>Anticiper le résultat de chaque instruction dans la console et vérifier le résultat affiché.
+<div class="highlight"><pre><span></span><code><span class="o">&gt;&gt;&gt;</span> <span class="n">mot</span> <span class="o">=</span> <span class="s2">&quot;bonjour&quot;</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">mot</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">mot</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">mot</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span> 
+<span class="o">&gt;&gt;&gt;</span> <span class="nb">len</span><span class="p">(</span><span class="n">mot</span><span class="p">)</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">mot</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">=</span> <span class="s1">&#39;B&#39;</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">mot</span> <span class="o">=</span> <span class="s2">&quot;Bonjour&quot;</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">mot1</span> <span class="o">=</span> <span class="s2">&quot;pom&quot;</span><span class="p">;</span> <span class="n">mot2</span> <span class="o">=</span> <span class="s2">&quot;pon&quot;</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">mot3</span> <span class="o">=</span> <span class="n">mot1</span> <span class="o">+</span> <span class="n">mot2</span><span class="p">;</span> <span class="n">mot3</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">mot4</span> <span class="o">=</span> <span class="n">mot1</span> <span class="o">*</span> <span class="mi">4</span><span class="p">;</span> <span class="n">mot4</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="nb">ord</span><span class="p">(</span><span class="s1">&#39;Z&#39;</span><span class="p">)</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="nb">chr</span><span class="p">(</span><span class="mi">65</span><span class="p">)</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="nb">str</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="s1">&#39;2&#39;</span> <span class="o">+</span> <span class="s1">&#39;3&#39;</span> 
+<span class="o">&gt;&gt;&gt;</span> <span class="nb">int</span><span class="p">(</span><span class="s1">&#39;2&#39;</span><span class="p">)</span> <span class="o">+</span> <span class="nb">int</span><span class="p">(</span><span class="s1">&#39;3&#39;</span><span class="p">)</span>
+</code></pre></div></p>
+</div>
+<h3 id="les-listes">Les listes</h3>
+<p>Les listes (type <code>list</code>) sont des séquences d'éléments qui peuvent être de type quelconque, éventuellement de types différents. Elles sont délimitées par des crochets <code>[ ]</code> et les éléments sont séparés par des virgules.</p>
+<ul>
+<li>Chaque élément de la liste a un indice positif : le premier élément porte l’indice 0, et les indices augmentent de gauche à droite.</li>
+<li>Chaque élément de la liste a un indice négatif. Le dernier élément porte l'indice -1,  et les indices diminuent de droite à gauche.</li>
+<li>La fonction <code>len()</code> donne la longueur d'une liste, c'est à dire le nombre de ses éléments.</li>
+<li>On peut accéder à la valeur d'un élément à partir de son indice : <code>nom_liste[indice]</code>.</li>
+<li>On peut modifier la valeur de chaque élément en le ré-affectant :<br />
+<code>nom_liste[indice] = nouvelle_valeur</code></li>
+<li>On peut ajouter un nouvel élément en fin de liste à l’aide de la méthode <code>append()</code> :<br />
+<code>nom_liste.append(nouvel_element)</code></li>
+<li>On peut concaténer (<code>+</code>) deux listes. </li>
+<li>On peut trier les éléments d'une liste à l’aide de la fonction <code>sorted()</code> : 
+<code>liste_triee = sorted(liste_initiale)</code>.</li>
+<li>Les fonctions <code>min()</code>et <code>max()</code> donnent les valeurs minimales et maximales d'une liste contenant des valeurs numériques comparables.</li>
+</ul>
+<div class="admonition tip">
+<p>Anticiper le résultat de chaque instruction dans la console et vérifier le résultat affiché.
+<div class="highlight"><pre><span></span><code><span class="o">&gt;&gt;&gt;</span> <span class="n">liste_1</span> <span class="o">=</span> <span class="p">[</span><span class="mi">10</span><span class="p">,</span> <span class="mi">21</span><span class="p">,</span> <span class="mi">13</span><span class="p">,</span> <span class="mi">24</span><span class="p">,</span> <span class="mi">5</span><span class="p">];</span> <span class="n">liste_2</span> <span class="o">=</span> <span class="p">[</span><span class="mi">16</span><span class="p">,</span> <span class="mi">27</span><span class="p">]</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">liste_1</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">liste_1</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">=</span> <span class="mi">4</span> <span class="p">;</span> <span class="n">liste_1</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="nb">len</span><span class="p">(</span><span class="n">liste_1</span><span class="p">)</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">liste_3</span> <span class="o">=</span> <span class="n">liste_1</span> <span class="o">+</span> <span class="n">liste_2</span> <span class="p">;</span> <span class="n">liste_3</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">liste_3</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="mi">18</span><span class="p">)</span> <span class="p">;</span> <span class="n">liste_3</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="nb">max</span><span class="p">(</span><span class="n">liste_3</span><span class="p">)</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="nb">min</span><span class="p">(</span><span class="n">liste_3</span><span class="p">)</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">liste_4</span> <span class="o">=</span> <span class="nb">sorted</span><span class="p">(</span><span class="n">liste_3</span><span class="p">)</span> <span class="p">;</span> <span class="n">liste_4</span>
+</code></pre></div></p>
+</div>
+<h3 id="les-p-uplets">Les p-uplets</h3>
+<p>Les p-uplets (type <code>tuple</code>) sont des séquences non modifiables (ou non "mutables"). Ils sont délimités par des parenthèses <code>( )</code>. Ils sont notamment utilisés implicitement lorsqu’une fonction renvoie plusieurs valeurs.</p>
+<div class="admonition tip">
+<p>Anticiper le résultat de chaque instruction dans la console et vérifier le résultat affiché.
+<div class="highlight"><pre><span></span><code><span class="o">&gt;&gt;&gt;</span> <span class="n">triplet</span> <span class="o">=</span> <span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">);</span> <span class="n">couple</span> <span class="o">=</span> <span class="p">(</span><span class="mi">4</span><span class="p">,</span><span class="mi">5</span><span class="p">)</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">triplet</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">triplet</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">=</span> <span class="mi">8</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="nb">len</span><span class="p">(</span><span class="n">triplet</span><span class="p">)</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">somme</span> <span class="o">=</span> <span class="n">triplet</span> <span class="o">+</span> <span class="n">couple</span> <span class="p">;</span> <span class="n">somme</span>
+</code></pre></div></p>
+</div>
+<h2 id="lediteur">L’éditeur</h2>
+<p>L’éditeur permet de saisir des programmes en Python (on parle aussi de scripts), que l’on peut sauvegarder dans des fichiers dont l’extension est <code>.py</code>. L’exécution du programme permet d'appeler dans la console les fonctions et variables définies dans le script.</p>
+<p>Extrait du document d’accompagnement <a href="https://cache.media.eduscol.education.fr/file/Mathematiques/73/3/Algorithmique_et_programmation_787733.pdf">Algorithmique et programmation</a> (Eduscol, 2017):</p>
+<blockquote>
+<p>Les élèves écriront des fonctions qui pourront être enregistrées dans des fichiers, appelés scripts ou modules, qu’on peut développer, enrichir et réutiliser lors de séances successives.
+Les scripts peuvent être exécutés dans un mode console, afin de tester et mettre au point les algorithmes et les programmes. L’exécution d’un script comportant la définition d’une fonction <span class="arithmatex">\(f\)</span> ne produit aucun affichage particulier dans la console.</p>
+</blockquote>
+<p>Voici un premier exemple d'utilisation de l'éditeur en lien avec la console : </p>
+<iframe src=https://console.basthon.fr/?from=https://raw.githubusercontent.com/nweibel/jupyter/master/script_initiation_1.py width=100% height=400></iframe>
+<p><a href="https://console.basthon.fr/?from=https://raw.githubusercontent.com/nweibel/jupyter/master/script_initiation_1.py" target="_blank">Ouvrir la console dans un nouvel onglet</a></p>
+<div class="admonition tip">
+<p>Après exécution du script, on peut appeler dans l'éditeur les fonctions <span class="arithmatex">\(f\)</span> et <span class="arithmatex">\(g\)</span>, en donnant une valeur au paramètre.
+<div class="highlight"><pre><span></span><code><span class="o">&gt;&gt;&gt;</span> <span class="n">f</span><span class="p">(</span><span class="mi">5</span><span class="p">)</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">f</span><span class="p">(</span><span class="mi">5</span><span class="p">)</span> <span class="o">+</span> <span class="n">g</span><span class="p">(</span><span class="mi">5</span><span class="p">)</span> <span class="o">==</span> <span class="n">f</span><span class="p">(</span><span class="mi">6</span><span class="p">)</span>
+</code></pre></div></p>
+</div>
+<h2 id="les-fonctions">Les fonctions</h2>
+<h3 id="declaration">Déclaration</h3>
+<p>Les fonctions permettent de décomposer un programme en plusieurs éléments plus simples, plus lisibles et que l'on peut combiner.
+Une fonction associe un bloc d'instructions à un nom.</p>
+<p>L'utilisation d'une fonction nécessite deux étapes :</p>
+<ul>
+<li>
+<p><em>sa déclaration</em> : on définit le nom de la fonction, ses paramètres et les instructions à exécuter ;</p>
+</li>
+<li>
+<p><em>son appel</em> : on exécute la fonction pour des valeurs explicites des paramètres.</p>
+</li>
+</ul>
+<p>La déclaration d'une fonction est introduite par le mot-clé <code>def</code>, suivi du nom de la fonction, de ses paramètres entre parenthèses, de deux points, puis d’un bloc d’instructions indentées.
+<div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">nom_de_la_fonction</span><span class="p">(</span><span class="n">parametre_1</span><span class="p">,</span> <span class="n">parametre_2</span><span class="p">,</span><span class="o">...</span><span class="p">):</span>
+    <span class="n">bloc</span> <span class="n">d</span><span class="err">’</span><span class="n">instructions</span>
+</code></pre></div>
+Le bloc d’instructions s’appelle le <em>corps</em> de la fonction. Il doit être obligatoirement indenté et la fin de ce bloc marque la fin de la déclaration de fonction. </p>
+<p>Une fonction peut renvoyer zéro, une ou plusieurs valeurs à l’aide de l'instruction <code>return</code> qui met fin à l’exécution de la fonction.</p>
+<p>Un exemple :
+<div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">moyenne</span><span class="p">(</span><span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">):</span>
+    <span class="n">m</span> <span class="o">=</span> <span class="p">(</span><span class="n">a</span> <span class="o">+</span> <span class="n">b</span><span class="p">)</span> <span class="o">/</span> <span class="mi">2</span>
+    <span class="k">return</span><span class="p">(</span><span class="n">m</span><span class="p">)</span>
+</code></pre></div></p>
+<div class="admonition tip">
+<p>Saisir ce script, puis l’exécuter. La fonction <code>moyenne</code> peut alors être appelée dans la console ou dans une autre partie du même script. La saisie dans la console de <code>moyenne(34,67)</code> renvoie la valeur 50.5.</p>
+</div>
+<p>On peut également écrire dans le script, en dehors de la fonction : <code>print(moyenne(34, 67))</code>. Cela provoquera, à l’exécution du script, l’affichage (dans la console) de la moyenne de 34 et 67.
+Ce fonctionnement est requis pour les interfaces ne disposant pas d'une console, comme  Codeskulptor3 par exemple.</p>
+<h3 id="parametres">Paramètres</h3>
+<p>La fonction <code>moyenne</code> définie ci-dessus possède deux paramètres <code>a</code>et <code>b</code>. L'appel de <code>moyenne</code>avec un nombre de paramètres différent de deux provoque une erreur.</p>
+<p>Une fonction n’a pas nécessairement de paramètres. On peut par exemple écrire :
+<div class="highlight"><pre><span></span><code><span class="kn">from</span> <span class="nn">random</span> <span class="kn">import</span> <span class="n">randint</span> 
+<span class="c1"># cette instruction permet d&#39;utiliser la fonction randint qui n&#39;est pas </span>
+<span class="c1"># disponible par défaut</span>
+<span class="k">def</span> <span class="nf">de</span><span class="p">(</span> <span class="p">):</span>
+    <span class="k">return</span><span class="p">(</span><span class="n">randint</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">6</span><span class="p">))</span>
+</code></pre></div>
+L’appel de la fonction <code>de()</code> provoque le tirage aléatoire d’un entier entre 1 et 6.</p>
+<div class="admonition tip">
+<p>On lance deux dés dés équilibrés à 6 faces et on calcule la somme des numéros situés sur les faces supérieures. Dans un script, écrire une fonction qui simule cette expérience et en renvoie le résultat.</p>
+</div>
+<h3 id="variable-locale">Variable locale</h3>
+<p>Une variable déclarée dans une fonction ne sera visible que dans cette fonction, et les confusions sont faciles si une autre variable porte le même nom. On parle de variable <em>locale</em>. </p>
+<div class="admonition tip">
+<p>Anticiper l’affichage produit dans la console par l’exécution du script suivant et vérifier.
+<div class="highlight"><pre><span></span><code><span class="n">score</span> <span class="o">=</span> <span class="mi">0</span>
+<span class="k">def</span> <span class="nf">bonus</span><span class="p">():</span>
+    <span class="n">score</span> <span class="o">=</span> <span class="mi">50</span>
+    <span class="k">return</span><span class="p">(</span><span class="n">score</span><span class="p">)</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;affichage 1 : &quot;</span> <span class="p">,</span> <span class="n">score</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;affichage 2 : &quot;</span> <span class="p">,</span> <span class="n">bonus</span><span class="p">())</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;affichage 3 : &quot;</span> <span class="p">,</span> <span class="n">score</span><span class="p">)</span>
+</code></pre></div></p>
+</div>
+<h2 id="structures-de-controle">Structures de contrôle</h2>
+<h3 id="structure-conditionnelle">Structure conditionnelle</h3>
+<p>En Python, une structure conditionnelle est introduite par le mot clé <code>if</code> dont la syntaxe est :
+<div class="highlight"><pre><span></span><code><span class="k">if</span> <span class="n">expression</span> <span class="p">:</span>
+    <span class="n">bloc</span> <span class="n">d</span><span class="err">’</span><span class="n">instructions</span> <span class="n">exécuté</span> <span class="n">si</span> <span class="n">expression</span> <span class="n">vaut</span> <span class="kc">True</span> 
+</code></pre></div>
+où <code>expression</code> a pour valeur un booléen.</p>
+<p>Pour exécuter un autre bloc d’instructions lorsque <code>expression</code> a pour valeur <code>False</code>, on utilise le mot clé <code>else</code> avec la syntaxe suivante :
+<div class="highlight"><pre><span></span><code><span class="k">if</span> <span class="n">expression</span> <span class="p">:</span>
+    <span class="n">bloc</span> <span class="n">d</span><span class="err">’</span><span class="n">instructions</span> <span class="n">exécuté</span> <span class="n">si</span> <span class="n">expression</span> <span class="n">vaut</span> <span class="kc">True</span> 
+<span class="k">else</span> <span class="p">:</span>
+    <span class="n">bloc</span> <span class="n">d</span><span class="err">’</span><span class="n">instructions</span> <span class="n">exécuté</span> <span class="n">si</span> <span class="n">expression</span> <span class="n">vaut</span> <span class="kc">False</span>
+</code></pre></div></p>
+<div class="admonition tip">
+<p>Après exécution du script suivant, quelle sera la valeur de <code>terme_suivant(14)</code> et de <code>terme_suivant(15)</code> ? Vérifier.
+<div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">terme_suivant</span><span class="p">(</span><span class="n">n</span><span class="p">):</span>
+    <span class="k">if</span> <span class="n">n</span> <span class="o">%</span> <span class="mi">2</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
+        <span class="k">return</span> <span class="p">(</span><span class="n">n</span> <span class="o">//</span> <span class="mi">2</span><span class="p">)</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="k">return</span> <span class="p">(</span><span class="mi">3</span> <span class="o">*</span> <span class="n">n</span> <span class="o">+</span> <span class="mi">1</span><span class="p">)</span>
+</code></pre></div></p>
+</div>
+<p>Si l'on souhaite tester plusieurs expressions, on peut utiliser le 
+mot-clé <code>elif</code>, autant de fois que nécessaire entre <code>if</code> et <code>else</code>.
+(<code>elif</code> signifie <em>sinon si</em>).</p>
+<div class="highlight"><pre><span></span><code><span class="k">if</span> <span class="n">expression_1</span> <span class="p">:</span>
+    <span class="n">bloc</span> <span class="n">d</span><span class="err">’</span><span class="n">instructions</span> <span class="n">exécuté</span> <span class="n">si</span> <span class="n">expression_1</span> <span class="n">vaut</span> <span class="kc">True</span> 
+<span class="k">elif</span> <span class="n">expression_2</span> <span class="p">:</span>
+    <span class="n">bloc</span> <span class="n">d</span><span class="err">’</span><span class="n">instructions</span> <span class="n">exécuté</span> <span class="n">si</span> <span class="n">expression_2</span> <span class="n">vaut</span> <span class="kc">True</span>
+<span class="k">else</span> <span class="p">:</span>
+    <span class="n">bloc</span> <span class="n">d</span><span class="err">’</span><span class="n">instructions</span> <span class="n">exécuté</span> <span class="n">si</span> <span class="n">expression_2</span> <span class="n">et</span> <span class="n">expression_1</span> <span class="n">valent</span> <span class="kc">False</span>
+</code></pre></div>
+<h3 id="structures-de-repetition">Structures de répétition</h3>
+<h4 id="boucles-non-bornees">Boucles non bornées</h4>
+<p>En Python, une boucle non bornée est introduite par le mot clé <code>while</code> dont la syntaxe est :
+<div class="highlight"><pre><span></span><code><span class="k">while</span> <span class="n">expression</span> <span class="p">:</span>
+    <span class="n">bloc</span> <span class="n">d</span><span class="err">’</span><span class="n">instructions</span> <span class="n">à</span> <span class="n">répéter</span> <span class="n">tant</span> <span class="n">que</span> <span class="n">expression</span> <span class="n">a</span> <span class="n">pour</span> <span class="n">valeur</span> <span class="kc">True</span> 
+</code></pre></div>
+Cette boucle permet de répéter un bloc d'instructions tant qu'une expression (booléenne) est vraie.
+On utilise généralement cette boucle lorsqu'on ne connait pas le nombre d'itérations au préalable.</p>
+<div class="admonition tip">
+<p>Après exécution du script suivant, quelle est la valeur de <code>rebondir(1)</code> et <code>rebondir(2)</code> ? Quelle interprétation donner aux valeurs affichées ?
+<div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">rebondir</span><span class="p">(</span><span class="n">h</span><span class="p">):</span>
+    <span class="n">hauteur</span> <span class="o">=</span> <span class="n">h</span>
+    <span class="n">rebond</span> <span class="o">=</span> <span class="mi">0</span>
+    <span class="k">while</span> <span class="n">hauteur</span> <span class="o">&gt;</span> <span class="mf">0.1</span> <span class="p">:</span>
+        <span class="n">hauteur</span> <span class="o">=</span> <span class="n">hauteur</span> <span class="o">*</span> <span class="mf">0.9</span>
+        <span class="n">rebond</span> <span class="o">=</span> <span class="n">rebond</span> <span class="o">+</span> <span class="mi">1</span>
+    <span class="k">return</span> <span class="p">(</span><span class="n">rebond</span><span class="p">,</span> <span class="n">hauteur</span><span class="p">)</span>
+</code></pre></div></p>
+</div>
+<p>Les boucles <code>while</code> présentent un risque de boucle infinie. 
+Pour que la boucle prenne fin, il faut s'assurer que l'expression qui conditionne l'exécution du corps de la boucle prendra la valeur <code>False</code>, éventuellement après de très nombreuses étapes. Il faut donc s’assurer que la valeur de cette expression est bien modifiée par les instructions du corps de la boucle (ou par un événement).</p>
+<div class="admonition abstract">
+<p class="admonition-title">Exemple :</p>
+<p>La boucle suivante ne se termine jamais : la variable <code>valeur</code> n'est jamais modifiée dans le corps de la boucle. Seule une action de l’utilisateur peut interrompre l'exécution du programme.</p>
+<div class="highlight"><pre><span></span><code><span class="n">compteur</span> <span class="o">=</span> <span class="mi">0</span>
+<span class="n">valeur</span> <span class="o">=</span> <span class="mi">0</span>
+<span class="k">while</span> <span class="n">valeur</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
+    <span class="n">compteur</span> <span class="o">=</span> <span class="n">compteur</span> <span class="o">+</span> <span class="mi">1</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">compteur</span><span class="p">)</span>
+</code></pre></div>
+</div>
+<p>À l'inverse, si l'expression qui conditionne l'exécution du corps de la boucle a pour valeur <code>False</code> dès le départ, le corps de la boucle n’est jamais exécuté. </p>
+<h4 id="boucles-bornees">Boucles bornées</h4>
+<p>En Python, la boucle bornée est introduite par le mot clé <code>for</code> dont la syntaxe est :</p>
+<div class="highlight"><pre><span></span><code><span class="k">for</span> <span class="n">iterateur</span> <span class="ow">in</span> <span class="n">sequence</span><span class="p">:</span>
+    <span class="n">bloc</span> <span class="n">d</span><span class="s1">&#39;instructions</span>
+</code></pre></div>
+<p>L'itérateur est une variable à laquelle il faut donner un nom, et qui prend successivement les valeurs des éléments de la séquence. <br />
+Le bloc d'instructions à exécuter dans le corps de la boucle est à indenter.</p>
+<p>En première approche, on peut utiliser l'instruction suivante pour répéter <code>n</code> fois un bloc d'instructions :<br />
+<div class="highlight"><pre><span></span><code><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">n</span><span class="p">):</span>
+    <span class="n">bloc</span> <span class="n">à</span> <span class="n">répéter</span> <span class="n">n</span> <span class="n">fois</span><span class="p">,</span> <span class="n">i</span> <span class="n">prenant</span> <span class="n">les</span> <span class="n">valeurs</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="o">...</span><span class="p">,</span> <span class="n">n</span> <span class="err">−</span> <span class="mi">1</span>
+</code></pre></div></p>
+<p>La fonction <code>range</code> peut prendre 1, 2 ou 3 arguments.</p>
+<ul>
+<li><code>for i in range(fin)</code> : <code>i</code> prend les valeurs de 0 à <code>fin</code> − 1</li>
+<li><code>for i in range(debut, fin)</code> : <code>i</code> prend les valeurs de <code>debut</code> à <code>fin</code> − 1</li>
+<li><code>for i in range(debut, fin, pas)</code> : <code>i</code> prend les valeurs <code>debut</code>, <code>debut</code> + <code>pas</code>, <code>debut</code> + 2<code>pas</code> ,... jusqu’à ce que <code>fin</code> − 1 soit atteint ou dépassé.</li>
+</ul>
+<div class="admonition abstract">
+<p class="admonition-title">Exemple :</p>
+<p><code>range(10)</code> génère la liste 0, 1, 2, 3, 4, 5, 6, 7, 8, 9  </p>
+<p><code>range(4, 10)</code> génère la liste 4, 5, 6, 7, 8, 9  </p>
+<p><code>range(1, 12, 3)</code> génère la liste 1, 4, 7, 10</p>
+<p><code>range(5, -1, -1)</code> génère la liste 5, 4, 3, 2, 1, 0</p>
+</div>
+<p>L'objet renvoyé par <code>range()</code> se comporte presque comme une liste, mais n'en est pas une. Cet objet génère les éléments de la séquence au fur et à mesure de l'itération, sans réellement produire la liste en tant que telle.</p>
+<div class="admonition tip">
+<p>Après exécution du script suivant, quelle est la valeur de <code>cumul_carre(2)</code> et de <code>cumul_carre(100)</code>?</p>
+<div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">cumul_carre</span><span class="p">(</span><span class="n">n</span><span class="p">):</span>
+    <span class="n">somme</span> <span class="o">=</span> <span class="mi">0</span>
+    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">n</span> <span class="o">+</span> <span class="mi">1</span><span class="p">):</span>
+        <span class="n">somme</span> <span class="o">=</span> <span class="n">somme</span> <span class="o">+</span> <span class="n">i</span> <span class="o">**</span> <span class="mi">2</span>
+    <span class="k">return</span> <span class="p">(</span><span class="n">somme</span><span class="p">)</span>
+</code></pre></div>
+</div>
+<p>La boucle <code>for</code> en Python permet de parcourir n’importe quelle séquence : chaine de caratères, liste, p-uplet, etc. </p>
+<p>Par exemple : <code>for c in "Bonjour"</code> permet à la variable <code>c</code> de prendre successivement la valeur de chacun des caractères de la chaine "Bonjour". </p>
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+        
+          <a href="#" class="md-top md-icon" data-md-component="top" data-md-state="hidden">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12z"/></svg>
+          </a>
+        
+      </main>
+      
+        
+<footer class="md-footer">
+  
+    <nav class="md-footer__inner md-grid" aria-label="Footer">
+      
+        <a href="../interfaces_python/" class="md-footer__link md-footer__link--prev" rel="prev">
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+          </div>
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Précédent
+              </span>
+              Interfaces python
+            </div>
+          </div>
+        </a>
+      
+      
+        <a href="../scratch_python/" class="md-footer__link md-footer__link--next" rel="next">
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Suivant
+              </span>
+              Scratch & Python
+            </div>
+          </div>
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4z"/></svg>
+          </div>
+        </a>
+      
+    </nav>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+          <div class="md-footer-copyright__highlight">
+            Sous licence CC BY-NC-SA 4.0
+          </div>
+        
+        Made with
+        <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+          Material for MkDocs
+        </a>
+        
+      </div>
+      
+  <div class="md-footer-social">
+    
+      
+      
+        
+        
+      
+      <a href="https://github.com/nweibel" target="_blank" rel="noopener" title="github.com" class="md-footer-social__link">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 512"><path d="M186.1 328.7c0 20.9-10.9 55.1-36.7 55.1s-36.7-34.2-36.7-55.1 10.9-55.1 36.7-55.1 36.7 34.2 36.7 55.1zM480 278.2c0 31.9-3.2 65.7-17.5 95-37.9 76.6-142.1 74.8-216.7 74.8-75.8 0-186.2 2.7-225.6-74.8-14.6-29-20.2-63.1-20.2-95 0-41.9 13.9-81.5 41.5-113.6-5.2-15.8-7.7-32.4-7.7-48.8 0-21.5 4.9-32.3 14.6-51.8 45.3 0 74.3 9 108.8 36 29-6.9 58.8-10 88.7-10 27 0 54.2 2.9 80.4 9.2 34-26.7 63-35.2 107.8-35.2 9.8 19.5 14.6 30.3 14.6 51.8 0 16.4-2.6 32.7-7.7 48.2 27.5 32.4 39 72.3 39 114.2zm-64.3 50.5c0-43.9-26.7-82.6-73.5-82.6-18.9 0-37 3.4-56 6-14.9 2.3-29.8 3.2-45.1 3.2-15.2 0-30.1-.9-45.1-3.2-18.7-2.6-37-6-56-6-46.8 0-73.5 38.7-73.5 82.6 0 87.8 80.4 101.3 150.4 101.3h48.2c70.3 0 150.6-13.4 150.6-101.3zm-82.6-55.1c-25.8 0-36.7 34.2-36.7 55.1s10.9 55.1 36.7 55.1 36.7-34.2 36.7-55.1-10.9-55.1-36.7-55.1z"/></svg>
+      </a>
+    
+      
+      
+        
+        
+      
+      <a href="https://twitter.com/nathalieweibel" target="_blank" rel="noopener" title="twitter.com" class="md-footer-social__link">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"/></svg>
+      </a>
+    
+  </div>
+
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.tabs", "navigation.sections", "navigation.top"], "translations": {"clipboard.copy": "Copier dans le presse-papier", "clipboard.copied": "Copi\u00e9 dans le presse-papier", "search.config.lang": "fr", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Rechercher", "search.result.placeholder": "Taper pour d\u00e9marrer la recherche", "search.result.none": "Aucun document trouv\u00e9", "search.result.one": "1 document trouv\u00e9", "search.result.other": "# documents trouv\u00e9s", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing"}, "search": "../../assets/javascripts/workers/search.fe42c31b.min.js", "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.4ea5477f.min.js"></script>
+      
+        <script src="../../javascripts/mathjax-config.js"></script>
+      
+        <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+      
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/tablesort/5.2.1/tablesort.min.js"></script>
+      
+        <script src="../../javascripts/tables.js"></script>
+      
+        <script src="https://unpkg.com/mermaid@8.9.2/dist/mermaid.min.js"></script>
+      
+        <script src="../../javascripts/mermaid.js"></script>
+      
+    
+  </body>
+</html>

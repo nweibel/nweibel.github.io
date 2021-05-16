@@ -271,6 +271,29 @@
   
 
       
+        
+  
+  
+
+
+  
+  
+  
+    
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../formation/interfaces_python/" class="md-tabs__link">
+        Formation
+      </a>
+    </li>
+  
+
+  
+
+      
     </ul>
   </div>
 </nav>
@@ -804,20 +827,20 @@
   
 
           
+        </ul>
+      </nav>
+    </li>
+  
+
+          
             
   
   
   
     <li class="md-nav__item">
-      <a href="../../jupyter/p5/" class="md-nav__link">
-        p5
+      <a href="../../jupyter/memo/" class="md-nav__link">
+        Mémos
       </a>
-    </li>
-  
-
-          
-        </ul>
-      </nav>
     </li>
   
 
@@ -1293,6 +1316,125 @@
   
 
     
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_7" type="checkbox" id="__nav_7" >
+      
+      <label class="md-nav__link" for="__nav_7">
+        Formation
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="Formation" data-md-level="1">
+        <label class="md-nav__title" for="__nav_7">
+          <span class="md-nav__icon md-icon"></span>
+          Formation
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    
+      
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_7_1" type="checkbox" id="__nav_7_1" >
+      
+      <label class="md-nav__link" for="__nav_7_1">
+        Python pour l'enseignant de mathématiques
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="Python pour l'enseignant de mathématiques" data-md-level="2">
+        <label class="md-nav__title" for="__nav_7_1">
+          <span class="md-nav__icon md-icon"></span>
+          Python pour l'enseignant de mathématiques
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../formation/interfaces_python/" class="md-nav__link">
+        Interfaces python
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../formation/initiation_python/" class="md-nav__link">
+        Initiation python
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../formation/scratch_python/" class="md-nav__link">
+        Scratch & Python
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../formation/competences/" class="md-nav__link">
+        Compétences
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../formation/exercices_python_math/" class="md-nav__link">
+        Exercices
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
   </ul>
 </nav>
                   </div>
@@ -1387,7 +1529,6 @@ En l'absence de <code>return</code> la fonction peut par exemple réaliser des a
 <div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">f</span><span class="p">(</span><span class="n">x</span><span class="p">,</span><span class="n">y</span><span class="p">):</span>
     <span class="k">return</span> <span class="n">x</span> <span class="o">**</span> <span class="mi">2</span> <span class="o">-</span> <span class="n">y</span> <span class="o">**</span> <span class="mi">2</span>
 </code></pre></div>
-
 <p>Cette fonction s'appelle <code>f</code>, elle demande deux paramètres et elle renvoie la différence des carrés des paramètres.</p>
 </div>
 <div class="admonition abstract">
@@ -1395,14 +1536,12 @@ En l'absence de <code>return</code> la fonction peut par exemple réaliser des a
 <div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">validation</span><span class="p">(</span><span class="n">mot</span><span class="p">):</span>
     <span class="k">return</span> <span class="n">mot</span> <span class="o">==</span> <span class="s1">&#39;secret123&#39;</span>
 </code></pre></div>
-
 <p>Cette fonction s'appelle <code>validation</code>, elle demande un seul paramètre et elle renvoie <code>True</code> si le paramètre est égal à la chaine 'secret123' et <code>False</code>sinon.</p>
 </div>
 <h2 id="lappel-dune-fonction">L'appel d'une fonction</h2>
 <p>La syntaxe de l'appel d'une fonction est :</p>
 <div class="highlight"><pre><span></span><code><span class="n">nom_de_la_fonction</span><span class="p">(</span><span class="n">valeurs_des_parametres</span><span class="p">)</span>
 </code></pre></div>
-
 <p>Lors de la définition d'une fonction, le type des paramètres n'est pas précisé. Lors de l'appel de la fonction, il est nécessaire que les instructions exécutées soient compatibles avec les types des valeurs des paramètres.</p>
 <div class="admonition abstract">
 <p class="admonition-title">Exemple 1 : fonction <code>f</code> </p>
@@ -1560,7 +1699,7 @@ Néanmoins l'exécution de la fonction ne déclenche pas d'erreur : elle renvoie
     <div class="md-dialog" data-md-component="dialog">
       <div class="md-dialog__inner md-typeset"></div>
     </div>
-    <script id="__config" type="application/json">{"base": "../..", "features": ["tabs", "navigation.tabs", "navigation.sections", "navigation.top"], "translations": {"clipboard.copy": "Copier dans le presse-papier", "clipboard.copied": "Copi\u00e9 dans le presse-papier", "search.config.lang": "fr", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Rechercher", "search.result.placeholder": "Taper pour d\u00e9marrer la recherche", "search.result.none": "Aucun document trouv\u00e9", "search.result.one": "1 document trouv\u00e9", "search.result.other": "# documents trouv\u00e9s", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing"}, "search": "../../assets/javascripts/workers/search.fe42c31b.min.js", "version": null}</script>
+    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.tabs", "navigation.sections", "navigation.top"], "translations": {"clipboard.copy": "Copier dans le presse-papier", "clipboard.copied": "Copi\u00e9 dans le presse-papier", "search.config.lang": "fr", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Rechercher", "search.result.placeholder": "Taper pour d\u00e9marrer la recherche", "search.result.none": "Aucun document trouv\u00e9", "search.result.one": "1 document trouv\u00e9", "search.result.other": "# documents trouv\u00e9s", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing"}, "search": "../../assets/javascripts/workers/search.fe42c31b.min.js", "version": null}</script>
     
     
       <script src="../../assets/javascripts/bundle.4ea5477f.min.js"></script>

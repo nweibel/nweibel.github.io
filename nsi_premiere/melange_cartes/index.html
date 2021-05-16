@@ -271,6 +271,29 @@
   
 
       
+        
+  
+  
+
+
+  
+  
+  
+    
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../formation/interfaces_python/" class="md-tabs__link">
+        Formation
+      </a>
+    </li>
+  
+
+  
+
+      
     </ul>
   </div>
 </nav>
@@ -739,20 +762,20 @@
   
 
           
+        </ul>
+      </nav>
+    </li>
+  
+
+          
             
   
   
   
     <li class="md-nav__item">
-      <a href="../../jupyter/p5/" class="md-nav__link">
-        p5
+      <a href="../../jupyter/memo/" class="md-nav__link">
+        Mémos
       </a>
-    </li>
-  
-
-          
-        </ul>
-      </nav>
     </li>
   
 
@@ -1366,6 +1389,125 @@
   
 
     
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_7" type="checkbox" id="__nav_7" >
+      
+      <label class="md-nav__link" for="__nav_7">
+        Formation
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="Formation" data-md-level="1">
+        <label class="md-nav__title" for="__nav_7">
+          <span class="md-nav__icon md-icon"></span>
+          Formation
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    
+      
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_7_1" type="checkbox" id="__nav_7_1" >
+      
+      <label class="md-nav__link" for="__nav_7_1">
+        Python pour l'enseignant de mathématiques
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="Python pour l'enseignant de mathématiques" data-md-level="2">
+        <label class="md-nav__title" for="__nav_7_1">
+          <span class="md-nav__icon md-icon"></span>
+          Python pour l'enseignant de mathématiques
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../formation/interfaces_python/" class="md-nav__link">
+        Interfaces python
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../formation/initiation_python/" class="md-nav__link">
+        Initiation python
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../formation/scratch_python/" class="md-nav__link">
+        Scratch & Python
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../formation/competences/" class="md-nav__link">
+        Compétences
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../formation/exercices_python_math/" class="md-nav__link">
+        Exercices
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
   </ul>
 </nav>
                   </div>
@@ -1517,7 +1659,6 @@
 Créer le tableau <code>jeu32</code>, contenant les 32 entiers entre 1 et 32. </p>
 <div class="highlight"><pre><span></span><code><span class="n">jeu32</span> <span class="o">=</span> <span class="p">[</span> <span class="err">…</span> <span class="p">]</span> <span class="c1"># à compléter</span>
 </code></pre></div>
-
 </div>
 <p>Pour réaliser un <strong>mélange parfait</strong> d'un jeu de cartes, on le sépare en 2 paquets de même taille avant de mélanger ensemble les 2 paquets créés. </p>
 <p>Les fonctions ci-dessous permettent de récupérer la moitié du "dessus" et la moitié du "dessous" d'un jeu de cartes. </p>
@@ -1527,7 +1668,6 @@ Créer le tableau <code>jeu32</code>, contenant les 32 entiers entre 1 et 32. </
 <span class="k">def</span> <span class="nf">dessous</span><span class="p">(</span><span class="n">tab</span><span class="p">):</span>
     <span class="k">return</span><span class="p">(</span><span class="n">tab</span><span class="p">[</span><span class="nb">len</span><span class="p">(</span><span class="n">tab</span><span class="p">)</span> <span class="o">//</span> <span class="mi">2</span> <span class="p">:])</span>
 </code></pre></div>
-
 <div class="admonition example">
 <p class="admonition-title">À réaliser</p>
 <p>Exécuter les appels <code>dessus(jeu32)</code> et <code>dessous(jeu32)</code> et observer le résultat produit.</p>
@@ -1572,13 +1712,11 @@ Les cartes extrêmes (1 et 8) sont désormais à l'intérieur du paquet mélang�
         <span class="n">tab2</span><span class="p">[</span><span class="mi">2</span> <span class="o">*</span> <span class="n">i</span> <span class="o">+</span> <span class="mi">1</span><span class="p">]</span> <span class="o">=</span> <span class="err">…</span> 
     <span class="k">return</span> <span class="n">tab2</span>
 </code></pre></div>
-
 <div class="admonition example">
 <p class="admonition-title">À réaliser</p>
 <p>Vérifier qu'un mélange de <code>jeu32</code> avec la fonction <code>outshuffle</code> donne bien le résultat attendu.</p>
 <div class="highlight"><pre><span></span><code><span class="k">assert</span><span class="p">(</span><span class="n">outshuffle</span><span class="p">(</span><span class="n">jeu32</span><span class="p">)</span> <span class="o">==</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">17</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">18</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">19</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">20</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">21</span><span class="p">,</span> <span class="mi">6</span><span class="p">,</span> <span class="mi">22</span><span class="p">,</span> <span class="mi">7</span><span class="p">,</span> <span class="mi">23</span><span class="p">,</span> <span class="mi">8</span><span class="p">,</span> <span class="mi">24</span><span class="p">,</span> <span class="mi">9</span><span class="p">,</span> <span class="mi">25</span><span class="p">,</span> <span class="mi">10</span><span class="p">,</span> <span class="mi">26</span><span class="p">,</span> <span class="mi">11</span><span class="p">,</span> <span class="mi">27</span><span class="p">,</span> <span class="mi">12</span><span class="p">,</span> <span class="mi">28</span><span class="p">,</span> <span class="mi">13</span><span class="p">,</span> <span class="mi">29</span><span class="p">,</span> <span class="mi">14</span><span class="p">,</span> <span class="mi">30</span><span class="p">,</span> <span class="mi">15</span><span class="p">,</span> <span class="mi">31</span><span class="p">,</span> <span class="mi">16</span><span class="p">,</span> <span class="mi">32</span><span class="p">])</span>
 </code></pre></div>
-
 </div>
 <h3 id="22-apres-plusieurs-melanges">2.2 Après plusieurs mélanges</h3>
 <div class="admonition question">
@@ -1608,7 +1746,6 @@ Les cartes extrêmes (1 et 8) sont désormais à l'intérieur du paquet mélang�
         <span class="n">tab</span> <span class="o">=</span> <span class="n">outshuffle</span><span class="p">(</span><span class="n">tab</span><span class="p">)</span>
     <span class="k">return</span> <span class="n">compteur</span>
 </code></pre></div>
-
 <h3 id="23-trajectoire-dune-carte-fixee">2.3 Trajectoire d'une carte fixée</h3>
 <p>On s'intéresse dans cette partie à toutes les positions occupées par la carte 2 du jeu <code>jeu32</code> au cours des mélanges successifs jusqu'à revenir à la configuration initiale du jeu.</p>
 <div class="admonition info">
@@ -1620,10 +1757,8 @@ Les cartes extrêmes (1 et 8) sont désormais à l'intérieur du paquet mélang�
 <p>Dans le tableau <code>jeu32</code>, la carte 2 apparaît en 2e position, c'est-à-dire avec l'indice 1.</p>
 <div class="highlight"><pre><span></span><code><span class="n">jeu32</span><span class="o">.</span><span class="n">index</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>
 </code></pre></div>
-
-<div class="codehilite"><pre><span></span><code><span class="err">1</span>
+<div class="codehilite"><pre><span></span><code><span class="mf">1</span>
 </code></pre></div>
-
 
 <p>Il peut être intéressant de constater que cette valeur est le nombre de cartes "au-dessus" de la carte 2 dans le paquet. </p>
 </div>
@@ -1684,7 +1819,6 @@ En particulier, à partir de l'indice de la dernière ligne du tableau, la formu
         <span class="n">tab</span> <span class="o">=</span> <span class="n">outshuffle</span><span class="p">(</span><span class="n">tab</span><span class="p">)</span>
     <span class="k">return</span> <span class="n">orbite</span>
 </code></pre></div>
-
 <div class="admonition question">
 <p class="admonition-title">Question 8</p>
 <p>Utiliser la fonction précédente pour explorer les indices de quelques cartes du tableau <code>jeu32</code> lorsqu'on effectue des mélanges out-shuffle jusqu'à revenir à la configuration de départ.<br />
@@ -1696,7 +1830,6 @@ En particulier, à partir de l'indice de la dernière ligne du tableau, la formu
 <div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">orbite_conjecture_out</span><span class="p">(</span><span class="n">valeur</span><span class="p">):</span>
    <span class="c1"># à compléter</span>
 </code></pre></div>
-
 </div>
 <div class="admonition question">
 <p class="admonition-title">Question 10</p>
@@ -1704,7 +1837,6 @@ En particulier, à partir de l'indice de la dernière ligne du tableau, la formu
 <div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">validation_conjecture_out</span><span class="p">(</span><span class="n">tab</span><span class="p">):</span>
     <span class="c1"># à compléter</span>
 </code></pre></div>
-
 </div>
 <h3 id="25-synthese">2.5 Synthèse</h3>
 <div class="admonition question">
@@ -1720,7 +1852,6 @@ En particulier, à partir de l'indice de la dernière ligne du tableau, la formu
 <div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">inshuffle</span><span class="p">(</span><span class="n">tab</span><span class="p">):</span>
    <span class="c1"># à compléter</span>
 </code></pre></div>
-
 </div>
 <h3 id="32-apres-plusieurs-melanges">3.2 Après plusieurs mélanges</h3>
 <div class="admonition question">
@@ -1780,7 +1911,6 @@ En particulier, à partir de l'indice de la dernière ligne du tableau, la formu
         <span class="n">tab</span> <span class="o">=</span> <span class="n">inshuffle</span><span class="p">(</span><span class="n">tab</span><span class="p">)</span>
     <span class="k">return</span> <span class="n">orbite</span>
 </code></pre></div>
-
 <div class="admonition question">
 <p class="admonition-title">Question 16</p>
 <p>Utiliser la fonction précédente pour explorer les indices de quelques cartes du tableau <code>jeu32</code> lorsqu'on effectue des mélanges in-shuffle jusqu'à revenir à la configuration de départ.<br />
@@ -1792,7 +1922,6 @@ En particulier, à partir de l'indice de la dernière ligne du tableau, la formu
 <div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">orbite_conjecture_in</span><span class="p">(</span><span class="n">valeur</span><span class="p">):</span>
    <span class="c1"># à compléter</span>
 </code></pre></div>
-
 </div>
 <div class="admonition question">
 <p class="admonition-title">Question 18</p>
@@ -1800,7 +1929,6 @@ En particulier, à partir de l'indice de la dernière ligne du tableau, la formu
 <div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">validation_conjecture_in</span><span class="p">(</span><span class="n">tab</span><span class="p">):</span>
     <span class="c1"># à compléter</span>
 </code></pre></div>
-
 </div>
 <h3 id="35-synthese">3.5 Synthèse</h3>
 <div class="admonition question">
@@ -1905,7 +2033,7 @@ En particulier, à partir de l'indice de la dernière ligne du tableau, la formu
     <div class="md-dialog" data-md-component="dialog">
       <div class="md-dialog__inner md-typeset"></div>
     </div>
-    <script id="__config" type="application/json">{"base": "../..", "features": ["tabs", "navigation.tabs", "navigation.sections", "navigation.top"], "translations": {"clipboard.copy": "Copier dans le presse-papier", "clipboard.copied": "Copi\u00e9 dans le presse-papier", "search.config.lang": "fr", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Rechercher", "search.result.placeholder": "Taper pour d\u00e9marrer la recherche", "search.result.none": "Aucun document trouv\u00e9", "search.result.one": "1 document trouv\u00e9", "search.result.other": "# documents trouv\u00e9s", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing"}, "search": "../../assets/javascripts/workers/search.fe42c31b.min.js", "version": null}</script>
+    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.tabs", "navigation.sections", "navigation.top"], "translations": {"clipboard.copy": "Copier dans le presse-papier", "clipboard.copied": "Copi\u00e9 dans le presse-papier", "search.config.lang": "fr", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Rechercher", "search.result.placeholder": "Taper pour d\u00e9marrer la recherche", "search.result.none": "Aucun document trouv\u00e9", "search.result.one": "1 document trouv\u00e9", "search.result.other": "# documents trouv\u00e9s", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing"}, "search": "../../assets/javascripts/workers/search.fe42c31b.min.js", "version": null}</script>
     
     
       <script src="../../assets/javascripts/bundle.4ea5477f.min.js"></script>

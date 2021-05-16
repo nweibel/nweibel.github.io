@@ -271,6 +271,29 @@
   
 
       
+        
+  
+  
+
+
+  
+  
+  
+    
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../formation/interfaces_python/" class="md-tabs__link">
+        Formation
+      </a>
+    </li>
+  
+
+  
+
+      
     </ul>
   </div>
 </nav>
@@ -739,20 +762,20 @@
   
 
           
+        </ul>
+      </nav>
+    </li>
+  
+
+          
             
   
   
   
     <li class="md-nav__item">
-      <a href="../../jupyter/p5/" class="md-nav__link">
-        p5
+      <a href="../../jupyter/memo/" class="md-nav__link">
+        Mémos
       </a>
-    </li>
-  
-
-          
-        </ul>
-      </nav>
     </li>
   
 
@@ -1428,6 +1451,125 @@
   
 
     
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_7" type="checkbox" id="__nav_7" >
+      
+      <label class="md-nav__link" for="__nav_7">
+        Formation
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="Formation" data-md-level="1">
+        <label class="md-nav__title" for="__nav_7">
+          <span class="md-nav__icon md-icon"></span>
+          Formation
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    
+      
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_7_1" type="checkbox" id="__nav_7_1" >
+      
+      <label class="md-nav__link" for="__nav_7_1">
+        Python pour l'enseignant de mathématiques
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="Python pour l'enseignant de mathématiques" data-md-level="2">
+        <label class="md-nav__title" for="__nav_7_1">
+          <span class="md-nav__icon md-icon"></span>
+          Python pour l'enseignant de mathématiques
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../formation/interfaces_python/" class="md-nav__link">
+        Interfaces python
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../formation/initiation_python/" class="md-nav__link">
+        Initiation python
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../formation/scratch_python/" class="md-nav__link">
+        Scratch & Python
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../formation/competences/" class="md-nav__link">
+        Compétences
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../formation/exercices_python_math/" class="md-nav__link">
+        Exercices
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
   </ul>
 </nav>
                   </div>
@@ -1659,7 +1801,6 @@ Que constate-t-on ? À quoi correspondent les 0 et les 9 ?</li>
                   <span class="s2">&quot;90909&quot;</span><span class="p">)</span>
 <span class="n">display</span><span class="o">.</span><span class="n">show</span><span class="p">(</span><span class="n">Image</span><span class="o">.</span><span class="n">mon_image</span><span class="p">)</span>
 </code></pre></div>
-
 <ul>
 <li>Dessiner sur une feuille à l'aide d'un quadrillage de 5 carreaux sur 5 une image personnelle et modifier le programme précédent pour la faire apparaître sur la carte micro:bit.</li>
 </ul>
@@ -1667,37 +1808,35 @@ Que constate-t-on ? À quoi correspondent les 0 et les 9 ?</li>
 <p><a href="../python_leds5x5"><span class="item led">led</span></a></p>
 <p><img alt="" src="../../images/mb_python_ex1.gif" /></p>
 <p>Créer une animation affichant successivement et en boucle deux images prédéfinies, par exemple Image.SQUARE et Image.SQUARE_SMALL.</p>
-<details class="abstract"><summary>Aide : une proposition à compléter</summary><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1
-2
-3</pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="kn">from</span> <span class="nn">microbit</span> <span class="kn">import</span> <span class="o">*</span>
+<details class="abstract"><summary>Aide : une proposition à compléter</summary><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="kn">from</span> <span class="nn">microbit</span> <span class="kn">import</span> <span class="o">*</span>
 <span class="n">mes_images</span> <span class="o">=</span> <span class="p">[</span><span class="n">Image</span><span class="o">.</span><span class="n">SQUARE</span><span class="p">,</span> <span class="n">Image</span><span class="o">.</span><span class="n">SQUARE_SMALL</span><span class="p">]</span> 
 <span class="n">display</span><span class="o">.</span><span class="n">show</span><span class="p">(</span><span class="o">...</span><span class="p">,</span> <span class="n">delay</span><span class="o">=...</span><span class="p">,</span> <span class="n">loop</span><span class="o">=...</span><span class="p">)</span>
 </code></pre></div>
 </td></tr></table>
-
 </details>
-<details class="success"><summary>Une solution</summary><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1
-2
-3</pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="kn">from</span> <span class="nn">microbit</span> <span class="kn">import</span> <span class="o">*</span>
+<details class="success"><summary>Une solution</summary><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="kn">from</span> <span class="nn">microbit</span> <span class="kn">import</span> <span class="o">*</span>
 <span class="n">mes_images</span> <span class="o">=</span> <span class="p">[</span><span class="n">Image</span><span class="o">.</span><span class="n">SQUARE</span><span class="p">,</span> <span class="n">Image</span><span class="o">.</span><span class="n">SQUARE_SMALL</span><span class="p">]</span> 
 <span class="n">display</span><span class="o">.</span><span class="n">show</span><span class="p">(</span><span class="n">mes_images</span><span class="p">,</span> <span class="n">delay</span><span class="o">=</span><span class="mi">500</span><span class="p">,</span> <span class="n">loop</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
 </code></pre></div>
 </td></tr></table>
-
 </details>
 <h2 id="2-faire-clignoter-une-led">2. Faire clignoter une LED</h2>
 <h3 id="21-faire-clignoter-une-led-de-la-carte">2.1 Faire clignoter une LED de la carte</h3>
 <p><a href="../python_leds5x5"><span class="item led">led</span></a></p>
 <p><img alt="" src="../../images/mb_python_ex2.gif" /></p>
 <p>Choisir l'une des LED de la carte et la faire clignoter.</p>
-<details class="abstract"><summary>Aide : une proposition à compléter</summary><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1
-2
-3
-4
-5
-6
-7
-8</pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="kn">from</span> <span class="nn">microbit</span> <span class="kn">import</span> <span class="o">*</span>
+<details class="abstract"><summary>Aide : une proposition à compléter</summary><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span>
+<span class="normal">5</span>
+<span class="normal">6</span>
+<span class="normal">7</span>
+<span class="normal">8</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="kn">from</span> <span class="nn">microbit</span> <span class="kn">import</span> <span class="o">*</span>
 <span class="k">while</span> <span class="kc">True</span><span class="p">:</span>
     <span class="c1"># choisir un pixel à allumer</span>
     <span class="n">display</span><span class="o">.</span><span class="n">set_pixel</span><span class="p">(</span><span class="o">...</span><span class="p">,</span> <span class="o">...</span><span class="p">,</span> <span class="mi">9</span><span class="p">)</span>
@@ -1707,14 +1846,13 @@ Que constate-t-on ? À quoi correspondent les 0 et les 9 ?</li>
     <span class="n">sleep</span><span class="p">(</span><span class="mi">500</span><span class="p">)</span>
 </code></pre></div>
 </td></tr></table>
-
 </details>
-<details class="success"><summary>Une solution</summary><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1
-2
-3
-4
-5
-6</pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="kn">from</span> <span class="nn">microbit</span> <span class="kn">import</span> <span class="o">*</span>
+<details class="success"><summary>Une solution</summary><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span>
+<span class="normal">5</span>
+<span class="normal">6</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="kn">from</span> <span class="nn">microbit</span> <span class="kn">import</span> <span class="o">*</span>
 <span class="k">while</span> <span class="kc">True</span><span class="p">:</span>
     <span class="n">display</span><span class="o">.</span><span class="n">set_pixel</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">9</span><span class="p">)</span>
     <span class="n">sleep</span><span class="p">(</span><span class="mi">500</span><span class="p">)</span>
@@ -1722,7 +1860,6 @@ Que constate-t-on ? À quoi correspondent les 0 et les 9 ?</li>
     <span class="n">sleep</span><span class="p">(</span><span class="mi">500</span><span class="p">)</span>
 </code></pre></div>
 </td></tr></table>
-
 </details>
 <h3 id="22-faire-varier-le-rythme-avec-un-potentiometre">2.2 Faire varier le rythme avec un potentiomètre</h3>
 <p><a href="../python_leds5x5"><span class="item led">led</span></a>
@@ -1734,13 +1871,13 @@ La fonction <code>pin0.read_analog()</code> renvoie une valeur qui dépend de l'
 <li>Modifier le programme précédent en ajoutant au début de la boucle <code>while</code> l'intruction : <code>mesure = pin0.read_analog()</code> puis en remplaçant les temps durant lesquels la LED est allumée ou éteinte par <code>mesure</code>.</li>
 <li>Quel effet observe-t-on sur le clignotement lorsque l'on tourne l'axe du potentiomètre ?</li>
 </ul>
-<details class="success"><summary>Une solution</summary><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1
-2
-3
-4
-5
-6
-7</pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="kn">from</span> <span class="nn">microbit</span> <span class="kn">import</span> <span class="o">*</span>
+<details class="success"><summary>Une solution</summary><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span>
+<span class="normal">5</span>
+<span class="normal">6</span>
+<span class="normal">7</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="kn">from</span> <span class="nn">microbit</span> <span class="kn">import</span> <span class="o">*</span>
 <span class="k">while</span> <span class="kc">True</span><span class="p">:</span>
     <span class="n">mesure</span> <span class="o">=</span> <span class="n">pin0</span><span class="o">.</span><span class="n">read_analog</span><span class="p">()</span> 
     <span class="n">display</span><span class="o">.</span><span class="n">set_pixel</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">9</span><span class="p">)</span>
@@ -1749,7 +1886,6 @@ La fonction <code>pin0.read_analog()</code> renvoie une valeur qui dépend de l'
     <span class="n">sleep</span><span class="p">(</span><span class="n">mesure</span><span class="p">)</span>
 </code></pre></div>
 </td></tr></table>
-
 </details>
 <h3 id="23-faire-clignoter-la-led-du-kit-grove">2.3 Faire clignoter la LED du kit Grove</h3>
 <p><a href="../python_grove/#actionneurs"><span class="item grove_led">led grove</span></a>
@@ -1761,13 +1897,13 @@ L'instruction <code>pin1.write_digital(1)</code> permet d'allumer la LED lorsqu'
 <li>Modifier le programme précédent pour faire clignoter la LED Grove, au lieu d'une LED de la carte. </li>
 <li>Le potentiomètre conserve-t-il son  effet ?</li>
 </ul>
-<details class="success"><summary>Une solution</summary><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1
-2
-3
-4
-5
-6
-7</pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="kn">from</span> <span class="nn">microbit</span> <span class="kn">import</span> <span class="o">*</span>
+<details class="success"><summary>Une solution</summary><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span>
+<span class="normal">5</span>
+<span class="normal">6</span>
+<span class="normal">7</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="kn">from</span> <span class="nn">microbit</span> <span class="kn">import</span> <span class="o">*</span>
 <span class="k">while</span> <span class="kc">True</span><span class="p">:</span>
     <span class="n">mesure</span> <span class="o">=</span> <span class="n">pin0</span><span class="o">.</span><span class="n">read_analog</span><span class="p">()</span> 
     <span class="n">pin1</span><span class="o">.</span><span class="n">write_digital</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
@@ -1776,19 +1912,18 @@ L'instruction <code>pin1.write_digital(1)</code> permet d'allumer la LED lorsqu'
     <span class="n">sleep</span><span class="p">(</span><span class="n">mesure</span><span class="p">)</span>
 </code></pre></div>
 </td></tr></table>
-
 </details>
 <h2 id="3-deplacer-un-point-lumineux">3. Déplacer un point lumineux</h2>
 <h3 id="31-programmer-le-deplacement-dun-point-lumineux-sur-la-carte">3.1 Programmer le déplacement d'un point lumineux sur la carte</h3>
 <p><a href="../python_leds5x5"><span class="item led">led</span></a> </p>
 <ul>
 <li>Lire le programme suivant et anticiper l'effet produit sur la carte micro:bit : 
-<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1
-2
-3
-4
-5
-6</pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="kn">from</span> <span class="nn">microbit</span> <span class="kn">import</span> <span class="o">*</span>
+<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span>
+<span class="normal">5</span>
+<span class="normal">6</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="kn">from</span> <span class="nn">microbit</span> <span class="kn">import</span> <span class="o">*</span>
 <span class="k">while</span> <span class="kc">True</span><span class="p">:</span>
     <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">5</span><span class="p">):</span> <span class="c1"># x prend les valeurs 0 à 4</span>
         <span class="n">display</span><span class="o">.</span><span class="n">set_pixel</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">9</span><span class="p">)</span> 
@@ -1800,24 +1935,24 @@ L'instruction <code>pin1.write_digital(1)</code> permet d'allumer la LED lorsqu'
 <li>Indenter l'instruction <code>display.clear()</code> pour qu'elle soit alignée avec le <code>sleep(300)</code> de la ligne 5. Quel effet cela a-t-il sur l'affichage produit sur la carte ? Pourquoi ?</li>
 <li>Poursuivre le programme précédent pour que le point lumineux allumé fasse le tour du carré de 25 LED. </li>
 </ul>
-<details class="abstract"><summary>Aide : une proposition à compléter</summary><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span> 1
- 2
- 3
- 4
- 5
- 6
- 7
- 8
- 9
-10
-11
-12
-13
-14
-15
-16
-17
-18</pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="kn">from</span> <span class="nn">microbit</span> <span class="kn">import</span> <span class="o">*</span>
+<details class="abstract"><summary>Aide : une proposition à compléter</summary><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
+<span class="normal"> 2</span>
+<span class="normal"> 3</span>
+<span class="normal"> 4</span>
+<span class="normal"> 5</span>
+<span class="normal"> 6</span>
+<span class="normal"> 7</span>
+<span class="normal"> 8</span>
+<span class="normal"> 9</span>
+<span class="normal">10</span>
+<span class="normal">11</span>
+<span class="normal">12</span>
+<span class="normal">13</span>
+<span class="normal">14</span>
+<span class="normal">15</span>
+<span class="normal">16</span>
+<span class="normal">17</span>
+<span class="normal">18</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="kn">from</span> <span class="nn">microbit</span> <span class="kn">import</span> <span class="o">*</span>
 <span class="k">while</span> <span class="kc">True</span><span class="p">:</span>
     <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">5</span><span class="p">):</span>   <span class="c1"># x prend les valeurs 0 à 4</span>
         <span class="n">display</span><span class="o">.</span><span class="n">set_pixel</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">9</span><span class="p">)</span> 
@@ -1837,26 +1972,25 @@ L'instruction <code>pin1.write_digital(1)</code> permet d'allumer la LED lorsqu'
         <span class="n">display</span><span class="o">.</span><span class="n">clear</span><span class="p">()</span>
 </code></pre></div>
 </td></tr></table>
-
 </details>
-<details class="success"><summary>Une solution</summary><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span> 1
- 2
- 3
- 4
- 5
- 6
- 7
- 8
- 9
-10
-11
-12
-13
-14
-15
-16
-17
-18</pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="kn">from</span> <span class="nn">microbit</span> <span class="kn">import</span> <span class="o">*</span>
+<details class="success"><summary>Une solution</summary><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
+<span class="normal"> 2</span>
+<span class="normal"> 3</span>
+<span class="normal"> 4</span>
+<span class="normal"> 5</span>
+<span class="normal"> 6</span>
+<span class="normal"> 7</span>
+<span class="normal"> 8</span>
+<span class="normal"> 9</span>
+<span class="normal">10</span>
+<span class="normal">11</span>
+<span class="normal">12</span>
+<span class="normal">13</span>
+<span class="normal">14</span>
+<span class="normal">15</span>
+<span class="normal">16</span>
+<span class="normal">17</span>
+<span class="normal">18</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="kn">from</span> <span class="nn">microbit</span> <span class="kn">import</span> <span class="o">*</span>
 <span class="k">while</span> <span class="kc">True</span><span class="p">:</span>
     <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">5</span><span class="p">):</span>   <span class="c1"># x prend les valeurs 0 à 4</span>
         <span class="n">display</span><span class="o">.</span><span class="n">set_pixel</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">9</span><span class="p">)</span> 
@@ -1876,7 +2010,6 @@ L'instruction <code>pin1.write_digital(1)</code> permet d'allumer la LED lorsqu'
         <span class="n">display</span><span class="o">.</span><span class="n">clear</span><span class="p">()</span>
 </code></pre></div>
 </td></tr></table>
-
 </details>
 <h3 id="32-programmer-le-deplacement-dun-point-lumineux-sur-le-ruban-neopixel">3.2 Programmer le déplacement d'un point lumineux sur le ruban NeoPixel</h3>
 <p><a href="../python_grove/#autres-actionneurs"><span class="item grove_neopixel">neopixel</span></a></p>
@@ -1885,17 +2018,17 @@ L'instruction <code>pin1.write_digital(1)</code> permet d'allumer la LED lorsqu'
 <li>Placer la carte micro-bit sur le shield Grove et connecter le ruban de led NeoPixel sur le connecteur P0-P14.  </li>
 <li>
 <p>Lire le programme suivant et anticiper l'effet produit sur le ruban NeoPixel : quels pixels sont allumés, dans quel ordre, de quelle(s) couleurs(s) ?<br />
-<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span> 1
- 2
- 3
- 4
- 5
- 6
- 7
- 8
- 9
-10
-11</pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="kn">from</span> <span class="nn">microbit</span> <span class="kn">import</span> <span class="o">*</span>
+<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
+<span class="normal"> 2</span>
+<span class="normal"> 3</span>
+<span class="normal"> 4</span>
+<span class="normal"> 5</span>
+<span class="normal"> 6</span>
+<span class="normal"> 7</span>
+<span class="normal"> 8</span>
+<span class="normal"> 9</span>
+<span class="normal">10</span>
+<span class="normal">11</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="kn">from</span> <span class="nn">microbit</span> <span class="kn">import</span> <span class="o">*</span>
 <span class="kn">import</span> <span class="nn">neopixel</span>
 <span class="c1"># pour une connexion sur connecteur P0/P14</span>
 <span class="n">np</span> <span class="o">=</span> <span class="n">neopixel</span><span class="o">.</span><span class="n">NeoPixel</span><span class="p">(</span><span class="n">pin0</span><span class="p">,</span> <span class="mi">30</span><span class="p">)</span>
@@ -1922,21 +2055,21 @@ L'instruction <code>pin1.write_digital(1)</code> permet d'allumer la LED lorsqu'
 <a href="../python_boutons"><span class="item buttons">boutons</span></a> </p>
 <p><strong>Fonctionnement attendu</strong> : Une led est allumée au centre de l'écran.
 En appuyant sur le bouton A, elle se "déplace" d'un pixel vers la gauche, et en appuyant sur le bouton B, elle se "déplace" d'un pixel vers la droite. Lorsqu'elle atteint un bord (gauche ou droit), l'appui sur le bouton correspondant à ce bord n'a plus d'effet. </p>
-<details class="abstract"><summary>Aide : une proposition à compléter</summary><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span> 1
- 2
- 3
- 4
- 5
- 6
- 7
- 8
- 9
-10
-11
-12
-13
-14
-15</pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="kn">from</span> <span class="nn">microbit</span> <span class="kn">import</span> <span class="o">*</span>
+<details class="abstract"><summary>Aide : une proposition à compléter</summary><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
+<span class="normal"> 2</span>
+<span class="normal"> 3</span>
+<span class="normal"> 4</span>
+<span class="normal"> 5</span>
+<span class="normal"> 6</span>
+<span class="normal"> 7</span>
+<span class="normal"> 8</span>
+<span class="normal"> 9</span>
+<span class="normal">10</span>
+<span class="normal">11</span>
+<span class="normal">12</span>
+<span class="normal">13</span>
+<span class="normal">14</span>
+<span class="normal">15</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="kn">from</span> <span class="nn">microbit</span> <span class="kn">import</span> <span class="o">*</span>
 <span class="c1">#positionnement initial au centre</span>
 <span class="n">x</span> <span class="o">=</span> <span class="o">...</span>
 <span class="n">y</span> <span class="o">=</span> <span class="o">...</span>
@@ -1953,21 +2086,20 @@ En appuyant sur le bouton A, elle se "déplace" d'un pixel vers la gauche, et en
     <span class="n">sleep</span><span class="p">(</span><span class="mi">20</span><span class="p">)</span>
 </code></pre></div>
 </td></tr></table>
-
 </details>
-<details class="success"><summary>Une solution</summary><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span> 1
- 2
- 3
- 4
- 5
- 6
- 7
- 8
- 9
-10
-11
-12
-13</pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="kn">from</span> <span class="nn">microbit</span> <span class="kn">import</span> <span class="o">*</span>
+<details class="success"><summary>Une solution</summary><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
+<span class="normal"> 2</span>
+<span class="normal"> 3</span>
+<span class="normal"> 4</span>
+<span class="normal"> 5</span>
+<span class="normal"> 6</span>
+<span class="normal"> 7</span>
+<span class="normal"> 8</span>
+<span class="normal"> 9</span>
+<span class="normal">10</span>
+<span class="normal">11</span>
+<span class="normal">12</span>
+<span class="normal">13</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="kn">from</span> <span class="nn">microbit</span> <span class="kn">import</span> <span class="o">*</span>
 <span class="n">x</span> <span class="o">=</span> <span class="mi">2</span>
 <span class="n">y</span> <span class="o">=</span> <span class="mi">2</span>
 <span class="k">while</span> <span class="kc">True</span><span class="p">:</span>
@@ -1982,31 +2114,30 @@ En appuyant sur le bouton A, elle se "déplace" d'un pixel vers la gauche, et en
     <span class="n">sleep</span><span class="p">(</span><span class="mi">20</span><span class="p">)</span>
 </code></pre></div>
 </td></tr></table>
-
 </details>
 <h3 id="34-deplacer-un-point-lumineux-sur-un-ruban-neopixel-avec-les-boutons">3.4 Déplacer un point lumineux sur un ruban NeoPixel avec les boutons</h3>
 <p><a href="../python_boutons"><span class="item buttons">boutons</span></a> 
 <a href="../python_grove/#autres-actionneurs"><span class="item grove_neopixel">neopixel</span></a></p>
 <p><strong>Fonctionnement attendu</strong> : Une led NeoPixel est allumée au début du ruban de led NeoPixel.
 En appuyant sur le bouton A, un point lumineux se "déplace" d'un pixel vers la fin du ruban, et en appuyant sur le bouton B, elle revient d'un pixel vers le début du ruban. Lorsque le point lumineux atteint une extrémité, l'appui sur le bouton correspondant à cette extrémité n'a plus d'effet. </p>
-<details class="abstract"><summary>Aide : une proposition à compléter</summary><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span> 1
- 2
- 3
- 4
- 5
- 6
- 7
- 8
- 9
-10
-11
-12
-13
-14
-15
-16
-17
-18</pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="kn">from</span> <span class="nn">microbit</span> <span class="kn">import</span> <span class="o">*</span>
+<details class="abstract"><summary>Aide : une proposition à compléter</summary><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
+<span class="normal"> 2</span>
+<span class="normal"> 3</span>
+<span class="normal"> 4</span>
+<span class="normal"> 5</span>
+<span class="normal"> 6</span>
+<span class="normal"> 7</span>
+<span class="normal"> 8</span>
+<span class="normal"> 9</span>
+<span class="normal">10</span>
+<span class="normal">11</span>
+<span class="normal">12</span>
+<span class="normal">13</span>
+<span class="normal">14</span>
+<span class="normal">15</span>
+<span class="normal">16</span>
+<span class="normal">17</span>
+<span class="normal">18</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="kn">from</span> <span class="nn">microbit</span> <span class="kn">import</span> <span class="o">*</span>
 <span class="kn">import</span> <span class="nn">neopixel</span>
 <span class="c1"># pour une connexion sur connecteur P0/P14</span>
 <span class="n">np</span> <span class="o">=</span> <span class="n">neopixel</span><span class="o">.</span><span class="n">NeoPixel</span><span class="p">(</span><span class="n">pin0</span><span class="p">,</span> <span class="mi">30</span><span class="p">)</span>
@@ -2026,26 +2157,25 @@ En appuyant sur le bouton A, un point lumineux se "déplace" d'un pixel vers la 
     <span class="n">sleep</span><span class="p">(</span><span class="mi">20</span><span class="p">)</span>
 </code></pre></div>
 </td></tr></table>
-
 </details>
-<details class="success"><summary>Une solution</summary><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span> 1
- 2
- 3
- 4
- 5
- 6
- 7
- 8
- 9
-10
-11
-12
-13
-14
-15
-16
-17
-18</pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="kn">from</span> <span class="nn">microbit</span> <span class="kn">import</span> <span class="o">*</span>
+<details class="success"><summary>Une solution</summary><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
+<span class="normal"> 2</span>
+<span class="normal"> 3</span>
+<span class="normal"> 4</span>
+<span class="normal"> 5</span>
+<span class="normal"> 6</span>
+<span class="normal"> 7</span>
+<span class="normal"> 8</span>
+<span class="normal"> 9</span>
+<span class="normal">10</span>
+<span class="normal">11</span>
+<span class="normal">12</span>
+<span class="normal">13</span>
+<span class="normal">14</span>
+<span class="normal">15</span>
+<span class="normal">16</span>
+<span class="normal">17</span>
+<span class="normal">18</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="kn">from</span> <span class="nn">microbit</span> <span class="kn">import</span> <span class="o">*</span>
 <span class="kn">import</span> <span class="nn">neopixel</span>
 <span class="c1"># pour une connexion sur connecteur P0/P14</span>
 <span class="n">np</span> <span class="o">=</span> <span class="n">neopixel</span><span class="o">.</span><span class="n">NeoPixel</span><span class="p">(</span><span class="n">pin0</span><span class="p">,</span> <span class="mi">30</span><span class="p">)</span>
@@ -2065,7 +2195,6 @@ En appuyant sur le bouton A, un point lumineux se "déplace" d'un pixel vers la 
     <span class="n">sleep</span><span class="p">(</span><span class="mi">20</span><span class="p">)</span>
 </code></pre></div>
 </td></tr></table>
-
 </details>
 <h3 id="35-deplacer-un-point-lumineux-avec-linclinaison-de-la-carte">3.5 Déplacer un point lumineux avec l'inclinaison de la carte</h3>
 <p><a href="../python_leds5x5"><span class="item led">led</span></a> 
@@ -2098,7 +2227,6 @@ Par exemple, voici la valeur que l'on peut donner à <code>x</code> selon la val
     <span class="n">display</span><span class="o">.</span><span class="n">set_pixel</span><span class="p">(</span><span class="n">x</span><span class="p">,</span><span class="n">y</span><span class="p">,</span><span class="mi">9</span><span class="p">)</span>
     <span class="n">sleep</span><span class="p">(</span><span class="mi">100</span><span class="p">)</span>
 </code></pre></div>
-
 <ul>
 <li>Saisir le programme et le flasher sur une carte connectée à l'ordinateur. Vérifier si le comportement anticipé est conforme à celui observé.  </li>
 <li>Compléter le programme en procédant de façon analogue pour déterminer la valeur que doit en prendre l'ordonnée du pixel <code>y</code> selon les valeurs de <code>accelerometer.get_y()</code></li>
@@ -2116,7 +2244,6 @@ Par exemple, voici la valeur que l'on peut donner à <code>x</code> selon la val
         <span class="n">display</span><span class="o">.</span><span class="n">show</span><span class="p">(</span><span class="n">Image</span><span class="o">.</span><span class="n">NO</span><span class="p">)</span>
     <span class="n">sleep</span><span class="p">(</span><span class="mi">200</span><span class="p">)</span>
 </code></pre></div>
-
 <ul>
 <li>Saisir ce programme et le flasher sur une carte connectée à l'ordinateur.<br />
 Que faut-il faire pour que l'image Image.YES s'affiche ?  </li>
@@ -2168,16 +2295,16 @@ Une autre carte reçoit les valeurs et les affiche.</p>
 <ul>
 <li>Modifier le programme de la carte réceptrice pour qu'elle n'affiche plus la température mais affiche (Image.HAPPY) si la température est supérieure à 20°C et (Image.SAD) sinon.</li>
 </ul>
-<details class="abstract"><summary>Aide : une proposition à compléter</summary><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span> 1
- 2
- 3
- 4
- 5
- 6
- 7
- 8
- 9
-10</pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="kn">from</span> <span class="nn">microbit</span> <span class="kn">import</span> <span class="o">*</span>
+<details class="abstract"><summary>Aide : une proposition à compléter</summary><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
+<span class="normal"> 2</span>
+<span class="normal"> 3</span>
+<span class="normal"> 4</span>
+<span class="normal"> 5</span>
+<span class="normal"> 6</span>
+<span class="normal"> 7</span>
+<span class="normal"> 8</span>
+<span class="normal"> 9</span>
+<span class="normal">10</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="kn">from</span> <span class="nn">microbit</span> <span class="kn">import</span> <span class="o">*</span>
 <span class="kn">import</span> <span class="nn">radio</span>
 <span class="n">radio</span><span class="o">.</span><span class="n">on</span><span class="p">()</span>
 <span class="k">while</span> <span class="kc">True</span><span class="p">:</span>
@@ -2189,23 +2316,22 @@ Une autre carte reçoit les valeurs et les affiche.</p>
     <span class="n">sleep</span><span class="p">(</span><span class="mi">1000</span><span class="p">)</span>
 </code></pre></div>
 </td></tr></table>
-
 </details>
 <ul>
 <li>Compléter le programme de la question précédente pour que la carte réceptrice affiche la température lorsqu'on appuie sur le bouton A. </li>
 </ul>
-<details class="abstract"><summary>Aide : une proposition à compléter</summary><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span> 1
- 2
- 3
- 4
- 5
- 6
- 7
- 8
- 9
-10
-11
-12</pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="kn">from</span> <span class="nn">microbit</span> <span class="kn">import</span> <span class="o">*</span>
+<details class="abstract"><summary>Aide : une proposition à compléter</summary><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
+<span class="normal"> 2</span>
+<span class="normal"> 3</span>
+<span class="normal"> 4</span>
+<span class="normal"> 5</span>
+<span class="normal"> 6</span>
+<span class="normal"> 7</span>
+<span class="normal"> 8</span>
+<span class="normal"> 9</span>
+<span class="normal">10</span>
+<span class="normal">11</span>
+<span class="normal">12</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="kn">from</span> <span class="nn">microbit</span> <span class="kn">import</span> <span class="o">*</span>
 <span class="kn">import</span> <span class="nn">radio</span>
 <span class="n">radio</span><span class="o">.</span><span class="n">on</span><span class="p">()</span>
 <span class="k">while</span> <span class="kc">True</span><span class="p">:</span>
@@ -2219,7 +2345,6 @@ Une autre carte reçoit les valeurs et les affiche.</p>
     <span class="n">sleep</span><span class="p">(</span><span class="mi">1000</span><span class="p">)</span>
 </code></pre></div>
 </td></tr></table>
-
 </details>
                 
               
@@ -2319,7 +2444,7 @@ Une autre carte reçoit les valeurs et les affiche.</p>
     <div class="md-dialog" data-md-component="dialog">
       <div class="md-dialog__inner md-typeset"></div>
     </div>
-    <script id="__config" type="application/json">{"base": "../..", "features": ["tabs", "navigation.tabs", "navigation.sections", "navigation.top"], "translations": {"clipboard.copy": "Copier dans le presse-papier", "clipboard.copied": "Copi\u00e9 dans le presse-papier", "search.config.lang": "fr", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Rechercher", "search.result.placeholder": "Taper pour d\u00e9marrer la recherche", "search.result.none": "Aucun document trouv\u00e9", "search.result.one": "1 document trouv\u00e9", "search.result.other": "# documents trouv\u00e9s", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing"}, "search": "../../assets/javascripts/workers/search.fe42c31b.min.js", "version": null}</script>
+    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.tabs", "navigation.sections", "navigation.top"], "translations": {"clipboard.copy": "Copier dans le presse-papier", "clipboard.copied": "Copi\u00e9 dans le presse-papier", "search.config.lang": "fr", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Rechercher", "search.result.placeholder": "Taper pour d\u00e9marrer la recherche", "search.result.none": "Aucun document trouv\u00e9", "search.result.one": "1 document trouv\u00e9", "search.result.other": "# documents trouv\u00e9s", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing"}, "search": "../../assets/javascripts/workers/search.fe42c31b.min.js", "version": null}</script>
     
     
       <script src="../../assets/javascripts/bundle.4ea5477f.min.js"></script>
