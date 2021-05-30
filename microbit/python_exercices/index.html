@@ -1193,26 +1193,6 @@
   
 </li>
         
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#4-detecter-lintensite-lumineuse" class="md-nav__link">
-    4. Détecter l'intensité lumineuse
-  </a>
-  
-    <nav class="md-nav" aria-label="4. Détecter l'intensité lumineuse">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#41-avec-les-leds-de-la-carte-microbit" class="md-nav__link">
-    4.1 Avec les leds de la carte micro:bit
-  </a>
-  
-</li>
-        
           <li class="md-nav__item">
   <a href="#42-avec-un-capteur-de-lumiere-grove" class="md-nav__link">
     4.2 Avec un capteur de lumière Grove
@@ -1573,10 +1553,49 @@
   
   
   
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_7_1_2" type="checkbox" id="__nav_7_1_2" >
+      
+      <label class="md-nav__link" for="__nav_7_1_2">
+        La carte micro:bit
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="La carte micro:bit" data-md-level="3">
+        <label class="md-nav__title" for="__nav_7_1_2">
+          <span class="md-nav__icon md-icon"></span>
+          La carte micro:bit
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
     <li class="md-nav__item">
-      <a href="../../snt/objets_connectes_seq1/" class="md-nav__link">
-        Programmer la carte micro:bit
+      <a href="../../snt/objets_connectes_seq1_intro/" class="md-nav__link">
+        La carte et l'éditeur
       </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../snt/objets_connectes_seq1_parcours_cible/" class="md-nav__link">
+        Parcours "Cible sur plan incliné"
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
     </li>
   
 
@@ -1863,26 +1882,6 @@
   
 </li>
         
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#4-detecter-lintensite-lumineuse" class="md-nav__link">
-    4. Détecter l'intensité lumineuse
-  </a>
-  
-    <nav class="md-nav" aria-label="4. Détecter l'intensité lumineuse">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#41-avec-les-leds-de-la-carte-microbit" class="md-nav__link">
-    4.1 Avec les leds de la carte micro:bit
-  </a>
-  
-</li>
-        
           <li class="md-nav__item">
   <a href="#42-avec-un-capteur-de-lumiere-grove" class="md-nav__link">
     4.2 Avec un capteur de lumière Grove
@@ -1956,7 +1955,7 @@ Que constate-t-on ? À quoi correspondent les 0 et les 9 ?</li>
                   <span class="s2">&quot;99999:&quot;</span>
                   <span class="s2">&quot;09990:&quot;</span>
                   <span class="s2">&quot;90909&quot;</span><span class="p">)</span>
-<span class="n">display</span><span class="o">.</span><span class="n">show</span><span class="p">(</span><span class="n">Image</span><span class="o">.</span><span class="n">mon_image</span><span class="p">)</span>
+<span class="n">display</span><span class="o">.</span><span class="n">show</span><span class="p">(</span><span class="n">mon_image</span><span class="p">)</span>
 </code></pre></div>
 <ul>
 <li>Dessiner sur une feuille à l'aide d'un quadrillage de 5 carreaux sur 5 une image personnelle et modifier le programme précédent pour la faire apparaître sur la carte micro:bit.</li>
@@ -2369,30 +2368,35 @@ Par exemple, voici la valeur que l'on peut donner à <code>x</code> selon la val
 <span class="n">y</span> <span class="o">=</span> <span class="mi">2</span>
 
 <span class="k">while</span> <span class="kc">True</span><span class="p">:</span>
-    <span class="n">display</span><span class="o">.</span><span class="n">set_pixel</span><span class="p">(</span><span class="n">x</span><span class="p">,</span><span class="n">y</span><span class="p">,</span><span class="mi">0</span><span class="p">)</span>
+    <span class="n">display</span><span class="o">.</span><span class="n">set_pixel</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span>
     <span class="n">acc_x</span> <span class="o">=</span> <span class="n">accelerometer</span><span class="o">.</span><span class="n">get_x</span><span class="p">()</span>
     <span class="k">if</span> <span class="n">acc_x</span> <span class="o">&gt;</span> <span class="o">...</span><span class="p">:</span>
         <span class="n">x</span> <span class="o">=</span> <span class="mi">4</span>
-    <span class="k">elif</span> <span class="n">acc_x</span> <span class="o">&gt;</span> <span class="mi">200</span><span class="p">:</span>
+    <span class="k">elif</span> <span class="n">acc_x</span> <span class="o">&gt;</span> <span class="mi">150</span><span class="p">:</span>
         <span class="n">x</span> <span class="o">=</span> <span class="o">...</span>
-    <span class="k">elif</span> <span class="n">acc_x</span> <span class="o">&lt;</span> <span class="o">-</span><span class="mi">400</span><span class="p">:</span>
+    <span class="k">elif</span> <span class="n">acc_x</span> <span class="o">&gt;</span> <span class="o">-</span><span class="mi">150</span><span class="p">:</span>
         <span class="n">x</span> <span class="o">=</span> <span class="o">...</span>
-    <span class="k">elif</span> <span class="n">acc_x</span> <span class="o">&lt;</span> <span class="o">...</span><span class="p">:</span> 
+    <span class="k">elif</span> <span class="n">acc_x</span> <span class="o">&gt;</span> <span class="o">-</span><span class="mi">450</span><span class="p">:</span> 
         <span class="n">x</span> <span class="o">=</span> <span class="mi">1</span>
     <span class="k">else</span><span class="p">:</span>
         <span class="n">x</span> <span class="o">=</span> <span class="o">...</span>
-    <span class="n">display</span><span class="o">.</span><span class="n">set_pixel</span><span class="p">(</span><span class="n">x</span><span class="p">,</span><span class="n">y</span><span class="p">,</span><span class="mi">9</span><span class="p">)</span>
-    <span class="n">sleep</span><span class="p">(</span><span class="mi">100</span><span class="p">)</span>
-</code></pre></div>
-<ul>
-<li>Saisir le programme et le flasher sur une carte connectée à l'ordinateur. Vérifier si le comportement anticipé est conforme à celui observé.  </li>
-<li>Compléter le programme en procédant de façon analogue pour déterminer la valeur que doit en prendre l'ordonnée du pixel <code>y</code> selon les valeurs de <code>accelerometer.get_y()</code></li>
-</ul>
-<h2 id="4-detecter-lintensite-lumineuse">4. Détecter l'intensité lumineuse</h2>
-<h3 id="41-avec-les-leds-de-la-carte-microbit">4.1 Avec les leds de la carte micro:bit</h3>
-<p><a href="../python_leds5x5"><span class="item led">led</span></a> </p>
-<p>Les LED de la carte peuvent détecter le niveau de lumière ambiante : la fonction <code>display.read_light_level()</code> renvoie une valeur comprise entre 0 et 255 : plus la valeur est élevée, plus l'environnement est lumineux. </p>
-<div class="highlight"><pre><span></span><code><span class="kn">from</span> <span class="nn">microbit</span> <span class="kn">import</span> <span class="o">*</span>
+    <span class="n">display</span><span class="o">.</span><span class="n">set_pixel</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="mi">9</span><span class="p">)</span>
+    <span class="n">sleep</span><span class="p">(</span><span class="mi">100</span><span class="p">)</span><span class="err">```</span>
+
+<span class="o">-</span> <span class="n">Saisir</span> <span class="n">le</span> <span class="n">programme</span> <span class="n">et</span> <span class="n">le</span> <span class="n">flasher</span> <span class="n">sur</span> <span class="n">une</span> <span class="n">carte</span> <span class="n">connectée</span> <span class="n">à</span> <span class="n">l</span><span class="s1">&#39;ordinateur. Vérifier si le comportement anticipé est conforme à celui observé.  </span>
+<span class="o">-</span> <span class="n">Compléter</span> <span class="n">le</span> <span class="n">programme</span> <span class="n">en</span> <span class="n">procédant</span> <span class="n">de</span> <span class="n">façon</span> <span class="n">analogue</span> <span class="n">pour</span> <span class="n">déterminer</span> <span class="n">la</span> <span class="n">valeur</span> <span class="n">que</span> <span class="n">doit</span> <span class="n">en</span> <span class="n">prendre</span> <span class="n">l</span><span class="s1">&#39;ordonnée du pixel `y` selon les valeurs de `accelerometer.get_y()`</span>
+
+<span class="c1">## 4. Détecter l&#39;intensité lumineuse</span>
+
+
+<span class="c1">### 4.1 Avec les leds de la carte micro:bit</span>
+
+<span class="p">[</span><span class="o">&lt;</span><span class="n">span</span> <span class="n">class</span><span class="o">=</span><span class="s2">&quot;item led&quot;</span><span class="o">&gt;</span><span class="n">led</span><span class="o">&lt;/</span><span class="n">span</span><span class="o">&gt;</span><span class="p">](</span><span class="o">../</span><span class="n">python_leds5x5</span><span class="p">)</span> 
+
+<span class="n">Les</span> <span class="n">LED</span> <span class="n">de</span> <span class="n">la</span> <span class="n">carte</span> <span class="n">peuvent</span> <span class="n">détecter</span> <span class="n">le</span> <span class="n">niveau</span> <span class="n">de</span> <span class="n">lumière</span> <span class="n">ambiante</span> <span class="p">:</span> <span class="n">la</span> <span class="n">fonction</span> <span class="err">`</span><span class="n">display</span><span class="o">.</span><span class="n">read_light_level</span><span class="p">()</span><span class="err">`</span> <span class="n">renvoie</span> <span class="n">une</span> <span class="n">valeur</span> <span class="n">comprise</span> <span class="n">entre</span> <span class="mi">0</span> <span class="n">et</span> <span class="mi">255</span> <span class="p">:</span> <span class="n">plus</span> <span class="n">la</span> <span class="n">valeur</span> <span class="n">est</span> <span class="n">élevée</span><span class="p">,</span> <span class="n">plus</span> <span class="n">l</span><span class="s1">&#39;environnement est lumineux. </span>
+
+<span class="err">```</span><span class="n">python</span>
+<span class="kn">from</span> <span class="nn">microbit</span> <span class="kn">import</span> <span class="o">*</span>
 <span class="k">while</span> <span class="kc">True</span><span class="p">:</span>
     <span class="n">niveau</span> <span class="o">=</span> <span class="n">display</span><span class="o">.</span><span class="n">read_light_level</span><span class="p">()</span>
     <span class="k">if</span> <span class="n">niveau</span> <span class="o">&gt;</span> <span class="mi">220</span><span class="p">:</span>

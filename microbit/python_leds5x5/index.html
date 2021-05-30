@@ -1507,10 +1507,49 @@
   
   
   
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_7_1_2" type="checkbox" id="__nav_7_1_2" >
+      
+      <label class="md-nav__link" for="__nav_7_1_2">
+        La carte micro:bit
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="La carte micro:bit" data-md-level="3">
+        <label class="md-nav__title" for="__nav_7_1_2">
+          <span class="md-nav__icon md-icon"></span>
+          La carte micro:bit
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
     <li class="md-nav__item">
-      <a href="../../snt/objets_connectes_seq1/" class="md-nav__link">
-        Programmer la carte micro:bit
+      <a href="../../snt/objets_connectes_seq1_intro/" class="md-nav__link">
+        La carte et l'éditeur
       </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../snt/objets_connectes_seq1_parcours_cible/" class="md-nav__link">
+        Parcours "Cible sur plan incliné"
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
     </li>
   
 
@@ -1869,7 +1908,7 @@
 <div class="admonition info">
 <p class="admonition-title">Info</p>
 <ul>
-<li>Chaque pixel a des coodonnées entières de (0, 0) dans le coin supérieur gauche à (4, 4) dans le coin inférieur droit.  </li>
+<li>Chaque pixel a des coordonnées entières de (0, 0) dans le coin supérieur gauche à (4, 4) dans le coin inférieur droit.  </li>
 <li>La luminosité de chaque pixel peut être définie, de 0 (le pixel est alors désactivé) à 9 (niveau le plus lumineux). </li>
 </ul>
 </div>
@@ -1952,7 +1991,7 @@ crée une image où tous les pixels ont une luninosité de 7.</p>
 <p><img alt="" src="../../images/mb_display_random.png" />  </p>
 <div class="admonition info">
 <p class="admonition-title">Info</p>
-<p>Le module <code>random</code> contient la fonction <code>randint(min,max)</code> qui renvoie un entier entre <code>min</code> et <code>max</code> compris. On peut l'utiliser pour définir aléatoirement la position d'un pixel ou la luminosité d'un pixel.</p>
+<p>Le module <code>random</code> contient la fonction <code>randint(min, max)</code> qui renvoie un entier entre <code>min</code> et <code>max</code> compris. On peut l'utiliser pour définir aléatoirement la position d'un pixel ou la luminosité d'un pixel.</p>
 <div class="highlight"><pre><span></span><code><span class="kn">from</span> <span class="nn">microbit</span> <span class="kn">import</span> <span class="o">*</span>
 <span class="kn">from</span> <span class="nn">random</span> <span class="kn">import</span> <span class="n">randint</span>
 <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">5</span><span class="p">):</span>   <span class="c1"># numéro de colonne de 0 à 4</span>
