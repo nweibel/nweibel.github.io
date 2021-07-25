@@ -14,18 +14,18 @@
       
       
       <link rel="icon" href="../../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-7.1.2">
+      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-7.2.0">
     
     
       
-        <title>Boucles bornées - Carnets.info</title>
+        <title>Généralités - Carnets.info</title>
       
     
     
-      <link rel="stylesheet" href="../../assets/stylesheets/main.6f955dcd.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.fe914879.min.css">
       
         
-        <link rel="stylesheet" href="../../assets/stylesheets/palette.ef6f36e2.min.css">
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.ba0d045b.min.css">
         
       
     
@@ -44,10 +44,19 @@
     
     
       
-        
-<script>window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)},ga.l=+new Date,ga("create","UA-171618240-1","auto"),ga("set","anonymizeIp",!0),ga("send","pageview"),document.addEventListener("DOMContentLoaded",function(){document.forms.search&&document.forms.search.query.addEventListener("blur",function(){var e;this.value&&(e=document.location.pathname,ga("send","pageview",e+"?q="+this.value))}),"undefined"!=typeof location$&&location$.subscribe(function(e){ga("send","pageview",e.pathname)})})</script>
-<script async src="https://www.google-analytics.com/analytics.js"></script>
-      
+  
+
+
+
+  
+  
+
+
+
+  <script>window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)},ga.l=+new Date,ga("create","UA-171618240-1","auto"),ga("set","anonymizeIp",!0),ga("send","pageview"),document.addEventListener("DOMContentLoaded",function(){document.forms.search&&document.forms.search.query.addEventListener("blur",function(){var e;this.value&&(e=document.location.pathname,ga("send","pageview",e+"?q="+this.value))}),"undefined"!=typeof location$&&location$.subscribe(function(e){ga("send","pageview",e.pathname)})})</script>
+  <script async src="https://www.google-analytics.com/analytics.js"></script>
+
+
     
     
   </head>
@@ -73,7 +82,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#boucles-bornees" class="md-skip">
+        <a href="#boucles-bornees-generalites" class="md-skip">
           Aller au contenu
         </a>
       
@@ -83,7 +92,7 @@
     </div>
     
       <header class="md-header" data-md-component="header">
-  <nav class="md-header__inner md-grid" aria-label="Header">
+  <nav class="md-header__inner md-grid" aria-label="En-tête">
     <a href="../.." title="Carnets.info" class="md-header__button md-logo" aria-label="Carnets.info" data-md-component="logo">
       
   
@@ -103,7 +112,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Boucles bornées
+              Généralités
             
           </span>
         </div>
@@ -114,7 +123,7 @@
         
           
           
-          <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="teal" data-md-color-accent="light-blue" type="radio" name="__palette" id="__palette_1">
+          <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="teal" data-md-color-accent="light-blue"  aria-label="mode sombre"  type="radio" name="__palette" id="__palette_1">
           
             <label class="md-header__button md-icon" title="mode sombre" for="__palette_2" hidden>
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M7 10a2 2 0 0 1 2 2 2 2 0 0 1-2 2 2 2 0 0 1-2-2 2 2 0 0 1 2-2m10-3a5 5 0 0 1 5 5 5 5 0 0 1-5 5H7a5 5 0 0 1-5-5 5 5 0 0 1 5-5h10M7 9a3 3 0 0 0-3 3 3 3 0 0 0 3 3h10a3 3 0 0 0 3-3 3 3 0 0 0-3-3H7z"/></svg>
@@ -123,7 +132,7 @@
         
           
           
-          <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="teal" data-md-color-accent="light-blue" type="radio" name="__palette" id="__palette_2">
+          <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="teal" data-md-color-accent="light-blue"  aria-label="mode clair"  type="radio" name="__palette" id="__palette_2">
           
             <label class="md-header__button md-icon" title="mode clair" for="__palette_1" hidden>
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 7H7a5 5 0 0 0-5 5 5 5 0 0 0 5 5h10a5 5 0 0 0 5-5 5 5 0 0 0-5-5m0 8a3 3 0 0 1-3-3 3 3 0 0 1 3-3 3 3 0 0 1 3 3 3 3 0 0 1-3 3z"/></svg>
@@ -142,20 +151,24 @@
   <label class="md-search__overlay" for="__search"></label>
   <div class="md-search__inner" role="search">
     <form class="md-search__form" name="search">
-      <input type="text" class="md-search__input" name="query" aria-label="Rechercher" placeholder="Rechercher" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" data-md-state="active" required>
+      <input type="text" class="md-search__input" name="query" aria-label="Rechercher" placeholder="Rechercher" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
       <label class="md-search__icon md-icon" for="__search">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
       </label>
-      <button type="reset" class="md-search__icon md-icon" aria-label="Clear" tabindex="-1">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg>
-      </button>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" aria-label="Effacer" tabindex="-1">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg>
+        </button>
+      </nav>
+      
     </form>
     <div class="md-search__output">
       <div class="md-search__scrollwrap" data-md-scrollfix>
         <div class="md-search-result" data-md-component="search-result">
           <div class="md-search-result__meta">
-            Initializing search
+            Initialisation de la recherche
           </div>
           <ol class="md-search-result__list"></ol>
         </div>
@@ -173,7 +186,7 @@
       
         
           
-<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+<nav class="md-tabs" aria-label="Onglets" data-md-component="tabs">
   <div class="md-tabs__inner md-grid">
     <ul class="md-tabs__list">
       
@@ -500,12 +513,12 @@
       
       
         <label class="md-nav__link md-nav__link--active" for="__toc">
-          Boucles bornées
+          Généralités
           <span class="md-nav__icon md-icon"></span>
         </label>
       
       <a href="./" class="md-nav__link md-nav__link--active">
-        Boucles bornées
+        Généralités
       </a>
       
         
@@ -554,6 +567,18 @@
   
 </nav>
       
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../boucles_bornees_exemples/" class="md-nav__link">
+        Exemples
+      </a>
     </li>
   
 
@@ -1755,11 +1780,11 @@
               
                 
                 
-                <h1 id="boucles-bornees">Boucles bornées</h1>
-<p>Les boucles bornées servent à exécuter certaines instructions d'un programme de manière répétitive, un nombre prédéfini de fois. </p>
-<p>Par exemple pour répéter quatre fois un bloc d'instructions, on peut écrire : </p>
+                <h1 id="boucles-bornees-generalites">Boucles bornées : généralités</h1>
+<p>Les boucles bornées servent à exécuter certaines instructions d'un programme de manière répétitive, un nombre prédéfini de fois.</p>
+<p>Par exemple pour répéter quatre fois un bloc d'instructions, on peut écrire :</p>
 <div class="highlight"><pre><span></span><code>    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">4</span><span class="p">):</span>
-        <span class="n">bloc</span> <span class="n">d</span><span class="s1">&#39;instructions </span>
+        <span class="n">bloc</span> <span class="n">d</span><span class="s1">&#39;instructions</span>
 </code></pre></div>
 <div class="admonition abstract">
 <p class="admonition-title">Exemple :</p>
@@ -1778,7 +1803,7 @@
 </code></pre></div>
 pour  répéter <code>n</code> fois un bloc d'instructions.<br />
 Mais les deux instructions que cette syntaxe combine : <code>for ... in</code> et <code>range()</code> permettent de nombreuses possibilités.</p>
-<h2 id="linstruction-for">L'instruction for</h2>
+<h2 id="linstruction-for">L'instruction <code>for</code></h2>
 <p>La boucle bornée (ou instruction <code>for</code>)  permet d’itérer sur les éléments d’une séquence (liste, chaine de caractères, etc.) dans l'ordre dans lequel les éléments apparaissent dans la séquence.   </p>
 <div class="admonition abstract">
 <p class="admonition-title">Exemple :</p>
@@ -1791,14 +1816,14 @@ Mais les deux instructions que cette syntaxe combine : <code>for ... in</code> e
 <span class="n">cyan</span>
 </code></pre></div></p>
 </div>
-<p>La syntaxe de la boucle <code>for</code>est : </p>
-<p><div class="highlight"><pre><span></span><code><span class="k">for</span> <span class="n">iterateur</span> <span class="ow">in</span> <span class="n">sequence</span><span class="p">:</span>
-    <span class="n">instructions</span>
+<p>La syntaxe de la boucle <code>for</code>est :</p>
+<p><div class="highlight"><pre><span></span><code><span class="k">for</span> <span class="n">element</span> <span class="ow">in</span> <span class="n">sequence</span><span class="p">:</span>
+    <span class="n">bloc</span> <span class="n">d</span><span class="s1">&#39;instructions</span>
 </code></pre></div>
-L'itérateur est une variable à laquelle il faut donner un nom, et qui prend successivement les valeurs des éléments de la séquence. <br />
+<code>element</code> est une variable à laquelle il faut donner un nom, et qui prend successivement les valeurs des éléments de la séquence. <br />
 Le bloc d'instructions à exécuter dans le corps de la boucle est à indenter.</p>
-<h2 id="la-fonction-range">La fonction range()</h2>
-<p>Pour itérer sur une suite de nombres, on utilise la fonction  <code>range()</code>. </p>
+<h2 id="la-fonction-range">La fonction <code>range()</code></h2>
+<p>Pour itérer sur une suite de nombres entiers, on utilise la fonction  <code>range()</code>.</p>
 <div class="admonition abstract">
 <p class="admonition-title">Exemple :</p>
 <p><div class="highlight"><pre><span></span><code><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">4</span><span class="p">):</span>
@@ -1813,8 +1838,10 @@ Ici <code>i</code>prend successivement les valeurs 0, 1, 2, puis 3 et pour chaqu
 </div>
 <p>La syntaxe générale est <code>range(debut, fin, pas)</code>.  </p>
 <p>La liste des valeurs générées commence avec la valeur <code>debut</code>;  les valeurs suivantes sont générées en augmentant de la valeur <code>pas</code> et la liste s'arrête  juste avant d'atteindre ou dépasser la valeur <code>fin</code>.</p>
-<p><code>debut</code> est un paramètre facultatif : sa valeur par défaut est <code>0</code>.<br />
-<code>pas</code> est aussi un paramètre facultatif. Il vaut <code>1</code>par défaut ; il faut donner les 3 paramètres de <code>range()</code> pour modifier sa valeur.    </p>
+<ul>
+<li><code>debut</code> est un paramètre facultatif : sa valeur par défaut est <code>0</code>.  </li>
+<li><code>pas</code> est aussi un paramètre facultatif. Il vaut <code>1</code>par défaut ; il faut donner les 3 paramètres de <code>range()</code> pour modifier sa valeur.    </li>
+</ul>
 <p>La syntaxe <code>range(valeur)</code> est donc équivalente à <code>range(0, valeur, 1)</code> et génère la liste les entiers de 0 à <code>valeur</code> - 1.</p>
 <div class="admonition abstract">
 <p class="admonition-title">Exemple :</p>
@@ -1879,6 +1906,7 @@ Ici <code>i</code>prend successivement les valeurs 0, 1, 2, puis 3 et pour chaqu
         
           <a href="#" class="md-top md-icon" data-md-component="top" data-md-state="hidden">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12z"/></svg>
+            Retour en haut de la page
           </a>
         
       </main>
@@ -1886,9 +1914,10 @@ Ici <code>i</code>prend successivement les valeurs 0, 1, 2, puis 3 et pour chaqu
         
 <footer class="md-footer">
   
-    <nav class="md-footer__inner md-grid" aria-label="Footer">
+    <nav class="md-footer__inner md-grid" aria-label="Pied de page">
       
-        <a href="../erreurs/" class="md-footer__link md-footer__link--prev" rel="prev">
+        
+        <a href="../erreurs/" class="md-footer__link md-footer__link--prev" aria-label="Précédent: Messages d&#39;erreurs" rel="prev">
           <div class="md-footer__button md-icon">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
           </div>
@@ -1903,13 +1932,14 @@ Ici <code>i</code>prend successivement les valeurs 0, 1, 2, puis 3 et pour chaqu
         </a>
       
       
-        <a href="../boucles_bornees_questions/" class="md-footer__link md-footer__link--next" rel="next">
+        
+        <a href="../boucles_bornees_exemples/" class="md-footer__link md-footer__link--next" aria-label="Suivant: Exemples" rel="next">
           <div class="md-footer__title">
             <div class="md-ellipsis">
               <span class="md-footer__direction">
                 Suivant
               </span>
-              Questions
+              Exemples
             </div>
           </div>
           <div class="md-footer__button md-icon">
@@ -1964,10 +1994,10 @@ Ici <code>i</code>prend successivement les valeurs 0, 1, 2, puis 3 et pour chaqu
     <div class="md-dialog" data-md-component="dialog">
       <div class="md-dialog__inner md-typeset"></div>
     </div>
-    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.tabs", "navigation.sections", "navigation.top"], "translations": {"clipboard.copy": "Copier dans le presse-papier", "clipboard.copied": "Copi\u00e9 dans le presse-papier", "search.config.lang": "fr", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Rechercher", "search.result.placeholder": "Taper pour d\u00e9marrer la recherche", "search.result.none": "Aucun document trouv\u00e9", "search.result.one": "1 document trouv\u00e9", "search.result.other": "# documents trouv\u00e9s", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing"}, "search": "../../assets/javascripts/workers/search.fe42c31b.min.js", "version": null}</script>
+    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.tabs", "navigation.sections", "navigation.top"], "translations": {"clipboard.copy": "Copier dans le presse-papier", "clipboard.copied": "Copi\u00e9 dans le presse-papier", "search.config.lang": "fr", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Rechercher", "search.result.placeholder": "Taper pour d\u00e9marrer la recherche", "search.result.none": "Aucun document trouv\u00e9", "search.result.one": "1 document trouv\u00e9", "search.result.other": "# documents trouv\u00e9s", "search.result.more.one": "1 de plus sur cette page", "search.result.more.other": "# de plus sur cette page", "search.result.term.missing": "Non trouv\u00e9", "select.version.title": "S\u00e9lectionner la version"}, "search": "../../assets/javascripts/workers/search.53c85856.min.js", "version": null}</script>
     
     
-      <script src="../../assets/javascripts/bundle.4ea5477f.min.js"></script>
+      <script src="../../assets/javascripts/bundle.716f8af4.min.js"></script>
       
         <script src="../../javascripts/mathjax-config.js"></script>
       
