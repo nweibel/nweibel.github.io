@@ -26,8 +26,10 @@ font-size: 0.7rem;}
 /* ========== admonition custom ====================*/
 :root {
   --md-admonition-icon--config: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path d="m571.31 193.94-22.63-22.63c-6.25-6.25-16.38-6.25-22.63 0l-11.31 11.31-28.9-28.9c5.63-21.31.36-44.9-16.35-61.61l-45.25-45.25c-62.48-62.48-163.79-62.48-226.28 0l90.51 45.25v18.75c0 16.97 6.74 33.25 18.75 45.25l49.14 49.14c16.71 16.71 40.3 21.98 61.61 16.35l28.9 28.9-11.31 11.31c-6.25 6.25-6.25 16.38 0 22.63l22.63 22.63c6.25 6.25 16.38 6.25 22.63 0l90.51-90.51c6.23-6.24 6.23-16.37-.02-22.62zm-286.72-15.2c-3.7-3.7-6.84-7.79-9.85-11.95L19.64 404.96c-25.57 23.88-26.26 64.19-1.53 88.93s65.05 24.05 88.93-1.53l238.13-255.07c-3.96-2.91-7.9-5.87-11.44-9.41l-49.14-49.14z"/></svg>');
-  
-  --md-admonition-icon--play: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M8,5.14V19.14L19,12.14L8,5.14Z" /></svg>')
+
+  --md-admonition-icon--play: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M8,5.14V19.14L19,12.14L8,5.14Z" /></svg>');
+
+  --md-admonition-icon--exo: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M504 256c0 136.997-111.043 248-248 248S8 392.997 8 256C8 119.083 119.043 8 256 8s248 111.083 248 248zM262.655 90c-54.497 0-89.255 22.957-116.549 63.758-3.536 5.286-2.353 12.415 2.715 16.258l34.699 26.31c5.205 3.947 12.621 3.008 16.665-2.122 17.864-22.658 30.113-35.797 57.303-35.797 20.429 0 45.698 13.148 45.698 32.958 0 14.976-12.363 22.667-32.534 33.976C247.128 238.528 216 254.941 216 296v4c0 6.627 5.373 12 12 12h56c6.627 0 12-5.373 12-12v-1.333c0-28.462 83.186-29.647 83.186-106.667 0-58.002-60.165-102-116.531-102zM256 338c-25.365 0-46 20.635-46 46 0 25.364 20.635 46 46 46s46-20.636 46-46c0-25.365-20.635-46-46-46z"/></svg>')
 }
 /* ------------ config------------------------------ 240, 202, 11 */
 
@@ -64,9 +66,25 @@ font-size: 0.7rem;}
   -webkit-mask-image: var(--md-admonition-icon--play);
           mask-image: var(--md-admonition-icon--play);
 }
+/*------------------ exo ---------------------------*/
 
+.md-typeset .admonition.exo,
+.md-typeset details.exo {
+border-color: rgb(0, 191, 165);
+}
+.md-typeset .exo > .admonition-title,
+.md-typeset .exo > summary {
+background-color: rgba(0, 191, 165, 0.1);
+border-color: rgb(0, 191, 165);
+}
+.md-typeset .exo > .admonition-title::before,
+.md-typeset .exo > summary::before {
+background-color: rgb(0, 191, 165);
+-webkit-mask-image: var(--md-admonition-icon--exo);
+        mask-image: var(--md-admonition-icon--exo);
+}
 /* ========== tags perso pour microbit ============= */
-.item { 
+.item {
 color:white;
 font-weight:bold;
 font-size:small;
@@ -76,34 +94,34 @@ border-radius:2px; }
 
 /* https://htmlcolorcodes.com/fr/tableau-de-couleur/ */
 /* Actionneurs carte : rouge*/
-.led { 
+.led {
 background-color:#F07E7E; }
 
 /* capteurs carte : gris bleu*/
 .buttons {
 background-color:#85929E; }
 .accelerometer {
-background-color:#5D6D7E; 
+background-color:#5D6D7E;
 }
 
 /* capteurs grove : bleus*/
-.grove_light { 
+.grove_light {
 background-color:#a7bad6 ; }
-.grove_potentiometre { 
+.grove_potentiometre {
 background-color:#89a4c8  ; }
-.grove_distance { 
+.grove_distance {
 background-color:#6c8dba; }
 
 /* # 4e76ad 315f9f 134891 */
 /* actionneurs grove :bruns*/
 
-.grove_led { 
+.grove_led {
 background-color:#f5cba7; }
-.grove_neopixel { 
+.grove_neopixel {
 background-color:#f0b27a; }
-.grove_digit { 
+.grove_digit {
 background-color:#eb984e; }
-.grove_speaker { 
+.grove_speaker {
 background-color:#e67e22; }
 
 /* radio : jaune*/

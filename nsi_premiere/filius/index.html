@@ -540,18 +540,6 @@
   
 
           
-            
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../python/boucles_bornees_imbriquees_questions/" class="md-nav__link">
-        Boucles bornées imbriquées
-      </a>
-    </li>
-  
-
-          
         </ul>
       </nav>
     </li>
@@ -1806,7 +1794,7 @@
                 
                 <h1 id="simulation-de-reseaux-avec-filius">Simulation de réseaux avec Filius</h1>
 <h2 id="le-logiciel-filius">Le logiciel Filius</h2>
-<details class="config"><summary>Télécharger le logiciel Filius</summary><p>Se rendre sur le site allemand du logiciel Filius <a href="https://www.lernsoftware-filius.de/Herunterladen">https://www.lernsoftware-filius.de/Herunterladen</a>. </p>
+<details class="config"><summary>Télécharger le logiciel Filius</summary><p>Se rendre sur le site allemand du logiciel Filius <a href="https://www.lernsoftware-filius.de/Herunterladen">https://www.lernsoftware-filius.de/Herunterladen</a>.</p>
 <p>Chercher la version actuelle, par exemple "Filius 1.12 (Windows/Ubuntu/Zip) "<br />
 Cliquer sur son système d'exploitation : Windows ou Ubuntu<br />
 (Avec MacOS, cliquer sur Zip : après extraction de l'archive, le fichier à ouvrir est alors filius.jar)</p>
@@ -1839,7 +1827,7 @@ Cliquer sur son système d'exploitation : Windows ou Ubuntu<br />
 <p>Switch : un switch, ou commutateur, permet d’interconnecter plusieurs composants entre eux au sein d’un réseau local. Ce composant ne nécessite pas de configuration.</p>
 </li>
 <li>
-<p>Routeur : un routeur dispose d’au moins deux interfaces réseau. Chaque interface doit être configurée manuellement. Il faut également paramétrer le routage, soit en activant le mode automatique, soit en définissant des règles manuellement. </p>
+<p>Routeur : un routeur dispose d’au moins deux interfaces réseau. Chaque interface doit être configurée manuellement. Il faut également paramétrer le routage, soit en activant le mode automatique, soit en définissant des règles manuellement.</p>
 </li>
 </ul>
 </details>
@@ -1877,7 +1865,7 @@ La première portera le nom <strong>M01</strong> avec l’adresse IP 192.168.0.
 La deuxième portera le nom <strong>M02</strong> avec l’adresse IP 192.168.0.2.<br />
 Le masque est 255.255.255.0.</li>
 </ul>
-<div class="admonition question">
+<div class="admonition exo">
 <p class="admonition-title">Question 1</p>
 <p>Justifier que ces deux clients font partie du même réseau local.</p>
 </div>
@@ -1889,59 +1877,59 @@ Le masque est 255.255.255.0.</li>
 <details class="play" open="open"><summary>Mode simulation</summary><p>Passer en mode <em>simulation</em>.</p>
 <ul>
 <li>
-<p>Accéder au bureau de la machine <strong>M01</strong> (en cliquant dessus) et installer un Terminal (Ligne de commande) avec l’outil d'installation des logiciels. </p>
+<p>Accéder au bureau de la machine <strong>M01</strong> (en cliquant dessus) et installer un Terminal (Ligne de commande) avec l’outil d'installation des logiciels.</p>
 </li>
 <li>
 <p>Ouvrir le terminal (Ligne de commande) sur le bureau de la machine <strong>M01</strong>.  </p>
 </li>
-<li>La commande <code>ipconfig</code> permet de connaître la <em>configuration réseau</em> d’une machine. Exécuter cette commande sur <strong>M01</strong>. </li>
+<li>La commande <code>ipconfig</code> permet de connaître la <em>configuration réseau</em> d’une machine. Exécuter cette commande sur <strong>M01</strong>.</li>
 </ul>
-<div class="admonition question">
+<div class="admonition exo">
 <p class="admonition-title">Question 2</p>
 <p>Quelle information trouve-t-on en dehors du nom de la machine et de son adresse IP ?</p>
 </div>
 <ul>
-<li>La commande <code>arp</code> permet de connaître la <em>table de résolution d'adresses</em> connue de cette machine. Exécuter cette commande sur <strong>M01</strong>. </li>
+<li>La commande <code>arp</code> permet de connaître la <em>table de résolution d'adresses</em> connue de cette machine. Exécuter cette commande sur <strong>M01</strong>.</li>
 </ul>
-<div class="admonition question">
+<div class="admonition exo">
 <p class="admonition-title">Question 3</p>
 <p>Quelle information est mise en correspondance de l'adresse IP ?<br />
 Quelle(s) correspondance(s) est(sont) établie(s) pour l'instant ?</p>
 </div>
 <ul>
-<li>La commande <code>ping</code> <code>adresse-cible</code> permet de tester si la communication est possible avec la machine d’adresse IP <code>adresse-cible</code>. 
-Vérifier ainsi que <strong>M01</strong> peut communiquer avec <strong>M02</strong> en saisissant : 
+<li>La commande <code>ping</code> <code>adresse-cible</code> permet de tester si la communication est possible avec la machine d’adresse IP <code>adresse-cible</code>.
+Vérifier ainsi que <strong>M01</strong> peut communiquer avec <strong>M02</strong> en saisissant :
 <div class="highlight"><pre><span></span><code>root /&gt; ping 192.168.0.2
 </code></pre></div></li>
 </ul>
-<div class="admonition question">
+<div class="admonition exo">
 <p class="admonition-title">Question 4</p>
 <p>Quelles informations apparaissent ? Comment les interpréter ?</p>
 </div>
 <ul>
 <li>
 <p>En effectuant un clic droit sur <strong>M01</strong>, sélectionner "Afficher les échanges de données".
-On obtient un tableau comme ci-dessous. En cliquant sur l'une des lignes, des détails s'affichent : 
+On obtient un tableau comme ci-dessous. En cliquant sur l'une des lignes, des détails s'affichent :
 <img alt="" src="../../images/filius/filius_etp1_echange1.png" width="650" />
 La première ligne est une requête du protocole ARP. Il s'agit d'un protocole qui s'interface entre la couche <em>Internet</em> et la couche <em>Liaison</em> (appelée <em>Réseau</em> dans la capture d'écran ). Cette requête consiste en un appel à tout le réseau : "Est-ce qu'une machine de ce réseau possède l'IP 192.168.0.2 ?"<br />
 Sa table de correspondance IP &ndash; MAC ne contenant que l'adresse de broadcast 255.255.255.255, la machine <strong>M01</strong> commence par envoyer un message à tout le réseau, par l'adresse MAC de broadcast <code>FF:FF:FF:FF:FF:FF</code>.<br />
 La machine <strong>M02</strong> d'IP 192.168.0.2 reconnaît son IP et répond à la machine <strong>M01</strong> d'IP 192.168.0.1. Elle lui envoie la correspondance entre son IP et son adresse MAC.
 <img alt="" src="../../images/filius/filius_etp1_echange2b.png" />
-La commande <code>arp</code> exécutée sur <strong>M01</strong> permet désormais de constater que cette machine a complété sa table de résolution d'adresses : 
+La commande <code>arp</code> exécutée sur <strong>M01</strong> permet désormais de constater que cette machine a complété sa table de résolution d'adresses :
 <div class="highlight"><pre><span></span><code>root /&gt; arp
 |    Adresse IP    |    Adresse MAC    |
 ----------------------------------------
 | 192.168.0.2      | 9E:EC:D1:EB:03:04 |
 | 255.255.255.255  | FF:FF:FF:FF:FF:FF |
 </code></pre></div>
-Les huit dernières lignes du tableau des échanges de données montrent les quatre séquences d'échanges dus à la commande <code>ping</code> entre les 2 machines <strong>M01</strong> et <strong>M02</strong>. 
-Les <code>ping</code> (ICMP Echo request) sont émis par <strong>M01</strong> à destination de <strong>M02</strong> et en réponse, les <code>pong</code> (ICMP echo reply) sont émis par <strong>M02</strong>  à destination de  <strong>M01</strong>. </p>
+Les huit dernières lignes du tableau des échanges de données montrent les quatre séquences d'échanges dus à la commande <code>ping</code> entre les 2 machines <strong>M01</strong> et <strong>M02</strong>.
+Les <code>ping</code> (ICMP Echo request) sont émis par <strong>M01</strong> à destination de <strong>M02</strong> et en réponse, les <code>pong</code> (ICMP echo reply) sont émis par <strong>M02</strong>  à destination de  <strong>M01</strong>.</p>
 </li>
 <li>
 <p>Saisir à nouveau la commande <code>ping 192.168.0.2</code> sur la machine <strong>M01</strong> et l'exécuter.</p>
 </li>
 </ul>
-<div class="admonition question">
+<div class="admonition exo">
 <p class="admonition-title">Question 5</p>
 <p>Quelle différence observe-t-on avec le résultat de la précédente exécution ? Comment l'expliquer ? (On pourra observer les échanges de données pour justifier sa réponse)</p>
 </div>
@@ -1954,7 +1942,7 @@ Les <code>ping</code> (ICMP Echo request) sont émis par <strong>M01</strong> à
 <li>Reprendre le réseau précédent <code>reseau1.fls</code>.</li>
 <li>Ajouter un 3ème ordinateur <strong>M03</strong> (IP 192.168.0.3).</li>
 </ul>
-<div class="admonition question">
+<div class="admonition exo">
 <p class="admonition-title">Question 1</p>
 <p><strong>M01</strong> est déjà relié par un câble à <strong>M02</strong>. Peut-on également relier <strong>M03</strong> à <strong>M01</strong> ?<br />
 Pourquoi ?</p>
@@ -1962,27 +1950,27 @@ Pourquoi ?</p>
 <ul>
 <li>Supprimer le câble entre <strong>M01</strong> et <strong>M02</strong>.</li>
 <li>Ajouter un commutateur (switch).</li>
-<li>Relier chaque ordinateur au commutateur à l'aide de câbles. 
+<li>Relier chaque ordinateur au commutateur à l'aide de câbles.
 <img alt="" src="../../images/filius/filius_etp2.png" width="400" /></li>
 </ul>
 </details>
-<details class="play" open="open"><summary>Mode simulation</summary><div class="admonition question">
+<details class="play" open="open"><summary>Mode simulation</summary><div class="admonition exo">
 <p class="admonition-title">Question 2</p>
 <p>Quelle commande permet de vérifier que la machine <strong>M01</strong> peut communiquer avec <strong>M03</strong> ?</p>
 </div>
 <ul>
 <li>Exécuter cette commande.</li>
 </ul>
-<div class="admonition question">
+<div class="admonition exo">
 <p class="admonition-title">Question 3</p>
 <p>À l'issue de l'exécution précédente, que contient la <em>table de résolution d'adresses</em> de la machine <strong>M03</strong> ?</p>
 </div>
 <ul>
-<li>En cliquant sur le commutateur on obtient sa table SAT : elle associe à chaque port du commutateur l'adresse MAC de la machine reliée sur ce port. Cette table se met à jour au fur et à mesure des communications. </li>
+<li>En cliquant sur le commutateur on obtient sa table SAT : elle associe à chaque port du commutateur l'adresse MAC de la machine reliée sur ce port. Cette table se met à jour au fur et à mesure des communications.</li>
 </ul>
-<div class="admonition question">
+<div class="admonition exo">
 <p class="admonition-title">Question 4</p>
-<p>Donner une commande permettant au commutateur de compléter sa table SAT. </p>
+<p>Donner une commande permettant au commutateur de compléter sa table SAT.</p>
 </div>
 <ul>
 <li>Exécuter une commande et vérifier que la table est complète.</li>
@@ -2001,14 +1989,14 @@ Pourquoi ?</p>
 </ul>
 <p><img alt="" src="../../images/filius/filius_etp3.png" width="600" /></p>
 </details>
-<details class="play" open="open"><summary>Mode simulation</summary><div class="admonition question">
+<details class="play" open="open"><summary>Mode simulation</summary><div class="admonition exo">
 <p class="admonition-title">Question 1</p>
 <p>Quelle commande permet de constater que la machine <strong>M01</strong> du réseau <strong>R0</strong> ne peut pas communiquer directement avec la machine <strong>M11</strong> du réseau <strong>R1</strong> ? Pourquoi est-ce le cas ?</p>
 </div>
 </details>
 <details class="config" open="open"><summary>Mode conception</summary><ul>
 <li>Il faut configurer le routeur pour mettre en relation logique les deux réseaux. Le routeur sert de passerelle de sortie (gateway) pour les machines d’un réseau vers l’extérieur. Il faut donc  :<ul>
-<li>d’une part modifier la configuration de chaque ordinateur pour lui indiquer une adresse IP passerelle de sortie (depuis le réseau <strong>R0</strong> : Passerelle 192.168.0.254 et depuis le réseau <strong>R1</strong> : Passerelle 192.168.1.254), </li>
+<li>d’une part modifier la configuration de chaque ordinateur pour lui indiquer une adresse IP passerelle de sortie (depuis le réseau <strong>R0</strong> : Passerelle 192.168.0.254 et depuis le réseau <strong>R1</strong> : Passerelle 192.168.1.254),</li>
 <li>d’autre part configurer le routeur pour indiquer ses adresses passerelles (une pour chaque réseau). Cocher également "routage automatique" : la table de routage se mettra à jour automatiquement.</li>
 </ul>
 </li>
@@ -2017,14 +2005,14 @@ Pourquoi ?</p>
 <details class="play" open="open"><summary>Mode simulation</summary><ul>
 <li>Vérifier désormais que <code>ping</code> fonctionne bien de <strong>M01</strong> vers <strong>M11</strong>. </li>
 </ul>
-<div class="admonition question">
+<div class="admonition exo">
 <p class="admonition-title">Question 2</p>
 <p>Comparer la valeur "ttl" affichée lors d'un ping entre <strong>M01</strong> et <strong>M03</strong> avec celle affichée lors d'un ping entre <strong>M01</strong> et <strong>M11</strong>. Comment interpréter ces valeurs ?</p>
 </div>
 <ul>
 <li>La commande <code>traceroute adresse-cible</code>  permet de connaître le chemin suivi pour communiquer avec la machine d’adresse IP <code>adresse-cible</code>.</li>
 </ul>
-<div class="admonition question">
+<div class="admonition exo">
 <p class="admonition-title">Question 3</p>
 <p>Chercher avec cette commande combien de « sauts » sont nécessaires pour passer de <strong>M01</strong> à <strong>M11</strong>.</p>
 </div>
@@ -2036,7 +2024,7 @@ Pourquoi ?</p>
 <details class="config" open="open"><summary>Mode conception</summary><ul>
 <li>Reprendre le projet filius <code>reseau2.fls</code> comportant 3 ordinateurs reliés à un commutateur.</li>
 <li>Ajouter un <strong>routeur</strong>, possédant 3 interfaces. Connecter l'une d'elles au <strong>commutateur</strong> du réseau actuel. (Passerelle pour cette interface 192.168.0.254)</li>
-<li>Ajouter une nouvelle machine, qui sera le <strong>serveur Web</strong> (IP 172.16.0.1, masque 255.255.0.0). </li>
+<li>Ajouter une nouvelle machine, qui sera le <strong>serveur Web</strong> (IP 172.16.0.1, masque 255.255.0.0).</li>
 <li>Connecter ce <strong>serveur Web</strong> au <strong>routeur</strong>. (Passerelle pour cette interface 172.16.255.254).</li>
 </ul>
 <p><img alt="" src="../../images/filius/filius_etp4.png" width="400" /></p>
@@ -2091,14 +2079,14 @@ Ce serveur sera contacté avant le <strong>serveur Web</strong> et fournira au c
 </details>
 <details class="play" open="open"><summary>Mode simulation</summary><ul>
 <li>Installer sur le <strong>serveur DNS</strong>, le logiciel "serveur DNS".</li>
-<li>Ouvrir ce logiciel pour réaliser la configuration. Indiquer un nom de domaine, par exemple "<a href="http://www.nsi.fr">www.nsi.fr</a>"  et associer l'adresse IP de ce <strong>serveur Web</strong>, 172.16.0.1. </li>
+<li>Ouvrir ce logiciel pour réaliser la configuration. Indiquer un nom de domaine, par exemple "<a href="http://www.nsi.fr">www.nsi.fr</a>"  et associer l'adresse IP de ce <strong>serveur Web</strong>, 172.16.0.1.</li>
 <li>Ajouter cette association à la liste et cliquer sur Démarrer.</li>
 <li>Sur la machine <strong>M01</strong>, depuis un navigateur web, saisir l'adresse du nom de domaine "<a href="http://www.nsi.fr">www.nsi.fr</a>" : la page d'accueil doit s'afficher. </li>
 <li>Observer les informations échangées entre <strong>M01</strong> et le <strong>serveur DNS</strong> : quels couches et protocoles sont utilisés ?</li>
 <li>Enregistrer ce projet sous <code>reseau5.fls</code>.</li>
 </ul>
 </details>
-<details class="info"><summary>Aide et éléments de correction</summary><p><a href="https://multy.me/OWve6U">https://multy.me/OWve6U</a> </p>
+<details class="info"><summary>Aide et éléments de correction</summary><p><a href="https://multy.me/OWve6U">https://multy.me/OWve6U</a></p>
 </details>
                 
               

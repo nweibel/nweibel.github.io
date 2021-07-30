@@ -540,18 +540,6 @@
   
 
           
-            
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../python/boucles_bornees_imbriquees_questions/" class="md-nav__link">
-        Boucles bornées imbriquées
-      </a>
-    </li>
-  
-
-          
         </ul>
       </nav>
     </li>
@@ -2079,7 +2067,7 @@ On peut écrire une suite d’instructions en les séparant par un <span class="
 <h3 id="variables">Variables</h3>
 <p>L’affectation d’une valeur à une variable se fait à l’aide du symbole <code>=</code>, symbole non symétrique ici.
 Selon les recommandations, le nom d'une variable peut contenir des lettres minuscules et le tiret bas. Les noms explicites sont à privilégier.<br />
-Lors de l'affectation d'une valeur à une variable : 
+Lors de l'affectation d'une valeur à une variable :
 <div class="highlight"><pre><span></span><code><span class="n">nom_variable</span> <span class="o">=</span> <span class="n">expression</span>
 </code></pre></div>
 l'expression de droite est <em>évaluée</em> et sa valeur est affectée à la variable.  </p>
@@ -2119,11 +2107,11 @@ l'expression de droite est <em>évaluée</em> et sa valeur est affectée à la v
 <p>Les principaux types de données en Python sont les nombres entiers, les nombres flottants, les booléens, les chaines de caractères, les listes et les p-uplets.</p>
 <h3 id="entiers-et-flottants">Entiers et flottants</h3>
 <p>Les entiers (type <code>int</code>) et flottants (type <code>float</code>) sont les deux types principaux pour les valeurs numériques réelles. Le type <code>int</code> n’est limité en taille que par la mémoire de la machine. <br />
-La fonction <code>int()</code> renvoie la troncature à l’entier d'un réel. </p>
+La fonction <code>int()</code> renvoie la troncature à l’entier d'un réel.</p>
 <p>Les flottants sont notés avec un point décimal ou en notation exponentielle. Leur précision est limitée. (Ils sont représentés sur 64 bits selon la norme IEEE 754 double précision.)</p>
 <p>Les notations contenant un point décimal, un quotient ou une écriture scientifique sont interprétées comme des flottants.
-Ainsi chacune des écritures suivantes :  <code>2.0</code>, <code>0.1</code>, <code>2/3</code>, <code>2.54e3</code>, <code>2e-3</code> correspond à un flottant. </p>
-<p>La fonction <code>float()</code> permet de convertir un entier en flottant. </p>
+Ainsi chacune des écritures suivantes :  <code>2.0</code>, <code>0.1</code>, <code>2/3</code>, <code>2.54e3</code>, <code>2e-3</code> correspond à un flottant.</p>
+<p>La fonction <code>float()</code> permet de convertir un entier en flottant.</p>
 <div class="admonition tip">
 <p>Observer le résultat de chaque instruction dans la console :  <br />
 <div class="highlight"><pre><span></span><code><span class="o">&gt;&gt;&gt;</span> <span class="mi">2</span><span class="o">**</span><span class="mi">10000</span>
@@ -2161,7 +2149,7 @@ L’évaluation d’une comparaison <code>&lt;</code> ; <code>&gt;</code> ; <cod
 <div class="highlight"><pre><span></span><code><span class="o">&gt;&gt;&gt;</span> <span class="n">mot</span> <span class="o">=</span> <span class="s2">&quot;bonjour&quot;</span>
 <span class="o">&gt;&gt;&gt;</span> <span class="n">mot</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
 <span class="o">&gt;&gt;&gt;</span> <span class="n">mot</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span>
-<span class="o">&gt;&gt;&gt;</span> <span class="n">mot</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span> 
+<span class="o">&gt;&gt;&gt;</span> <span class="n">mot</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span>
 <span class="o">&gt;&gt;&gt;</span> <span class="nb">len</span><span class="p">(</span><span class="n">mot</span><span class="p">)</span>
 <span class="o">&gt;&gt;&gt;</span> <span class="n">mot</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">=</span> <span class="s1">&#39;B&#39;</span>
 <span class="o">&gt;&gt;&gt;</span> <span class="n">mot</span> <span class="o">=</span> <span class="s2">&quot;Bonjour&quot;</span>
@@ -2171,7 +2159,7 @@ L’évaluation d’une comparaison <code>&lt;</code> ; <code>&gt;</code> ; <cod
 <span class="o">&gt;&gt;&gt;</span> <span class="nb">ord</span><span class="p">(</span><span class="s1">&#39;Z&#39;</span><span class="p">)</span>
 <span class="o">&gt;&gt;&gt;</span> <span class="nb">chr</span><span class="p">(</span><span class="mi">65</span><span class="p">)</span>
 <span class="o">&gt;&gt;&gt;</span> <span class="nb">str</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span>
-<span class="o">&gt;&gt;&gt;</span> <span class="s1">&#39;2&#39;</span> <span class="o">+</span> <span class="s1">&#39;3&#39;</span> 
+<span class="o">&gt;&gt;&gt;</span> <span class="s1">&#39;2&#39;</span> <span class="o">+</span> <span class="s1">&#39;3&#39;</span>
 <span class="o">&gt;&gt;&gt;</span> <span class="nb">int</span><span class="p">(</span><span class="s1">&#39;2&#39;</span><span class="p">)</span> <span class="o">+</span> <span class="nb">int</span><span class="p">(</span><span class="s1">&#39;3&#39;</span><span class="p">)</span>
 </code></pre></div></p>
 </div>
@@ -2186,8 +2174,8 @@ L’évaluation d’une comparaison <code>&lt;</code> ; <code>&gt;</code> ; <cod
 <code>nom_liste[indice] = nouvelle_valeur</code></li>
 <li>On peut ajouter un nouvel élément en fin de liste à l’aide de la méthode <code>append()</code> :<br />
 <code>nom_liste.append(nouvel_element)</code></li>
-<li>On peut concaténer (<code>+</code>) deux listes. </li>
-<li>On peut trier les éléments d'une liste à l’aide de la fonction <code>sorted()</code> : 
+<li>On peut concaténer (<code>+</code>) deux listes.</li>
+<li>On peut trier les éléments d'une liste à l’aide de la fonction <code>sorted()</code> :
 <code>liste_triee = sorted(liste_initiale)</code>.</li>
 <li>Les fonctions <code>min()</code>et <code>max()</code> donnent les valeurs minimales et maximales d'une liste contenant des valeurs numériques comparables.</li>
 </ul>
@@ -2222,7 +2210,7 @@ L’évaluation d’une comparaison <code>&lt;</code> ; <code>&gt;</code> ; <cod
 <p>Les élèves écriront des fonctions qui pourront être enregistrées dans des fichiers, appelés scripts ou modules, qu’on peut développer, enrichir et réutiliser lors de séances successives.
 Les scripts peuvent être exécutés dans un mode console, afin de tester et mettre au point les algorithmes et les programmes. L’exécution d’un script comportant la définition d’une fonction <span class="arithmatex">\(f\)</span> ne produit aucun affichage particulier dans la console.</p>
 </blockquote>
-<p>Voici un premier exemple d'utilisation de l'éditeur en lien avec la console : </p>
+<p>Voici un premier exemple d'utilisation de l'éditeur en lien avec la console :</p>
 <iframe src=https://console.basthon.fr/?from=https://raw.githubusercontent.com/nweibel/jupyter/master/script_initiation_1.py width=100% height=400></iframe>
 <p><a href="https://console.basthon.fr/?from=https://raw.githubusercontent.com/nweibel/jupyter/master/script_initiation_1.py" target="_blank">Ouvrir la console dans un nouvel onglet</a></p>
 <div class="admonition tip">
@@ -2248,7 +2236,7 @@ Une fonction associe un bloc d'instructions à un nom.</p>
 <div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">nom_de_la_fonction</span><span class="p">(</span><span class="n">parametre_1</span><span class="p">,</span> <span class="n">parametre_2</span><span class="p">,</span><span class="o">...</span><span class="p">):</span>
     <span class="n">bloc</span> <span class="n">d</span><span class="err">’</span><span class="n">instructions</span>
 </code></pre></div>
-Le bloc d’instructions s’appelle le <em>corps</em> de la fonction. Il doit être obligatoirement indenté et la fin de ce bloc marque la fin de la déclaration de fonction. </p>
+Le bloc d’instructions s’appelle le <em>corps</em> de la fonction. Il doit être obligatoirement indenté et la fin de ce bloc marque la fin de la déclaration de fonction.</p>
 <p>Une fonction peut renvoyer zéro, une ou plusieurs valeurs à l’aide de l'instruction <code>return</code> qui met fin à l’exécution de la fonction.</p>
 <p>Un exemple :
 <div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">moyenne</span><span class="p">(</span><span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">):</span>
@@ -2263,8 +2251,8 @@ Ce fonctionnement est requis pour les interfaces ne disposant pas d'une console,
 <h3 id="parametres">Paramètres</h3>
 <p>La fonction <code>moyenne</code> définie ci-dessus possède deux paramètres <code>a</code>et <code>b</code>. L'appel de <code>moyenne</code>avec un nombre de paramètres différent de deux provoque une erreur.</p>
 <p>Une fonction n’a pas nécessairement de paramètres. On peut par exemple écrire :
-<div class="highlight"><pre><span></span><code><span class="kn">from</span> <span class="nn">random</span> <span class="kn">import</span> <span class="n">randint</span> 
-<span class="c1"># cette instruction permet d&#39;utiliser la fonction randint qui n&#39;est pas </span>
+<div class="highlight"><pre><span></span><code><span class="kn">from</span> <span class="nn">random</span> <span class="kn">import</span> <span class="n">randint</span>
+<span class="c1"># cette instruction permet d&#39;utiliser la fonction randint qui n&#39;est pas</span>
 <span class="c1"># disponible par défaut</span>
 <span class="k">def</span> <span class="nf">de</span><span class="p">(</span> <span class="p">):</span>
     <span class="k">return</span><span class="p">(</span><span class="n">randint</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">6</span><span class="p">))</span>
@@ -2274,7 +2262,7 @@ L’appel de la fonction <code>de()</code> provoque le tirage aléatoire d’un 
 <p>On lance deux dés dés équilibrés à 6 faces et on calcule la somme des numéros situés sur les faces supérieures. Dans un script, écrire une fonction qui simule cette expérience et en renvoie le résultat.</p>
 </div>
 <h3 id="variable-locale">Variable locale</h3>
-<p>Une variable déclarée dans une fonction ne sera visible que dans cette fonction, et les confusions sont faciles si une autre variable porte le même nom. On parle de variable <em>locale</em>. </p>
+<p>Une variable déclarée dans une fonction ne sera visible que dans cette fonction, et les confusions sont faciles si une autre variable porte le même nom. On parle de variable <em>locale</em>.</p>
 <div class="admonition tip">
 <p>Anticiper l’affichage produit dans la console par l’exécution du script suivant et vérifier.
 <div class="highlight"><pre><span></span><code><span class="n">score</span> <span class="o">=</span> <span class="mi">0</span>
@@ -2291,12 +2279,12 @@ L’appel de la fonction <code>de()</code> provoque le tirage aléatoire d’un 
 <h3 id="structure-conditionnelle">Structure conditionnelle</h3>
 <p>En Python, une structure conditionnelle est introduite par le mot clé <code>if</code> dont la syntaxe est :
 <div class="highlight"><pre><span></span><code><span class="k">if</span> <span class="n">expression</span> <span class="p">:</span>
-    <span class="n">bloc</span> <span class="n">d</span><span class="err">’</span><span class="n">instructions</span> <span class="n">exécuté</span> <span class="n">si</span> <span class="n">expression</span> <span class="n">vaut</span> <span class="kc">True</span> 
+    <span class="n">bloc</span> <span class="n">d</span><span class="err">’</span><span class="n">instructions</span> <span class="n">exécuté</span> <span class="n">si</span> <span class="n">expression</span> <span class="n">vaut</span> <span class="kc">True</span>
 </code></pre></div>
 où <code>expression</code> a pour valeur un booléen.</p>
 <p>Pour exécuter un autre bloc d’instructions lorsque <code>expression</code> a pour valeur <code>False</code>, on utilise le mot clé <code>else</code> avec la syntaxe suivante :
 <div class="highlight"><pre><span></span><code><span class="k">if</span> <span class="n">expression</span> <span class="p">:</span>
-    <span class="n">bloc</span> <span class="n">d</span><span class="err">’</span><span class="n">instructions</span> <span class="n">exécuté</span> <span class="n">si</span> <span class="n">expression</span> <span class="n">vaut</span> <span class="kc">True</span> 
+    <span class="n">bloc</span> <span class="n">d</span><span class="err">’</span><span class="n">instructions</span> <span class="n">exécuté</span> <span class="n">si</span> <span class="n">expression</span> <span class="n">vaut</span> <span class="kc">True</span>
 <span class="k">else</span> <span class="p">:</span>
     <span class="n">bloc</span> <span class="n">d</span><span class="err">’</span><span class="n">instructions</span> <span class="n">exécuté</span> <span class="n">si</span> <span class="n">expression</span> <span class="n">vaut</span> <span class="kc">False</span>
 </code></pre></div></p>
@@ -2309,11 +2297,11 @@ où <code>expression</code> a pour valeur un booléen.</p>
         <span class="k">return</span> <span class="p">(</span><span class="mi">3</span> <span class="o">*</span> <span class="n">n</span> <span class="o">+</span> <span class="mi">1</span><span class="p">)</span>
 </code></pre></div></p>
 </div>
-<p>Si l'on souhaite tester plusieurs expressions, on peut utiliser le 
+<p>Si l'on souhaite tester plusieurs expressions, on peut utiliser le
 mot-clé <code>elif</code>, autant de fois que nécessaire entre <code>if</code> et <code>else</code>.
 (<code>elif</code> signifie <em>sinon si</em>).</p>
 <div class="highlight"><pre><span></span><code><span class="k">if</span> <span class="n">expression_1</span> <span class="p">:</span>
-    <span class="n">bloc</span> <span class="n">d</span><span class="err">’</span><span class="n">instructions</span> <span class="n">exécuté</span> <span class="n">si</span> <span class="n">expression_1</span> <span class="n">vaut</span> <span class="kc">True</span> 
+    <span class="n">bloc</span> <span class="n">d</span><span class="err">’</span><span class="n">instructions</span> <span class="n">exécuté</span> <span class="n">si</span> <span class="n">expression_1</span> <span class="n">vaut</span> <span class="kc">True</span>
 <span class="k">elif</span> <span class="n">expression_2</span> <span class="p">:</span>
     <span class="n">bloc</span> <span class="n">d</span><span class="err">’</span><span class="n">instructions</span> <span class="n">exécuté</span> <span class="n">si</span> <span class="n">expression_2</span> <span class="n">vaut</span> <span class="kc">True</span>
 <span class="k">else</span> <span class="p">:</span>
@@ -2323,7 +2311,7 @@ mot-clé <code>elif</code>, autant de fois que nécessaire entre <code>if</code>
 <h4 id="boucles-non-bornees">Boucles non bornées</h4>
 <p>En Python, une boucle non bornée est introduite par le mot clé <code>while</code> dont la syntaxe est :
 <div class="highlight"><pre><span></span><code><span class="k">while</span> <span class="n">expression</span> <span class="p">:</span>
-    <span class="n">bloc</span> <span class="n">d</span><span class="err">’</span><span class="n">instructions</span> <span class="n">à</span> <span class="n">répéter</span> <span class="n">tant</span> <span class="n">que</span> <span class="n">expression</span> <span class="n">a</span> <span class="n">pour</span> <span class="n">valeur</span> <span class="kc">True</span> 
+    <span class="n">bloc</span> <span class="n">d</span><span class="err">’</span><span class="n">instructions</span> <span class="n">à</span> <span class="n">répéter</span> <span class="n">tant</span> <span class="n">que</span> <span class="n">expression</span> <span class="n">a</span> <span class="n">pour</span> <span class="n">valeur</span> <span class="kc">True</span>
 </code></pre></div>
 Cette boucle permet de répéter un bloc d'instructions tant qu'une expression (booléenne) est vraie.
 On utilise généralement cette boucle lorsqu'on ne connait pas le nombre d'itérations au préalable.</p>
@@ -2338,7 +2326,7 @@ On utilise généralement cette boucle lorsqu'on ne connait pas le nombre d'ité
     <span class="k">return</span> <span class="p">(</span><span class="n">rebond</span><span class="p">,</span> <span class="n">hauteur</span><span class="p">)</span>
 </code></pre></div></p>
 </div>
-<p>Les boucles <code>while</code> présentent un risque de boucle infinie. 
+<p>Les boucles <code>while</code> présentent un risque de boucle infinie.
 Pour que la boucle prenne fin, il faut s'assurer que l'expression qui conditionne l'exécution du corps de la boucle prendra la valeur <code>False</code>, éventuellement après de très nombreuses étapes. Il faut donc s’assurer que la valeur de cette expression est bien modifiée par les instructions du corps de la boucle (ou par un événement).</p>
 <div class="admonition abstract">
 <p class="admonition-title">Exemple :</p>
@@ -2350,13 +2338,13 @@ Pour que la boucle prenne fin, il faut s'assurer que l'expression qui conditionn
     <span class="nb">print</span><span class="p">(</span><span class="n">compteur</span><span class="p">)</span>
 </code></pre></div>
 </div>
-<p>À l'inverse, si l'expression qui conditionne l'exécution du corps de la boucle a pour valeur <code>False</code> dès le départ, le corps de la boucle n’est jamais exécuté. </p>
+<p>À l'inverse, si l'expression qui conditionne l'exécution du corps de la boucle a pour valeur <code>False</code> dès le départ, le corps de la boucle n’est jamais exécuté.</p>
 <h4 id="boucles-bornees">Boucles bornées</h4>
 <p>En Python, la boucle bornée est introduite par le mot clé <code>for</code> dont la syntaxe est :</p>
-<div class="highlight"><pre><span></span><code><span class="k">for</span> <span class="n">iterateur</span> <span class="ow">in</span> <span class="n">sequence</span><span class="p">:</span>
+<div class="highlight"><pre><span></span><code><span class="k">for</span> <span class="n">element</span> <span class="ow">in</span> <span class="n">sequence</span><span class="p">:</span>
     <span class="n">bloc</span> <span class="n">d</span><span class="s1">&#39;instructions</span>
 </code></pre></div>
-<p>L'itérateur est une variable à laquelle il faut donner un nom, et qui prend successivement les valeurs des éléments de la séquence. <br />
+<p><code>element</code> est une variable à laquelle il faut donner un nom, et qui prend successivement les valeurs des éléments de la séquence. <br />
 Le bloc d'instructions à exécuter dans le corps de la boucle est à indenter.</p>
 <p>En première approche, on peut utiliser l'instruction suivante pour répéter <code>n</code> fois un bloc d'instructions :<br />
 <div class="highlight"><pre><span></span><code><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">n</span><span class="p">):</span>
@@ -2385,8 +2373,8 @@ Le bloc d'instructions à exécuter dans le corps de la boucle est à indenter.<
     <span class="k">return</span> <span class="p">(</span><span class="n">somme</span><span class="p">)</span>
 </code></pre></div>
 </div>
-<p>La boucle <code>for</code> en Python permet de parcourir n’importe quelle séquence : chaine de caratères, liste, p-uplet, etc. </p>
-<p>Par exemple : <code>for c in "Bonjour"</code> permet à la variable <code>c</code> de prendre successivement la valeur de chacun des caractères de la chaine "Bonjour". </p>
+<p>La boucle <code>for</code> en Python permet de parcourir n’importe quelle séquence : chaine de caratères, liste, p-uplet, etc.</p>
+<p>Par exemple : <code>for c in "Bonjour"</code> permet à la variable <code>c</code> de prendre successivement la valeur de chacun des caractères de la chaine "Bonjour".</p>
                 
               
               

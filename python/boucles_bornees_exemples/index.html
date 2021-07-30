@@ -660,18 +660,6 @@
   
 
           
-            
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../boucles_bornees_imbriquees_questions/" class="md-nav__link">
-        Boucles bornées imbriquées
-      </a>
-    </li>
-  
-
-          
         </ul>
       </nav>
     </li>
@@ -1902,9 +1890,9 @@ On utilise une boucle pour répéter un bloc de deux instructions :
 <code>forward(100)</code> et <code>left(90)</code>  sont exécutées quatre fois de suite.</p>
 <h3 id="12-calcul-de-la-longueur-du-trajet-parcouru">1.2 Calcul de la longueur du trajet parcouru</h3>
 <p>Pour calculer la longueur du trajet parcouru on peut initialiser une variable <code>parcouru</code> à 0 et lui ajouter la longueur de chaque segment parcouru :
-<div class="highlight"><pre><span></span><code><span class="n">parcouru</span> <span class="o">=</span> <span class="mi">0</span>
+<div class="highlight"><pre><span></span><code><span class="n">parcouru</span> <span class="o">=</span> <span class="mi">0</span>                     <span class="c1"># initialisation à 0</span>
 <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">4</span><span class="p">):</span>
-    <span class="n">parcouru</span> <span class="o">=</span> <span class="n">parcouru</span> <span class="o">+</span> <span class="mi">100</span>
+    <span class="n">parcouru</span> <span class="o">=</span> <span class="n">parcouru</span> <span class="o">+</span> <span class="mi">100</span>    <span class="c1"># parcouru est augmentée de 100</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">parcouru</span><span class="p">)</span>
 </code></pre></div>
 <div class="highlight"><pre><span></span><code><span class="mi">400</span>
@@ -1917,21 +1905,21 @@ On dit que <code>parcouru</code> est une <em>variable de cumul</em>. Évidemment
 <p>On souhaite réaliser une spirale composée de dix segments dont les longueurs sont successivement 10, 20, 30, ..., 100.<br />
 On peut utiliser une variable <code>pas</code> contenant à chaque étape la longueur du tracé à réaliser. À la fin de chaque étape, la valeur de la variable <code>pas</code> sera augmentée de 10.</p>
 <p><img align="right" alt="spirale" src="../../images/turtle/spirale.png" width="170" /></p>
-<p><div class="highlight"><pre><span></span><code><span class="n">pas</span> <span class="o">=</span> <span class="mi">10</span>
+<p><div class="highlight"><pre><span></span><code><span class="n">pas</span> <span class="o">=</span> <span class="mi">10</span>              <span class="c1"># initialisation à 10</span>
 <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">10</span><span class="p">):</span>
     <span class="n">forward</span><span class="p">(</span><span class="n">pas</span><span class="p">)</span>
     <span class="n">left</span><span class="p">(</span><span class="mi">90</span><span class="p">)</span>
-    <span class="n">pas</span> <span class="o">=</span> <span class="n">pas</span> <span class="o">+</span> <span class="mi">10</span>
+    <span class="n">pas</span> <span class="o">=</span> <span class="n">pas</span> <span class="o">+</span> <span class="mi">10</span>    <span class="c1"># pas est augmenté de 10</span>
 </code></pre></div>
 On utilise une boucle pour répéter un bloc d'instructions
 dix fois de suite. Comme l'instruction <code>forward(pas)</code> dépend du paramètre <code>pas</code> et que celui-ci est modifié à l'intérieur de la boucle, les dix tracés ne sont pas identiques.</p>
 <h3 id="22-calcul-de-la-longueur-du-trajet-parcouru">2.2 Calcul de la longueur du trajet parcouru</h3>
 <p>Cette fois encore, pour calculer la longueur du trajet parcouru on peut initialiser une variable <code>parcouru</code> à 0 et lui ajouter la longueur de chaque segment parcouru, or cette longueur est la valeur de <code>pas</code>.</p>
-<p><div class="highlight"><pre><span></span><code><span class="n">parcouru</span> <span class="o">=</span> <span class="mi">0</span>
-<span class="n">pas</span> <span class="o">=</span> <span class="mi">10</span>
+<p><div class="highlight"><pre><span></span><code><span class="n">parcouru</span> <span class="o">=</span> <span class="mi">0</span>                     <span class="c1"># initialisation à 0</span>
+<span class="n">pas</span> <span class="o">=</span> <span class="mi">10</span>                         <span class="c1"># initialisation à 10</span>
 <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">10</span><span class="p">):</span>
-    <span class="n">parcouru</span> <span class="o">=</span> <span class="n">parcouru</span> <span class="o">+</span> <span class="n">pas</span>
-    <span class="n">pas</span> <span class="o">=</span> <span class="n">pas</span> <span class="o">+</span> <span class="mi">10</span>
+    <span class="n">parcouru</span> <span class="o">=</span> <span class="n">parcouru</span> <span class="o">+</span> <span class="n">pas</span>    <span class="c1"># parcouru est augmentée de la valeur de pas</span>
+    <span class="n">pas</span> <span class="o">=</span> <span class="n">pas</span> <span class="o">+</span> <span class="mi">10</span>               <span class="c1"># pas est augmentée de 10</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">parcouru</span><span class="p">)</span>
 </code></pre></div>
 <div class="highlight"><pre><span></span><code><span class="mi">550</span>
@@ -1954,7 +1942,7 @@ Dans l'instruction <code class="highlight"><span class="k">for</span> <span clas
 Lorsque <code>i</code> prend les valeurs entières de 0 à 9, l'expression <code>10 + 10 * i</code> prend les valeurs : 10, 20, ..., 100.</p>
 <h3 id="32-calcul-de-la-longueur-du-trajet-parcouru">3.2 Calcul de la longueur du trajet parcouru</h3>
 <p>En s'appuyant sur le programme de tracé précédent, le calcul de la longueur devient :</p>
-<p><div class="highlight"><pre><span></span><code><span class="n">parcouru</span> <span class="o">=</span> <span class="mi">0</span>
+<p><div class="highlight"><pre><span></span><code><span class="n">parcouru</span> <span class="o">=</span> <span class="mi">0</span>  
 <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">10</span><span class="p">):</span>
     <span class="n">parcouru</span> <span class="o">=</span> <span class="n">parcouru</span> <span class="o">+</span> <span class="p">(</span><span class="mi">10</span> <span class="o">+</span> <span class="mi">10</span> <span class="o">*</span> <span class="n">i</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">parcouru</span><span class="p">)</span>
