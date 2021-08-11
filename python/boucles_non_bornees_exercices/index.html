@@ -1935,32 +1935,37 @@
 <p>L'instruction <code>randint(1,6)</code> génère un entier aléatoire entre 1 et 6 compris. Cette fonction fait partie du module <code>random</code>. Pour pouvoir l'utiliser on peut écrire en début de programme : <code>from random import randint</code>.  </p>
 </div>
 <h4 id="exercice-11">Exercice 1.1</h4>
-<div class="admonition tip">
+<div class="admonition exo">
+<p class="admonition-title">Question</p>
 <p>On simule le tirage aléatoire de deux dés, jusqu'à ce qu'on obtienne un double (deux 1, deux 2, etc.).<br />
-Ecrire un programme qui permet d'afficher le nombre de coups qui ont été nécessaires pour obtenir le premier double. (Un premier double au 3e lancer doit faire afficher la valeur 3).</p>
+Écrire un programme qui permet d'afficher le nombre de coups qui ont été nécessaires pour obtenir le premier double. (Un premier double au 3e lancer doit faire afficher la valeur 3).</p>
 </div>
 <h4 id="exercice-12">Exercice 1.2</h4>
-<div class="admonition tip">
+<div class="admonition exo">
+<p class="admonition-title">Question</p>
 <p>On simule le tirage aléatoire de deux dés, jusqu'à ce que la somme des deux dés soit égale à 7.<br />
-Ecrire un programme qui permet d'afficher le nombre de coups qui ont été nécessaires pour obtenir une somme des deux dés égale à 7.</p>
+Écrire un programme qui permet d'afficher le nombre de coups qui ont été nécessaires pour obtenir une somme des deux dés égale à 7.</p>
 </div>
 <h2 id="2-accumulation">2. Accumulation</h2>
 <h4 id="exercice-21">Exercice 2.1</h4>
-<div class="admonition tip">
+<div class="admonition exo">
+<p class="admonition-title">Question</p>
 <p>On dispose d'une feuille de papier d'épaisseur 0,1 mm.
 En supposant qu'on peut plier en 2 cette feuille autant de fois qu'on le souhaite, combien de fois doit-on la plier en deux au minimum pour que l'épaisseur dépasse la hauteur de la tour Eiffel (324 m) ?<br />
 Écrire un programme en Python pour résoudre ce problème.</p>
 </div>
 <h4 id="exercice-22">Exercice 2.2</h4>
-<div class="admonition tip">
+<div class="admonition exo">
+<p class="admonition-title">Question</p>
 <p>Un capital de 1000 euros est déposé sur un compte à intérêts composés à 4 % : chaque année le montant disponible sur le compte est augmenté de 4 %. <br />
 Si l'on n'effectue ni dépôt ni retrait, combien d'années faut-il pour que le montant disponible atteigne (ou dépasse) 2000 euros ?<br />
 Écrire un programme en Python pour résoudre ce problème.</p>
 </div>
 <h2 id="3-calculs-en-boucle">3. Calculs en boucle</h2>
 <h4 id="exercice-31">Exercice 3.1</h4>
-<div class="admonition tip">
-<p>Quelle serait la valeur de la variable <code>resultat</code> à l'issue de l'exécution de ces instructions ?<br />
+<div class="admonition exo">
+<p class="admonition-title">Question</p>
+<p>Quelle sera la valeur de la variable <code>resultat</code> à l'issue de l'exécution de ces instructions ?<br />
 Comment décrire ce que réalise ce programme ?
 <div class="highlight"><pre><span></span><code><span class="n">resultat</span> <span class="o">=</span> <span class="mi">1</span>
 <span class="k">while</span> <span class="n">resultat</span> <span class="o">&lt;</span> <span class="mi">1000</span> <span class="p">:</span>
@@ -1968,34 +1973,31 @@ Comment décrire ce que réalise ce programme ?
 </code></pre></div></p>
 </div>
 <h4 id="exercice-32">Exercice 3.2</h4>
-<div class="admonition tip">
-<p>Écrire un programme qui permet de déterminer la plus petite puissance de 5 supérieure à 1000. 
+<div class="admonition exo">
+<p class="admonition-title">Question</p>
+<p>Écrire un programme qui permet de déterminer la plus petite puissance de 5 supérieure à 1000.
 Le programme ne devra pas utiliser l'opérateur python <code>**</code>.</p>
 </div>
 <h2 id="4-traces-en-boucle">4. Tracés en boucle</h2>
 <h4 id="exercice-41">Exercice 4.1</h4>
-<div class="admonition tip">
-<p>Le programme suivant utilise la tortue du module <code>mobilechelonian</code> dans un notebook Jupyter.<br />
- S'arrête-t-il lorsqu'on lance son exécution ? Pourquoi ?</p>
-<div class="highlight"><pre><span></span><code><span class="kn">from</span> <span class="nn">mobilechelonian</span> <span class="kn">import</span> <span class="n">Turtle</span>
-<span class="n">t</span> <span class="o">=</span> <span class="n">Turtle</span><span class="p">()</span>
-<span class="n">longueur</span> <span class="o">=</span> <span class="mi">150</span>
+<div class="admonition exo">
+<p class="admonition-title">Question</p>
+<p><img alt="🐢" class="twemoji" src="https://twemoji.maxcdn.com/v/latest/svg/1f422.svg" title=":turtle:" /> Le programme suivant s'arrête-t-il lorsqu'on lance son exécution ? Pourquoi ?</p>
+<div class="highlight"><pre><span></span><code><span class="n">longueur</span> <span class="o">=</span> <span class="mi">150</span>
 <span class="k">while</span> <span class="n">longueur</span> <span class="o">&gt;</span> <span class="mi">0</span> <span class="p">:</span>
-    <span class="n">t</span><span class="o">.</span><span class="n">forward</span><span class="p">(</span><span class="n">longueur</span><span class="p">)</span>
-    <span class="n">t</span><span class="o">.</span><span class="n">left</span><span class="p">(</span><span class="mi">89</span><span class="p">)</span>
+    <span class="n">forward</span><span class="p">(</span><span class="n">longueur</span><span class="p">)</span>
+    <span class="n">left</span><span class="p">(</span><span class="mi">89</span><span class="p">)</span>
     <span class="n">longueur</span> <span class="o">=</span> <span class="n">longueur</span> <span class="o">-</span> <span class="mi">2</span>
 </code></pre></div>
 </div>
 <h4 id="exercice-42">Exercice 4.2</h4>
-<div class="admonition tip">
-<p>Le programme suivant utilise la tortue du module <code>mobilechelonian</code> dans un notebook Jupyter.<br />
- S'arrête-t-il lorsqu'on lance son exécution ? Pourquoi ? </p>
-<div class="highlight"><pre><span></span><code><span class="kn">from</span> <span class="nn">mobilechelonian</span> <span class="kn">import</span> <span class="n">Turtle</span>
-<span class="n">t</span> <span class="o">=</span> <span class="n">Turtle</span><span class="p">()</span>
-<span class="n">longueur</span> <span class="o">=</span> <span class="mi">150</span>
+<div class="admonition exo">
+<p class="admonition-title">Question</p>
+<p><img alt="🐢" class="twemoji" src="https://twemoji.maxcdn.com/v/latest/svg/1f422.svg" title=":turtle:" /> Le programme suivant s'arrête-t-il lorsqu'on lance son exécution ? Pourquoi ?</p>
+<div class="highlight"><pre><span></span><code><span class="n">longueur</span> <span class="o">=</span> <span class="mi">150</span>
 <span class="k">while</span> <span class="n">longueur</span> <span class="o">&gt;</span> <span class="mi">0</span> <span class="p">:</span>
-    <span class="n">t</span><span class="o">.</span><span class="n">forward</span><span class="p">(</span><span class="n">longueur</span><span class="p">)</span>
-    <span class="n">t</span><span class="o">.</span><span class="n">left</span><span class="p">(</span><span class="mi">89</span><span class="p">)</span>
+    <span class="n">forward</span><span class="p">(</span><span class="n">longueur</span><span class="p">)</span>
+    <span class="n">left</span><span class="p">(</span><span class="mi">89</span><span class="p">)</span>
     <span class="n">longueur</span> <span class="o">=</span> <span class="n">longueur</span> <span class="o">/</span> <span class="mi">2</span>
 </code></pre></div>
 </div>
