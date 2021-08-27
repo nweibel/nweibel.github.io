@@ -850,6 +850,18 @@
   
 
           
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../fonctions_exercices/" class="md-nav__link">
+        Exercices
+      </a>
+    </li>
+  
+
+          
         </ul>
       </nav>
     </li>
@@ -1842,25 +1854,26 @@ où <code>expression</code> a pour valeur <code>True</code> ou <code>False</code
 Dans tous les cas, si le bloc <code>bloc_instructions_2</code> existe, il est exécuté ensuite.  </p>
 <div class="admonition abstract">
 <p class="admonition-title">Exemple : l'expression de la clause <code>if</code> a pour valeur <code>True</code></p>
-<p><div class="highlight"><pre><span></span><code><span class="n">nb</span> <span class="o">=</span> <span class="mi">17</span>
-<span class="k">if</span> <span class="n">nb</span> <span class="o">%</span> <span class="mi">2</span> <span class="o">!=</span> <span class="mi">0</span><span class="p">:</span>
-    <span class="n">nb</span> <span class="o">=</span> <span class="n">nb</span> <span class="o">*</span> <span class="mi">2</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">nb</span><span class="p">,</span> <span class="s2">&quot;est un nombre pair&quot;</span><span class="p">)</span>
+<p><div class="highlight"><pre><span></span><code><span class="n">nb</span> <span class="o">=</span> <span class="mi">174</span>
+<span class="k">if</span> <span class="n">nb</span> <span class="o">%</span> <span class="mi">2</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">nb</span><span class="p">,</span> <span class="s2">&quot;est un nombre pair&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;fin des tests&quot;</span><span class="p">)</span>
 </code></pre></div>
-<div class="highlight"><pre><span></span><code>34 est un nombre pair
+<div class="highlight"><pre><span></span><code>174 est un nombre pair
+fin des tests
 </code></pre></div></p>
-<p><code>nb % 2 != 0</code> est une expression qui vaut <code>True</code> lorsque <code>nb</code> vaut 17. L'instruction <code>nb = nb * 2</code> est exécutée, ce qui affecte à <code>nb</code> la valeur 34.</p>
+<p><code>nb % 2 == 0</code> est une expression qui vaut <code>True</code> lorsque <code>nb</code> vaut 174. L'instruction <code>print(nb, "est un nombre pair")</code> est exécutée.</p>
 </div>
 <div class="admonition abstract">
 <p class="admonition-title">Exemple : l'expression de la clause <code>if</code> a pour valeur <code>False</code></p>
-<p><div class="highlight"><pre><span></span><code><span class="n">nb</span> <span class="o">=</span> <span class="mi">18</span>
-<span class="k">if</span> <span class="n">nb</span> <span class="o">%</span> <span class="mi">2</span> <span class="o">!=</span> <span class="mi">0</span><span class="p">:</span>
-    <span class="n">nb</span> <span class="o">=</span> <span class="n">nb</span> <span class="o">*</span> <span class="mi">2</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">nb</span><span class="p">,</span> <span class="s2">&quot;est un nombre pair&quot;</span><span class="p">)</span>
+<p><div class="highlight"><pre><span></span><code><span class="n">nb</span> <span class="o">=</span> <span class="mi">181</span>
+<span class="k">if</span> <span class="n">nb</span> <span class="o">%</span> <span class="mi">2</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">nb</span><span class="p">,</span> <span class="s2">&quot;est un nombre pair&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;fin des tests&quot;</span><span class="p">)</span>
 </code></pre></div>
-<div class="highlight"><pre><span></span><code>18 est un nombre pair
+<div class="highlight"><pre><span></span><code>fin des tests
 </code></pre></div></p>
-<p><code>nb % 2 != 0</code> est une expression qui vaut <code>False</code> lorsque <code>nb</code> vaut 18. L'instruction <code>nb = nb * 2</code> est ignorée et la valeur de <code>nb</code> n'est pas modifiée.</p>
+<p><code>nb % 2 == 0</code> est une expression qui vaut <code>False</code> lorsque <code>nb</code> vaut 181. L'instruction <code>print(nb, "est un nombre pair")</code> est ignorée.</p>
 </div>
 <h2 id="linstruction-if-else">L'instruction <code>if … else</code></h2>
 <p>La syntaxe de l'instruction <code>if … else</code> est :</p>
@@ -1919,21 +1932,24 @@ où <code>expression1</code> et <code>expression2</code> ont pour valeur <code>T
 </ul>
 <div class="admonition abstract">
 <p class="admonition-title">Exemple : </p>
-<p><div class="highlight"><pre><span></span><code><span class="n">nb</span> <span class="o">=</span> <span class="mi">15</span>
-<span class="k">if</span> <span class="n">nb</span> <span class="o">&lt;=</span> <span class="mi">10</span><span class="p">:</span>
-    <span class="nb">print</span><span class="p">(</span><span class="n">nb</span><span class="p">,</span> <span class="s2">&quot;est inférieur ou égal à 10&quot;</span><span class="p">)</span>
-<span class="k">elif</span> <span class="n">nb</span> <span class="o">&gt;=</span> <span class="mi">20</span><span class="p">:</span>
-    <span class="nb">print</span><span class="p">(</span><span class="n">nb</span><span class="p">,</span> <span class="s2">&quot;est supérieur ou égal à 20&quot;</span><span class="p">)</span>
+<p><div class="highlight"><pre><span></span><code><span class="n">nb</span> <span class="o">=</span> <span class="mi">178</span>
+<span class="k">if</span> <span class="n">nb</span> <span class="o">%</span> <span class="mi">10</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">nb</span><span class="p">,</span> <span class="s2">&quot;est un multiple de 10&quot;</span><span class="p">)</span>
+<span class="k">elif</span> <span class="n">nb</span> <span class="o">%</span> <span class="mi">5</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">nb</span><span class="p">,</span> <span class="s2">&quot;est un multiple de 5, mais pas de 10&quot;</span><span class="p">)</span>
+<span class="k">elif</span> <span class="n">nb</span> <span class="o">%</span> <span class="mi">2</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">nb</span><span class="p">,</span> <span class="s2">&quot;est un multiple de 2, mais pas de 10&quot;</span><span class="p">)</span>
 <span class="k">else</span> <span class="p">:</span>
-    <span class="nb">print</span><span class="p">(</span><span class="n">nb</span><span class="p">,</span> <span class="s2">&quot;est strictement compris entre 10 et 20&quot;</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">nb</span><span class="p">,</span> <span class="s2">&quot;n&#39;est ni un multiple de 2, ni un multiple de 5&quot;</span><span class="p">)</span>
 </code></pre></div>
-<div class="highlight"><pre><span></span><code>15 est strictement compris entre 10 et 20
+<div class="highlight"><pre><span></span><code>178 est un multiple de 2, mais pas de 10
 </code></pre></div></p>
-<p><code>nb &lt;= 10</code> est une expression qui vaut <code>False</code> lorsque <code>nb</code> vaut 15.<br />
-L'instruction <code>print(nb, "est inférieur ou égal à 10")</code> est ignorée.<br />
-<code>nb &gt;= 20</code> est une expression qui vaut <code>False</code> lorsque <code>nb</code> vaut 15.<br />
-L'instruction <code>print(nb, "est supérieur ou égal à 20")</code> est aussi ignorée.  </p>
-<p>L'instruction <code>print(nb, "est strictement compris entre 10 et 20")</code> est donc exécutée.</p>
+<p><code>nb % 10 == 0</code> est une expression qui vaut <code>False</code> lorsque <code>nb</code> vaut 178.<br />
+L'instruction <code>print(nb, "est un multiple de 10")</code> est ignorée.<br />
+<code>nb % 5 == 0</code> est une expression qui vaut <code>False</code> lorsque <code>nb</code> vaut 178.<br />
+L'instruction <code>print(nb, "est un multiple de 5, mais pas de 10")</code> est aussi ignorée.<br />
+<code>nb % 2 == 0</code> est une expression qui vaut <code>True</code> lorsque <code>nb</code> vaut 178.
+L'instruction <code>print(nb, "est un multiple de 2, mais pas de 10")</code> est donc exécutée.</p>
 </div>
                 
               

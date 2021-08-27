@@ -917,6 +917,18 @@
   
 
           
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../fonctions_exercices/" class="md-nav__link">
+        Exercices
+      </a>
+    </li>
+  
+
+          
         </ul>
       </nav>
     </li>
@@ -2170,58 +2182,56 @@ L'affichage produit est le message d'erreur : <code>TypeError: cannot concatenat
 </div>
 </div>
 <h2 id="3-traces-en-boucle-des-fonctions-sans-return">3. Tracés en boucle : des fonctions sans <code>return</code></h2>
-<p>Les tracés suivants ont été réalisés dans un environnement Jupyter, à l'aide du module <a href="https://pypi.org/project/mobilechelonian/">mobilechelonian</a> qui  permet d'utiliser l'essentiel des méthodes liées à la tortue. Pour exécuter les codes dans un notebook Jupyter, les instructions sont à précéder de :  <br />
-<code>from mobilechelonian import Turtle</code>.  </p>
-<p>Dans un environnement standard on pourra utiliser le module <a href="https://docs.python.org/fr/3/library/turtle.html">turtle</a>, avec quelques adaptations du code.</p>
+<div class="admonition info">
+<p class="admonition-title">Module turtle</p>
+<p>Les exercices suivants utilisent le module <code>turtle</code>. Ils sont précédés de l'icône <img alt="🐢" class="twemoji" src="https://twemoji.maxcdn.com/v/latest/svg/1f422.svg" title=":turtle:" />.  </p>
+<p>Pour exécuter dans un notebook Jupyter de Basthon un programme utilisant des instructions du module <code>turtle</code>, le notebook doit contenir l'instruction   <code>from turtle import *</code> et le programme doit se terminer avec l’instruction <code>done()</code>.</p>
+</div>
 <h4 id="question-31">Question 3.1</h4>
 <div class="admonition exo">
 <p class="admonition-title">Question</p>
-<p>Parmi les programmes suivants, lequel permet de faire tracer à la tortue la figure ci-dessous ?  </p>
-<p><img alt="trois carrés" src="../../images/trois_carres.png" /></p>
+<p><img alt="🐢" class="twemoji" src="https://twemoji.maxcdn.com/v/latest/svg/1f422.svg" title=":turtle:" /> Parmi les programmes suivants, lequel permet de faire tracer à la tortue la figure ci-dessous ?  </p>
+<p><img alt="trois carrés" src="../../images/turtle/trois_carres.png" width="250" /></p>
 </div>
 <p>Programme A :
-<div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">carre</span><span class="p">(</span><span class="n">tortue</span><span class="p">):</span>
+<div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">carre</span><span class="p">():</span>
     <span class="k">for</span> <span class="n">nb_cote</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span> <span class="p">:</span>
-        <span class="n">tortue</span><span class="o">.</span><span class="n">forward</span><span class="p">(</span><span class="mi">100</span><span class="p">)</span>
-        <span class="n">tortue</span><span class="o">.</span><span class="n">left</span><span class="p">(</span><span class="mi">90</span><span class="p">)</span>
+        <span class="n">forward</span><span class="p">(</span><span class="mi">100</span><span class="p">)</span>
+        <span class="n">left</span><span class="p">(</span><span class="mi">90</span><span class="p">)</span>
 
-<span class="n">t</span> <span class="o">=</span> <span class="n">Turtle</span><span class="p">()</span>
 <span class="k">for</span> <span class="n">nb_carre</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">4</span><span class="p">)</span> <span class="p">:</span>
-    <span class="n">carre</span><span class="p">(</span><span class="n">t</span><span class="p">)</span>
-    <span class="n">t</span><span class="o">.</span><span class="n">right</span><span class="p">(</span><span class="mi">120</span><span class="p">)</span>
+    <span class="n">carre</span><span class="p">()</span>
+    <span class="n">right</span><span class="p">(</span><span class="mi">120</span><span class="p">)</span>
 </code></pre></div></p>
 <p>Programme B :
-<div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">carre</span><span class="p">(</span><span class="n">tortue</span><span class="p">):</span>
+<div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">carre</span><span class="p">():</span>
     <span class="k">for</span> <span class="n">nb_cote</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">4</span><span class="p">)</span> <span class="p">:</span>
-        <span class="n">tortue</span><span class="o">.</span><span class="n">forward</span><span class="p">(</span><span class="mi">100</span><span class="p">)</span>
-        <span class="n">tortue</span><span class="o">.</span><span class="n">left</span><span class="p">(</span><span class="mi">90</span><span class="p">)</span>
+        <span class="n">forward</span><span class="p">(</span><span class="mi">100</span><span class="p">)</span>
+        <span class="n">left</span><span class="p">(</span><span class="mi">90</span><span class="p">)</span>
 
-<span class="n">t</span> <span class="o">=</span> <span class="n">Turtle</span><span class="p">()</span>
 <span class="k">for</span> <span class="n">nb_carre</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span> <span class="p">:</span>
-    <span class="n">carre</span><span class="p">(</span><span class="n">t</span><span class="p">)</span>
-    <span class="n">t</span><span class="o">.</span><span class="n">left</span><span class="p">(</span><span class="mi">30</span><span class="p">)</span>
+    <span class="n">carre</span><span class="p">()</span>
+    <span class="n">left</span><span class="p">(</span><span class="mi">30</span><span class="p">)</span>
 </code></pre></div></p>
 <p>Programme C :
-<div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">carre</span><span class="p">(</span><span class="n">tortue</span><span class="p">):</span>
+<div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">carre</span><span class="p">():</span>
     <span class="k">for</span> <span class="n">nb_cote</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">4</span><span class="p">)</span> <span class="p">:</span>
-        <span class="n">tortue</span><span class="o">.</span><span class="n">forward</span><span class="p">(</span><span class="mi">100</span><span class="p">)</span>
-        <span class="n">tortue</span><span class="o">.</span><span class="n">left</span><span class="p">(</span><span class="mi">90</span><span class="p">)</span>
+        <span class="n">forward</span><span class="p">(</span><span class="mi">100</span><span class="p">)</span>
+        <span class="n">left</span><span class="p">(</span><span class="mi">90</span><span class="p">)</span>
 
-<span class="n">t</span> <span class="o">=</span> <span class="n">Turtle</span><span class="p">()</span>
 <span class="k">for</span> <span class="n">nb_carre</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span> <span class="p">:</span>
-    <span class="n">carre</span><span class="p">(</span><span class="n">t</span><span class="p">)</span>
-    <span class="n">t</span><span class="o">.</span><span class="n">left</span><span class="p">(</span><span class="mi">120</span><span class="p">)</span>
+    <span class="n">carre</span><span class="p">()</span>
+    <span class="n">left</span><span class="p">(</span><span class="mi">120</span><span class="p">)</span>
 </code></pre></div></p>
 <p>Programme D :
-<div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">carre</span><span class="p">(</span><span class="n">tortue</span><span class="p">):</span>
+<div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">carre</span><span class="p">():</span>
     <span class="k">for</span> <span class="n">nb_cote</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">4</span><span class="p">)</span> <span class="p">:</span>
-        <span class="n">tortue</span><span class="o">.</span><span class="n">forward</span><span class="p">(</span><span class="mi">100</span><span class="p">)</span>
-        <span class="n">tortue</span><span class="o">.</span><span class="n">left</span><span class="p">(</span><span class="mi">90</span><span class="p">)</span>
+        <span class="n">forward</span><span class="p">(</span><span class="mi">100</span><span class="p">)</span>
+        <span class="n">left</span><span class="p">(</span><span class="mi">90</span><span class="p">)</span>
 
-<span class="n">t</span> <span class="o">=</span> <span class="n">Turtle</span><span class="p">()</span>
 <span class="k">for</span> <span class="n">nb_carre</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span> <span class="p">:</span>
-    <span class="n">carre</span><span class="p">(</span><span class="n">tortue</span><span class="p">)</span>
-    <span class="n">t</span><span class="o">.</span><span class="n">left</span><span class="p">(</span><span class="mi">120</span><span class="p">)</span>
+    <span class="n">carre</span><span class="p">()</span>
+    <span class="n">left</span><span class="p">(</span><span class="mi">120</span><span class="p">)</span>
 </code></pre></div></p>
 <div class="tabbed-set" data-tabs="6:3"><input checked="checked" id="__tabbed_6_1" name="__tabbed_6" type="radio" /><label for="__tabbed_6_1">Propositions de réponses</label><div class="tabbed-content">
 <ul class="task-list">
@@ -2240,60 +2250,55 @@ L'affichage produit est le message d'erreur : <code>TypeError: cannot concatenat
 </ul>
 </div>
 <input id="__tabbed_6_3" name="__tabbed_6" type="radio" /><label for="__tabbed_6_3">Arguments</label><div class="tabbed-content">
-<p>La fonction <code>carre</code> prend en paramètre une tortue. Cette fonction doit faire tracer 4 côtés (<code>range(4)</code>) et les angles d'un carré font 90°.<br />
-   Lorsqu'on appelle cette fonction le paramètre prend pour valeur le nom de la tortue qui doit tracer le carré. Dans tous les programmes proposés, celle-ci s'appelle <code>t</code>.
-   Chaque carré est l'image d'un autre par une rotation d'un tiers d'angle plein (360/3 = 120°). Le sens de cette rotation importe peu : <code>t.right(120)</code> aurait aussi convenu.</p>
+<p>La fonction <code>carre</code> doit faire tracer 4 côtés (<code>range(4)</code>) et les angles d'un carré font 90°.<br />
+   Chaque carré est l'image d'un autre par une rotation d'un tiers d'angle plein (360/3 = 120°). Le sens de cette rotation importe peu : <code>right(120)</code> aurait aussi convenu.</p>
 </div>
 </div>
 <h4 id="question-32">Question 3.2</h4>
 <div class="admonition exo">
 <p class="admonition-title">Question</p>
-<p>Parmi les programmes suivants, lequel permet de faire tracer à la tortue la figure ci-dessous ?  </p>
-<p><img alt="trois hexagones" src="../../images/trois_hexagones.png" /></p>
+<p><img alt="🐢" class="twemoji" src="https://twemoji.maxcdn.com/v/latest/svg/1f422.svg" title=":turtle:" /> Parmi les programmes suivants, lequel permet de faire tracer à la tortue la figure ci-dessous ?  </p>
+<p><img alt="trois hexagones" src="../../images/turtle/trois_hexagones.png" width="250" /></p>
 </div>
 <p>Programme A :
-<div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">hexagone</span><span class="p">(</span><span class="n">tortue</span><span class="p">):</span>
+<div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">hexagone</span><span class="p">():</span>
     <span class="k">for</span> <span class="n">nb_cote</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span> <span class="p">:</span>
-        <span class="n">tortue</span><span class="o">.</span><span class="n">forward</span><span class="p">(</span><span class="mi">80</span><span class="p">)</span>
-        <span class="n">tortue</span><span class="o">.</span><span class="n">left</span><span class="p">(</span><span class="mi">120</span><span class="p">)</span>
+        <span class="n">forward</span><span class="p">(</span><span class="mi">80</span><span class="p">)</span>
+        <span class="n">left</span><span class="p">(</span><span class="mi">120</span><span class="p">)</span>
 
-<span class="n">t</span> <span class="o">=</span> <span class="n">Turtle</span><span class="p">()</span>
 <span class="k">for</span> <span class="n">nb_poly</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">6</span><span class="p">)</span> <span class="p">:</span>
     <span class="n">hexagone</span><span class="p">(</span><span class="n">t</span><span class="p">)</span>
-    <span class="n">t</span><span class="o">.</span><span class="n">left</span><span class="p">(</span><span class="mi">60</span><span class="p">)</span>
+    <span class="n">left</span><span class="p">(</span><span class="mi">60</span><span class="p">)</span>
 </code></pre></div></p>
 <p>Programme B :
-<div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">hexagone</span><span class="p">(</span><span class="n">tortue</span><span class="p">):</span>
+<div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">hexagone</span><span class="p">():</span>
     <span class="k">for</span> <span class="n">nb_cote</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">6</span><span class="p">)</span> <span class="p">:</span>
-        <span class="n">tortue</span><span class="o">.</span><span class="n">forward</span><span class="p">(</span><span class="mi">80</span><span class="p">)</span>
-        <span class="n">tortue</span><span class="o">.</span><span class="n">left</span><span class="p">(</span><span class="mi">120</span><span class="p">)</span>
+        <span class="n">forward</span><span class="p">(</span><span class="mi">80</span><span class="p">)</span>
+        <span class="n">left</span><span class="p">(</span><span class="mi">120</span><span class="p">)</span>
 
-<span class="n">t</span> <span class="o">=</span> <span class="n">Turtle</span><span class="p">()</span>
 <span class="k">for</span> <span class="n">nb_poly</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span> <span class="p">:</span>
-    <span class="n">hexagone</span><span class="p">(</span><span class="n">t</span><span class="p">)</span>
-    <span class="n">t</span><span class="o">.</span><span class="n">left</span><span class="p">(</span><span class="mi">60</span><span class="p">)</span>
+    <span class="n">hexagone</span><span class="p">()</span>
+    <span class="n">left</span><span class="p">(</span><span class="mi">60</span><span class="p">)</span>
 </code></pre></div></p>
 <p>Programme C :
-<div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">hexagone</span><span class="p">(</span><span class="n">tortue</span><span class="p">):</span>
+<div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">hexagone</span><span class="p">():</span>
     <span class="k">for</span> <span class="n">nb_cote</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">6</span><span class="p">)</span> <span class="p">:</span>
-        <span class="n">tortue</span><span class="o">.</span><span class="n">forward</span><span class="p">(</span><span class="mi">80</span><span class="p">)</span>
-        <span class="n">tortue</span><span class="o">.</span><span class="n">left</span><span class="p">(</span><span class="mi">60</span><span class="p">)</span>
+        <span class="n">forward</span><span class="p">(</span><span class="mi">80</span><span class="p">)</span>
+        <span class="n">left</span><span class="p">(</span><span class="mi">60</span><span class="p">)</span>
 
-<span class="n">t</span> <span class="o">=</span> <span class="n">Turtle</span><span class="p">()</span>
 <span class="k">for</span> <span class="n">nb_poly</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">6</span><span class="p">)</span> <span class="p">:</span>
-    <span class="n">hexagone</span><span class="p">(</span><span class="n">tortue</span><span class="p">)</span>
-    <span class="n">t</span><span class="o">.</span><span class="n">left</span><span class="p">(</span><span class="mi">120</span><span class="p">)</span>
+    <span class="n">hexagone</span><span class="p">()</span>
+    <span class="n">left</span><span class="p">(</span><span class="mi">120</span><span class="p">)</span>
 </code></pre></div></p>
 <p>Programme D :
-<div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">hexagone</span><span class="p">(</span><span class="n">tortue</span><span class="p">):</span>
+<div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">hexagone</span><span class="p">():</span>
     <span class="k">for</span> <span class="n">nb_cote</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">6</span><span class="p">)</span> <span class="p">:</span>
-        <span class="n">tortue</span><span class="o">.</span><span class="n">forward</span><span class="p">(</span><span class="mi">80</span><span class="p">)</span>
-        <span class="n">tortue</span><span class="o">.</span><span class="n">left</span><span class="p">(</span><span class="mi">60</span><span class="p">)</span>
+        <span class="n">forward</span><span class="p">(</span><span class="mi">80</span><span class="p">)</span>
+        <span class="n">left</span><span class="p">(</span><span class="mi">60</span><span class="p">)</span>
 
-<span class="n">t</span> <span class="o">=</span> <span class="n">Turtle</span><span class="p">()</span>
 <span class="k">for</span> <span class="n">nb_poly</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span> <span class="p">:</span>
-    <span class="n">hexagone</span><span class="p">(</span><span class="n">t</span><span class="p">)</span>
-    <span class="n">t</span><span class="o">.</span><span class="n">left</span><span class="p">(</span><span class="mi">120</span><span class="p">)</span>
+    <span class="n">hexagone</span><span class="p">()</span>
+    <span class="n">left</span><span class="p">(</span><span class="mi">120</span><span class="p">)</span>
 </code></pre></div></p>
 <div class="tabbed-set" data-tabs="7:3"><input checked="checked" id="__tabbed_7_1" name="__tabbed_7" type="radio" /><label for="__tabbed_7_1">Propositions de réponses</label><div class="tabbed-content">
 <ul class="task-list">
@@ -2313,9 +2318,8 @@ L'affichage produit est le message d'erreur : <code>TypeError: cannot concatenat
 </div>
 <input id="__tabbed_7_3" name="__tabbed_7" type="radio" /><label for="__tabbed_7_3">Arguments</label><div class="tabbed-content">
 <p>Il y a 3 hexagones réguliers à tracer (<code>range(3)</code>).
-   La fonction <code>hexagone</code> prend en paramètre une tortue et lui fait tracer 6 côtés (<code>range(6)</code>). Les angles internes de l'hexagone font 120° donc la tortue doit pivoter de 180 - 120 = 60°.<br />
-   Lorsqu'on appelle cette fonction le paramètre prend pour valeur le nom de la tortue qui doit tracer le carré. Dans tous les programmes proposés, celle-ci s'appelle <code>t</code>.<br />
-   Chaque hexagone est l'image d'un autre par une rotation d'un tiers d'angle plein (360/3 = 120°). Le sens de cette rotation importe peu : <code>t.right(120)</code> aurait aussi convenu.</p>
+   La fonction <code>hexagone</code> fait tracer 6 côtés (<code>range(6)</code>). Les angles internes de l'hexagone font 120° donc la tortue doit pivoter de 180 - 120 = 60°.
+   Chaque hexagone est l'image d'un autre par une rotation d'un tiers d'angle plein (360/3 = 120°). Le sens de cette rotation importe peu : <code>right(120)</code> aurait aussi convenu.</p>
 </div>
 </div>
                 
@@ -2358,13 +2362,13 @@ L'affichage produit est le message d'erreur : <code>TypeError: cannot concatenat
       
       
         
-        <a href="../../jupyter/memomd/" class="md-footer__link md-footer__link--next" aria-label="Suivant: Mémo Markdown" rel="next">
+        <a href="../fonctions_exercices/" class="md-footer__link md-footer__link--next" aria-label="Suivant: Exercices" rel="next">
           <div class="md-footer__title">
             <div class="md-ellipsis">
               <span class="md-footer__direction">
                 Suivant
               </span>
-              Mémo Markdown
+              Exercices
             </div>
           </div>
           <div class="md-footer__button md-icon">
