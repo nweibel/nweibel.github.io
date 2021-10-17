@@ -1921,7 +1921,7 @@
                 
                 <h1 id="p5-presentation"><img alt="" src="../../images/p5js.svg" width="32" /> p5 : présentation</h1>
 <p><a href="https://basthon.fr">Basthon</a> propose la bibliothèque <strong>p5</strong>, qui permet de réaliser rapidement des <a href="https://notebook.basthon.fr/?from=examples/p5.ipynb">constructions graphiques et des animations</a>.
-La bibiothèque propose l'essentiel des fonctions de <a href="https://p5js.org">p5.js</a>, avec la syntaxe de python. En particulier, il ne s'agit pas de la bibliothèque <a href="https://p5.readthedocs.io/en/latest/">p5</a> disponible dans d'autres IDE.</p>
+La bibliothèque propose l'essentiel des fonctions de <a href="https://p5js.org">p5.js</a>, avec la syntaxe de python. En particulier, il ne s'agit pas de la bibliothèque <a href="https://p5.readthedocs.io/en/latest/">p5</a> disponible dans d'autres IDE.</p>
 <h2 id="structure-du-programme">Structure du programme</h2>
 <p>Le programme doit contenir deux fonctions, <code>setup()</code> et <code>draw()</code>, et l'exécution est lancée à l'aide de l'instruction <code>run()</code>.</p>
 <p>Lorsque l'on exécute l'instruction <code>run()</code>, la fonction <code>setup()</code> est exécutée une fois :
@@ -1948,16 +1948,20 @@ Elle contient des instructions qui seront exécutées avec une fréquence régla
 </thead>
 <tbody>
 <tr>
-<td align="left"><code>windowWidth</code>,  <code>windowHeight</code></td>
+<td align="left">windowWidth,  windowHeight</td>
 <td align="left">Dimensions de la fenêtre</td>
 </tr>
 <tr>
-<td align="left"><code>width</code>, <code>height</code></td>
+<td align="left">width, height</td>
 <td align="left">Dimensions de la zone de dessin. Les valeurs de <code>width</code> et <code>height</code> sont définies par les paramètres de la fonction <code>createCanvas()</code>.</td>
 </tr>
 <tr>
-<td align="left"><code>mouseX</code>, <code>mouseY</code></td>
+<td align="left">mouseX, mouseY</td>
 <td align="left">Coordonnées du pointeur de la souris</td>
+</tr>
+<tr>
+<td align="left">mouseIsPressed</td>
+<td align="left">Booléen qui vaut <code>True</code>si la souris est cliquée, et <code>False</code> sinon.</td>
 </tr>
 </tbody>
 </table>
@@ -1991,13 +1995,13 @@ Elle contient des instructions qui seront exécutées avec une fréquence régla
 <td align="left">couleur r, v, b, alpha</td>
 </tr>
 <tr>
-<td align="left"><code>color(0, 0, 255)</code></td>
+<td align="left">color(0, 0, 255)</td>
 <td align="left">objet p5.Color</td>
 </tr>
 </tbody>
 </table>
 <p>On peut égaler déterminer une couleur à l'aide de la fonction <code>lerpColor</code>:<br />
-<code>lerpColor(couleur1, couleur2, coefficient)</code>  détermine une couleur intermédiaire entre <code>couleur1</code> et <code>couleur2</code>. <code>coefficient</code>  est un nombre entre 0 et 1. Plus <code>coefficient</code> est proche de 0, plus la couleur obtenue est proche de <code>couleur1</code>, et plus <code>coefficient</code> est proche de 1, plus la couleur obtenue est proche de <code>couleur2</code>. </p>
+<code>lerpColor(couleur1, couleur2, coefficient)</code>  détermine une couleur intermédiaire entre <code>couleur1</code> et <code>couleur2</code>. <code>coefficient</code>  est un nombre entre 0 et 1. Plus <code>coefficient</code> est proche de 0, plus la couleur obtenue est proche de <code>couleur1</code>, et plus <code>coefficient</code> est proche de 1, plus la couleur obtenue est proche de <code>couleur2</code>.</p>
 <h2 id="dessiner-en-couleur">Dessiner en couleur</h2>
 <table>
 <thead>
@@ -2008,23 +2012,23 @@ Elle contient des instructions qui seront exécutées avec une fréquence régla
 </thead>
 <tbody>
 <tr>
-<td align="left"><code>background(couleur)</code></td>
+<td align="left">background(couleur)</td>
 <td align="left">Définit la couleur d'arrière-plan de la zone dessin (255 par défaut).</td>
 </tr>
 <tr>
-<td align="left"><code>fill(couleur)</code></td>
+<td align="left">fill(couleur)</td>
 <td align="left">Définit la couleur de remplissage des formes (255 par défaut).</td>
 </tr>
 <tr>
-<td align="left"><code>noFill()</code></td>
+<td align="left">noFill()</td>
 <td align="left">Désactive la couleur de remplissage.</td>
 </tr>
 <tr>
-<td align="left"><code>stroke(couleur)</code></td>
+<td align="left">stroke(couleur)</td>
 <td align="left">Définit la couleur de tracé des formes (0 par défaut).</td>
 </tr>
 <tr>
-<td align="left"><code>noStroke()</code></td>
+<td align="left">noStroke()</td>
 <td align="left">Désactive le tracé du contour des figures.</td>
 </tr>
 </tbody>
@@ -2043,39 +2047,39 @@ Les abscisses augmentent de gauche à droite, les ordonnées augmentent de haut 
 </thead>
 <tbody>
 <tr>
-<td align="left"><code>point(x, y)</code></td>
+<td align="left">point(x, y)</td>
 <td align="left">Trace un point de coordonnées (x, y).</td>
 </tr>
 <tr>
-<td align="left"><code>line(x1, y1, x2, y2)</code></td>
+<td align="left">line(x1, y1, x2, y2)</td>
 <td align="left">Trace un segment reliant les deux points de coordonnées (x1, y1) et (x2, y2).</td>
 </tr>
 <tr>
-<td align="left"><code>circle(x, y, diametre)</code></td>
+<td align="left">circle(x, y, diametre)</td>
 <td align="left">Tracer un cercle dont le centre a pour coordonnées (x, y) et dont le diamètre prend la valeur fixée.</td>
 </tr>
 <tr>
-<td align="left"><code>ellipse(x, y, largeur, hauteur)</code></td>
+<td align="left">ellipse(x, y, largeur, hauteur)</td>
 <td align="left">Tracer une ellipse dont le centre a pour coordonnées (x, y) et dont la largeur et la hauteur prennent les valeurs fixées.</td>
 </tr>
 <tr>
-<td align="left"><code>arc(x, y, largeur, hauteur, angleDebut, angleFin)</code></td>
+<td align="left">arc(x, y, largeur, hauteur, angleDebut, angleFin)</td>
 <td align="left">Trace un arc de l'ellipse définie par <code>ellipse(x,y,largeur,hauteur)</code> entre les points repérés par les angles <code>angleDébut</code> et <code>angleFin</code> (en radians).</td>
 </tr>
 <tr>
-<td align="left"><code>square(x, y, cote)</code></td>
+<td align="left">square(x, y, cote)</td>
 <td align="left">Trace un carré dont le sommet en haut à gauche a pour coordonnées (x, y) et dont le côté prend la valeur fixée.</td>
 </tr>
 <tr>
-<td align="left"><code>rect(x, y, largeur, hauteur)</code></td>
+<td align="left">rect(x, y, largeur, hauteur)</td>
 <td align="left">Trace un rectangle dont le sommet en haut à gauche a pour coordonnées (x, y), et dont la largeur et la hauteur prennent les valeurs fixées.</td>
 </tr>
 <tr>
-<td align="left"><code>triangle(x1, y1, x2, y2, x3, y3)</code></td>
+<td align="left">triangle(x1, y1, x2, y2, x3, y3)</td>
 <td align="left">Trace un triangle dont les trois sommets ont pour coordonnées (x1, y1), (x2, y2), et (x3, y3).</td>
 </tr>
 <tr>
-<td align="left"><code>quad(x1, y1, x2, y2, x3, y3, x4, y4)</code></td>
+<td align="left">quad(x1, y1, x2, y2, x3, y3, x4, y4)</td>
 <td align="left">Trace un quadrilatère dont les quatre sommets ont pour coordonnées (x1, y1), (x2, y2), (x3, y3) et (x4, y4).</td>
 </tr>
 </tbody>
