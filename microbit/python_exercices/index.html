@@ -1688,6 +1688,26 @@
   
 </li>
         
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-detecter-lintensite-lumineuse" class="md-nav__link">
+    4. Détecter l'intensité lumineuse
+  </a>
+  
+    <nav class="md-nav" aria-label="4. Détecter l'intensité lumineuse">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#41-avec-les-leds-de-la-carte-microbit" class="md-nav__link">
+    4.1 Avec les leds de la carte micro:bit
+  </a>
+  
+</li>
+        
           <li class="md-nav__item">
   <a href="#42-avec-un-capteur-de-lumiere-grove" class="md-nav__link">
     4.2 Avec un capteur de lumière Grove
@@ -2076,6 +2096,26 @@
   
 </li>
         
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-detecter-lintensite-lumineuse" class="md-nav__link">
+    4. Détecter l'intensité lumineuse
+  </a>
+  
+    <nav class="md-nav" aria-label="4. Détecter l'intensité lumineuse">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#41-avec-les-leds-de-la-carte-microbit" class="md-nav__link">
+    4.1 Avec les leds de la carte micro:bit
+  </a>
+  
+</li>
+        
           <li class="md-nav__item">
   <a href="#42-avec-un-capteur-de-lumiere-grove" class="md-nav__link">
     4.2 Avec un capteur de lumière Grove
@@ -2126,7 +2166,7 @@
 <h3 id="11-afficher-une-image-predefinie">1.1 Afficher une image prédéfinie</h3>
 <p><a href="../python_leds5x5"><span class="item led">led</span></a></p>
 <p><img alt="" src="../../images/mb_display_yes.png" /></p>
-<p>Voici un premier programme : 
+<p>Voici un premier programme :
 <div class="highlight"><pre><span></span><code><span class="kn">from</span> <span class="nn">microbit</span> <span class="kn">import</span> <span class="o">*</span>
 <span class="n">display</span><span class="o">.</span><span class="n">show</span><span class="p">(</span><span class="n">Image</span><span class="o">.</span><span class="n">YES</span><span class="p">)</span>
 </code></pre></div></p>
@@ -2134,7 +2174,7 @@
 <li>Saisir ce programme et le flasher sur une carte connectée à l'ordinateur.<br />
 Que constate-t-on ?  </li>
 <li>Remplacer dans le programme le mot YES par l'un des mots suivants :<br />
-CHESSBOARD - DIAMOND - HAPPY - HEART - NO - SAD - SQUARE </li>
+CHESSBOARD - DIAMOND - HAPPY - HEART - NO - SAD - SQUARE</li>
 <li>Choisir l'une des images et la reproduire sur une feuille à l'aide d'un quadrillage de 5 carreaux sur 5.</li>
 </ul>
 <h3 id="12-afficher-une-image-personnalisee">1.2 Afficher une image personnalisée</h3>
@@ -2161,7 +2201,7 @@ Que constate-t-on ? À quoi correspondent les 0 et les 9 ?</li>
 <details class="abstract"><summary>Aide : une proposition à compléter</summary><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
 <span class="normal">2</span>
 <span class="normal">3</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="kn">from</span> <span class="nn">microbit</span> <span class="kn">import</span> <span class="o">*</span>
-<span class="n">mes_images</span> <span class="o">=</span> <span class="p">[</span><span class="n">Image</span><span class="o">.</span><span class="n">SQUARE</span><span class="p">,</span> <span class="n">Image</span><span class="o">.</span><span class="n">SQUARE_SMALL</span><span class="p">]</span> 
+<span class="n">mes_images</span> <span class="o">=</span> <span class="p">[</span><span class="n">Image</span><span class="o">.</span><span class="n">SQUARE</span><span class="p">,</span> <span class="n">Image</span><span class="o">.</span><span class="n">SQUARE_SMALL</span><span class="p">]</span>
 <span class="n">display</span><span class="o">.</span><span class="n">show</span><span class="p">(</span><span class="o">...</span><span class="p">,</span> <span class="n">delay</span><span class="o">=...</span><span class="p">,</span> <span class="n">loop</span><span class="o">=...</span><span class="p">)</span>
 </code></pre></div>
 </td></tr></table>
@@ -2169,7 +2209,7 @@ Que constate-t-on ? À quoi correspondent les 0 et les 9 ?</li>
 <details class="success"><summary>Une solution</summary><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
 <span class="normal">2</span>
 <span class="normal">3</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="kn">from</span> <span class="nn">microbit</span> <span class="kn">import</span> <span class="o">*</span>
-<span class="n">mes_images</span> <span class="o">=</span> <span class="p">[</span><span class="n">Image</span><span class="o">.</span><span class="n">SQUARE</span><span class="p">,</span> <span class="n">Image</span><span class="o">.</span><span class="n">SQUARE_SMALL</span><span class="p">]</span> 
+<span class="n">mes_images</span> <span class="o">=</span> <span class="p">[</span><span class="n">Image</span><span class="o">.</span><span class="n">SQUARE</span><span class="p">,</span> <span class="n">Image</span><span class="o">.</span><span class="n">SQUARE_SMALL</span><span class="p">]</span>
 <span class="n">display</span><span class="o">.</span><span class="n">show</span><span class="p">(</span><span class="n">mes_images</span><span class="p">,</span> <span class="n">delay</span><span class="o">=</span><span class="mi">500</span><span class="p">,</span> <span class="n">loop</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
 </code></pre></div>
 </td></tr></table>
@@ -2216,7 +2256,7 @@ Que constate-t-on ? À quoi correspondent les 0 et les 9 ?</li>
 <a href="../python_grove/#capteurs"><span class="item grove_potentiometre">potentiomètre</span></a></p>
 <p><img alt="" src="../../images/grove/grove_shield_potentiometre.png" /></p>
 <p>Placer la carte micro-bit sur le shield Grove et connecter le potentiomètre sur la broche P0-P14.<br />
-La fonction <code>pin0.read_analog()</code> renvoie une valeur qui dépend de l'angle de rotation de l'axe du potentiomètre. </p>
+La fonction <code>pin0.read_analog()</code> renvoie une valeur qui dépend de l'angle de rotation de l'axe du potentiomètre.</p>
 <ul>
 <li>Modifier le programme précédent en ajoutant au début de la boucle <code>while</code> l'intruction : <code>mesure = pin0.read_analog()</code> puis en remplaçant les temps durant lesquels la LED est allumée ou éteinte par <code>mesure</code>.</li>
 <li>Quel effet observe-t-on sur le clignotement lorsque l'on tourne l'axe du potentiomètre ?</li>
@@ -2229,7 +2269,7 @@ La fonction <code>pin0.read_analog()</code> renvoie une valeur qui dépend de l'
 <span class="normal">6</span>
 <span class="normal">7</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="kn">from</span> <span class="nn">microbit</span> <span class="kn">import</span> <span class="o">*</span>
 <span class="k">while</span> <span class="kc">True</span><span class="p">:</span>
-    <span class="n">mesure</span> <span class="o">=</span> <span class="n">pin0</span><span class="o">.</span><span class="n">read_analog</span><span class="p">()</span> 
+    <span class="n">mesure</span> <span class="o">=</span> <span class="n">pin0</span><span class="o">.</span><span class="n">read_analog</span><span class="p">()</span>
     <span class="n">display</span><span class="o">.</span><span class="n">set_pixel</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">9</span><span class="p">)</span>
     <span class="n">sleep</span><span class="p">(</span><span class="n">mesure</span><span class="p">)</span>
     <span class="n">display</span><span class="o">.</span><span class="n">set_pixel</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span>
@@ -2244,7 +2284,7 @@ La fonction <code>pin0.read_analog()</code> renvoie une valeur qui dépend de l'
 <p>Connecter la LED sur le shield Grove sur la broche P1-P15 ( en plus  du potentiomètre déjà connecté sur la broche P0-P14).<br />
 L'instruction <code>pin1.write_digital(1)</code> permet d'allumer la LED lorsqu'elle est sur la broche P1, et l'instruction <code>pin1.write_digital(0)</code> permet de l'éteindre.</p>
 <ul>
-<li>Modifier le programme précédent pour faire clignoter la LED Grove, au lieu d'une LED de la carte. </li>
+<li>Modifier le programme précédent pour faire clignoter la LED Grove, au lieu d'une LED de la carte.</li>
 <li>Le potentiomètre conserve-t-il son  effet ?</li>
 </ul>
 <details class="success"><summary>Une solution</summary><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
@@ -2255,7 +2295,7 @@ L'instruction <code>pin1.write_digital(1)</code> permet d'allumer la LED lorsqu'
 <span class="normal">6</span>
 <span class="normal">7</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="kn">from</span> <span class="nn">microbit</span> <span class="kn">import</span> <span class="o">*</span>
 <span class="k">while</span> <span class="kc">True</span><span class="p">:</span>
-    <span class="n">mesure</span> <span class="o">=</span> <span class="n">pin0</span><span class="o">.</span><span class="n">read_analog</span><span class="p">()</span> 
+    <span class="n">mesure</span> <span class="o">=</span> <span class="n">pin0</span><span class="o">.</span><span class="n">read_analog</span><span class="p">()</span>
     <span class="n">pin1</span><span class="o">.</span><span class="n">write_digital</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
     <span class="n">sleep</span><span class="p">(</span><span class="n">mesure</span><span class="p">)</span>
     <span class="n">pin1</span><span class="o">.</span><span class="n">write_digital</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>
@@ -2265,9 +2305,9 @@ L'instruction <code>pin1.write_digital(1)</code> permet d'allumer la LED lorsqu'
 </details>
 <h2 id="3-deplacer-un-point-lumineux">3. Déplacer un point lumineux</h2>
 <h3 id="31-programmer-le-deplacement-dun-point-lumineux-sur-la-carte">3.1 Programmer le déplacement d'un point lumineux sur la carte</h3>
-<p><a href="../python_leds5x5"><span class="item led">led</span></a> </p>
+<p><a href="../python_leds5x5"><span class="item led">led</span></a></p>
 <ul>
-<li>Lire le programme suivant et anticiper l'effet produit sur la carte micro:bit : 
+<li>Lire le programme suivant et anticiper l'effet produit sur la carte micro:bit :
 <table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
 <span class="normal">2</span>
 <span class="normal">3</span>
@@ -2276,14 +2316,14 @@ L'instruction <code>pin1.write_digital(1)</code> permet d'allumer la LED lorsqu'
 <span class="normal">6</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="kn">from</span> <span class="nn">microbit</span> <span class="kn">import</span> <span class="o">*</span>
 <span class="k">while</span> <span class="kc">True</span><span class="p">:</span>
     <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">5</span><span class="p">):</span> <span class="c1"># x prend les valeurs 0 à 4</span>
-        <span class="n">display</span><span class="o">.</span><span class="n">set_pixel</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">9</span><span class="p">)</span> 
-        <span class="n">sleep</span><span class="p">(</span><span class="mi">300</span><span class="p">)</span> 
+        <span class="n">display</span><span class="o">.</span><span class="n">set_pixel</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">9</span><span class="p">)</span>
+        <span class="n">sleep</span><span class="p">(</span><span class="mi">300</span><span class="p">)</span>
     <span class="n">display</span><span class="o">.</span><span class="n">clear</span><span class="p">()</span>
 </code></pre></div>
 </td></tr></table></li>
-<li>Saisir ce programme et le flasher sur une carte micro:bit. Vérifier si l'effet constaté correspond à celui anticipé. </li>
+<li>Saisir ce programme et le flasher sur une carte micro:bit. Vérifier si l'effet constaté correspond à celui anticipé.</li>
 <li>Indenter l'instruction <code>display.clear()</code> pour qu'elle soit alignée avec le <code>sleep(300)</code> de la ligne 5. Quel effet cela a-t-il sur l'affichage produit sur la carte ? Pourquoi ?</li>
-<li>Poursuivre le programme précédent pour que le point lumineux allumé fasse le tour du carré de 25 LED. </li>
+<li>Poursuivre le programme précédent pour que le point lumineux allumé fasse le tour du carré de 25 LED.</li>
 </ul>
 <details class="abstract"><summary>Aide : une proposition à compléter</summary><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
 <span class="normal"> 2</span>
@@ -2305,20 +2345,20 @@ L'instruction <code>pin1.write_digital(1)</code> permet d'allumer la LED lorsqu'
 <span class="normal">18</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="kn">from</span> <span class="nn">microbit</span> <span class="kn">import</span> <span class="o">*</span>
 <span class="k">while</span> <span class="kc">True</span><span class="p">:</span>
     <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">5</span><span class="p">):</span>   <span class="c1"># x prend les valeurs 0 à 4</span>
-        <span class="n">display</span><span class="o">.</span><span class="n">set_pixel</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">9</span><span class="p">)</span> 
-        <span class="n">sleep</span><span class="p">(</span><span class="mi">300</span><span class="p">)</span> 
+        <span class="n">display</span><span class="o">.</span><span class="n">set_pixel</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">9</span><span class="p">)</span>
+        <span class="n">sleep</span><span class="p">(</span><span class="mi">300</span><span class="p">)</span>
         <span class="n">display</span><span class="o">.</span><span class="n">clear</span><span class="p">()</span>
     <span class="k">for</span> <span class="n">y</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">5</span><span class="p">):</span>   <span class="c1"># y prend les valeurs 1 à 4</span>
-        <span class="n">display</span><span class="o">.</span><span class="n">set_pixel</span><span class="p">(</span><span class="o">...</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="mi">9</span><span class="p">)</span> 
-        <span class="n">sleep</span><span class="p">(</span><span class="mi">300</span><span class="p">)</span> 
+        <span class="n">display</span><span class="o">.</span><span class="n">set_pixel</span><span class="p">(</span><span class="o">...</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="mi">9</span><span class="p">)</span>
+        <span class="n">sleep</span><span class="p">(</span><span class="mi">300</span><span class="p">)</span>
         <span class="n">display</span><span class="o">.</span><span class="n">clear</span><span class="p">()</span>
     <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">3</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">):</span>   <span class="c1"># x prend les valeurs 3 à 0</span>
-        <span class="n">display</span><span class="o">.</span><span class="n">set_pixel</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="o">...</span><span class="p">,</span> <span class="mi">9</span><span class="p">)</span> 
-        <span class="n">sleep</span><span class="p">(</span><span class="mi">300</span><span class="p">)</span> 
+        <span class="n">display</span><span class="o">.</span><span class="n">set_pixel</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="o">...</span><span class="p">,</span> <span class="mi">9</span><span class="p">)</span>
+        <span class="n">sleep</span><span class="p">(</span><span class="mi">300</span><span class="p">)</span>
         <span class="n">display</span><span class="o">.</span><span class="n">clear</span><span class="p">()</span>
     <span class="k">for</span> <span class="n">y</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">3</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">):</span>   <span class="c1"># x prend les valeurs 0 à 4</span>
-        <span class="n">display</span><span class="o">.</span><span class="n">set_pixel</span><span class="p">(</span><span class="o">...</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="mi">9</span><span class="p">)</span> 
-        <span class="n">sleep</span><span class="p">(</span><span class="mi">300</span><span class="p">)</span> 
+        <span class="n">display</span><span class="o">.</span><span class="n">set_pixel</span><span class="p">(</span><span class="o">...</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="mi">9</span><span class="p">)</span>
+        <span class="n">sleep</span><span class="p">(</span><span class="mi">300</span><span class="p">)</span>
         <span class="n">display</span><span class="o">.</span><span class="n">clear</span><span class="p">()</span>
 </code></pre></div>
 </td></tr></table>
@@ -2343,20 +2383,20 @@ L'instruction <code>pin1.write_digital(1)</code> permet d'allumer la LED lorsqu'
 <span class="normal">18</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="kn">from</span> <span class="nn">microbit</span> <span class="kn">import</span> <span class="o">*</span>
 <span class="k">while</span> <span class="kc">True</span><span class="p">:</span>
     <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">5</span><span class="p">):</span>   <span class="c1"># x prend les valeurs 0 à 4</span>
-        <span class="n">display</span><span class="o">.</span><span class="n">set_pixel</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">9</span><span class="p">)</span> 
-        <span class="n">sleep</span><span class="p">(</span><span class="mi">300</span><span class="p">)</span> 
+        <span class="n">display</span><span class="o">.</span><span class="n">set_pixel</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">9</span><span class="p">)</span>
+        <span class="n">sleep</span><span class="p">(</span><span class="mi">300</span><span class="p">)</span>
         <span class="n">display</span><span class="o">.</span><span class="n">clear</span><span class="p">()</span>
     <span class="k">for</span> <span class="n">y</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">5</span><span class="p">):</span>   <span class="c1"># y prend les valeurs 1 à 4</span>
-        <span class="n">display</span><span class="o">.</span><span class="n">set_pixel</span><span class="p">(</span><span class="mi">4</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="mi">9</span><span class="p">)</span> 
-        <span class="n">sleep</span><span class="p">(</span><span class="mi">300</span><span class="p">)</span> 
+        <span class="n">display</span><span class="o">.</span><span class="n">set_pixel</span><span class="p">(</span><span class="mi">4</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="mi">9</span><span class="p">)</span>
+        <span class="n">sleep</span><span class="p">(</span><span class="mi">300</span><span class="p">)</span>
         <span class="n">display</span><span class="o">.</span><span class="n">clear</span><span class="p">()</span>
     <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">3</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">):</span>   <span class="c1"># x prend les valeurs 3 à 0</span>
-        <span class="n">display</span><span class="o">.</span><span class="n">set_pixel</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">9</span><span class="p">)</span> 
-        <span class="n">sleep</span><span class="p">(</span><span class="mi">300</span><span class="p">)</span> 
+        <span class="n">display</span><span class="o">.</span><span class="n">set_pixel</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">9</span><span class="p">)</span>
+        <span class="n">sleep</span><span class="p">(</span><span class="mi">300</span><span class="p">)</span>
         <span class="n">display</span><span class="o">.</span><span class="n">clear</span><span class="p">()</span>
     <span class="k">for</span> <span class="n">y</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">3</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">):</span>   <span class="c1"># x prend les valeurs 0 à 4</span>
-        <span class="n">display</span><span class="o">.</span><span class="n">set_pixel</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="mi">9</span><span class="p">)</span> 
-        <span class="n">sleep</span><span class="p">(</span><span class="mi">300</span><span class="p">)</span> 
+        <span class="n">display</span><span class="o">.</span><span class="n">set_pixel</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="mi">9</span><span class="p">)</span>
+        <span class="n">sleep</span><span class="p">(</span><span class="mi">300</span><span class="p">)</span>
         <span class="n">display</span><span class="o">.</span><span class="n">clear</span><span class="p">()</span>
 </code></pre></div>
 </td></tr></table>
@@ -2385,26 +2425,26 @@ L'instruction <code>pin1.write_digital(1)</code> permet d'allumer la LED lorsqu'
 
 <span class="k">while</span> <span class="kc">True</span><span class="p">:</span>
     <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">30</span><span class="p">):</span> <span class="c1"># x prend les valeurs 0 à 29</span>
-        <span class="n">np</span><span class="p">[</span><span class="n">x</span><span class="p">]</span> <span class="o">=</span> <span class="p">(</span><span class="mi">255</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span> 
-        <span class="n">sleep</span><span class="p">(</span><span class="mi">200</span><span class="p">)</span> 
+        <span class="n">np</span><span class="p">[</span><span class="n">x</span><span class="p">]</span> <span class="o">=</span> <span class="p">(</span><span class="mi">255</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span>
+        <span class="n">sleep</span><span class="p">(</span><span class="mi">200</span><span class="p">)</span>
         <span class="n">np</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
     <span class="n">np</span><span class="o">.</span><span class="n">clear</span><span class="p">()</span>
 </code></pre></div>
 </td></tr></table></p>
 </li>
 <li>
-<p>Saisir ce programme et le flasher sur une carte micro:bit, connectée. Vérifier si l'effet constaté correspond à celui anticipé. </p>
+<p>Saisir ce programme et le flasher sur une carte micro:bit, connectée. Vérifier si l'effet constaté correspond à celui anticipé.</p>
 </li>
 <li>Indenter l'instruction <code>np.clear()</code> pour qu'elle soit alignée avec le <code>np.show()</code> de la ligne 10. Quel effet cela a-t-il sur l'affichage produit sur le ruban ? Pourquoi ?</li>
 <li>Modifier une valeur du programme pour augmenter la "vitesse" du point lumineux.  </li>
 <li>Modifier une ou plusieurs valeurs pour que le pixel allumé soit jaune.</li>
-<li>Poursuivre le programme précédent pour que le point lumineux fasse des allers-retours entre les deux extrémités du ruban. </li>
+<li>Poursuivre le programme précédent pour que le point lumineux fasse des allers-retours entre les deux extrémités du ruban.</li>
 </ul>
 <h3 id="33-deplacer-un-pixel-sur-la-carte-avec-les-boutons">3.3 Déplacer un pixel sur la carte avec les boutons</h3>
-<p><a href="../python_leds5x5"><span class="item led">led</span></a> 
-<a href="../python_boutons"><span class="item buttons">boutons</span></a> </p>
+<p><a href="../python_leds5x5"><span class="item led">led</span></a>
+<a href="../python_boutons"><span class="item buttons">boutons</span></a></p>
 <p><strong>Fonctionnement attendu</strong> : Une led est allumée au centre de l'écran.
-En appuyant sur le bouton A, elle se "déplace" d'un pixel vers la gauche, et en appuyant sur le bouton B, elle se "déplace" d'un pixel vers la droite. Lorsqu'elle atteint un bord (gauche ou droit), l'appui sur le bouton correspondant à ce bord n'a plus d'effet. </p>
+En appuyant sur le bouton A, elle se "déplace" d'un pixel vers la gauche, et en appuyant sur le bouton B, elle se "déplace" d'un pixel vers la droite. Lorsqu'elle atteint un bord (gauche ou droit), l'appui sur le bouton correspondant à ce bord n'a plus d'effet.</p>
 <details class="abstract"><summary>Aide : une proposition à compléter</summary><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
 <span class="normal"> 2</span>
 <span class="normal"> 3</span>
@@ -2425,14 +2465,14 @@ En appuyant sur le bouton A, elle se "déplace" d'un pixel vers la gauche, et en
 <span class="n">y</span> <span class="o">=</span> <span class="o">...</span>
 
 <span class="k">while</span> <span class="kc">True</span><span class="p">:</span>
-    <span class="n">display</span><span class="o">.</span><span class="n">set_pixel</span><span class="p">(</span><span class="n">x</span><span class="p">,</span><span class="n">y</span><span class="p">,</span><span class="mi">0</span><span class="p">)</span> <span class="c1"># on éteint le pixel </span>
+    <span class="n">display</span><span class="o">.</span><span class="n">set_pixel</span><span class="p">(</span><span class="n">x</span><span class="p">,</span><span class="n">y</span><span class="p">,</span><span class="mi">0</span><span class="p">)</span> <span class="c1"># on éteint le pixel</span>
     <span class="k">if</span> <span class="n">button_a</span><span class="o">.</span><span class="n">was_pressed</span><span class="p">():</span>
         <span class="k">if</span> <span class="n">x</span> <span class="o">...</span><span class="p">:</span>      <span class="c1"># si le pixel n&#39;est pas déjà au bord gauche</span>
             <span class="n">x</span> <span class="o">=</span> <span class="n">x</span> <span class="o">...</span>  <span class="c1"># on le déplace d&#39;une unité vers la gauche</span>
     <span class="k">if</span> <span class="n">button_b</span><span class="o">.</span><span class="n">was_pressed</span><span class="p">():</span>
         <span class="k">if</span> <span class="n">x</span> <span class="o">...</span><span class="p">:</span>      <span class="c1"># si le pixel n&#39;est pas déjà au bord droit</span>
              <span class="n">x</span> <span class="o">=</span> <span class="n">x</span> <span class="o">...</span> <span class="c1"># on le déplace d&#39;une unité vers la droite</span>
-    <span class="n">display</span><span class="o">.</span><span class="n">set_pixel</span><span class="p">(</span><span class="n">x</span><span class="p">,</span><span class="n">y</span><span class="p">,</span><span class="mi">9</span><span class="p">)</span> <span class="c1"># on allume le pixel </span>
+    <span class="n">display</span><span class="o">.</span><span class="n">set_pixel</span><span class="p">(</span><span class="n">x</span><span class="p">,</span><span class="n">y</span><span class="p">,</span><span class="mi">9</span><span class="p">)</span> <span class="c1"># on allume le pixel</span>
     <span class="n">sleep</span><span class="p">(</span><span class="mi">20</span><span class="p">)</span>
 </code></pre></div>
 </td></tr></table>
@@ -2466,10 +2506,10 @@ En appuyant sur le bouton A, elle se "déplace" d'un pixel vers la gauche, et en
 </td></tr></table>
 </details>
 <h3 id="34-deplacer-un-point-lumineux-sur-un-ruban-neopixel-avec-les-boutons">3.4 Déplacer un point lumineux sur un ruban NeoPixel avec les boutons</h3>
-<p><a href="../python_boutons"><span class="item buttons">boutons</span></a> 
+<p><a href="../python_boutons"><span class="item buttons">boutons</span></a>
 <a href="../python_grove/#autres-actionneurs"><span class="item grove_neopixel">neopixel</span></a></p>
 <p><strong>Fonctionnement attendu</strong> : Une led NeoPixel est allumée au début du ruban de led NeoPixel.
-En appuyant sur le bouton A, un point lumineux se "déplace" d'un pixel vers la fin du ruban, et en appuyant sur le bouton B, elle revient d'un pixel vers le début du ruban. Lorsque le point lumineux atteint une extrémité, l'appui sur le bouton correspondant à cette extrémité n'a plus d'effet. </p>
+En appuyant sur le bouton A, un point lumineux se "déplace" d'un pixel vers la fin du ruban, et en appuyant sur le bouton B, elle revient d'un pixel vers le début du ruban. Lorsque le point lumineux atteint une extrémité, l'appui sur le bouton correspondant à cette extrémité n'a plus d'effet.</p>
 <details class="abstract"><summary>Aide : une proposition à compléter</summary><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
 <span class="normal"> 2</span>
 <span class="normal"> 3</span>
@@ -2547,11 +2587,11 @@ En appuyant sur le bouton A, un point lumineux se "déplace" d'un pixel vers la 
 </td></tr></table>
 </details>
 <h3 id="35-deplacer-un-point-lumineux-avec-linclinaison-de-la-carte">3.5 Déplacer un point lumineux avec l'inclinaison de la carte</h3>
-<p><a href="../python_leds5x5"><span class="item led">led</span></a> 
-<a href="../python_accelerometre"><span class="item accelerometer">accéléromètre</span></a> </p>
-<p>On souhaite déplacer un point lumineux sur l'écran en fonction des valeurs des inclinaisons gauche-droite et avant-arrière de la carte, comme une bille qui se déplacerait sur un plan incliné. </p>
+<p><a href="../python_leds5x5"><span class="item led">led</span></a>
+<a href="../python_accelerometre"><span class="item accelerometer">accéléromètre</span></a></p>
+<p>On souhaite déplacer un point lumineux sur l'écran en fonction des valeurs des inclinaisons gauche-droite et avant-arrière de la carte, comme une bille qui se déplacerait sur un plan incliné.</p>
 <p>On utilise la valeur détectée pour <code>accelerometer.get_x()</code> (inclinaison gauche-droite) et <code>accelerometer.get_y()</code> (inclinaison avant-arrière) et selon leur valeur, on donne à l'abscisse <code>x</code> et à l'ordonnée <code>y</code> d'un pixel allumé la valeur 0, 1, 2, 3 ou 4.<br />
-Par exemple, voici la valeur que l'on peut donner à <code>x</code> selon la valeur de <code>accelerometer.get_x()</code> : </p>
+Par exemple, voici la valeur que l'on peut donner à <code>x</code> selon la valeur de <code>accelerometer.get_x()</code> :</p>
 <p><img alt="" src="../../images/inclinaison.png" /></p>
 <ul>
 <li>Compléter le programme suivant pour qu'il respecte les indications précédentes pour déterminer la valeur de <code>x</code>.</li>
@@ -2570,32 +2610,27 @@ Par exemple, voici la valeur que l'on peut donner à <code>x</code> selon la val
         <span class="n">x</span> <span class="o">=</span> <span class="o">...</span>
     <span class="k">elif</span> <span class="n">acc_x</span> <span class="o">&gt;</span> <span class="o">-</span><span class="mi">150</span><span class="p">:</span>
         <span class="n">x</span> <span class="o">=</span> <span class="o">...</span>
-    <span class="k">elif</span> <span class="n">acc_x</span> <span class="o">&gt;</span> <span class="o">-</span><span class="mi">450</span><span class="p">:</span> 
+    <span class="k">elif</span> <span class="n">acc_x</span> <span class="o">&gt;</span> <span class="o">-</span><span class="mi">450</span><span class="p">:</span>
         <span class="n">x</span> <span class="o">=</span> <span class="mi">1</span>
     <span class="k">else</span><span class="p">:</span>
         <span class="n">x</span> <span class="o">=</span> <span class="o">...</span>
     <span class="n">display</span><span class="o">.</span><span class="n">set_pixel</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="mi">9</span><span class="p">)</span>
-    <span class="n">sleep</span><span class="p">(</span><span class="mi">100</span><span class="p">)</span><span class="err">```</span>
-
-<span class="o">-</span> <span class="n">Saisir</span> <span class="n">le</span> <span class="n">programme</span> <span class="n">et</span> <span class="n">le</span> <span class="n">flasher</span> <span class="n">sur</span> <span class="n">une</span> <span class="n">carte</span> <span class="n">connectée</span> <span class="n">à</span> <span class="n">l</span><span class="s1">&#39;ordinateur. Vérifier si le comportement anticipé est conforme à celui observé.  </span>
-<span class="o">-</span> <span class="n">Compléter</span> <span class="n">le</span> <span class="n">programme</span> <span class="n">en</span> <span class="n">procédant</span> <span class="n">de</span> <span class="n">façon</span> <span class="n">analogue</span> <span class="n">pour</span> <span class="n">déterminer</span> <span class="n">la</span> <span class="n">valeur</span> <span class="n">que</span> <span class="n">doit</span> <span class="n">en</span> <span class="n">prendre</span> <span class="n">l</span><span class="s1">&#39;ordonnée du pixel `y` selon les valeurs de `accelerometer.get_y()`</span>
-
-<span class="c1">## 4. Détecter l&#39;intensité lumineuse</span>
-
-
-<span class="c1">### 4.1 Avec les leds de la carte micro:bit</span>
-
-<span class="p">[</span><span class="o">&lt;</span><span class="n">span</span> <span class="n">class</span><span class="o">=</span><span class="s2">&quot;item led&quot;</span><span class="o">&gt;</span><span class="n">led</span><span class="o">&lt;/</span><span class="n">span</span><span class="o">&gt;</span><span class="p">](</span><span class="o">../</span><span class="n">python_leds5x5</span><span class="p">)</span> 
-
-<span class="n">Les</span> <span class="n">LED</span> <span class="n">de</span> <span class="n">la</span> <span class="n">carte</span> <span class="n">peuvent</span> <span class="n">détecter</span> <span class="n">le</span> <span class="n">niveau</span> <span class="n">de</span> <span class="n">lumière</span> <span class="n">ambiante</span> <span class="p">:</span> <span class="n">la</span> <span class="n">fonction</span> <span class="err">`</span><span class="n">display</span><span class="o">.</span><span class="n">read_light_level</span><span class="p">()</span><span class="err">`</span> <span class="n">renvoie</span> <span class="n">une</span> <span class="n">valeur</span> <span class="n">comprise</span> <span class="n">entre</span> <span class="mi">0</span> <span class="n">et</span> <span class="mi">255</span> <span class="p">:</span> <span class="n">plus</span> <span class="n">la</span> <span class="n">valeur</span> <span class="n">est</span> <span class="n">élevée</span><span class="p">,</span> <span class="n">plus</span> <span class="n">l</span><span class="s1">&#39;environnement est lumineux. </span>
-
-<span class="err">```</span><span class="n">python</span>
-<span class="kn">from</span> <span class="nn">microbit</span> <span class="kn">import</span> <span class="o">*</span>
+    <span class="n">sleep</span><span class="p">(</span><span class="mi">100</span><span class="p">)</span>
+</code></pre></div>
+<ul>
+<li>Saisir le programme et le flasher sur une carte connectée à l'ordinateur. Vérifier si le comportement anticipé est conforme à celui observé.  </li>
+<li>Compléter le programme en procédant de façon analogue pour déterminer la valeur que doit en prendre l'ordonnée du pixel <code>y</code> selon les valeurs de <code>accelerometer.get_y()</code></li>
+</ul>
+<h2 id="4-detecter-lintensite-lumineuse">4. Détecter l'intensité lumineuse</h2>
+<h3 id="41-avec-les-leds-de-la-carte-microbit">4.1 Avec les leds de la carte micro:bit</h3>
+<p><a href="../python_leds5x5"><span class="item led">led</span></a></p>
+<p>Les LED de la carte peuvent détecter le niveau de lumière ambiante : la fonction <code>display.read_light_level()</code> renvoie une valeur comprise entre 0 et 255 : plus la valeur est élevée, plus l'environnement est lumineux.</p>
+<div class="highlight"><pre><span></span><code><span class="kn">from</span> <span class="nn">microbit</span> <span class="kn">import</span> <span class="o">*</span>
 <span class="k">while</span> <span class="kc">True</span><span class="p">:</span>
     <span class="n">niveau</span> <span class="o">=</span> <span class="n">display</span><span class="o">.</span><span class="n">read_light_level</span><span class="p">()</span>
     <span class="k">if</span> <span class="n">niveau</span> <span class="o">&gt;</span> <span class="mi">220</span><span class="p">:</span>
         <span class="n">display</span><span class="o">.</span><span class="n">show</span><span class="p">(</span><span class="n">Image</span><span class="o">.</span><span class="n">YES</span><span class="p">)</span>
-    <span class="k">else</span> <span class="p">:</span> 
+    <span class="k">else</span> <span class="p">:</span>
         <span class="n">display</span><span class="o">.</span><span class="n">show</span><span class="p">(</span><span class="n">Image</span><span class="o">.</span><span class="n">NO</span><span class="p">)</span>
     <span class="n">sleep</span><span class="p">(</span><span class="mi">200</span><span class="p">)</span>
 </code></pre></div>
@@ -2608,24 +2643,24 @@ Que faut-il faire pour que l'image Image.YES s'affiche ?  </li>
 <p><a href="../python_leds5x5"><span class="item led">led</span></a> <a href="../python_grove/#capteurs"><span class="item grove_light">capteur de lumière</span></a></p>
 <p><img alt="" src="../../images/grove/mb_python_grove_detecteur.png" /></p>
 <p>Placer la carte micro-bit sur le shield Grove et connecter le capteur de lumière sur la broche P0-P14.<br />
-La fonction <code>pin0.read_analog()</code> renvoie une valeur entière d'autant plus élevée que l'environnement est lumineux. </p>
-<p>Saisir et flasher le programme suivant : 
+La fonction <code>pin0.read_analog()</code> renvoie une valeur entière d'autant plus élevée que l'environnement est lumineux.</p>
+<p>Saisir et flasher le programme suivant :
 <div class="highlight"><pre><span></span><code><span class="kn">from</span> <span class="nn">microbit</span> <span class="kn">import</span> <span class="o">*</span>
 <span class="k">while</span> <span class="kc">True</span><span class="p">:</span>
     <span class="n">mesure</span> <span class="o">=</span> <span class="n">pin0</span><span class="o">.</span><span class="n">read_analog</span><span class="p">()</span>
     <span class="k">if</span> <span class="n">mesure</span> <span class="o">&gt;</span> <span class="mi">600</span><span class="p">:</span>
         <span class="n">display</span><span class="o">.</span><span class="n">show</span><span class="p">(</span><span class="n">Image</span><span class="o">.</span><span class="n">YES</span><span class="p">)</span>
-    <span class="k">else</span> <span class="p">:</span> 
+    <span class="k">else</span> <span class="p">:</span>
         <span class="n">display</span><span class="o">.</span><span class="n">show</span><span class="p">(</span><span class="n">Image</span><span class="o">.</span><span class="n">NO</span><span class="p">)</span>
     <span class="n">sleep</span><span class="p">(</span><span class="mi">100</span><span class="p">)</span>
 </code></pre></div></p>
 <ul>
 <li>Que peut-on faire pour que l'image Image.NO s'affiche sur la carte micro:bit ?  </li>
-<li>Emballer le capteur (connecté à la carte) dans une feuille de papier.  Modifier le programme pour que la carte affiche l'image Image.YES tant que le capteur reste emballé et l'image Image.NO dès que l'emballage est ouvert. </li>
+<li>Emballer le capteur (connecté à la carte) dans une feuille de papier.  Modifier le programme pour que la carte affiche l'image Image.YES tant que le capteur reste emballé et l'image Image.NO dès que l'emballage est ouvert.</li>
 </ul>
 <h2 id="5-envoyer-des-messages-par-radio">5. Envoyer des messages par radio</h2>
 <h3 id="51-envoyer-une-valeur">5.1 Envoyer une valeur</h3>
-<p><a href="../python_leds5x5"><span class="item led">led</span></a> 
+<p><a href="../python_leds5x5"><span class="item led">led</span></a>
 <a href="../python_boutons"><span class="item buttons">boutons</span></a> <a href="../python_radio"><span class="item radio">radio</span></a></p>
 <p>Cet exercice nécessite deux cartes : une carte mesure la température et envoie par radio la valeur mesurée.
 Une autre carte reçoit les valeurs et les affiche.</p>
@@ -2666,14 +2701,14 @@ Une autre carte reçoit les valeurs et les affiche.</p>
     <span class="n">valeur</span> <span class="o">=</span> <span class="n">radio</span><span class="o">.</span><span class="n">receive</span><span class="p">()</span>
     <span class="k">if</span> <span class="o">...</span> <span class="o">&gt;</span> <span class="mi">20</span><span class="p">:</span>
         <span class="n">display</span><span class="o">.</span><span class="n">show</span><span class="p">(</span><span class="o">...</span><span class="p">)</span>   
-    <span class="o">...</span> <span class="p">:</span> 
-        <span class="n">display</span><span class="o">.</span><span class="n">show</span><span class="p">(</span><span class="o">...</span><span class="p">)</span> 
+    <span class="o">...</span> <span class="p">:</span>
+        <span class="n">display</span><span class="o">.</span><span class="n">show</span><span class="p">(</span><span class="o">...</span><span class="p">)</span>
     <span class="n">sleep</span><span class="p">(</span><span class="mi">1000</span><span class="p">)</span>
 </code></pre></div>
 </td></tr></table>
 </details>
 <ul>
-<li>Compléter le programme de la question précédente pour que la carte réceptrice affiche la température lorsqu'on appuie sur le bouton A. </li>
+<li>Compléter le programme de la question précédente pour que la carte réceptrice affiche la température lorsqu'on appuie sur le bouton A.</li>
 </ul>
 <details class="abstract"><summary>Aide : une proposition à compléter</summary><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
 <span class="normal"> 2</span>
@@ -2693,8 +2728,8 @@ Une autre carte reçoit les valeurs et les affiche.</p>
     <span class="n">valeur</span> <span class="o">=</span> <span class="n">radio</span><span class="o">.</span><span class="n">receive</span><span class="p">()</span>
     <span class="k">if</span> <span class="o">...</span> <span class="o">&gt;</span> <span class="mi">20</span><span class="p">:</span>
         <span class="n">display</span><span class="o">.</span><span class="n">show</span><span class="p">(</span><span class="o">...</span><span class="p">)</span>   
-    <span class="o">...</span> <span class="p">:</span> 
-        <span class="n">display</span><span class="o">.</span><span class="n">show</span><span class="p">(</span><span class="o">...</span><span class="p">)</span> 
+    <span class="o">...</span> <span class="p">:</span>
+        <span class="n">display</span><span class="o">.</span><span class="n">show</span><span class="p">(</span><span class="o">...</span><span class="p">)</span>
     <span class="k">if</span> <span class="n">button_a</span><span class="o">.</span><span class="n">is_pressed</span><span class="p">():</span>
         <span class="o">...</span>
     <span class="n">sleep</span><span class="p">(</span><span class="mi">1000</span><span class="p">)</span>
