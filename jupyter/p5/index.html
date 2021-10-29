@@ -957,40 +957,99 @@
     Structure du programme
   </a>
   
-</li>
-      
-        <li class="md-nav__item">
+    <nav class="md-nav" aria-label="Structure du programme">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
   <a href="#variables-systeme" class="md-nav__link">
     Variables système
   </a>
   
 </li>
+        
+      </ul>
+    </nav>
+  
+</li>
       
         <li class="md-nav__item">
+  <a href="#couleurs" class="md-nav__link">
+    Couleurs
+  </a>
+  
+    <nav class="md-nav" aria-label="Couleurs">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
   <a href="#designer-une-couleur" class="md-nav__link">
     Désigner une couleur
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
+        
+          <li class="md-nav__item">
   <a href="#dessiner-en-couleur" class="md-nav__link">
     Dessiner en couleur
   </a>
   
 </li>
+        
+      </ul>
+    </nav>
+  
+</li>
       
         <li class="md-nav__item">
+  <a href="#formes" class="md-nav__link">
+    Formes
+  </a>
+  
+    <nav class="md-nav" aria-label="Formes">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
   <a href="#primitives-2d" class="md-nav__link">
     Primitives 2d
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
+        
+          <li class="md-nav__item">
   <a href="#traces" class="md-nav__link">
     Tracés
   </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#evenements" class="md-nav__link">
+    Événements
+  </a>
+  
+    <nav class="md-nav" aria-label="Événements">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#touches-du-clavier" class="md-nav__link">
+    Touches du clavier
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#souris" class="md-nav__link">
+    Souris
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -1869,40 +1928,99 @@
     Structure du programme
   </a>
   
-</li>
-      
-        <li class="md-nav__item">
+    <nav class="md-nav" aria-label="Structure du programme">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
   <a href="#variables-systeme" class="md-nav__link">
     Variables système
   </a>
   
 </li>
+        
+      </ul>
+    </nav>
+  
+</li>
       
         <li class="md-nav__item">
+  <a href="#couleurs" class="md-nav__link">
+    Couleurs
+  </a>
+  
+    <nav class="md-nav" aria-label="Couleurs">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
   <a href="#designer-une-couleur" class="md-nav__link">
     Désigner une couleur
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
+        
+          <li class="md-nav__item">
   <a href="#dessiner-en-couleur" class="md-nav__link">
     Dessiner en couleur
   </a>
   
 </li>
+        
+      </ul>
+    </nav>
+  
+</li>
       
         <li class="md-nav__item">
+  <a href="#formes" class="md-nav__link">
+    Formes
+  </a>
+  
+    <nav class="md-nav" aria-label="Formes">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
   <a href="#primitives-2d" class="md-nav__link">
     Primitives 2d
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
+        
+          <li class="md-nav__item">
   <a href="#traces" class="md-nav__link">
     Tracés
   </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#evenements" class="md-nav__link">
+    Événements
+  </a>
+  
+    <nav class="md-nav" aria-label="Événements">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#touches-du-clavier" class="md-nav__link">
+    Touches du clavier
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#souris" class="md-nav__link">
+    Souris
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -1929,7 +2047,8 @@ La bibliothèque propose l'essentiel des fonctions de <a href="https://p5js.org"
     <span class="n">createCanvas</span><span class="p">(</span><span class="mi">800</span><span class="p">,</span><span class="mi">600</span><span class="p">)</span>
     <span class="c1"># instructions de paramétrage de l&#39;affichage</span>
 </code></pre></div>
-Cette fonction permet de définir les dimensions de la fenêtre de tracé, et quelques paramètres initiaux.</p>
+Cette fonction permet de définir les dimensions de la fenêtre de tracé, et quelques paramètres initiaux.
+Les valeurs données aux paramètres de la fonction <code>createCanvas</code> sont affectées automatiquement à deux variables systèmes :  <code>width</code>  pour le premier paramètre et <code>height</code> pour le second.</p>
 <p>Puis la fonction <code>draw()</code> est ensuite exécutée en boucle, après l'exécution de <code>setup()</code>:
 <div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">draw</span><span class="p">():</span>
     <span class="c1"># instructions de dessin</span>
@@ -1938,7 +2057,7 @@ Elle contient des instructions qui seront exécutées avec une fréquence régla
 <p>L'instruction <code>stop()</code> met fin au programme :
 <div class="highlight"><pre><span></span><code><span class="n">stop</span><span class="p">()</span>
 </code></pre></div></p>
-<h2 id="variables-systeme">Variables système</h2>
+<h3 id="variables-systeme">Variables système</h3>
 <table>
 <thead>
 <tr>
@@ -1955,17 +2074,12 @@ Elle contient des instructions qui seront exécutées avec une fréquence régla
 <td align="left">width, height</td>
 <td align="left">Dimensions de la zone de dessin. Les valeurs de <code>width</code> et <code>height</code> sont définies par les paramètres de la fonction <code>createCanvas()</code>.</td>
 </tr>
-<tr>
-<td align="left">mouseX, mouseY</td>
-<td align="left">Coordonnées du pointeur de la souris</td>
-</tr>
-<tr>
-<td align="left">mouseIsPressed</td>
-<td align="left">Booléen qui vaut <code>True</code>si la souris est cliquée, et <code>False</code> sinon.</td>
-</tr>
 </tbody>
 </table>
-<h2 id="designer-une-couleur">Désigner une couleur</h2>
+<p>Voir également les paragraphes <a href="#touches-du-clavier">Touches du clavier</a> et
+<a href="#souris">Souris</a>.</p>
+<h2 id="couleurs">Couleurs</h2>
+<h3 id="designer-une-couleur">Désigner une couleur</h3>
 <table>
 <thead>
 <tr>
@@ -2002,7 +2116,7 @@ Elle contient des instructions qui seront exécutées avec une fréquence régla
 </table>
 <p>On peut égaler déterminer une couleur à l'aide de la fonction <code>lerpColor</code>:<br />
 <code>lerpColor(couleur1, couleur2, coefficient)</code>  détermine une couleur intermédiaire entre <code>couleur1</code> et <code>couleur2</code>. <code>coefficient</code>  est un nombre entre 0 et 1. Plus <code>coefficient</code> est proche de 0, plus la couleur obtenue est proche de <code>couleur1</code>, et plus <code>coefficient</code> est proche de 1, plus la couleur obtenue est proche de <code>couleur2</code>.</p>
-<h2 id="dessiner-en-couleur">Dessiner en couleur</h2>
+<h3 id="dessiner-en-couleur">Dessiner en couleur</h3>
 <table>
 <thead>
 <tr>
@@ -2034,7 +2148,8 @@ Elle contient des instructions qui seront exécutées avec une fréquence régla
 </tbody>
 </table>
 <p>Si <code>noFill()</code> et <code>noStroke()</code> sont exécutées en même temps, rien n'est tracé dans la zone de dessin.</p>
-<h2 id="primitives-2d">Primitives 2d</h2>
+<h2 id="formes">Formes</h2>
+<h3 id="primitives-2d">Primitives 2d</h3>
 <p>L'origine du repère est située en haut à gauche.
 Les abscisses augmentent de gauche à droite, les ordonnées augmentent de haut en bas.</p>
 <p><img src=https://py.processing.org/tutorials/drawing/imgs/1.5.jpg></p>
@@ -2084,7 +2199,7 @@ Les abscisses augmentent de gauche à droite, les ordonnées augmentent de haut 
 </tr>
 </tbody>
 </table>
-<h2 id="traces">Tracés</h2>
+<h3 id="traces">Tracés</h3>
 <table>
 <thead>
 <tr>
@@ -2104,6 +2219,61 @@ Les abscisses augmentent de gauche à droite, les ordonnées augmentent de haut 
 <tr>
 <td align="left">strokeCap(style)</td>
 <td align="left">Définit le style de rendu des extrémités de ligne. Ces extrémités sont soit arrondies, carrées ou étendues, chacune spécifiée avec les paramètres correspondants: ROUND, SQUARE et PROJECT (par défaut : ROUND).</td>
+</tr>
+</tbody>
+</table>
+<h2 id="evenements">Événements</h2>
+<h3 id="touches-du-clavier">Touches du clavier</h3>
+<table>
+<thead>
+<tr>
+<th align="left">syntaxe</th>
+<th align="left">description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">key</td>
+<td align="left">Nom de la dernière touche appuyée.</td>
+</tr>
+<tr>
+<td align="left">keyCode</td>
+<td align="left">Code de la dernière touche appuyée.</td>
+</tr>
+<tr>
+<td align="left">keyIsPressed <br>isKeyPressed</td>
+<td align="left">Vaut <code>True</code> lorsqu'une touche du clavier est appuyée et <code>False</code> sinon.</td>
+</tr>
+<tr>
+<td align="left">keyIsDown(code)  <br> keyIsDown(touche)</td>
+<td align="left">Vaut <code>True</code> si la touche concernée est appuyée et <code>False</code> sinon.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="souris">Souris</h3>
+<table>
+<thead>
+<tr>
+<th align="left">syntaxe</th>
+<th align="left">description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">mouseX, mouseY</td>
+<td align="left">Coordonnées du pointeur de la souris</td>
+</tr>
+<tr>
+<td align="left">mouseIsPressed</td>
+<td align="left">Vaut <code>True</code>si la souris est cliquée, et <code>False</code> sinon.</td>
+</tr>
+<tr>
+<td align="left">movedX</td>
+<td align="left">Mouvement horizontal du pointeur de la souris depuis la dernière exécution de <code>draw()</code></td>
+</tr>
+<tr>
+<td align="left">movedY</td>
+<td align="left">Mouvement vertical du pointeur de la souris depuis la dernière exécution de <code>draw()</code></td>
 </tr>
 </tbody>
 </table>
