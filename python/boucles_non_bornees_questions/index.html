@@ -9,12 +9,11 @@
         <meta name="description" content="informatique, NSI, SNT">
       
       
-      
         <meta name="author" content="Nathalie Weibel">
       
       
       <link rel="icon" href="../../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.2.3, mkdocs-material-7.3.6">
+      <meta name="generator" content="mkdocs-1.2.3, mkdocs-material-8.1.3">
     
     
       
@@ -22,10 +21,10 @@
       
     
     
-      <link rel="stylesheet" href="../../assets/stylesheets/main.a57b2b03.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.edf004c2.min.css">
       
         
-        <link rel="stylesheet" href="../../assets/stylesheets/palette.3f5d1f46.min.css">
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.e6a45f82.min.css">
         
       
     
@@ -35,22 +34,20 @@
         
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Sans:300,400,400i,700%7CRoboto+Mono&display=fallback">
-        <style>:root{--md-text-font-family:"PT Sans";--md-code-font-family:"Roboto Mono"}</style>
+        <style>:root{--md-text-font:"PT Sans";--md-code-font:"Roboto Mono"}</style>
       
-    
     
     
       <link rel="stylesheet" href="../../stylesheets/extra.css">
     
+    <script>__md_scope=new URL("../..",location),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
   
 
 
-
   
   
-
 
 
   <script>window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)},ga.l=+new Date,ga("create","UA-171618240-1","auto"),ga("set","anonymizeIp",!0),ga("send","pageview"),document.addEventListener("DOMContentLoaded",function(){document.forms.search&&document.forms.search.query.addEventListener("blur",function(){var e;this.value&&(e=document.location.pathname,ga("send","pageview",e+"?q="+this.value))}),"undefined"!=typeof location$&&location$.subscribe(function(e){ga("send","pageview",e.pathname)})})</script>
@@ -72,9 +69,8 @@
     <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="teal" data-md-color-accent="light-blue">
   
     
-    <script>function __prefix(e){return new URL("../..",location).pathname+"."+e}function __get(e,t=localStorage){return JSON.parse(t.getItem(__prefix(e)))}</script>
     
-      <script>var palette=__get("__palette");if(null!==palette&&"object"==typeof palette.color)for(var key in palette.color)document.body.setAttribute("data-md-color-"+key,palette.color[key])</script>
+      <script>var palette=__md_get("__palette");if(palette&&"object"==typeof palette.color)for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)</script>
     
     <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
@@ -90,6 +86,7 @@
     <div data-md-component="announce">
       
     </div>
+    
     
       
 
@@ -148,8 +145,7 @@
       <label class="md-header__button md-icon" for="__search">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
       </label>
-      
-<div class="md-search" data-md-component="search" role="dialog">
+      <div class="md-search" data-md-component="search" role="dialog">
   <label class="md-search__overlay" for="__search"></label>
   <div class="md-search__inner" role="search">
     <form class="md-search__form" name="search">
@@ -742,7 +738,6 @@
       </a>
       
         
-
 
 <nav class="md-nav md-nav--secondary" aria-label="Table des matières">
   
@@ -2250,7 +2245,6 @@
                   <div class="md-sidebar__inner">
                     
 
-
 <nav class="md-nav md-nav--secondary" aria-label="Table des matières">
   
   
@@ -2364,8 +2358,8 @@
             <article class="md-content__inner md-typeset">
               
                 
-                
-                <h1 id="questions-boucles-non-bornees">Questions : boucles non bornées</h1>
+
+<h1 id="questions-boucles-non-bornees">Questions : boucles non bornées</h1>
 <h2 id="1-aleatoire">1. Aléatoire</h2>
 <div class="admonition info">
 <p class="admonition-title">Info</p>
@@ -2413,7 +2407,9 @@ Parmi les 4 programmes suivants, lequel permet d'afficher le nombre de coups qui
     <span class="n">compteur</span> <span class="o">=</span> <span class="n">compteur</span> <span class="o">+</span> <span class="mi">1</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">compteur</span> <span class="o">+</span> <span class="mi">1</span><span class="p">)</span>
 </code></pre></div></p>
-<div class="tabbed-set" data-tabs="1:3"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><label for="__tabbed_1_1">Propositions de réponses</label><div class="tabbed-content">
+<div class="tabbed-set tabbed-alternate" data-tabs="1:3"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><input id="__tabbed_1_3" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1">Propositions de réponses</label><label for="__tabbed_1_2">Solution</label><label for="__tabbed_1_3">Arguments</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
 <ul class="task-list">
 <li class="task-list-item"><label class="task-list-control"><input type="checkbox"/><span class="task-list-indicator"></span></label> A</li>
 <li class="task-list-item"><label class="task-list-control"><input type="checkbox"/><span class="task-list-indicator"></span></label> B</li>
@@ -2421,7 +2417,7 @@ Parmi les 4 programmes suivants, lequel permet d'afficher le nombre de coups qui
 <li class="task-list-item"><label class="task-list-control"><input type="checkbox"/><span class="task-list-indicator"></span></label> D</li>
 </ul>
 </div>
-<input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><label for="__tabbed_1_2">Solution</label><div class="tabbed-content">
+<div class="tabbed-block">
 <ul class="task-list">
 <li class="task-list-item"><label class="task-list-control"><input type="checkbox" checked/><span class="task-list-indicator"></span></label> A</li>
 <li class="task-list-item"><label class="task-list-control"><input type="checkbox"/><span class="task-list-indicator"></span></label> B</li>
@@ -2429,9 +2425,10 @@ Parmi les 4 programmes suivants, lequel permet d'afficher le nombre de coups qui
 <li class="task-list-item"><label class="task-list-control"><input type="checkbox"/><span class="task-list-indicator"></span></label> D</li>
 </ul>
 </div>
-<input id="__tabbed_1_3" name="__tabbed_1" type="radio" /><label for="__tabbed_1_3">Arguments</label><div class="tabbed-content">
+<div class="tabbed-block">
 <p>Le premier lancer peut donner lieu à un 6 : le compteur doit être initialisé à 1 dès qu'un lancer est simulé. Ensuite il faut incrémenter<sup id="fnref3:1"><a class="footnote-ref" href="#fn:1">1</a></sup> le compteur à chaque fois qu'un lancer est simulé.
 De cette façon, compteur contient exactement le nombre de lancers jusqu'au premier 6.</p>
+</div>
 </div>
 </div>
 <h4 id="question-12">Question 1.2</h4>
@@ -2481,7 +2478,9 @@ Parmi les 4 programmes suivants, lequel permet d'afficher le nombre de bonds qui
     <span class="n">marche</span> <span class="o">=</span> <span class="n">marche</span> <span class="o">+</span> <span class="n">bond</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">compteur</span><span class="p">)</span>
 </code></pre></div></p>
-<div class="tabbed-set" data-tabs="2:3"><input checked="checked" id="__tabbed_2_1" name="__tabbed_2" type="radio" /><label for="__tabbed_2_1">Propositions de réponses</label><div class="tabbed-content">
+<div class="tabbed-set tabbed-alternate" data-tabs="2:3"><input checked="checked" id="__tabbed_2_1" name="__tabbed_2" type="radio" /><input id="__tabbed_2_2" name="__tabbed_2" type="radio" /><input id="__tabbed_2_3" name="__tabbed_2" type="radio" /><div class="tabbed-labels"><label for="__tabbed_2_1">Propositions de réponses</label><label for="__tabbed_2_2">Solution</label><label for="__tabbed_2_3">Arguments</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
 <ul class="task-list">
 <li class="task-list-item"><label class="task-list-control"><input type="checkbox"/><span class="task-list-indicator"></span></label> A</li>
 <li class="task-list-item"><label class="task-list-control"><input type="checkbox"/><span class="task-list-indicator"></span></label> B</li>
@@ -2489,7 +2488,7 @@ Parmi les 4 programmes suivants, lequel permet d'afficher le nombre de bonds qui
 <li class="task-list-item"><label class="task-list-control"><input type="checkbox"/><span class="task-list-indicator"></span></label> D</li>
 </ul>
 </div>
-<input id="__tabbed_2_2" name="__tabbed_2" type="radio" /><label for="__tabbed_2_2">Solution</label><div class="tabbed-content">
+<div class="tabbed-block">
 <ul class="task-list">
 <li class="task-list-item"><label class="task-list-control"><input type="checkbox"/><span class="task-list-indicator"></span></label> A</li>
 <li class="task-list-item"><label class="task-list-control"><input type="checkbox" checked/><span class="task-list-indicator"></span></label> B</li>
@@ -2497,13 +2496,14 @@ Parmi les 4 programmes suivants, lequel permet d'afficher le nombre de bonds qui
 <li class="task-list-item"><label class="task-list-control"><input type="checkbox"/><span class="task-list-indicator"></span></label> D</li>
 </ul>
 </div>
-<input id="__tabbed_2_3" name="__tabbed_2" type="radio" /><label for="__tabbed_2_3">Arguments</label><div class="tabbed-content">
+<div class="tabbed-block">
 <ul>
 <li>Le programme A initialise la variable <code>compteur</code> à 1 alors que <code>marche</code> est initialisé à 0.  </li>
 <li>Le programme C n'incrémente <sup id="fnref2:1"><a class="footnote-ref" href="#fn:1">1</a></sup> pas correctement <code>compteur</code> : chaque bond ne compte que pour 1.  </li>
 <li>Le programme D teste si on atteint exactement la 17e marche, or notre simulation pourrait induire un bond de 2 marches à partir de la 16e. La variable <code>marche</code> pourrait ne jamais valoir 17 et le programme ne s'arrêterait pas.  </li>
 <li>Seul le programme B convient.</li>
 </ul>
+</div>
 </div>
 </div>
 <h2 id="2-accumulation">2. Accumulation</h2>
@@ -2545,7 +2545,9 @@ Parmi les 4 programmes suivants, lequel permet d'afficher la valeur de <span cla
     <span class="n">n</span> <span class="o">=</span> <span class="n">n</span> <span class="o">+</span> <span class="mi">1</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">n</span><span class="p">)</span>
 </code></pre></div></p>
-<div class="tabbed-set" data-tabs="3:3"><input checked="checked" id="__tabbed_3_1" name="__tabbed_3" type="radio" /><label for="__tabbed_3_1">Propositions de réponses</label><div class="tabbed-content">
+<div class="tabbed-set tabbed-alternate" data-tabs="3:3"><input checked="checked" id="__tabbed_3_1" name="__tabbed_3" type="radio" /><input id="__tabbed_3_2" name="__tabbed_3" type="radio" /><input id="__tabbed_3_3" name="__tabbed_3" type="radio" /><div class="tabbed-labels"><label for="__tabbed_3_1">Propositions de réponses</label><label for="__tabbed_3_2">Solution</label><label for="__tabbed_3_3">Arguments</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
 <ul class="task-list">
 <li class="task-list-item"><label class="task-list-control"><input type="checkbox"/><span class="task-list-indicator"></span></label> A</li>
 <li class="task-list-item"><label class="task-list-control"><input type="checkbox"/><span class="task-list-indicator"></span></label> B</li>
@@ -2553,7 +2555,7 @@ Parmi les 4 programmes suivants, lequel permet d'afficher la valeur de <span cla
 <li class="task-list-item"><label class="task-list-control"><input type="checkbox"/><span class="task-list-indicator"></span></label> D</li>
 </ul>
 </div>
-<input id="__tabbed_3_2" name="__tabbed_3" type="radio" /><label for="__tabbed_3_2">Solution</label><div class="tabbed-content">
+<div class="tabbed-block">
 <ul class="task-list">
 <li class="task-list-item"><label class="task-list-control"><input type="checkbox"/><span class="task-list-indicator"></span></label> A</li>
 <li class="task-list-item"><label class="task-list-control"><input type="checkbox"/><span class="task-list-indicator"></span></label> B</li>
@@ -2561,12 +2563,13 @@ Parmi les 4 programmes suivants, lequel permet d'afficher la valeur de <span cla
 <li class="task-list-item"><label class="task-list-control"><input type="checkbox"/><span class="task-list-indicator"></span></label> D</li>
 </ul>
 </div>
-<input id="__tabbed_3_3" name="__tabbed_3" type="radio" /><label for="__tabbed_3_3">Arguments</label><div class="tabbed-content">
+<div class="tabbed-block">
 <ul>
 <li>Les corps de boucles des programmes A et B ne sont jamais exécutés car les expressions <code>somme &gt; 1000</code> et <code>somme &gt;= 1000</code> sont évaluées à <code>False</code> puisque <code>somme</code>vaut 0 lors de l'évaluation.  </li>
 <li>La seule différence entre les programmes C et D est l'ordre des instructions <code>somme =  somme + n</code> et <code>n = n + 1</code>. Dans le programme D, <code>n</code> est incrémenté <sup id="fnref:1"><a class="footnote-ref" href="#fn:1">1</a></sup> après avoir été ajouté à <code>somme</code> : lorsque la valeur de <code>somme</code> sera supérieure ou égale à 1000, mettant fin  à la boucle, la valeur de <code>n</code> ne sera pas la dernière ajoutée à <code>somme</code>. L'instruction <code>print(n)</code> n'affichera pas la bonne valeur.<br />
 Dans le programme C, <code>n</code> est incrémenté avant d'être ajouté à <code>somme</code>, et le problème précédent ne se pose plus.</li>
 </ul>
+</div>
 </div>
 </div>
 <h4 id="question-22">Question 2.2</h4>
@@ -2579,7 +2582,9 @@ Dans le programme C, <code>n</code> est incrémenté avant d'être ajouté à <c
     <span class="n">i</span> <span class="o">=</span> <span class="mi">2</span> <span class="o">*</span> <span class="n">i</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">i</span><span class="p">)</span>
 </code></pre></div>
-<div class="tabbed-set" data-tabs="4:3"><input checked="checked" id="__tabbed_4_1" name="__tabbed_4" type="radio" /><label for="__tabbed_4_1">Propositions de réponses</label><div class="tabbed-content">
+<div class="tabbed-set tabbed-alternate" data-tabs="4:3"><input checked="checked" id="__tabbed_4_1" name="__tabbed_4" type="radio" /><input id="__tabbed_4_2" name="__tabbed_4" type="radio" /><input id="__tabbed_4_3" name="__tabbed_4" type="radio" /><div class="tabbed-labels"><label for="__tabbed_4_1">Propositions de réponses</label><label for="__tabbed_4_2">Solution</label><label for="__tabbed_4_3">Arguments</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
 <ul class="task-list">
 <li class="task-list-item"><label class="task-list-control"><input type="checkbox"/><span class="task-list-indicator"></span></label> 1</li>
 <li class="task-list-item"><label class="task-list-control"><input type="checkbox"/><span class="task-list-indicator"></span></label> 64</li>
@@ -2587,7 +2592,7 @@ Dans le programme C, <code>n</code> est incrémenté avant d'être ajouté à <c
 <li class="task-list-item"><label class="task-list-control"><input type="checkbox"/><span class="task-list-indicator"></span></label> 128</li>
 </ul>
 </div>
-<input id="__tabbed_4_2" name="__tabbed_4" type="radio" /><label for="__tabbed_4_2">Solution</label><div class="tabbed-content">
+<div class="tabbed-block">
 <ul class="task-list">
 <li class="task-list-item"><label class="task-list-control"><input type="checkbox"/><span class="task-list-indicator"></span></label> 1</li>
 <li class="task-list-item"><label class="task-list-control"><input type="checkbox"/><span class="task-list-indicator"></span></label> 64</li>
@@ -2595,8 +2600,9 @@ Dans le programme C, <code>n</code> est incrémenté avant d'être ajouté à <c
 <li class="task-list-item"><label class="task-list-control"><input type="checkbox" checked/><span class="task-list-indicator"></span></label> 128</li>
 </ul>
 </div>
-<input id="__tabbed_4_3" name="__tabbed_4" type="radio" /><label for="__tabbed_4_3">Arguments</label><div class="tabbed-content">
+<div class="tabbed-block">
 <p>La variable <code>i</code> prend successivement les valeurs 1, 2, 4, 8, 16, 32, 64. Pour toutes ces valeurs, l'expression <code>i &lt;= 100</code> est évaluée à <code>True</code> et le corps de la boucle est exécuté. Lors de la dernière exécution <code>i</code> prend la valeur 128, ce qui fait sortir de la boucle.</p>
+</div>
 </div>
 </div>
 <h2 id="3-entrer-dans-la-boucle-et-en-sortir">3. Entrer dans la boucle et en sortir</h2>
@@ -2611,7 +2617,9 @@ Quelle est la valeur affichée à l'issue de l'exécution de ce programme ?</p>
 <span class="nb">print</span><span class="p">(</span><span class="n">a</span><span class="p">)</span>
 </code></pre></div>
 </div>
-<div class="tabbed-set" data-tabs="5:3"><input checked="checked" id="__tabbed_5_1" name="__tabbed_5" type="radio" /><label for="__tabbed_5_1">Propositions de réponses</label><div class="tabbed-content">
+<div class="tabbed-set tabbed-alternate" data-tabs="5:3"><input checked="checked" id="__tabbed_5_1" name="__tabbed_5" type="radio" /><input id="__tabbed_5_2" name="__tabbed_5" type="radio" /><input id="__tabbed_5_3" name="__tabbed_5" type="radio" /><div class="tabbed-labels"><label for="__tabbed_5_1">Propositions de réponses</label><label for="__tabbed_5_2">Solution</label><label for="__tabbed_5_3">Arguments</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
 <ul class="task-list">
 <li class="task-list-item"><label class="task-list-control"><input type="checkbox"/><span class="task-list-indicator"></span></label> 5</li>
 <li class="task-list-item"><label class="task-list-control"><input type="checkbox"/><span class="task-list-indicator"></span></label> 7</li>
@@ -2619,7 +2627,7 @@ Quelle est la valeur affichée à l'issue de l'exécution de ce programme ?</p>
 <li class="task-list-item"><label class="task-list-control"><input type="checkbox"/><span class="task-list-indicator"></span></label> Aucune : la boucle ne termine pas</li>
 </ul>
 </div>
-<input id="__tabbed_5_2" name="__tabbed_5" type="radio" /><label for="__tabbed_5_2">Solution</label><div class="tabbed-content">
+<div class="tabbed-block">
 <ul class="task-list">
 <li class="task-list-item"><label class="task-list-control"><input type="checkbox" checked/><span class="task-list-indicator"></span></label> 5</li>
 <li class="task-list-item"><label class="task-list-control"><input type="checkbox"/><span class="task-list-indicator"></span></label> 7</li>
@@ -2627,8 +2635,9 @@ Quelle est la valeur affichée à l'issue de l'exécution de ce programme ?</p>
 <li class="task-list-item"><label class="task-list-control"><input type="checkbox"/><span class="task-list-indicator"></span></label> Aucune : la boucle ne termine pas</li>
 </ul>
 </div>
-<input id="__tabbed_5_3" name="__tabbed_5" type="radio" /><label for="__tabbed_5_3">Arguments</label><div class="tabbed-content">
+<div class="tabbed-block">
 <p>L'expression <code>a &lt; 5</code> est évaluée à <code>False</code> lorque <code>a</code> vaut 5 : le corps de la boucle n'est jamais exécuté.</p>
+</div>
 </div>
 </div>
 <h4 id="question-32">Question 3.2</h4>
@@ -2642,7 +2651,9 @@ Quelle est la valeur affichée à l'issue de l'exécution de ce programme ?</p>
 <span class="nb">print</span><span class="p">(</span><span class="n">a</span><span class="p">)</span>
 </code></pre></div>
 </div>
-<div class="tabbed-set" data-tabs="6:3"><input checked="checked" id="__tabbed_6_1" name="__tabbed_6" type="radio" /><label for="__tabbed_6_1">Propositions de réponses</label><div class="tabbed-content">
+<div class="tabbed-set tabbed-alternate" data-tabs="6:3"><input checked="checked" id="__tabbed_6_1" name="__tabbed_6" type="radio" /><input id="__tabbed_6_2" name="__tabbed_6" type="radio" /><input id="__tabbed_6_3" name="__tabbed_6" type="radio" /><div class="tabbed-labels"><label for="__tabbed_6_1">Propositions de réponses</label><label for="__tabbed_6_2">Solution</label><label for="__tabbed_6_3">Arguments</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
 <ul class="task-list">
 <li class="task-list-item"><label class="task-list-control"><input type="checkbox"/><span class="task-list-indicator"></span></label> 5</li>
 <li class="task-list-item"><label class="task-list-control"><input type="checkbox"/><span class="task-list-indicator"></span></label> 9</li>
@@ -2650,7 +2661,7 @@ Quelle est la valeur affichée à l'issue de l'exécution de ce programme ?</p>
 <li class="task-list-item"><label class="task-list-control"><input type="checkbox"/><span class="task-list-indicator"></span></label> Aucune : la boucle ne termine pas</li>
 </ul>
 </div>
-<input id="__tabbed_6_2" name="__tabbed_6" type="radio" /><label for="__tabbed_6_2">Solution</label><div class="tabbed-content">
+<div class="tabbed-block">
 <ul class="task-list">
 <li class="task-list-item"><label class="task-list-control"><input type="checkbox"/><span class="task-list-indicator"></span></label> 5</li>
 <li class="task-list-item"><label class="task-list-control"><input type="checkbox"/><span class="task-list-indicator"></span></label> 9</li>
@@ -2658,8 +2669,9 @@ Quelle est la valeur affichée à l'issue de l'exécution de ce programme ?</p>
 <li class="task-list-item"><label class="task-list-control"><input type="checkbox"/><span class="task-list-indicator"></span></label> Aucune : la boucle ne termine pas</li>
 </ul>
 </div>
-<input id="__tabbed_6_3" name="__tabbed_6" type="radio" /><label for="__tabbed_6_3">Arguments</label><div class="tabbed-content">
+<div class="tabbed-block">
 <p>La variable <code>a</code> prend successivement les valeurs 5, 7 et 9. Pour toutes ces valeurs, l'expression <code>a &lt; 10</code> est évaluée à <code>True</code> et le corps de la boucle est exécuté. Lors de la dernière exécution <code>a</code> prend la valeur 11, ce qui fait sortir de la boucle.</p>
+</div>
 </div>
 </div>
 <h4 id="question-33">Question 3.3</h4>
@@ -2673,7 +2685,9 @@ Quelle est la valeur affichée à l'issue de l'exécution de ce programme ?</p>
 <span class="nb">print</span><span class="p">(</span><span class="n">a</span><span class="p">)</span>
 </code></pre></div>
 </div>
-<div class="tabbed-set" data-tabs="7:3"><input checked="checked" id="__tabbed_7_1" name="__tabbed_7" type="radio" /><label for="__tabbed_7_1">Propositions de réponses</label><div class="tabbed-content">
+<div class="tabbed-set tabbed-alternate" data-tabs="7:3"><input checked="checked" id="__tabbed_7_1" name="__tabbed_7" type="radio" /><input id="__tabbed_7_2" name="__tabbed_7" type="radio" /><input id="__tabbed_7_3" name="__tabbed_7" type="radio" /><div class="tabbed-labels"><label for="__tabbed_7_1">Propositions de réponses</label><label for="__tabbed_7_2">Solution</label><label for="__tabbed_7_3">Arguments</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
 <ul class="task-list">
 <li class="task-list-item"><label class="task-list-control"><input type="checkbox"/><span class="task-list-indicator"></span></label> 5</li>
 <li class="task-list-item"><label class="task-list-control"><input type="checkbox"/><span class="task-list-indicator"></span></label> 3</li>
@@ -2681,7 +2695,7 @@ Quelle est la valeur affichée à l'issue de l'exécution de ce programme ?</p>
 <li class="task-list-item"><label class="task-list-control"><input type="checkbox"/><span class="task-list-indicator"></span></label> Aucune : la boucle ne termine pas</li>
 </ul>
 </div>
-<input id="__tabbed_7_2" name="__tabbed_7" type="radio" /><label for="__tabbed_7_2">Solution</label><div class="tabbed-content">
+<div class="tabbed-block">
 <ul class="task-list">
 <li class="task-list-item"><label class="task-list-control"><input type="checkbox"/><span class="task-list-indicator"></span></label> 5</li>
 <li class="task-list-item"><label class="task-list-control"><input type="checkbox"/><span class="task-list-indicator"></span></label> 3</li>
@@ -2689,8 +2703,9 @@ Quelle est la valeur affichée à l'issue de l'exécution de ce programme ?</p>
 <li class="task-list-item"><label class="task-list-control"><input type="checkbox" checked/><span class="task-list-indicator"></span></label> Aucune : la boucle ne termine pas</li>
 </ul>
 </div>
-<input id="__tabbed_7_3" name="__tabbed_7" type="radio" /><label for="__tabbed_7_3">Arguments</label><div class="tabbed-content">
+<div class="tabbed-block">
 <p>La variable <code>a</code> prend les valeurs 5, 3 ,1, -1, -3, etc. Pour toutes les valeurs, l'expression <code>a &lt; 10</code> est évaluée à <code>True</code> et le corps de la boucle est exécuté. Les valeurs de <code>a</code> sont décroissantes, et aucune valeur prise par <code>a</code> ne permettra de sortir de la boucle.</p>
+</div>
 </div>
 </div>
 <div class="footnote">
@@ -2701,11 +2716,6 @@ Quelle est la valeur affichée à l'issue de l'exécution de ce programme ?</p>
 </li>
 </ol>
 </div>
-                
-              
-              
-                
-
 
               
             </article>
@@ -2719,8 +2729,7 @@ Quelle est la valeur affichée à l'issue de l'exécution de ce programme ?</p>
         
       </main>
       
-        
-<footer class="md-footer">
+        <footer class="md-footer">
   
     <nav class="md-footer__inner md-grid" aria-label="Pied de page">
       
@@ -2759,43 +2768,42 @@ Quelle est la valeur affichée à l'issue de l'exécution de ce programme ?</p>
   
   <div class="md-footer-meta md-typeset">
     <div class="md-footer-meta__inner md-grid">
-      <div class="md-footer-copyright">
-        
-          <div class="md-footer-copyright__highlight">
-            Nathalie Weibel CC BY-NC-SA 4.0
-          </div>
-        
-        
-          Made with
-          <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
-            Material for MkDocs
-          </a>
-        
-        
-      </div>
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      Nathalie Weibel CC BY-NC-SA 4.0
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
       
-  <div class="md-footer-social">
+        <div class="md-social">
+  
+    
     
       
       
-        
-        
-      
-      <a href="https://github.com/nweibel" target="_blank" rel="noopener" title="github.com" class="md-footer-social__link">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 512"><path d="M186.1 328.7c0 20.9-10.9 55.1-36.7 55.1s-36.7-34.2-36.7-55.1 10.9-55.1 36.7-55.1 36.7 34.2 36.7 55.1zM480 278.2c0 31.9-3.2 65.7-17.5 95-37.9 76.6-142.1 74.8-216.7 74.8-75.8 0-186.2 2.7-225.6-74.8-14.6-29-20.2-63.1-20.2-95 0-41.9 13.9-81.5 41.5-113.6-5.2-15.8-7.7-32.4-7.7-48.8 0-21.5 4.9-32.3 14.6-51.8 45.3 0 74.3 9 108.8 36 29-6.9 58.8-10 88.7-10 27 0 54.2 2.9 80.4 9.2 34-26.7 63-35.2 107.8-35.2 9.8 19.5 14.6 30.3 14.6 51.8 0 16.4-2.6 32.7-7.7 48.2 27.5 32.4 39 72.3 39 114.2zm-64.3 50.5c0-43.9-26.7-82.6-73.5-82.6-18.9 0-37 3.4-56 6-14.9 2.3-29.8 3.2-45.1 3.2-15.2 0-30.1-.9-45.1-3.2-18.7-2.6-37-6-56-6-46.8 0-73.5 38.7-73.5 82.6 0 87.8 80.4 101.3 150.4 101.3h48.2c70.3 0 150.6-13.4 150.6-101.3zm-82.6-55.1c-25.8 0-36.7 34.2-36.7 55.1s10.9 55.1 36.7 55.1 36.7-34.2 36.7-55.1-10.9-55.1-36.7-55.1z"/></svg>
-      </a>
+    
+    <a href="https://github.com/nweibel" target="_blank" rel="noopener" title="github.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 512"><path d="M186.1 328.7c0 20.9-10.9 55.1-36.7 55.1s-36.7-34.2-36.7-55.1 10.9-55.1 36.7-55.1 36.7 34.2 36.7 55.1zM480 278.2c0 31.9-3.2 65.7-17.5 95-37.9 76.6-142.1 74.8-216.7 74.8-75.8 0-186.2 2.7-225.6-74.8-14.6-29-20.2-63.1-20.2-95 0-41.9 13.9-81.5 41.5-113.6-5.2-15.8-7.7-32.4-7.7-48.8 0-21.5 4.9-32.3 14.6-51.8 45.3 0 74.3 9 108.8 36 29-6.9 58.8-10 88.7-10 27 0 54.2 2.9 80.4 9.2 34-26.7 63-35.2 107.8-35.2 9.8 19.5 14.6 30.3 14.6 51.8 0 16.4-2.6 32.7-7.7 48.2 27.5 32.4 39 72.3 39 114.2zm-64.3 50.5c0-43.9-26.7-82.6-73.5-82.6-18.9 0-37 3.4-56 6-14.9 2.3-29.8 3.2-45.1 3.2-15.2 0-30.1-.9-45.1-3.2-18.7-2.6-37-6-56-6-46.8 0-73.5 38.7-73.5 82.6 0 87.8 80.4 101.3 150.4 101.3h48.2c70.3 0 150.6-13.4 150.6-101.3zm-82.6-55.1c-25.8 0-36.7 34.2-36.7 55.1s10.9 55.1 36.7 55.1 36.7-34.2 36.7-55.1-10.9-55.1-36.7-55.1z"/></svg>
+    </a>
+  
+    
     
       
       
-        
-        
-      
-      <a href="https://twitter.com/nathalieweibel" target="_blank" rel="noopener" title="twitter.com" class="md-footer-social__link">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"/></svg>
-      </a>
     
-  </div>
-
+    <a href="https://twitter.com/nathalieweibel" target="_blank" rel="noopener" title="twitter.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"/></svg>
+    </a>
+  
+</div>
+      
     </div>
   </div>
 </footer>
@@ -2804,10 +2812,10 @@ Quelle est la valeur affichée à l'issue de l'exécution de ce programme ?</p>
     <div class="md-dialog" data-md-component="dialog">
       <div class="md-dialog__inner md-typeset"></div>
     </div>
-    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.tabs", "navigation.sections", "navigation.top"], "translations": {"clipboard.copy": "Copier dans le presse-papier", "clipboard.copied": "Copi\u00e9 dans le presse-papier", "search.config.lang": "fr", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Rechercher", "search.result.placeholder": "Taper pour d\u00e9marrer la recherche", "search.result.none": "Aucun document trouv\u00e9", "search.result.one": "1 document trouv\u00e9", "search.result.other": "# documents trouv\u00e9s", "search.result.more.one": "1 de plus sur cette page", "search.result.more.other": "# de plus sur cette page", "search.result.term.missing": "Non trouv\u00e9", "select.version.title": "S\u00e9lectionner la version"}, "search": "../../assets/javascripts/workers/search.fcfe8b6d.min.js", "version": null}</script>
+    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.tabs", "navigation.sections", "navigation.top", "content.code.annotate"], "translations": {"clipboard.copy": "Copier dans le presse-papier", "clipboard.copied": "Copi\u00e9 dans le presse-papier", "search.config.lang": "fr", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Rechercher", "search.result.placeholder": "Taper pour d\u00e9marrer la recherche", "search.result.none": "Aucun document trouv\u00e9", "search.result.one": "1 document trouv\u00e9", "search.result.other": "# documents trouv\u00e9s", "search.result.more.one": "1 de plus sur cette page", "search.result.more.other": "# de plus sur cette page", "search.result.term.missing": "Non trouv\u00e9", "select.version.title": "S\u00e9lectionner la version"}, "search": "../../assets/javascripts/workers/search.0bbba5b5.min.js"}</script>
     
     
-      <script src="../../assets/javascripts/bundle.b1047164.min.js"></script>
+      <script src="../../assets/javascripts/bundle.e1a181d9.min.js"></script>
       
         <script src="../../javascripts/mathjax-config.js"></script>
       
