@@ -1059,6 +1059,13 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
+  <a href="#les-fonctions-setup-draw-et-run" class="md-nav__link">
+    Les fonctions setup(), draw() et run()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#variables-systeme" class="md-nav__link">
     Variables système
   </a>
@@ -1176,6 +1183,47 @@
           <li class="md-nav__item">
   <a href="#angles" class="md-nav__link">
     Angles
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#images" class="md-nav__link">
+    Images
+  </a>
+  
+    <nav class="md-nav" aria-label="Images">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#charger-une-image" class="md-nav__link">
+    Charger une image
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#afficher-une-image" class="md-nav__link">
+    Afficher  une image
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#creer-une-image" class="md-nav__link">
+    Créer une image
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#modifier-une-image" class="md-nav__link">
+    Modifier une image
   </a>
   
 </li>
@@ -2312,6 +2360,13 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
+  <a href="#les-fonctions-setup-draw-et-run" class="md-nav__link">
+    Les fonctions setup(), draw() et run()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#variables-systeme" class="md-nav__link">
     Variables système
   </a>
@@ -2438,6 +2493,47 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#images" class="md-nav__link">
+    Images
+  </a>
+  
+    <nav class="md-nav" aria-label="Images">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#charger-une-image" class="md-nav__link">
+    Charger une image
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#afficher-une-image" class="md-nav__link">
+    Afficher  une image
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#creer-une-image" class="md-nav__link">
+    Créer une image
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#modifier-une-image" class="md-nav__link">
+    Modifier une image
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -2455,6 +2551,7 @@
 <p><a href="https://basthon.fr">Basthon</a> propose la bibliothèque <strong>p5</strong>, qui permet de réaliser rapidement des <a href="https://notebook.basthon.fr/?from=examples/p5.ipynb">constructions graphiques et des animations</a>.
 La bibliothèque propose l'essentiel des fonctions de <a href="https://p5js.org">p5.js</a>, avec la syntaxe de python. En particulier, il ne s'agit pas de la bibliothèque <a href="https://p5.readthedocs.io/en/latest/">p5</a> disponible dans d'autres IDE.</p>
 <h2 id="structure-du-programme">Structure du programme</h2>
+<h3 id="les-fonctions-setup-draw-et-run">Les fonctions <code>setup()</code>, <code>draw()</code> et <code>run()</code></h3>
 <p>Le programme doit contenir deux fonctions, <code>setup()</code> et <code>draw()</code>, et l'exécution est lancée à l'aide de l'instruction <code>run()</code>.</p>
 <p>Lorsque l'on exécute l'instruction <code>run()</code>, la fonction <code>setup()</code> est exécutée une fois :
 <div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">setup</span><span class="p">():</span>
@@ -2471,6 +2568,22 @@ Elle contient des instructions qui seront exécutées avec une fréquence régla
 <p>L'instruction <code>stop()</code> met fin au programme :
 <div class="highlight"><pre><span></span><code><span class="n">stop</span><span class="p">()</span>
 </code></pre></div></p>
+<details class="info"><summary>Complément : la fonction <code>preload</code></summary><p>Il est possible de charger des données avant l'exécution de <code>setup()</code>. On peut par exemple charger une image dans la fonction <code>preload</code> puis l'afficher depuis la fonction <code>setup()</code>. Dans ce cas, l'appel de la fonction <code>run</code> doit préciser d'exécuter la fonction <code>preload</code>.</p>
+<p>Exemple :
+<div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">preload</span><span class="p">():</span>
+  <span class="k">global</span> <span class="n">background_img</span>
+  <span class="n">background_img</span> <span class="o">=</span> <span class="n">loadImage</span><span class="p">(</span><span class="n">url</span><span class="p">)</span>   
+
+<span class="k">def</span> <span class="nf">setup</span><span class="p">():</span>
+  <span class="n">createCanvas</span><span class="p">(</span><span class="mi">700</span><span class="p">,</span><span class="mi">700</span><span class="p">)</span>
+  <span class="n">background</span><span class="p">(</span><span class="n">background_img</span><span class="p">)</span>
+
+<span class="k">def</span> <span class="nf">draw</span><span class="p">():</span>
+  <span class="k">pass</span>
+
+<span class="n">run</span><span class="p">(</span><span class="n">preload</span><span class="o">=</span><span class="n">preload</span><span class="p">)</span>
+</code></pre></div></p>
+</details>
 <h3 id="variables-systeme">Variables système</h3>
 <table>
 <thead>
@@ -2799,6 +2912,83 @@ Les abscisses augmentent de gauche à droite, les ordonnées augmentent de haut 
 <tr>
 <td align="left">HALF_PI, PI, QUARTER_PI, TWO_PI</td>
 <td align="left">Constantes permettant respectivement d'approcher les valeurs de <span class="arithmatex">\(\frac \pi 2\)</span>, <span class="arithmatex">\(\pi\)</span>, <span class="arithmatex">\(\frac \pi 4\)</span>, <span class="arithmatex">\(2\pi\)</span></td>
+</tr>
+</tbody>
+</table>
+<h2 id="images">Images</h2>
+<h3 id="charger-une-image">Charger une image</h3>
+<table>
+<thead>
+<tr>
+<th align="left">syntaxe</th>
+<th align="left">description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">loadImage(chemin)</td>
+<td align="left">Charge une image à partir d'un chemin et crée un objet de classe p5.Image. Si nécessaire, l'image peut être préchargée en plaçant l'appel à la fonction <code>loadImage</code> dans la fonction <code>preload</code>.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="afficher-une-image">Afficher  une image</h3>
+<table>
+<thead>
+<tr>
+<th align="left">syntaxe</th>
+<th align="left">description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">background(p5.Image)</td>
+<td align="left">Affiche une p5.Image en fond d'écran</td>
+</tr>
+<tr>
+<td align="left">image(p5.Image, x, y)</td>
+<td align="left">Affiche une p5.Image en plaçant le pixel en haut à gauche au point de coordonnées (x, y) dans la zone de dessin.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="creer-une-image">Créer une image</h3>
+<table>
+<thead>
+<tr>
+<th align="left">syntaxe</th>
+<th align="left">description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">createImage(largeur, hauteur)</td>
+<td align="left">Crée un objet de type p5.Image</td>
+</tr>
+</tbody>
+</table>
+<h3 id="modifier-une-image">Modifier une image</h3>
+<table>
+<thead>
+<tr>
+<th align="left">syntaxe</th>
+<th align="left">description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">img.loadPixels()</td>
+<td align="left">Méthode qui crée le tableau des pixels de img.</td>
+</tr>
+<tr>
+<td align="left">img.get(x, y)</td>
+<td align="left">Méthode qui permet de lire la couleur du pixel de coordonnées (x, y) de img.</td>
+</tr>
+<tr>
+<td align="left">img.set(x, y, couleur)</td>
+<td align="left">Méthode qui permet de spécifier la couleur du pixel de coordonnées (x, y) de img.</td>
+</tr>
+<tr>
+<td align="left">img.updatePixels()</td>
+<td align="left">Méthode qui met à jour le tableau des pixels de img.</td>
 </tr>
 </tbody>
 </table>
