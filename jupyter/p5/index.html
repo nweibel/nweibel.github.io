@@ -957,6 +957,20 @@
               
   
   
+  
+    <li class="md-nav__item">
+      <a href="../memolatex/" class="md-nav__link">
+        Mémo LaTeX
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
     
   
   
@@ -966,18 +980,18 @@
     <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3_3" type="checkbox" id="__nav_3_3" checked>
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3_4" type="checkbox" id="__nav_3_4" checked>
       
       
       
       
-        <label class="md-nav__link" for="__nav_3_3">
+        <label class="md-nav__link" for="__nav_3_4">
           Modules
           <span class="md-nav__icon md-icon"></span>
         </label>
       
       <nav class="md-nav" aria-label="Modules" data-md-level="2">
-        <label class="md-nav__title" for="__nav_3_3">
+        <label class="md-nav__title" for="__nav_3_4">
           <span class="md-nav__icon md-icon"></span>
           Modules
         </label>
@@ -1231,6 +1245,33 @@
           <li class="md-nav__item">
   <a href="#modifier-une-image" class="md-nav__link">
     Modifier une image
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#dom" class="md-nav__link">
+    DOM
+  </a>
+  
+    <nav class="md-nav" aria-label="DOM">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#creationsuppression-delements" class="md-nav__link">
+    Création/suppression d'éléments
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#methodes-liees-aux-elements" class="md-nav__link">
+    Méthodes liées aux éléments
   </a>
   
 </li>
@@ -2459,6 +2500,33 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#dom" class="md-nav__link">
+    DOM
+  </a>
+  
+    <nav class="md-nav" aria-label="DOM">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#creationsuppression-delements" class="md-nav__link">
+    Création/suppression d'éléments
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#methodes-liees-aux-elements" class="md-nav__link">
+    Méthodes liées aux éléments
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -2941,6 +3009,89 @@ Les abscisses augmentent de gauche à droite, les ordonnées augmentent de haut 
 <tr>
 <td align="left">img.updatePixels()</td>
 <td align="left">Méthode qui met à jour le tableau des pixels de img.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="dom">DOM</h2>
+<h3 id="creationsuppression-delements">Création/suppression d'éléments</h3>
+<table>
+<thead>
+<tr>
+<th align="left">syntaxe</th>
+<th align="left">description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">createDiv(contenu html)</td>
+<td align="left">Crée un élément <code>&lt;div&gt;&lt;/div&gt;</code></td>
+</tr>
+<tr>
+<td align="left">createP(contenu html)</td>
+<td align="left">Crée un élément <code>&lt;p&gt;&lt;/p&gt;</code></td>
+</tr>
+<tr>
+<td align="left">createElement(balise, contenu)</td>
+<td align="left">Crée un élément <code>&lt;balise&gt;&lt;/balise&gt;</code></td>
+</tr>
+<tr>
+<td align="left">createInput()</td>
+<td align="left">Crée un élément <code>&lt;input&gt;&lt;/input&gt;</code> pour insérer du texte</td>
+</tr>
+<tr>
+<td align="left">createButton()</td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left">createCheckbox()</td>
+<td align="left">Crée un élément <code>&lt;input&gt;&lt;/input&gt;</code>  de type checkbox (case à cocher). La valeur booléenne de la case est donnée par la méthode <code>.checked()</code>.</td>
+</tr>
+<tr>
+<td align="left">createSlider()</td>
+<td align="left">Crée un élément <code>&lt;input&gt;&lt;/input&gt;</code>  de type range (curseur)</td>
+</tr>
+<tr>
+<td align="left">removeElements()</td>
+<td align="left">supprime les éléments créés (sauf celui créé par createCanvas)</td>
+</tr>
+</tbody>
+</table>
+<h3 id="methodes-liees-aux-elements">Méthodes liées aux éléments</h3>
+<table>
+<thead>
+<tr>
+<th align="left">syntaxe</th>
+<th align="left">description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">element.size(largeur, hauteur)</td>
+<td align="left">Méthode qui spécifie les dimensions de <code>element</code></td>
+</tr>
+<tr>
+<td align="left">element.position(x, y)</td>
+<td align="left">Méthode qui spécifie la position de <code>element</code></td>
+</tr>
+<tr>
+<td align="left">element.style(propriété, valeur)</td>
+<td align="left">Méthode qui spécifie la valeur attribuée à une propriété CSS de <code>element</code>.</td>
+</tr>
+<tr>
+<td align="left">element.value()</td>
+<td align="left">Méthode qui renvoie la valeur de <code>element</code></td>
+</tr>
+<tr>
+<td align="left">element.show()</td>
+<td align="left">Rend <code>element</code> visible</td>
+</tr>
+<tr>
+<td align="left">element.hide()</td>
+<td align="left">Rend <code>element</code> invisible</td>
+</tr>
+<tr>
+<td align="left">element.remove()</td>
+<td align="left">Supprime <code>element</code> du DOM</td>
 </tr>
 </tbody>
 </table>

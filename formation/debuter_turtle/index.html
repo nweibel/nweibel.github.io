@@ -956,24 +956,38 @@
   
   
   
+    <li class="md-nav__item">
+      <a href="../../jupyter/memolatex/" class="md-nav__link">
+        Mémo LaTeX
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
     
       
     
     <li class="md-nav__item md-nav__item--section md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3_3" type="checkbox" id="__nav_3_3" >
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3_4" type="checkbox" id="__nav_3_4" >
       
       
       
       
-        <label class="md-nav__link" for="__nav_3_3">
+        <label class="md-nav__link" for="__nav_3_4">
           Modules
           <span class="md-nav__icon md-icon"></span>
         </label>
       
       <nav class="md-nav" aria-label="Modules" data-md-level="2">
-        <label class="md-nav__title" for="__nav_3_3">
+        <label class="md-nav__title" for="__nav_3_4">
           <span class="md-nav__icon md-icon"></span>
           Modules
         </label>
@@ -2344,11 +2358,11 @@ et finir par l’instruction :
 <span class="n">shape</span><span class="p">(</span><span class="s2">&quot;triangle&quot;</span><span class="p">)</span>
 
 <span class="k">def</span> <span class="nf">figure</span><span class="p">():</span>
-    <span class="k">for</span> <span class="n">nb_cotes</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">4</span><span class="p">)</span> <span class="p">:</span>
+    <span class="k">for</span> <span class="n">cote</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">4</span><span class="p">)</span> <span class="p">:</span>
         <span class="n">forward</span><span class="p">(</span><span class="mi">100</span><span class="p">)</span>
         <span class="n">left</span><span class="p">(</span><span class="mi">90</span><span class="p">)</span>
 
-<span class="k">for</span> <span class="n">nb_figures</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">5</span><span class="p">)</span> <span class="p">:</span>
+<span class="k">for</span> <span class="n">etape</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">5</span><span class="p">)</span> <span class="p">:</span>
     <span class="n">figure</span><span class="p">()</span>
     <span class="n">right</span><span class="p">(</span><span class="mi">72</span><span class="p">)</span>
 
@@ -2356,7 +2370,7 @@ et finir par l’instruction :
 </code></pre></div>
 <p>Le bloc
 <div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">figure</span><span class="p">():</span>
-    <span class="k">for</span> <span class="n">nb_cotes</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">4</span><span class="p">)</span> <span class="p">:</span>
+    <span class="k">for</span> <span class="n">cote</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">4</span><span class="p">)</span> <span class="p">:</span>
         <span class="n">forward</span><span class="p">(</span><span class="mi">100</span><span class="p">)</span>
         <span class="n">left</span><span class="p">(</span><span class="mi">90</span><span class="p">)</span>
 </code></pre></div>
@@ -2377,17 +2391,17 @@ On peut choisir de donner à la fonction des paramètres qui auront une influenc
 <div class="admonition exo">
 <p class="admonition-title">Question</p>
 <p>Modifier ainsi le code de la fonction <code>figure()</code>:
-<div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">figure</span><span class="p">(</span><span class="n">cote</span><span class="p">):</span>
-    <span class="k">for</span> <span class="n">nb_cotes</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">4</span><span class="p">)</span> <span class="p">:</span>
-        <span class="n">forward</span><span class="p">(</span><span class="n">cote</span><span class="p">)</span>
+<div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">figure</span><span class="p">(</span><span class="n">longueur</span><span class="p">):</span>
+    <span class="k">for</span> <span class="n">cote</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">4</span><span class="p">)</span> <span class="p">:</span>
+        <span class="n">forward</span><span class="p">(</span><span class="n">longueur</span><span class="p">)</span>
         <span class="n">left</span><span class="p">(</span><span class="mi">90</span><span class="p">)</span>
 </code></pre></div></p>
 </div>
 <div class="admonition exo">
 <p class="admonition-title">Question</p>
-<p>Désormais, la fonction <code>figure()</code> dépend du paramètre <code>cote</code>. Quelle est l’influence de ce paramètre sur le tracé ?</p>
+<p>Désormais, la fonction <code>figure()</code> dépend du paramètre <code>longueur</code>. Quelle est l’influence de ce paramètre sur le tracé ?</p>
 </div>
-<p>Pour appeler la fonction, il faut désormais donner une valeur à ce paramètre : <code>figure(100)</code> signifie qu’on appelle la fonction <code>figure()</code> en donnant à <code>cote</code>  la valeur 100.</p>
+<p>Pour appeler la fonction, il faut désormais donner une valeur à ce paramètre : <code>figure(100)</code> signifie qu’on appelle la fonction <code>figure()</code> en donnant à <code>longueur</code>  la valeur 100.</p>
 <div class="admonition exo">
 <p class="admonition-title">Question</p>
 <p>Modifier le code du reste du programme pour obtenir le même tracé que précédemment, avec la fonction modifiée.</p>
@@ -2399,7 +2413,7 @@ On peut choisir de donner à la fonction des paramètres qui auront une influenc
 <div class="admonition exo">
 <p class="admonition-title">Question</p>
 <p>Remplacer les 4 dernières lignes du programme par celles-ci :
-<div class="highlight"><pre><span></span><code><span class="k">for</span> <span class="n">nb_figures</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">5</span><span class="p">)</span> <span class="p">:</span>
+<div class="highlight"><pre><span></span><code><span class="k">for</span> <span class="n">etape</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">5</span><span class="p">)</span> <span class="p">:</span>
    <span class="n">figure</span><span class="p">(</span><span class="mi">100</span><span class="p">)</span>
    <span class="n">figure</span><span class="p">(</span><span class="mi">50</span><span class="p">)</span>
    <span class="n">right</span><span class="p">(</span><span class="mi">72</span><span class="p">)</span>
@@ -2421,12 +2435,13 @@ On peut choisir de donner à la fonction des paramètres qui auront une influenc
 <div class="highlight"><pre><span></span><code><span class="kn">from</span> <span class="nn">turtle</span> <span class="kn">import</span> <span class="o">*</span>
 <span class="n">shape</span><span class="p">(</span><span class="s2">&quot;triangle&quot;</span><span class="p">)</span>
 
-<span class="k">def</span> <span class="nf">figure</span><span class="p">(</span><span class="n">cote</span><span class="p">):</span>
-    <span class="k">for</span> <span class="n">nb_cote</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span> <span class="p">:</span>
-        <span class="n">forward</span><span class="p">(</span><span class="n">cote</span><span class="p">)</span>
+<span class="k">def</span> <span class="nf">figure</span><span class="p">(</span><span class="n">longueur</span><span class="p">):</span>
+    <span class="k">for</span> <span class="n">etape</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span> <span class="p">:</span>
+        <span class="n">forward</span><span class="p">(</span><span class="n">longueur</span><span class="p">)</span>
         <span class="n">left</span><span class="p">(</span><span class="mi">120</span><span class="p">)</span>
-<span class="k">for</span> <span class="n">nb_figures</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">10</span><span class="p">)</span> <span class="p">:</span>
-    <span class="k">if</span> <span class="n">nb_figures</span> <span class="o">%</span> <span class="mi">2</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
+
+<span class="k">for</span> <span class="n">etape</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">10</span><span class="p">)</span> <span class="p">:</span>
+    <span class="k">if</span> <span class="n">etape</span> <span class="o">%</span> <span class="mi">2</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
         <span class="n">pencolor</span><span class="p">(</span><span class="s2">&quot;red&quot;</span><span class="p">)</span>
         <span class="n">figure</span><span class="p">(</span><span class="mi">100</span><span class="p">)</span>   
     <span class="k">else</span> <span class="p">:</span>       
