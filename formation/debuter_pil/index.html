@@ -1997,8 +1997,8 @@
   
   
     <li class="md-nav__item">
-      <a href="../debuter_pandas/" class="md-nav__link">
-        Débuter avec pandas
+      <a href="../debuter_ipythonblocks/" class="md-nav__link">
+        Débuter avec ipythonblocks
       </a>
     </li>
   
@@ -2034,9 +2034,101 @@
         
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Débuter avec PIL
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="./" class="md-nav__link md-nav__link--active">
         Débuter avec PIL
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table des matières">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table des matières
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1-le-module-pillow" class="md-nav__link">
+    1. Le module Pil(low)
+  </a>
+  
+    <nav class="md-nav" aria-label="1. Le module Pil(low)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#presentation" class="md-nav__link">
+    Présentation
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#les-attributs-dune-image" class="md-nav__link">
+    Les attributs d'une image
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#methodes-disponibles" class="md-nav__link">
+    Méthodes disponibles
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#fonctions-de-traitement-dimage-predefinies" class="md-nav__link">
+    Fonctions de traitement d'image prédéfinies
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-parcours-manipulation-dimages" class="md-nav__link">
+    2. Parcours Manipulation d'images
+  </a>
+  
+    <nav class="md-nav" aria-label="2. Parcours Manipulation d'images">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#sur-capytale" class="md-nav__link">
+    Sur Capytale
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sur-basthon" class="md-nav__link">
+    Sur Basthon
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -2091,6 +2183,82 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table des matières
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1-le-module-pillow" class="md-nav__link">
+    1. Le module Pil(low)
+  </a>
+  
+    <nav class="md-nav" aria-label="1. Le module Pil(low)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#presentation" class="md-nav__link">
+    Présentation
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#les-attributs-dune-image" class="md-nav__link">
+    Les attributs d'une image
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#methodes-disponibles" class="md-nav__link">
+    Méthodes disponibles
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#fonctions-de-traitement-dimage-predefinies" class="md-nav__link">
+    Fonctions de traitement d'image prédéfinies
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-parcours-manipulation-dimages" class="md-nav__link">
+    2. Parcours Manipulation d'images
+  </a>
+  
+    <nav class="md-nav" aria-label="2. Parcours Manipulation d'images">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#sur-capytale" class="md-nav__link">
+    Sur Capytale
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sur-basthon" class="md-nav__link">
+    Sur Basthon
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -2103,8 +2271,143 @@
                 
 
 
-<h1 id="debuter-avec-la-bibliotheque-pil-en-snt">Débuter avec la bibliothèque PIL en snt</h1>
-<p>(disponible prochainement)</p>
+<h1 id="debuter-avec-la-bibliotheque-pil-en-snt">Débuter avec la bibliothèque PIL en SNT</h1>
+<h2 id="1-le-module-pillow">1. Le module Pil(low)</h2>
+<p><img alt="pil" class="center" src="/images/pillow.png" width="20%" /></p>
+<h3 id="presentation">Présentation</h3>
+<p>Pillow est une bibliothèque de traitement d'image, successeur du projet PIL (Python Imaging Library). Elle est conçue de manière à offrir un accès rapide aux données contenues dans une image,
+ et offre un support pour différents formats de fichiers tels que PPM, PNG, JPEG, GIF, TIFF et BMP. <br />
+Pillow dispose de capacités de traitement d'images relativement puissantes, et a pour but d'offrir une solide base à toute application générale de traitement d'images.</p>
+<p>Le programme doit commencer par <code class="highlight"><span class="kn">from</span> <span class="nn">PIL</span> <span class="kn">import</span> <span class="n">Image</span></code>
+ pour importer les fonctions du module, qui seront ensuite préfixées par <code>Image</code>.  </p>
+<h3 id="les-attributs-dune-image">Les attributs d'une image</h3>
+<p>La bibliothèque utilise le principe d'images matricielles c'est-à-dire que chaque élément de la matrice représente un point avec une couleur associée (= un pixel) selon différents modes possibles.  </p>
+<p>Les modes les plus connus sont :</p>
+<ul>
+<li>L (nuances de gris),</li>
+<li>RGB (couleur)</li>
+<li>et RGBA (couleur et transparence),</li>
+</ul>
+<p>qui représentent respectivement les pixels sur 8 bits, 3x8 bits et 4x8 bits.</p>
+<p>On ouvre un fichier avec la fonction <code>open(nom_fichier)</code>  où  <code>nom_fichier</code> est le nom complet du fichier (nom et extension) écrit entre guillemets ; cette instruction renvoie un objet <code>Image</code>  contenant les données du fichier que l'on pourra ensuite manipuler.</p>
+<p>Voici quelques attributs d'un tel objet :</p>
+<ul>
+<li><code>format</code> : indique le format de l'image PPM, PNG, JPEG, GIF, TIFF et BMP.</li>
+<li><code>mode</code> : indique le mode L, RGB, RGBA</li>
+<li><code>size</code> : indique la taille de l'image sous la forme d'un couple (largeur, hauteur)</li>
+<li><code>width</code> : indique le nombre de pixels en largeur</li>
+<li><code>height</code> : indique le nombre de pixels en hauteur</li>
+</ul>
+<div class="admonition abstract">
+<p class="admonition-title">Exemple</p>
+<div class="tabbed-set tabbed-alternate" data-tabs="1:2"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1">Le code</label><label for="__tabbed_1_2">Le résultat</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<p>En utilisant l'image sous le titre
+<div class="highlight"><pre><span></span><code><span class="kn">from</span> <span class="nn">PIL</span> <span class="kn">import</span> <span class="n">Image</span>
+
+<span class="n">img</span> <span class="o">=</span> <span class="n">Image</span><span class="o">.</span><span class="n">open</span><span class="p">(</span><span class="s2">&quot;pillow.png&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;le format est&quot;</span><span class="p">,</span> <span class="n">img</span><span class="o">.</span><span class="n">format</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;le mode est&quot;</span><span class="p">,</span> <span class="n">img</span><span class="o">.</span><span class="n">mode</span><span class="p">)</span>
+<span class="n">largeur</span><span class="p">,</span> <span class="n">hauteur</span> <span class="o">=</span> <span class="n">img</span><span class="o">.</span><span class="n">size</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;le nombre de pixels en largeur est&quot;</span><span class="p">,</span> <span class="n">largeur</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;le nombre de pixels en hauteur est&quot;</span><span class="p">,</span> <span class="n">hauteur</span><span class="p">)</span>
+</code></pre></div></p>
+</div>
+<div class="tabbed-block">
+<div class="highlight"><pre><span></span><code>le format est PNG
+le mode est RGBA
+le nombre de pixels en largeur est 160
+le nombre de pixels en hauteur est 161
+</code></pre></div>
+</div>
+</div>
+</div>
+</div>
+<h3 id="methodes-disponibles">Méthodes disponibles</h3>
+<p>Les méthodes à appliquer aux objets <code>Image</code> sont :</p>
+<ul>
+<li><code>close()</code> ferme l'image chargée en mémoire ;</li>
+<li><code>show()</code> afficher l'image dans un outil externe ;</li>
+<li><code>save(nom_fichier, format)</code> sauvegarde l'image dans le format spécifié par l'extension ;</li>
+<li><code>getpixel(x, y)</code>  récupère les attributs du pixel à la position  <code>x, y</code> ;</li>
+<li><code>putpixel((x, y), (r, g, b))</code>  modifie les attributs du pixel à la position donnée ; par exemple, ici pour un mode RGB.</li>
+</ul>
+<details class="note"><summary>Remarque</summary><p>Les coordonnées d'un pixel sont définies dans un repère où l'origine est le point en haut à gauche, l'axe des abscisses est orienté dans le sens gauche-droite et l'axe des ordonnées dans le sens haut-bas.</p>
+<p><img alt="repere" class="center" src="/images/repere.png" width="30%" /></p>
+</details>
+<div class="admonition abstract">
+<p class="admonition-title">Exemple</p>
+<div class="tabbed-set tabbed-alternate" data-tabs="2:2"><input checked="checked" id="__tabbed_2_1" name="__tabbed_2" type="radio" /><input id="__tabbed_2_2" name="__tabbed_2" type="radio" /><div class="tabbed-labels"><label for="__tabbed_2_1">Le code</label><label for="__tabbed_2_2">Le résultat</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<div class="highlight"><pre><span></span><code><span class="kn">from</span> <span class="nn">PIL</span> <span class="kn">import</span> <span class="n">Image</span>
+
+<span class="n">img</span> <span class="o">=</span> <span class="n">Image</span><span class="o">.</span><span class="n">open</span><span class="p">(</span><span class="s2">&quot;pillow.png&quot;</span><span class="p">)</span>
+<span class="n">img</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;le pixel (50, 50) est codé par :&quot;</span><span class="p">,</span> <span class="n">img</span><span class="o">.</span><span class="n">getpixel</span><span class="p">((</span><span class="mi">50</span><span class="p">,</span> <span class="mi">50</span><span class="p">)))</span>
+
+<span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">60</span><span class="p">,</span> <span class="mi">101</span><span class="p">):</span>
+    <span class="k">for</span> <span class="n">y</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">60</span><span class="p">,</span> <span class="mi">101</span><span class="p">):</span>
+        <span class="n">img</span><span class="o">.</span><span class="n">putpixel</span><span class="p">((</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">),</span> <span class="p">(</span><span class="mi">180</span><span class="p">,</span> <span class="mi">180</span><span class="p">,</span> <span class="mi">180</span><span class="p">,</span> <span class="mi">255</span><span class="p">))</span>
+<span class="n">img</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+<span class="c1"># on ferme !</span>
+<span class="n">img</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
+</code></pre></div>
+</div>
+<div class="tabbed-block">
+<p><img alt="res" src="/images/resultat.png" width="50%" /></p>
+</div>
+</div>
+</div>
+</div>
+<h3 id="fonctions-de-traitement-dimage-predefinies">Fonctions de traitement d'image prédéfinies</h3>
+<p>Il existe d'autres fonctions du module <code>Image</code> qui permettent de faire du traitement d'images automatiquement :</p>
+<ul>
+<li><code>copy()</code> : permet de faire une copie de l'image</li>
+<li><code>convert("L")</code> : permet de convertir en nuances de gris</li>
+<li><code>convert("RGB")</code> : permet de convertir en RGB</li>
+<li><code>convert("1")</code> : permet de  convertir en noir et blanc</li>
+<li><code>resize((L, H))</code> : permet de modifier la taille de l'image</li>
+<li><code>rotate(angle)</code> : permet de faire une rotation de angle dans le sens anti-horaire</li>
+</ul>
+<div class="admonition abstract">
+<p class="admonition-title">Exemple</p>
+<div class="tabbed-set tabbed-alternate" data-tabs="3:2"><input checked="checked" id="__tabbed_3_1" name="__tabbed_3" type="radio" /><input id="__tabbed_3_2" name="__tabbed_3" type="radio" /><div class="tabbed-labels"><label for="__tabbed_3_1">Le code</label><label for="__tabbed_3_2">Le résultat</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<div class="highlight"><pre><span></span><code><span class="kn">from</span> <span class="nn">PIL</span> <span class="kn">import</span> <span class="n">Image</span>
+
+<span class="n">img</span> <span class="o">=</span> <span class="n">Image</span><span class="o">.</span><span class="n">open</span><span class="p">(</span><span class="s2">&quot;pillow.png&quot;</span><span class="p">)</span>
+<span class="n">largeur</span><span class="p">,</span> <span class="n">hauteur</span> <span class="o">=</span> <span class="n">img</span><span class="o">.</span><span class="n">size</span>
+
+<span class="n">imgNB</span> <span class="o">=</span> <span class="n">img</span><span class="o">.</span><span class="n">convert</span><span class="p">(</span><span class="s2">&quot;L&quot;</span><span class="p">)</span>
+<span class="n">imgNB</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+
+<span class="n">imgPetit</span> <span class="o">=</span> <span class="n">img</span><span class="o">.</span><span class="n">resize</span><span class="p">((</span><span class="n">largeur</span> <span class="o">//</span> <span class="mi">2</span><span class="p">,</span> <span class="n">hauteur</span> <span class="o">//</span> <span class="mi">2</span><span class="p">))</span>
+<span class="n">imgPetit</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+
+<span class="n">imgR</span> <span class="o">=</span> <span class="n">img</span><span class="o">.</span><span class="n">rotate</span><span class="p">(</span><span class="mi">45</span><span class="p">)</span>
+<span class="n">imgR</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+
+<span class="c1"># on ferme !</span>
+<span class="n">img</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
+</code></pre></div>
+</div>
+<div class="tabbed-block">
+<p><img alt="res" src="/images/resultat2.png" width="20%" /></p>
+</div>
+</div>
+</div>
+</div>
+<details class="info"><summary>En savoir plus</summary><p>En savoir plus sur le module <a href="https://pillow.readthedocs.io/en/stable/reference/Image.html" target="_blank">Image</a></p>
+</details>
+<h2 id="2-parcours-manipulation-dimages">2. Parcours Manipulation d'images</h2>
+<h3 id="sur-capytale">Sur Capytale</h3>
+<p>Se connecter à l'ENT puis <a href="">ouvrir le notebook sur Capytale</a></p>
+<h3 id="sur-basthon">Sur Basthon</h3>
+<p><a href="https://notebook.basthon.fr/?aux=https://raw.githubusercontent.com/reiamnat/SNTstage/main/kingfisher.jpg&amp;aux=https://raw.githubusercontent.com/reiamnat/SNTstage/main/kingfisherNB.jpg&amp;from=https://raw.githubusercontent.com/reiamnat/SNTstage/main/TraitementPhoto.ipynb">Ouvrir le notebook dans Basthon</a></p>
 
               
             </article>
