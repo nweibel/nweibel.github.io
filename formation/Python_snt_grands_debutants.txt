@@ -1,3 +1,0 @@
-# SNT : Python pour les Grands débutants
-
-Cette formation s'adresse à des enseignants de SNT qui souhaitent découvrir Python et réaliser quelques activités en lien avec le programme de SNT. 
