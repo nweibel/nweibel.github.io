@@ -2556,14 +2556,14 @@
 <ul>
 <li>
 <p>on peut écrire le code JavaScript dans le fichier HTML en l'insérant dans un élément <code>&lt;script&gt;</code>:
-<div class="highlight"><pre><span></span><code><span class="p">&lt;</span><span class="nt">script</span> <span class="na">type</span><span class="o">=</span><span class="s">&quot;text/javascript&quot;</span><span class="p">&gt;</span>
+<div class="highlight"><pre><span></span><code><span class="p">&lt;</span><span class="nt">script</span> <span class="na">type</span><span class="o">=</span><span class="s">"text/javascript"</span><span class="p">&gt;</span>
 <span class="w"> </span><span class="c1">//code JS</span>
 <span class="p">&lt;/</span><span class="nt">script</span><span class="p">&gt;</span>
 </code></pre></div></p>
 </li>
 <li>
-<p>on peut faire référence à un fichier externe nommé par exemple <code>script.js</code> contenant le code JavaScript en utilisant l'attribut <code>src</code> d'un élément  <code>&lt;script&gt;</code> :<br />
-<div class="highlight"><pre><span></span><code><span class="p">&lt;</span><span class="nt">script</span> <span class="na">language</span><span class="o">=</span><span class="s">&quot;JavaScript&quot;</span> <span class="na">src</span><span class="o">=</span><span class="s">&quot;script.js&quot;</span><span class="p">&gt;&lt;/</span><span class="nt">script</span><span class="p">&gt;</span>
+<p>on peut faire référence à un fichier externe nommé par exemple <code>script.js</code> contenant le code JavaScript en utilisant l'attribut <code>src</code> d'un élément  <code>&lt;script&gt;</code> :<br/>
+<div class="highlight"><pre><span></span><code><span class="p">&lt;</span><span class="nt">script</span> <span class="na">language</span><span class="o">=</span><span class="s">"JavaScript"</span> <span class="na">src</span><span class="o">=</span><span class="s">"script.js"</span><span class="p">&gt;&lt;/</span><span class="nt">script</span><span class="p">&gt;</span>
 </code></pre></div></p>
 </li>
 </ul>
@@ -2586,21 +2586,21 @@
 <div class="admonition abstract">
 <p class="admonition-title">Exemples</p>
 <p>Voici quelques éléments html et la référence faite à ces éléments dans le code js :</p>
-<div class="tabbed-set tabbed-alternate" data-tabs="1:2"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1">html</label><label for="__tabbed_1_2">js</label></div>
+<div class="tabbed-set tabbed-alternate" data-tabs="1:2"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio"/><input id="__tabbed_1_2" name="__tabbed_1" type="radio"/><div class="tabbed-labels"><label for="__tabbed_1_1">html</label><label for="__tabbed_1_2">js</label></div>
 <div class="tabbed-content">
 <div class="tabbed-block">
 <div class="highlight"><pre><span></span><code><span class="p">&lt;</span><span class="nt">body</span><span class="p">&gt;</span>
 <span class="p">&lt;</span><span class="nt">h1</span><span class="p">&gt;</span>Titre<span class="p">&lt;/</span><span class="nt">h1</span><span class="p">&gt;</span>
-<span class="p">&lt;</span><span class="nt">p</span> <span class="na">id</span><span class="o">=</span><span class="s">&quot;special_p&quot;</span><span class="p">&gt;</span>Paragraphe spécial<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">p</span> <span class="na">id</span><span class="o">=</span><span class="s">"special_p"</span><span class="p">&gt;</span>Paragraphe spécial<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
 <span class="p">&lt;/</span><span class="nt">body</span><span class="p">&gt;</span>
 </code></pre></div>
 </div>
 <div class="tabbed-block">
-<div class="highlight"><pre><span></span><code><span class="c1">// sélection d&#39;un élément dont la balise est unique</span>
-<span class="kd">let</span><span class="w"> </span><span class="nx">corps</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">document</span><span class="p">.</span><span class="nx">querySelector</span><span class="p">(</span><span class="s1">&#39;body&#39;</span><span class="p">);</span>
-<span class="kd">let</span><span class="w"> </span><span class="nx">titre</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">document</span><span class="p">.</span><span class="nx">querySelector</span><span class="p">(</span><span class="s1">&#39;h1&#39;</span><span class="p">);</span>
+<div class="highlight"><pre><span></span><code><span class="c1">// sélection d'un élément dont la balise est unique</span>
+<span class="kd">let</span><span class="w"> </span><span class="nx">corps</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">document</span><span class="p">.</span><span class="nx">querySelector</span><span class="p">(</span><span class="s1">'body'</span><span class="p">);</span>
+<span class="kd">let</span><span class="w"> </span><span class="nx">titre</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">document</span><span class="p">.</span><span class="nx">querySelector</span><span class="p">(</span><span class="s1">'h1'</span><span class="p">);</span>
 <span class="c1">// sélection avec un identifiant</span>
-<span class="kd">let</span><span class="w"> </span><span class="nx">monParagraphe</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">document</span><span class="p">.</span><span class="nx">querySelector</span><span class="p">(</span><span class="s1">&#39;#special_p&#39;</span><span class="p">);</span>
+<span class="kd">let</span><span class="w"> </span><span class="nx">monParagraphe</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">document</span><span class="p">.</span><span class="nx">querySelector</span><span class="p">(</span><span class="s1">'#special_p'</span><span class="p">);</span>
 </code></pre></div>
 </div>
 </div>
@@ -2614,8 +2614,8 @@
 L'événement est à citer entre guillemets.</p>
 <div class="admonition abstract">
 <p class="admonition-title">Exemple</p>
-<div class="highlight"><pre><span></span><code><span class="kd">let</span><span class="w"> </span><span class="nx">bouton</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">document</span><span class="p">.</span><span class="nx">querySelector</span><span class="p">(</span><span class="s1">&#39;button&#39;</span><span class="p">);</span>
-<span class="nx">bouton</span><span class="p">.</span><span class="nx">addEventListener</span><span class="p">(</span><span class="s2">&quot;click&quot;</span><span class="p">,</span><span class="w"> </span><span class="nx">fonction_a_appeler</span><span class="p">);</span>
+<div class="highlight"><pre><span></span><code><span class="kd">let</span><span class="w"> </span><span class="nx">bouton</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">document</span><span class="p">.</span><span class="nx">querySelector</span><span class="p">(</span><span class="s1">'button'</span><span class="p">);</span>
+<span class="nx">bouton</span><span class="p">.</span><span class="nx">addEventListener</span><span class="p">(</span><span class="s2">"click"</span><span class="p">,</span><span class="w"> </span><span class="nx">fonction_a_appeler</span><span class="p">);</span>
 </code></pre></div>
 </div>
 <p>Voici quelques événements possibles :</p>
@@ -2659,28 +2659,27 @@ L'événement est à citer entre guillemets.</p>
 <p>Les propriétés CSS s'écrivent en JavaScript sans le caractère <code>-</code>  et avec des majuscules pour séparer les mots. (<a href="https://developer.mozilla.org/fr/docs/Web/CSS/CSS_Properties_Reference">Référence des propriétés CSS</a>)</p>
 <div class="admonition abstract">
 <p class="admonition-title">Exemples</p>
-<div class="highlight"><pre><span></span><code><span class="nx">element</span><span class="p">.</span><span class="nx">style</span><span class="p">.</span><span class="nx">color</span><span class="o">=</span><span class="s2">&quot;red&quot;</span><span class="p">;</span>
-<span class="nx">element</span><span class="p">.</span><span class="nx">style</span><span class="p">.</span><span class="nx">backgroundColor</span><span class="o">=</span><span class="s2">&quot;rgb(255,0,0)&quot;</span><span class="p">;</span>
-<span class="nx">element</span><span class="p">.</span><span class="nx">style</span><span class="p">.</span><span class="nx">fontSize</span><span class="o">=</span><span class="s2">&quot;16px&quot;</span><span class="p">;</span>
-<span class="nx">element</span><span class="p">.</span><span class="nx">style</span><span class="p">.</span><span class="nx">textAlign</span><span class="o">=</span><span class="s2">&quot;center&quot;</span><span class="p">;</span>
+<div class="highlight"><pre><span></span><code><span class="nx">element</span><span class="p">.</span><span class="nx">style</span><span class="p">.</span><span class="nx">color</span><span class="o">=</span><span class="s2">"red"</span><span class="p">;</span>
+<span class="nx">element</span><span class="p">.</span><span class="nx">style</span><span class="p">.</span><span class="nx">backgroundColor</span><span class="o">=</span><span class="s2">"rgb(255,0,0)"</span><span class="p">;</span>
+<span class="nx">element</span><span class="p">.</span><span class="nx">style</span><span class="p">.</span><span class="nx">fontSize</span><span class="o">=</span><span class="s2">"16px"</span><span class="p">;</span>
+<span class="nx">element</span><span class="p">.</span><span class="nx">style</span><span class="p">.</span><span class="nx">textAlign</span><span class="o">=</span><span class="s2">"center"</span><span class="p">;</span>
 </code></pre></div>
 </div>
 <p>Les valeurs que l'on attribue aux propriétés sont des chaines de caractères entre guillemets.</p>
 <h3 id="42-modifier-le-contenu-dun-element">4.2 Modifier le contenu d'un élément</h3>
 <div class="admonition abstract">
 <p class="admonition-title">Exemples</p>
-<div class="highlight"><pre><span></span><code><span class="c1">//modifier le texte d&#39;un élément</span>
-<span class="nx">element</span><span class="p">.</span><span class="nx">textContent</span><span class="o">=</span><span class="s2">&quot;nouveau contenu&quot;</span><span class="p">;</span>
+<div class="highlight"><pre><span></span><code><span class="c1">//modifier le texte d'un élément</span>
+<span class="nx">element</span><span class="p">.</span><span class="nx">textContent</span><span class="o">=</span><span class="s2">"nouveau contenu"</span><span class="p">;</span>
 
-<span class="c1">// modifier la source d&#39;une image</span>
-<span class="nx">image</span><span class="p">.</span><span class="nx">src</span><span class="o">=</span><span class="s2">&quot;nouvelle_url&quot;</span><span class="p">;</span>
+<span class="c1">// modifier la source d'une image</span>
+<span class="nx">image</span><span class="p">.</span><span class="nx">src</span><span class="o">=</span><span class="s2">"nouvelle_url"</span><span class="p">;</span>
 </code></pre></div>
 </div>
 <h2 id="5-exemples">5. Exemples</h2>
 <h3 id="51-modifier-le-contenu-du-titre-et-sa-couleur">5.1 Modifier le contenu du titre et sa couleur</h3>
-<iframe height="300" style="width: 100%;" scrolling="no" title="Untitled" src="https://codepen.io/nathalieweibel/embed/PopOKRM?default-tab=result&theme-id=light" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
+<iframe allowfullscreen="true" allowtransparency="true" frameborder="no" height="300" loading="lazy" scrolling="no" src="https://codepen.io/nathalieweibel/embed/PopOKRM?default-tab=result&amp;theme-id=light" style="width: 100%;" title="Untitled">
 </iframe>
-
 <div class="admonition exo">
 <p class="admonition-title">Questions</p>
 <ol>
@@ -2689,7 +2688,7 @@ L'événement est à citer entre guillemets.</p>
 </ol>
 </div>
 <h3 id="52-affichercacher-du-texte-avec-deux-boutons">5.2 Afficher/cacher du texte avec deux boutons</h3>
-<iframe height="300" style="width: 100%;" scrolling="no" title="Afficher-cacher du texte" src="https://codepen.io/nathalieweibel/embed/jOaGjae?default-tab=result&theme-id=light" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
+<iframe allowfullscreen="true" allowtransparency="true" frameborder="no" height="300" loading="lazy" scrolling="no" src="https://codepen.io/nathalieweibel/embed/jOaGjae?default-tab=result&amp;theme-id=light" style="width: 100%;" title="Afficher-cacher du texte">
 </iframe>
 <div class="admonition exo">
 <p class="admonition-title">Questions</p>
@@ -2700,7 +2699,7 @@ L'événement est à citer entre guillemets.</p>
 </ol>
 </div>
 <h3 id="53-inverser-des-couleurs-de-texte-darriere-plan">5.3 Inverser des couleurs de texte, d'arrière-plan</h3>
-<iframe height="300" style="width: 100%;" scrolling="no" title="inversion" src="https://codepen.io/nathalieweibel/embed/eYpOeVz?default-tab=&theme-id=light" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
+<iframe allowfullscreen="true" allowtransparency="true" frameborder="no" height="300" loading="lazy" scrolling="no" src="https://codepen.io/nathalieweibel/embed/eYpOeVz?default-tab=&amp;theme-id=light" style="width: 100%;" title="inversion">
 </iframe>
 <div class="admonition exo">
 <p class="admonition-title">Questions</p>
@@ -2710,7 +2709,7 @@ L'événement est à citer entre guillemets.</p>
 </ol>
 </div>
 <h3 id="54-faire-defiler-des-images-avec-un-bouton">5.4 Faire défiler des images avec un bouton</h3>
-<iframe height="450" style="width: 100%;" scrolling="no" title="Carpe diem" src="https://codepen.io/nathalieweibel/embed/rNOBZWG?default-tab=result&theme-id=light" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
+<iframe allowfullscreen="true" allowtransparency="true" frameborder="no" height="450" loading="lazy" scrolling="no" src="https://codepen.io/nathalieweibel/embed/rNOBZWG?default-tab=result&amp;theme-id=light" style="width: 100%;" title="Carpe diem">
 </iframe>
 <div class="admonition exo">
 <p class="admonition-title">Vrai ou faux ?</p>
@@ -2731,7 +2730,7 @@ L'événement est à citer entre guillemets.</p>
 <p class="admonition-title">Alignement breton</p>
 <p>code Capytale : 3c57-373162</p>
 <p>Compléter le code JS sans modifier les codes HTML et CSS pour que l'appui sur les boutons <code>Gauche</code>, <code>Centré</code> ou <code>Droite</code>  aligne tous les éléments du cadre en conséquence.</p>
-<p><iframe height="300" style="width: 100%;" scrolling="no" title="Untitled" src="https://codepen.io/nathalieweibel/embed/JjOOLxX?default-tab=result&theme-id=light" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
+<p><iframe allowfullscreen="true" allowtransparency="true" frameborder="no" height="300" loading="lazy" scrolling="no" src="https://codepen.io/nathalieweibel/embed/JjOOLxX?default-tab=result&amp;theme-id=light" style="width: 100%;" title="Untitled">
 </iframe></p>
 </div>
 <h3 id="62-encodage">6.2 Encodage</h3>
@@ -2740,7 +2739,7 @@ L'événement est à citer entre guillemets.</p>
 <p>code Capytale : 40d7-372824</p>
 <p>En JavaScript, <code>document.characterSet</code> est une propriété qui renvoie l'encodage du document.
 Sans modifier les codes HTML et CSS, compléter le code JS fourni pour qu'au clic sur le bouton, une nouvelle ligne de texte apparaisse et communique le type d'encodage du document.</p>
-<p><iframe height="300" style="width: 100%;" scrolling="no" title="encodage" src="https://codepen.io/nathalieweibel/embed/vYNYJVw?default-tab=result&theme-id=light" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true"></iframe></p>
+<p><iframe allowfullscreen="true" allowtransparency="true" frameborder="no" height="300" loading="lazy" scrolling="no" src="https://codepen.io/nathalieweibel/embed/vYNYJVw?default-tab=result&amp;theme-id=light" style="width: 100%;" title="encodage"></iframe></p>
 </div>
 <h3 id="63-compteur">6.3 Compteur</h3>
 <div class="admonition exo">
@@ -2753,8 +2752,8 @@ Ajouter à cette page un deuxième bouton de remise à zéro du compteur.</p>
 <div class="admonition exo">
 <p class="admonition-title">Lancer de dé</p>
 <p>code Capytale : 6c71-372788</p>
-<p><code>Math.ceil(Math.random()*6)</code> fournit en JavaScript un entier aléatoire entre 1 et 6.<br />
-Réaliser une page qui affiche une face d'un dé, choisie aléatoirement, lorsqu'on clique sur un bouton.<br />
+<p><code>Math.ceil(Math.random()*6)</code> fournit en JavaScript un entier aléatoire entre 1 et 6.<br/>
+Réaliser une page qui affiche une face d'un dé, choisie aléatoirement, lorsqu'on clique sur un bouton.<br/>
 Les images des six faces sont fournies.  </p>
 </div>
 

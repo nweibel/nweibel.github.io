@@ -2537,13 +2537,13 @@
 
 
 <h1 id="messages-derreurs">Messages d'erreurs</h1>
-<p><img alt="" src="../../images/undraw_fixing_bugs_w7gi.svg" width="400" /></p>
+<p><img alt="" src="../../images/undraw_fixing_bugs_w7gi.svg" width="400"/></p>
 <!-- <iframe src=https://notebook.basthon.fr/?from=https://raw.githubusercontent.com/nweibel/jupyter/master/messages_d_erreurs.ipynb& width=100% height=800></iframe>[Ouvrir le notebook dans un nouvel onglet](https://notebook.basthon.fr/?from=https://raw.githubusercontent.com/nweibel/jupyter/master/messages_d_erreurs.ipynb&){: target='_blank' }
 -->
 <p>Réussir à trouver les erreurs contenues dans un programme est une compétence essentielle pour programmer. Python signale certaines erreurs en indiquant leur position estimée dans le programme et leur type.</p>
 <p>Voici quelques types d'erreurs, usuels dans des programmes de débutants,  qu'il est conseillé de connaître, pour apprendre à les repérer rapidement, pour interpréter correctement les messages d'erreurs affichés et pour en proposer une correction.</p>
 <h2 id="1-erreurs-de-syntaxe-syntaxerror">1. Erreurs de syntaxe : <em>SyntaxError</em></h2>
-<p>Python ne peut exécuter un programme que si sa syntaxe est correcte. Dans le cas contraire, le processus s’arrête et adresse un message d’erreur. <br />
+<p>Python ne peut exécuter un programme que si sa syntaxe est correcte. Dans le cas contraire, le processus s’arrête et adresse un message d’erreur. <br/>
 Le terme <em>syntaxe</em> se réfère aux règles que les auteurs du langage ont établies pour la structure du programme.</p>
 <h3 id="11-invalid-syntax">1.1 <em>Invalid syntax</em></h3>
 <p>Les erreurs de syntaxe ont de nombreuses origines, et la liste suivante est loin d'être exhaustive :</p>
@@ -2568,9 +2568,9 @@ Le curseur désigne ici l'absence du double point <code>:</code> attendu.</p>
 <p><em>EOL</em> signifie <em>end of line</em> : le message d'erreur indique qu'une chaîne de caractères est mal délimitée, il manque probablement des guillemets.  </p>
 <details class="abstract">
 <summary>Exemple</summary>
-<p><div class="highlight"><pre><span></span><code><span class="s2">&quot;Hello World!</span>
+<p><div class="highlight"><pre><span></span><code><span class="s2">"Hello World!</span>
 </code></pre></div>
-<div class="highlight"><pre><span></span><code>&quot;Hello World!
+<div class="highlight"><pre><span></span><code>"Hello World!
              ^
 SyntaxError: EOL while scanning string literal
 </code></pre></div></p>
@@ -2583,7 +2583,7 @@ SyntaxError: EOL while scanning string literal
     <span class="n">y</span> <span class="o">=</span> <span class="mi">2</span> <span class="o">*</span> <span class="n">x</span>
 <span class="k">return</span> <span class="n">y</span>
 </code></pre></div>
-<div class="highlight"><pre><span></span><code>SyntaxError: &#39;return&#39; outside function
+<div class="highlight"><pre><span></span><code>SyntaxError: 'return' outside function
 </code></pre></div></p>
 </details>
 <h3 id="14-cannot-assign-to-function-call">1.4 <em>cannot assign to function call</em></h3>
@@ -2654,13 +2654,13 @@ IndentationError: unindent does not match any outer indentation level
 <p>Les types des opérandes et des opérateurs ne sont pas compatibles. Par exemple, avec un opérateur <code>+</code>, l'opération réalisée est une addition si les deux opérandes sont des nombres, ou une concaténation si les opérandes sont des chaines de caractères. Mais une <code>TypeError</code> est déclenchée si les deux opérandes ne sont pas de même type.</p>
 <details class="abstract">
 <summary>Exemples</summary>
-<p><div class="highlight"><pre><span></span><code><span class="mi">3</span> <span class="o">+</span> <span class="s2">&quot;2&quot;</span>
+<p><div class="highlight"><pre><span></span><code><span class="mi">3</span> <span class="o">+</span> <span class="s2">"2"</span>
 </code></pre></div>
-<div class="highlight"><pre><span></span><code>TypeError: unsupported operand type(s) for +: &#39;int&#39; and &#39;str&#39;
+<div class="highlight"><pre><span></span><code>TypeError: unsupported operand type(s) for +: 'int' and 'str'
 </code></pre></div></p>
-<p><div class="highlight"><pre><span></span><code><span class="s2">&quot;3&quot;</span> <span class="o">+</span> <span class="mi">2</span>
+<p><div class="highlight"><pre><span></span><code><span class="s2">"3"</span> <span class="o">+</span> <span class="mi">2</span>
 </code></pre></div>
-<div class="highlight"><pre><span></span><code>TypeError: can only concatenate str (not &quot;int&quot;) to str
+<div class="highlight"><pre><span></span><code>TypeError: can only concatenate str (not "int") to str
 </code></pre></div></p>
 </details>
 <h2 id="4-erreur-de-nom-nameerror">4. Erreur de nom  : <em>NameError</em></h2>
@@ -2669,7 +2669,7 @@ IndentationError: unindent does not match any outer indentation level
 <summary>Exemples</summary>
 <p><div class="highlight"><pre><span></span><code><span class="n">a</span> <span class="o">=</span> <span class="n">a</span> <span class="o">+</span> <span class="mi">1</span>
 </code></pre></div>
-<div class="highlight"><pre><span></span><code>NameError: name &#39;a&#39; is not defined
+<div class="highlight"><pre><span></span><code>NameError: name 'a' is not defined
 </code></pre></div></p>
 </details>
 <h2 id="5-erreur-dindex-indexerror">5. Erreur d'index : <em>IndexError</em></h2>

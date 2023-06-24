@@ -2349,7 +2349,7 @@
 
 
 <h1 id="fonctions">Fonctions</h1>
-<p>Les fonctions permettent de décomposer un programme en plusieurs éléments plus simples, plus lisibles et que l'on peut combiner.<br />
+<p>Les fonctions permettent de décomposer un programme en plusieurs éléments plus simples, plus lisibles et que l'on peut combiner.<br/>
 Une fonction associe un bloc d'instructions à un nom.</p>
 <p>L'utilisation d'une fonction nécessite deux étapes :  </p>
 <ul>
@@ -2361,13 +2361,13 @@ Une fonction associe un bloc d'instructions à un nom.</p>
 </li>
 </ul>
 <h2 id="la-declaration-dune-fonction">La déclaration d'une fonction</h2>
-<p>La syntaxe de la déclaration d'une fonction est :<br />
+<p>La syntaxe de la déclaration d'une fonction est :<br/>
 <div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">nom_de_la_fonction</span><span class="p">(</span><span class="n">parametres</span><span class="p">):</span>
     <span class="n">bloc_instructions</span>
 </code></pre></div>
-La définition d'une fonction commence par le mot-clé <code>def</code>.<br />
-Les paramètres sont séparés par des virgules. Il peut ne pas y en avoir : dans ce cas on conserve tout de même les parenthèses.<br />
-La première ligne se termine par un double point.<br />
+La définition d'une fonction commence par le mot-clé <code>def</code>.<br/>
+Les paramètres sont séparés par des virgules. Il peut ne pas y en avoir : dans ce cas on conserve tout de même les parenthèses.<br/>
+La première ligne se termine par un double point.<br/>
 Le bloc <code>bloc_instructions</code> est indenté. On l'appelle le <em>corps</em> de la fonction.</p>
 <p>Il est fréquent (mais pas obligatoire) que la fonction renvoie une valeur : on utilise pour cela le mot-clé <code>return</code>.
 En l'absence de <code>return</code> la fonction peut par exemple réaliser des affichages, des tracés ou écrire dans un fichier. Elle renverra alors implicitement <code>None</code>.</p>
@@ -2381,7 +2381,7 @@ En l'absence de <code>return</code> la fonction peut par exemple réaliser des a
 <div class="admonition abstract">
 <p class="admonition-title">Exemple 2 : une fonction à valeur booléenne</p>
 <div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">validation</span><span class="p">(</span><span class="n">mot</span><span class="p">):</span>
-    <span class="k">return</span> <span class="n">mot</span> <span class="o">==</span> <span class="s1">&#39;secret123&#39;</span>
+    <span class="k">return</span> <span class="n">mot</span> <span class="o">==</span> <span class="s1">'secret123'</span>
 </code></pre></div>
 <p>Cette fonction s'appelle <code>validation</code>, elle demande un seul paramètre et elle renvoie <code>True</code> si le paramètre est égal à la chaine 'secret123' et <code>False</code>sinon.</p>
 </div>
@@ -2397,12 +2397,12 @@ En l'absence de <code>return</code> la fonction peut par exemple réaliser des a
 </code></pre></div>
 <div class="highlight"><pre><span></span><code>16
 </code></pre></div></p>
-<p>Les paramètres <code>x</code>et <code>y</code> de <code>f</code> prennent respectivement les valeurs 5 et 3.<br />
+<p>Les paramètres <code>x</code>et <code>y</code> de <code>f</code> prennent respectivement les valeurs 5 et 3.<br/>
 La fonction renvoie la valeur <span class="arithmatex">\(5 \times 5 - 3 \times 3\)</span>, soit <span class="arithmatex">\(16\)</span>.</p>
-<p>2e cas :  <br />
-<div class="highlight"><pre><span></span><code><span class="n">f</span><span class="p">(</span><span class="s1">&#39;a&#39;</span><span class="p">,</span><span class="s1">&#39;b&#39;</span><span class="p">)</span>
+<p>2e cas :  <br/>
+<div class="highlight"><pre><span></span><code><span class="n">f</span><span class="p">(</span><span class="s1">'a'</span><span class="p">,</span><span class="s1">'b'</span><span class="p">)</span>
 </code></pre></div>
-<div class="highlight"><pre><span></span><code>TypeError: unsupported operand type(s) for Pow: &#39;str&#39; and &#39;int&#39;
+<div class="highlight"><pre><span></span><code>TypeError: unsupported operand type(s) for Pow: 'str' and 'int'
 </code></pre></div></p>
 <p>Les paramètres <code>x</code>et <code>y</code> de <code>f</code> prennent respectivement pour valeurs les chaines de caractères 'a' et 'b'.
 Comme l'opérateur <code>** 2</code> n'a pas de signification pour une chaine de caractères, l'appel de la fonction avec ces valeurs renvoie une erreur.</p>
@@ -2410,18 +2410,18 @@ Comme l'opérateur <code>** 2</code> n'a pas de signification pour une chaine de
 <div class="admonition abstract">
 <p class="admonition-title">Exemple 2 : fonction <code>validation</code> </p>
 <p>1er cas :
-<div class="highlight"><pre><span></span><code><span class="n">validation</span><span class="p">(</span><span class="s1">&#39;mot_de_passe123&#39;</span><span class="p">)</span>
+<div class="highlight"><pre><span></span><code><span class="n">validation</span><span class="p">(</span><span class="s1">'mot_de_passe123'</span><span class="p">)</span>
 </code></pre></div>
 <div class="highlight"><pre><span></span><code>False
 </code></pre></div></p>
-<p>Le paramètre <code>mot</code>de la fonction <code>validation</code> prend la valeur 'mot_de_passe123'.<br />
+<p>Le paramètre <code>mot</code>de la fonction <code>validation</code> prend la valeur 'mot_de_passe123'.<br/>
 La fonction renvoie la valeur de 'mot_de_passe123' == 'secret123', soit <code>False</code>.</p>
-<p>2e cas :  <br />
+<p>2e cas :  <br/>
 <div class="highlight"><pre><span></span><code><span class="n">validation</span><span class="p">(</span><span class="mi">123</span><span class="p">)</span>
 </code></pre></div>
 <div class="highlight"><pre><span></span><code>False
 </code></pre></div></p>
-<p>Le paramètre <code>mot</code>de la fonction <code>validation</code> prend la valeur 123, qui est un entier et non une chaine de caractères.<br />
+<p>Le paramètre <code>mot</code>de la fonction <code>validation</code> prend la valeur 123, qui est un entier et non une chaine de caractères.<br/>
 Néanmoins l'exécution de la fonction ne déclenche pas d'erreur : elle renvoie la valeur de 123 == 'secret123', qui est <code>False</code>.  </p>
 </div>
 <h2 id="fonctions-anonymes">Fonctions anonymes</h2>

@@ -2343,14 +2343,14 @@
 <span class="n">bloc_instructions_2</span>
 </code></pre></div>
 où <code>expression</code> a pour valeur <code>True</code> ou <code>False</code>. Il s'agit de l'expression de la <em>clause</em> <code>if</code>.</p>
-<p>Si <code>expression</code> a pour valeur <code>True</code>, le bloc <code>bloc_instructions_1</code> est exécuté, sinon, il est ignoré.<br />
+<p>Si <code>expression</code> a pour valeur <code>True</code>, le bloc <code>bloc_instructions_1</code> est exécuté, sinon, il est ignoré.<br/>
 Dans tous les cas, si le bloc <code>bloc_instructions_2</code> existe, il est exécuté ensuite.  </p>
 <div class="admonition abstract">
 <p class="admonition-title">Exemple : l'expression de la clause <code>if</code> a pour valeur <code>True</code></p>
 <p><div class="highlight"><pre><span></span><code><span class="n">nb</span> <span class="o">=</span> <span class="mi">174</span>
 <span class="k">if</span> <span class="n">nb</span> <span class="o">%</span> <span class="mi">2</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
-    <span class="nb">print</span><span class="p">(</span><span class="n">nb</span><span class="p">,</span> <span class="s2">&quot;est un nombre pair&quot;</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;fin des tests&quot;</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">nb</span><span class="p">,</span> <span class="s2">"est un nombre pair"</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">"fin des tests"</span><span class="p">)</span>
 </code></pre></div>
 <div class="highlight"><pre><span></span><code>174 est un nombre pair
 fin des tests
@@ -2361,8 +2361,8 @@ fin des tests
 <p class="admonition-title">Exemple : l'expression de la clause <code>if</code> a pour valeur <code>False</code></p>
 <p><div class="highlight"><pre><span></span><code><span class="n">nb</span> <span class="o">=</span> <span class="mi">181</span>
 <span class="k">if</span> <span class="n">nb</span> <span class="o">%</span> <span class="mi">2</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
-    <span class="nb">print</span><span class="p">(</span><span class="n">nb</span><span class="p">,</span> <span class="s2">&quot;est un nombre pair&quot;</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;fin des tests&quot;</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">nb</span><span class="p">,</span> <span class="s2">"est un nombre pair"</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">"fin des tests"</span><span class="p">)</span>
 </code></pre></div>
 <div class="highlight"><pre><span></span><code>fin des tests
 </code></pre></div></p>
@@ -2389,9 +2389,9 @@ où <code>expression</code> a pour valeur <code>True</code> ou <code>False</code
 <p class="admonition-title">Exemple : </p>
 <p><div class="highlight"><pre><span></span><code><span class="n">nb</span> <span class="o">=</span> <span class="mi">5</span>
 <span class="k">if</span> <span class="n">nb</span> <span class="o">%</span> <span class="mi">2</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
-    <span class="nb">print</span><span class="p">(</span><span class="n">nb</span><span class="p">,</span> <span class="s2">&quot;est un nombre pair&quot;</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">nb</span><span class="p">,</span> <span class="s2">"est un nombre pair"</span><span class="p">)</span>
 <span class="k">else</span> <span class="p">:</span>
-    <span class="nb">print</span><span class="p">(</span><span class="n">nb</span><span class="p">,</span> <span class="s2">&quot;est un nombre  impair&quot;</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">nb</span><span class="p">,</span> <span class="s2">"est un nombre  impair"</span><span class="p">)</span>
 </code></pre></div>
 <div class="highlight"><pre><span></span><code>5 est un nombre impair
 </code></pre></div></p>
@@ -2427,20 +2427,20 @@ où <code>expression1</code> et <code>expression2</code> ont pour valeur <code>T
 <p class="admonition-title">Exemple : </p>
 <p><div class="highlight"><pre><span></span><code><span class="n">nb</span> <span class="o">=</span> <span class="mi">178</span>
 <span class="k">if</span> <span class="n">nb</span> <span class="o">%</span> <span class="mi">10</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
-    <span class="nb">print</span><span class="p">(</span><span class="n">nb</span><span class="p">,</span> <span class="s2">&quot;est un multiple de 10&quot;</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">nb</span><span class="p">,</span> <span class="s2">"est un multiple de 10"</span><span class="p">)</span>
 <span class="k">elif</span> <span class="n">nb</span> <span class="o">%</span> <span class="mi">5</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
-    <span class="nb">print</span><span class="p">(</span><span class="n">nb</span><span class="p">,</span> <span class="s2">&quot;est un multiple de 5, mais pas de 10&quot;</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">nb</span><span class="p">,</span> <span class="s2">"est un multiple de 5, mais pas de 10"</span><span class="p">)</span>
 <span class="k">elif</span> <span class="n">nb</span> <span class="o">%</span> <span class="mi">2</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
-    <span class="nb">print</span><span class="p">(</span><span class="n">nb</span><span class="p">,</span> <span class="s2">&quot;est un multiple de 2, mais pas de 10&quot;</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">nb</span><span class="p">,</span> <span class="s2">"est un multiple de 2, mais pas de 10"</span><span class="p">)</span>
 <span class="k">else</span> <span class="p">:</span>
-    <span class="nb">print</span><span class="p">(</span><span class="n">nb</span><span class="p">,</span> <span class="s2">&quot;n&#39;est ni un multiple de 2, ni un multiple de 5&quot;</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">nb</span><span class="p">,</span> <span class="s2">"n'est ni un multiple de 2, ni un multiple de 5"</span><span class="p">)</span>
 </code></pre></div>
 <div class="highlight"><pre><span></span><code>178 est un multiple de 2, mais pas de 10
 </code></pre></div></p>
-<p><code>nb % 10 == 0</code> est une expression qui vaut <code>False</code> lorsque <code>nb</code> vaut 178.<br />
-L'instruction <code>print(nb, "est un multiple de 10")</code> est ignorée.<br />
-<code>nb % 5 == 0</code> est une expression qui vaut <code>False</code> lorsque <code>nb</code> vaut 178.<br />
-L'instruction <code>print(nb, "est un multiple de 5, mais pas de 10")</code> est aussi ignorée.<br />
+<p><code>nb % 10 == 0</code> est une expression qui vaut <code>False</code> lorsque <code>nb</code> vaut 178.<br/>
+L'instruction <code>print(nb, "est un multiple de 10")</code> est ignorée.<br/>
+<code>nb % 5 == 0</code> est une expression qui vaut <code>False</code> lorsque <code>nb</code> vaut 178.<br/>
+L'instruction <code>print(nb, "est un multiple de 5, mais pas de 10")</code> est aussi ignorée.<br/>
 <code>nb % 2 == 0</code> est une expression qui vaut <code>True</code> lorsque <code>nb</code> vaut 178.
 L'instruction <code>print(nb, "est un multiple de 2, mais pas de 10")</code> est donc exécutée.</p>
 </div>

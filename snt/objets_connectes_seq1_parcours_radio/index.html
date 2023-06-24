@@ -2433,9 +2433,9 @@
 <span class="n">radio</span><span class="o">.</span><span class="n">config</span><span class="p">(</span><span class="n">group</span><span class="o">=...</span><span class="p">)</span> <span class="c1">#choisir une valeur entre 0 et 255</span>
 <span class="k">while</span> <span class="kc">True</span><span class="p">:</span>
     <span class="k">if</span> <span class="n">button_a</span><span class="o">.</span><span class="n">was_pressed</span><span class="p">():</span>
-        <span class="n">radio</span><span class="o">.</span><span class="n">send</span><span class="p">(</span><span class="s2">&quot;A&quot;</span><span class="p">)</span>
+        <span class="n">radio</span><span class="o">.</span><span class="n">send</span><span class="p">(</span><span class="s2">"A"</span><span class="p">)</span>
     <span class="k">elif</span> <span class="n">button_b</span><span class="o">.</span><span class="n">was_pressed</span><span class="p">():</span>
-        <span class="n">radio</span><span class="o">.</span><span class="n">send</span><span class="p">(</span><span class="s2">&quot;B&quot;</span><span class="p">)</span>
+        <span class="n">radio</span><span class="o">.</span><span class="n">send</span><span class="p">(</span><span class="s2">"B"</span><span class="p">)</span>
 </code></pre></div></td></tr></table></div></p>
 <p>Programme sur la carte réceptrice
 <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
@@ -2456,17 +2456,17 @@
 <span class="n">radio</span><span class="o">.</span><span class="n">config</span><span class="p">(</span><span class="n">group</span><span class="o">=...</span><span class="p">)</span> <span class="c1">#choisir la même valeur que la carte émettrice</span>
 <span class="k">while</span> <span class="kc">True</span><span class="p">:</span>
     <span class="n">reception</span> <span class="o">=</span> <span class="n">radio</span><span class="o">.</span><span class="n">receive</span><span class="p">()</span>
-    <span class="k">if</span> <span class="n">reception</span> <span class="o">==</span> <span class="s2">&quot;A&quot;</span><span class="p">:</span>
+    <span class="k">if</span> <span class="n">reception</span> <span class="o">==</span> <span class="s2">"A"</span><span class="p">:</span>
         <span class="n">display</span><span class="o">.</span><span class="n">show</span><span class="p">(</span><span class="n">Image</span><span class="o">.</span><span class="n">YES</span><span class="p">)</span>
         <span class="n">sleep</span><span class="p">(</span><span class="mi">200</span><span class="p">)</span>
-    <span class="k">elif</span> <span class="n">reception</span> <span class="o">==</span> <span class="s2">&quot;B&quot;</span><span class="p">:</span>
+    <span class="k">elif</span> <span class="n">reception</span> <span class="o">==</span> <span class="s2">"B"</span><span class="p">:</span>
         <span class="n">display</span><span class="o">.</span><span class="n">show</span><span class="p">(</span><span class="n">Image</span><span class="o">.</span><span class="n">NO</span><span class="p">)</span>
         <span class="n">sleep</span><span class="p">(</span><span class="mi">200</span><span class="p">)</span>
     <span class="n">display</span><span class="o">.</span><span class="n">clear</span><span class="p">()</span>
 </code></pre></div></td></tr></table></div>
-Saisir les programmes sur deux cartes différentes, cliquer sur <code>Vérifier</code> et s'il n'y a pas d'erreur détectée, les <code>flasher</code> sur les cartes.<br />
+Saisir les programmes sur deux cartes différentes, cliquer sur <code>Vérifier</code> et s'il n'y a pas d'erreur détectée, les <code>flasher</code> sur les cartes.<br/>
 Que constate-t-on ? Que faut-il faire pour voir s'afficher quelque chose ?  </p>
-<p>Quels sont les capteurs et actionneurs utilisés sur chaque carte par ces programmes ? <br />
+<p>Quels sont les capteurs et actionneurs utilisés sur chaque carte par ces programmes ? <br/>
 Quel est le rôle de la dernière instruction ? (ligne 13, carte réceptrice)</p>
 <h2 id="exercice-2-envoyer-une-mesure">Exercice 2. Envoyer une mesure</h2>
 <p>L'objectif est de mesurer la température avec une carte et de l'envoyer à une autre carte par radio.</p>
@@ -2501,8 +2501,8 @@ Quel est le rôle de la dernière instruction ? (ligne 13, carte réceptrice)</p
     <span class="k">if</span> <span class="n">button_a</span><span class="o">.</span><span class="n">was_pressed</span><span class="p">():</span>
         <span class="n">display</span><span class="o">.</span><span class="n">scroll</span><span class="p">(</span><span class="n">temperature</span><span class="p">())</span>
 </code></pre></div>
-Saisir ce programme, cliquer sur <code>Vérifier</code> et s'il n'y a pas d'erreur détectée, le <code>flasher</code> sur une carte connectée à un ordinateur.<br />
-Que constate-t-on ? Que faut-il faire pour voir s'afficher une valeur ? Que représente cette valeur ?<br />
+Saisir ce programme, cliquer sur <code>Vérifier</code> et s'il n'y a pas d'erreur détectée, le <code>flasher</code> sur une carte connectée à un ordinateur.<br/>
+Que constate-t-on ? Que faut-il faire pour voir s'afficher une valeur ? Que représente cette valeur ?<br/>
 Quels sont les capteurs et actionneurs utilisés  par ce programme ?   </p>
 <h3 id="22-envoyer-la-temperature-a-une-autre-carte">2.2 Envoyer la température à une autre carte</h3>
 <p><span class="item primm">P</span>
@@ -2510,7 +2510,7 @@ Quels sont les capteurs et actionneurs utilisés  par ce programme ?   </p>
 <span class="item pr_i_mm">I</span>
 <span class="item primm">M</span>
 <span class="item primm">M</span></p>
-<p>Ce programme nécessite deux cartes.<br />
+<p>Ce programme nécessite deux cartes.<br/>
 Voici le programme à saisir sur la carte émettrice :</p>
 <div class="highlight"><pre><span></span><code><span class="kn">from</span> <span class="nn">microbit</span> <span class="kn">import</span> <span class="o">*</span>
 <span class="kn">import</span> <span class="nn">radio</span>

@@ -2251,25 +2251,25 @@
 <div class="admonition info">
 <p class="admonition-title">Énoncé</p>
 <p>Vous possédez un jeu de cartes contenant chacune une liste de nombres. Le jeu est accompagné d'une notice :</p>
-<p>Demandez à quelqu'un de choisir un nombre entre 1 et 42, sans vous le dire.<br />
-Montrez-lui les cartes du jeu une à une et demandez-lui si son nombre figure dans la liste.<br />
+<p>Demandez à quelqu'un de choisir un nombre entre 1 et 42, sans vous le dire.<br/>
+Montrez-lui les cartes du jeu une à une et demandez-lui si son nombre figure dans la liste.<br/>
 Faites la somme des premiers nombres de chaque carte où la personne a dit OUI, et donnez ce nombre à votre interlocuteur.</p>
 </div>
 <p>Vous décidez alors de bêta-tester le jeu sur votre grand-mère.</p>
 <p>« Mamie, choisis un nombre. Est-ce qu'il est dans cette liste ? »</p>
-<p>1 3 5 7 9 11 13 15 17 19 21 23 25 27 29 31 33 35 37 39 41 ? → OUI<br />
-2 3 6 7 10 11 14 15 18 19 22 23 26 27 30 31 34 35 38 39 42 ? → OUI<br />
-4 5 6 7 12 13 14 15 20 21 22 23 28 29 30 31 36 37 38 39 ? → NON<br />
-8 9 10 11 12 13 14 15 24 25 26 27 28 29 30 31 40 41 42 ? → OUI<br />
-16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 ? → OUI<br />
+<p>1 3 5 7 9 11 13 15 17 19 21 23 25 27 29 31 33 35 37 39 41 ? → OUI<br/>
+2 3 6 7 10 11 14 15 18 19 22 23 26 27 30 31 34 35 38 39 42 ? → OUI<br/>
+4 5 6 7 12 13 14 15 20 21 22 23 28 29 30 31 36 37 38 39 ? → NON<br/>
+8 9 10 11 12 13 14 15 24 25 26 27 28 29 30 31 40 41 42 ? → OUI<br/>
+16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 ? → OUI<br/>
 32 33 34 35 36 37 38 39 40 41 42 ? → NON  </p>
-<p>« OK, alors ton nombre est le (1 + 2 + 8 + 16 =) 27 ! C'est ça ?<br />
-— Ah, je ne sais plus !<br />
+<p>« OK, alors ton nombre est le (1 + 2 + 8 + 16 =) 27 ! C'est ça ?<br/>
+— Ah, je ne sais plus !<br/>
 — :( »</p>
 <p>Mais pourquoi se limiter à 42 ? On vous demande de générer les cartes pour pouvoir effectuer le tour avec des nombres de 1 à <code>n</code>.</p>
 <div class="admonition abstract">
 <p class="admonition-title">À réaliser</p>
-<p>Écrire une fonction <code>affiche_cartes(n)</code> qui prend en paramètre le nombre entier <code>n</code>, nombre maximum que pourra choisir votre audience, et qui affiche sur la ligne n° <code>i</code>, la liste des nombres de la <code>i</code>-ème carte.<br />
+<p>Écrire une fonction <code>affiche_cartes(n)</code> qui prend en paramètre le nombre entier <code>n</code>, nombre maximum que pourra choisir votre audience, et qui affiche sur la ligne n° <code>i</code>, la liste des nombres de la <code>i</code>-ème carte.<br/>
 Exemples :
 <div class="highlight"><pre><span></span><code><span class="n">affiche_cartes</span><span class="p">(</span><span class="mi">15</span><span class="p">)</span>
 </code></pre></div>

@@ -2323,7 +2323,7 @@
 <h1 id="variables">Variables</h1>
 <p>Une variable est un emplacement doté d'un nom, utilisé pour stocker des données dans la mémoire. On peut considérer une variable comme un conteneur contenant des données pouvant être modifiées ultérieurement dans le programme.</p>
 <h2 id="affecter-une-valeur-a-une-variable">Affecter une valeur à une variable</h2>
-<p>On affecte une valeur à une variable en Python à l'aide d'une instruction dont la syntaxe est : <br />
+<p>On affecte une valeur à une variable en Python à l'aide d'une instruction dont la syntaxe est : <br/>
 <div class="highlight"><pre><span></span><code><span class="n">nom_variable</span> <span class="o">=</span> <span class="n">valeur_variable</span>
 </code></pre></div>
 Le nom d'une variable est appelé son <strong>identifiant</strong>. Les noms de variables peuvent contenir des lettres, le tiret bas <span class="keys"><kbd class="key-underscore">_</kbd></span> et, sauf pour le premier caractère, des chiffres.
@@ -2333,16 +2333,16 @@ Par ailleurs les mots réservés<sup id="fnref:a"><a class="footnote-ref" href="
 <p class="admonition-title">Exemple</p>
 <p>Voici des identifiants valides pour les variables suivantes :
 <div class="highlight"><pre><span></span><code><span class="n">score</span> <span class="o">=</span> <span class="mi">203</span>
-<span class="n">nom_joueur_1</span> <span class="o">=</span> <span class="s2">&quot;mona-lisa&quot;</span>
+<span class="n">nom_joueur_1</span> <span class="o">=</span> <span class="s2">"mona-lisa"</span>
 <span class="n">longueur</span> <span class="o">=</span> <span class="mf">1.25</span>
 <span class="n">dimensions_valides</span> <span class="o">=</span> <span class="kc">True</span>
 </code></pre></div></p>
-<p><img alt="" src="../../images/pythontutor_variables_1.png" width="350" /></p>
+<p><img alt="" src="../../images/pythontutor_variables_1.png" width="350"/></p>
 <p>Et voici des noms qui ne pourront pas être des identifiants de variables :  </p>
-<p><code>2e_joueur</code> (commence par un chiffre), <br />
-<code>tom&amp;jerry</code> (caractère <code>&amp;</code> non autorisé), <br />
-<code>joueur-2</code> (caractère <code>-</code> non autorisé),<br />
-<code>taux tva</code> (espace non autorisé),<br />
+<p><code>2e_joueur</code> (commence par un chiffre), <br/>
+<code>tom&amp;jerry</code> (caractère <code>&amp;</code> non autorisé), <br/>
+<code>joueur-2</code> (caractère <code>-</code> non autorisé),<br/>
+<code>taux tva</code> (espace non autorisé),<br/>
 <code>global</code> (mot réservé)</p>
 </div>
 <p>La valeur référencée par une variable n'est pas systématiquement une valeur numérique : dans l'exemple précédent, on a référencé un entier (type <code>int</code>), un flottant (type <code>float</code>), une chaine de caractères (type <code>str</code>) et un booléen (type <code>bool</code>) : différents types usuels seront étudiés par la suite.</p>
@@ -2400,20 +2400,20 @@ Par ailleurs les mots réservés<sup id="fnref:a"><a class="footnote-ref" href="
 <span class="n">minutes</span> <span class="o">=</span> <span class="n">secondes</span> <span class="o">//</span> <span class="mi">60</span>
 <span class="c1"># modification de la valeur de secondes</span>
 <span class="hll"><span class="n">secondes</span> <span class="o">=</span> <span class="n">secondes</span> <span class="o">%</span> <span class="mi">60</span>
-</span><span class="nb">print</span><span class="p">(</span><span class="n">minutes</span><span class="p">,</span> <span class="s2">&quot;min&quot;</span><span class="p">,</span> <span class="n">secondes</span><span class="p">,</span> <span class="s2">&quot;s&quot;</span><span class="p">)</span>
+</span><span class="nb">print</span><span class="p">(</span><span class="n">minutes</span><span class="p">,</span> <span class="s2">"min"</span><span class="p">,</span> <span class="n">secondes</span><span class="p">,</span> <span class="s2">"s"</span><span class="p">)</span>
 </code></pre></div></td></tr></table></div>
 <div class="highlight"><pre><span></span><code>20 min 34 s
 </code></pre></div>
 Le membre droit de l'affectation (ligne 4)  :
 <code class="highlight"><span class="n">secondes</span> <span class="o">%</span> <span class="mi">60</span></code>
-est d'abord évalué en tenant compte de la valeur actuelle de la variable <code>secondes</code>,  soit <span class="arithmatex">\(1234\)</span>. <br />
+est d'abord évalué en tenant compte de la valeur actuelle de la variable <code>secondes</code>,  soit <span class="arithmatex">\(1234\)</span>. <br/>
  On calcule <span class="arithmatex">\(1234 \ \%\  60 = 34\)</span> puis on affecte cette nouvelle valeur à la variable <code>secondes</code>. L'ancienne valeur est "oubliée" et la nouvelle valeur de <code>secondes</code> est désormais <span class="arithmatex">\(34\)</span>.</p>
 </div>
 <div class="footnote">
-<hr />
+<hr/>
 <ol>
 <li id="fn:a">
-<p>'False', 'None', 'True', 'and', 'as', 'assert', 'async', 'await', 'break', 'class', 'continue', 'def', 'del', 'elif', 'else', 'except', 'finally', 'for', 'from', 'global', 'if', 'import', 'in', 'is', 'lambda', 'nonlocal', 'not', 'or', 'pass', 'raise', 'return', 'try', 'while', 'with', 'yield'&#160;<a class="footnote-backref" href="#fnref:a" title="Jump back to footnote 1 in the text">&#8617;</a></p>
+<p>'False', 'None', 'True', 'and', 'as', 'assert', 'async', 'await', 'break', 'class', 'continue', 'def', 'del', 'elif', 'else', 'except', 'finally', 'for', 'from', 'global', 'if', 'import', 'in', 'is', 'lambda', 'nonlocal', 'not', 'or', 'pass', 'raise', 'return', 'try', 'while', 'with', 'yield' <a class="footnote-backref" href="#fnref:a" title="Jump back to footnote 1 in the text">↩</a></p>
 </li>
 </ol>
 </div>

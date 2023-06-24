@@ -2349,10 +2349,9 @@
 
 
 <h1 id="laccelerometre">L'accéléromètre</h1>
-<iframe width="560" height="315" src="https://www.youtube.com/embed/UT35ODxvmS0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
+<iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="" frameborder="0" height="315" src="https://www.youtube.com/embed/UT35ODxvmS0" width="560"></iframe>
 <h2 id="laccelerometre_1">L'accéleromètre</h2>
-<p>La carte micro:bit comporte un accéléromètre, désigné par <code>accelerometer</code>.<br />
+<p>La carte micro:bit comporte un accéléromètre, désigné par <code>accelerometer</code>.<br/>
 Il permet de connaître l'orientation de la carte selon 3 axes :  </p>
 <ul>
 <li><code>x</code>, l’inclinaison de gauche à droite (roulis),</li>
@@ -2386,7 +2385,7 @@ Il permet de connaître l'orientation de la carte selon 3 axes :  </p>
 </tbody>
 </table>
 <h2 id="les-gestes">Les gestes</h2>
-<p>Grâce à l'accéléromètre, la carte micro:bit reconnaît les mouvements qu'elle subit ainsi que son orientation.<br />
+<p>Grâce à l'accéléromètre, la carte micro:bit reconnaît les mouvements qu'elle subit ainsi que son orientation.<br/>
 Elle peut détecter les gestes suivants : <code>up, down, left, right, face up, face down, freefall, 3g, 6g, 8g, shake</code></p>
 <table>
 <thead>
@@ -2415,17 +2414,17 @@ Elle peut détecter les gestes suivants : <code>up, down, left, right, face up, 
 </tbody>
 </table>
 <h2 id="exemple">Exemple</h2>
-<p><img alt="" src="../../images/mb_accelerometre.png" width="250px" />  </p>
+<p><img alt="" src="../../images/mb_accelerometre.png" width="250px"/> </p>
 <p><div class="highlight"><pre><span></span><code><span class="kn">from</span> <span class="nn">microbit</span> <span class="kn">import</span> <span class="o">*</span>
 
 <span class="k">while</span> <span class="kc">True</span><span class="p">:</span>
-    <span class="k">if</span><span class="p">(</span><span class="n">accelerometer</span><span class="o">.</span><span class="n">current_gesture</span><span class="p">()</span> <span class="o">==</span> <span class="s1">&#39;up&#39;</span><span class="p">):</span>
+    <span class="k">if</span><span class="p">(</span><span class="n">accelerometer</span><span class="o">.</span><span class="n">current_gesture</span><span class="p">()</span> <span class="o">==</span> <span class="s1">'up'</span><span class="p">):</span>
         <span class="n">display</span><span class="o">.</span><span class="n">show</span><span class="p">(</span><span class="n">Image</span><span class="o">.</span><span class="n">ARROW_N</span><span class="p">)</span>
-    <span class="k">elif</span><span class="p">(</span><span class="n">accelerometer</span><span class="o">.</span><span class="n">current_gesture</span><span class="p">()</span> <span class="o">==</span> <span class="s1">&#39;down&#39;</span><span class="p">):</span>
+    <span class="k">elif</span><span class="p">(</span><span class="n">accelerometer</span><span class="o">.</span><span class="n">current_gesture</span><span class="p">()</span> <span class="o">==</span> <span class="s1">'down'</span><span class="p">):</span>
         <span class="n">display</span><span class="o">.</span><span class="n">show</span><span class="p">(</span><span class="n">Image</span><span class="o">.</span><span class="n">ARROW_S</span><span class="p">)</span>
-    <span class="k">elif</span><span class="p">(</span><span class="n">accelerometer</span><span class="o">.</span><span class="n">current_gesture</span><span class="p">()</span> <span class="o">==</span> <span class="s1">&#39;left&#39;</span><span class="p">):</span>
+    <span class="k">elif</span><span class="p">(</span><span class="n">accelerometer</span><span class="o">.</span><span class="n">current_gesture</span><span class="p">()</span> <span class="o">==</span> <span class="s1">'left'</span><span class="p">):</span>
         <span class="n">display</span><span class="o">.</span><span class="n">show</span><span class="p">(</span><span class="n">Image</span><span class="o">.</span><span class="n">ARROW_E</span><span class="p">)</span>
-    <span class="k">elif</span><span class="p">(</span><span class="n">accelerometer</span><span class="o">.</span><span class="n">current_gesture</span><span class="p">()</span> <span class="o">==</span> <span class="s1">&#39;right&#39;</span><span class="p">):</span>
+    <span class="k">elif</span><span class="p">(</span><span class="n">accelerometer</span><span class="o">.</span><span class="n">current_gesture</span><span class="p">()</span> <span class="o">==</span> <span class="s1">'right'</span><span class="p">):</span>
         <span class="n">display</span><span class="o">.</span><span class="n">show</span><span class="p">(</span><span class="n">Image</span><span class="o">.</span><span class="n">ARROW_W</span><span class="p">)</span>
     <span class="k">else</span><span class="p">:</span>
         <span class="n">display</span><span class="o">.</span><span class="n">clear</span><span class="p">()</span>
@@ -2433,7 +2432,7 @@ Elle peut détecter les gestes suivants : <code>up, down, left, right, face up, 
 </code></pre></div>
 Lorsqu'on exécute ce programme, une flèche désigne le côté de la carte tourné vers le haut. Si la carte est posée "à plat" aucun affichage n'est réalisé.</p>
 <h2 id="references">Références</h2>
-<p><a href="https://microbit-micropython.readthedocs.io/fr/latest/tutorials/gestures.html">Gestes</a><br />
+<p><a href="https://microbit-micropython.readthedocs.io/fr/latest/tutorials/gestures.html">Gestes</a><br/>
 <a href="https://microbit-micropython.readthedocs.io/en/latest/accelerometer.html">La classe Accelerometer</a></p>
 
 

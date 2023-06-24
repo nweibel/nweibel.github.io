@@ -2487,10 +2487,9 @@
 
 
 <h1 id="les-led">Les LED</h1>
-<iframe width="560" height="315" src="https://www.youtube.com/embed/eRhlaXqT-0w" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
+<iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="" frameborder="0" height="315" src="https://www.youtube.com/embed/eRhlaXqT-0w" width="560"></iframe>
 <h2 id="lobjet-display">L'objet <code>display</code></h2>
-<p><img alt="" src="../../images/mb_display.png" width="250px" /></p>
+<p><img alt="" src="../../images/mb_display.png" width="250px"/></p>
 <p>La matrice LED comporte 25 LED. On peut l'utiliser pour afficher des caractères, des images, faire défiler un message, etc.  </p>
 <div class="admonition info">
 <p class="admonition-title">Info</p>
@@ -2507,11 +2506,11 @@
 <li>set_pixel</li>
 <li>get_pixel</li>
 </ul>
-<p>La complétion automatique de l'éditeur mu permet d'accéder à cette liste dès que l'on saisit <code>display.</code><br />
-<img alt="" src="../../images/mb_display_menu.png" width="250px" /></p>
+<p>La complétion automatique de l'éditeur mu permet d'accéder à cette liste dès que l'on saisit <code>display.</code><br/>
+<img alt="" src="../../images/mb_display_menu.png" width="250px"/></p>
 </div>
 <h2 id="afficher-des-caracteres-des-messages">Afficher des caractères, des messages</h2>
-<p><img alt="" src="../../images/mb_display_a.png" width="250px" />  </p>
+<p><img alt="" src="../../images/mb_display_a.png" width="250px"/> </p>
 <table>
 <thead>
 <tr>
@@ -2535,7 +2534,7 @@
 </tbody>
 </table>
 <h2 id="faire-defiler-des-messages">Faire défiler des messages</h2>
-<p><img alt="" src="../../images/mb_display_defil_abcde.gif" />  </p>
+<p><img alt="" src="../../images/mb_display_defil_abcde.gif"/> </p>
 <table>
 <thead>
 <tr>
@@ -2555,7 +2554,7 @@
 </tbody>
 </table>
 <h2 id="allumer-des-pixels">Allumer des pixels</h2>
-<p><img alt="" src="../../images/mb_display_pixel.png" title="display.show(0, 3, 9)" width="250px" />  </p>
+<p><img alt="" src="../../images/mb_display_pixel.png" title="display.show(0, 3, 9)" width="250px"/> </p>
 <div class="admonition info">
 <p class="admonition-title">Info</p>
 <ul>
@@ -2583,7 +2582,7 @@
 </table>
 <h2 id="afficher-des-images">Afficher des images</h2>
 <h3 id="afficher-des-images-pre-definies">Afficher des images pré-définies</h3>
-<p><img alt="" src="../../images/mb_display_coeur.png" width="250px" />  </p>
+<p><img alt="" src="../../images/mb_display_coeur.png" width="250px"/> </p>
 <div class="admonition info">
 <p class="admonition-title">Info</p>
 <p>Il existe des images prédéfinies que l'on peut afficher en utilisant leur nom et la syntaxe <code>Image.nom</code>
@@ -2597,18 +2596,18 @@ HEART_SMALL - HOUSE - MEH - MUSIC_CROTCHET - MUSIC_QUAVER - MUSIC_QUAVERS - NO -
 </ul>
 </div>
 <h3 id="definir-ses-propres-images">Définir ses propres images</h3>
-<p><img alt="" src="../../images/mb_display_eclat.png" width="250px" />  </p>
+<p><img alt="" src="../../images/mb_display_eclat.png" width="250px"/> </p>
 <div class="admonition info">
 <p class="admonition-title">Info</p>
 <p>On peut définir une image en affectant à chaque pixel son niveau de luminosité, soit ligne par ligne:
-<div class="highlight"><pre><span></span><code><span class="n">eclat</span> <span class="o">=</span> <span class="n">Image</span><span class="p">(</span><span class="s2">&quot;00300:&quot;</span>
-              <span class="s2">&quot;03630:&quot;</span>
-              <span class="s2">&quot;36963:&quot;</span>
-              <span class="s2">&quot;03630:&quot;</span>
-              <span class="s2">&quot;00300&quot;</span><span class="p">)</span>
+<div class="highlight"><pre><span></span><code><span class="n">eclat</span> <span class="o">=</span> <span class="n">Image</span><span class="p">(</span><span class="s2">"00300:"</span>
+              <span class="s2">"03630:"</span>
+              <span class="s2">"36963:"</span>
+              <span class="s2">"03630:"</span>
+              <span class="s2">"00300"</span><span class="p">)</span>
 </code></pre></div>
 soit en une seule ligne :
-<div class="highlight"><pre><span></span><code><span class="n">eclat</span> <span class="o">=</span> <span class="n">Image</span><span class="p">(</span><span class="s2">&quot;00300:03630:36963:03630:00300&quot;</span><span class="p">)</span>
+<div class="highlight"><pre><span></span><code><span class="n">eclat</span> <span class="o">=</span> <span class="n">Image</span><span class="p">(</span><span class="s2">"00300:03630:36963:03630:00300"</span><span class="p">)</span>
 </code></pre></div></p>
 </div>
 <table>
@@ -2631,7 +2630,7 @@ soit en une seule ligne :
 </table>
 <div class="admonition tip">
 <p class="admonition-title">Pour aller plus loin</p>
-<p>La classe <a href="https://microbit-micropython.readthedocs.io/fr/latest/image.html">Image</a> contient des méthodes pour créer et manipuler des images.<br />
+<p>La classe <a href="https://microbit-micropython.readthedocs.io/fr/latest/image.html">Image</a> contient des méthodes pour créer et manipuler des images.<br/>
 Par exemple,
 <div class="highlight"><pre><span></span><code><span class="n">mon_image</span> <span class="o">=</span> <span class="n">Image</span><span class="p">()</span>
 <span class="n">mon_image</span><span class="o">.</span><span class="n">fill</span><span class="p">(</span><span class="mi">7</span><span class="p">)</span>
@@ -2639,7 +2638,7 @@ Par exemple,
 crée une image où tous les pixels ont une luninosité de 7.</p>
 </div>
 <h3 id="afficher-des-pixels-aleatoires">Afficher des pixels aléatoires</h3>
-<p><img alt="" src="../../images/mb_display_random.png" width="250px" />  </p>
+<p><img alt="" src="../../images/mb_display_random.png" width="250px"/> </p>
 <div class="admonition info">
 <p class="admonition-title">Info</p>
 <p>Le module <code>random</code> contient la fonction <code>randint(min, max)</code> qui renvoie un entier entre <code>min</code> et <code>max</code> compris. On peut l'utiliser pour définir aléatoirement la position d'un pixel ou la luminosité d'un pixel.</p>
@@ -2651,7 +2650,7 @@ crée une image où tous les pixels ont une luninosité de 7.</p>
 </code></pre></div>
 </div>
 <h2 id="animer-des-images">Animer des images</h2>
-<p><img alt="" src="../../images/mb_display_coeurs.gif" />  </p>
+<p><img alt="" src="../../images/mb_display_coeurs.gif"/> </p>
 <div class="admonition info">
 <p class="admonition-title">Info</p>
 <p>Pour créer une animation affichant successivement plusieurs images, créer une liste contenant toutes les images, puis afficher cette liste.
@@ -2735,7 +2734,7 @@ crée une image où tous les pixels ont une luninosité de 7.</p>
 </tbody>
 </table>
 <h2 id="references">Références</h2>
-<p><a href="https://microbit-micropython.readthedocs.io/en/latest/display.html#module-microbit.display">Le module Display : documentation microbit-micropython</a><br />
+<p><a href="https://microbit-micropython.readthedocs.io/en/latest/display.html#module-microbit.display">Le module Display : documentation microbit-micropython</a><br/>
 <a href="https://microbit-micropython.readthedocs.io/fr/latest/image.html">La classe Image</a></p>
 
 

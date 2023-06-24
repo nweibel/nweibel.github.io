@@ -2266,8 +2266,8 @@
 Les valeurs à tester doivent être précédées de <code>&gt;&gt;&gt;</code>, et le résultat attendu doit être en début de ligne suivante.</p>
 <p>Voici un exemple pour la fonction <code>est_parfait</code> :
 <div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">est_parfait</span><span class="p">(</span><span class="n">n</span><span class="p">)</span> <span class="p">:</span> 
-<span class="w">    </span><span class="sd">&#39;&#39;&#39;n est un entier strictement positif</span>
-<span class="sd">    parfait(n) vaut True si l&#39;entier n est parfait ou False sinon.</span>
+<span class="w">    </span><span class="sd">'''n est un entier strictement positif</span>
+<span class="sd">    parfait(n) vaut True si l'entier n est parfait ou False sinon.</span>
 <span class="sd">    Un nombre parfait est tel que la somme de ses diviseurs est égale à son double.</span>
 <span class="sd">    &gt;&gt;&gt; est_parfait(2)</span>
 <span class="sd">    False</span>
@@ -2277,9 +2277,9 @@ Les valeurs à tester doivent être précédées de <code>&gt;&gt;&gt;</code>, e
 <span class="sd">    False</span>
 <span class="sd">    &gt;&gt;&gt; est_parfait(28)</span>
 <span class="sd">    True</span>
-<span class="sd">    &#39;&#39;&#39;</span>
+<span class="sd">    '''</span>
 
-   <span class="k">assert</span><span class="p">(</span><span class="n">n</span><span class="o">&gt;</span><span class="mi">0</span> <span class="ow">and</span> <span class="nb">type</span><span class="p">(</span><span class="n">n</span><span class="p">)</span><span class="o">==</span><span class="nb">int</span><span class="p">),</span> <span class="s2">&quot;l&#39;argument doit être un entier strictement positif&quot;</span>
+   <span class="k">assert</span><span class="p">(</span><span class="n">n</span><span class="o">&gt;</span><span class="mi">0</span> <span class="ow">and</span> <span class="nb">type</span><span class="p">(</span><span class="n">n</span><span class="p">)</span><span class="o">==</span><span class="nb">int</span><span class="p">),</span> <span class="s2">"l'argument doit être un entier strictement positif"</span>
    <span class="n">diviseurs</span> <span class="o">=</span> <span class="p">[</span><span class="n">i</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="n">n</span><span class="o">+</span><span class="mi">1</span><span class="p">)</span> <span class="k">if</span> <span class="n">n</span><span class="o">%</span><span class="n">i</span> <span class="o">==</span> <span class="mi">0</span><span class="p">]</span>
    <span class="k">return</span> <span class="nb">sum</span><span class="p">(</span><span class="n">diviseurs</span><span class="p">)</span> <span class="o">==</span> <span class="mi">2</span><span class="o">*</span><span class="n">n</span>
 </code></pre></div></p>

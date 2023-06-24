@@ -2446,13 +2446,13 @@
 
 <h1 id="presentation-de-la-carte-microbit">Présentation de la carte micro:bit</h1>
 <h2 id="1-quest-ce-quune-carte-microbit">1. Qu'est-ce qu'une carte micro:bit ?</h2>
-<p>La carte BBC micro:bit est une carte micro-contrôleur de 5 cm sur 4 cm, qui a été conçue &mdash; notamment par la BBC &mdash; dans un objectif pédagogique. Elle se programme à l'aide de différentes interfaces et différents langages, permettant à des élèves de tous niveaux d’aborder la robotique et d'interagir avec le monde réel.</p>
-<p><img alt="" src="../../images/microbit-front.png" />
-<img alt="" src="../../images/microbit-back.png" title="(version 1.3 de la carte)" /></p>
+<p>La carte BBC micro:bit est une carte micro-contrôleur de 5 cm sur 4 cm, qui a été conçue — notamment par la BBC — dans un objectif pédagogique. Elle se programme à l'aide de différentes interfaces et différents langages, permettant à des élèves de tous niveaux d’aborder la robotique et d'interagir avec le monde réel.</p>
+<p><img alt="" src="../../images/microbit-front.png"/>
+<img alt="" src="../../images/microbit-back.png" title="(version 1.3 de la carte)"/></p>
 <h2 id="2-description-des-composants">2. Description des composants</h2>
 <details class="info">
 <summary>Composants visibles à l'avant :</summary>
-<p><img alt="" src="../../images/microbitV2-front.png" title="(version 2 de la carte)" width="300px" /></p>
+<p><img alt="" src="../../images/microbitV2-front.png" title="(version 2 de la carte)" width="300px"/></p>
 <table>
 <thead>
 <tr>
@@ -2510,8 +2510,8 @@
 </details>
 <details class="info">
 <summary>Composants visibles à l'arrière :</summary>
-<p><img alt="" src="../../images/microbit-back2.png" title="(version 1.5 de la carte)" />
-<img alt="" src="../../images/microbitV2-back.png" title="(version 2 de la carte)" width="300px" /></p>
+<p><img alt="" src="../../images/microbit-back2.png" title="(version 1.5 de la carte)"/>
+<img alt="" src="../../images/microbitV2-back.png" title="(version 2 de la carte)" width="300px"/></p>
 <table>
 <thead>
 <tr>
@@ -2616,17 +2616,17 @@
 </table>
 </details>
 <h2 id="3-lediteur-mu">3. L'éditeur Mu</h2>
-<p><img alt="" src="../../images/icones_mu/bandeau.png" />  </p>
+<p><img alt="" src="../../images/icones_mu/bandeau.png"/> </p>
 <p>Ouvrir l'éditeur de code <a href="https://codewith.mu/">Mu</a>.
-Cliquer sur <img alt="" src="../../images/icones_mu/mode.png" width="35" />
- et choisir micro:bit.<br />
+Cliquer sur <img alt="" src="../../images/icones_mu/mode.png" width="35"/>
+ et choisir micro:bit.<br/>
 Ce logiciel va permettre de saisir les programmes en python, de les vérifier et de les envoyer (flasher) sur la carte micro:bit.</p>
 <p>Python possède de nombreuses bibliothèques spécialisées. Pour contrôler la carte micro:bit avec Python, il faut importer la bibliothèque <code>microbit</code> avec cette ligne au début de chaque programme :
 <div class="highlight"><pre><span></span><code><span class="kn">from</span> <span class="nn">microbit</span> <span class="kn">import</span> <span class="o">*</span>
 </code></pre></div></p>
 <details class="info">
 <summary>En savoir plus sur la carte et les éditeurs</summary>
-<p><a href="../../microbit/decouvrir_microbit/">- La carte : approfondissement</a><br />
+<p><a href="../../microbit/decouvrir_microbit/">- La carte : approfondissement</a><br/>
 <a href="../../microbit/python_editeur/">- Les différents éditeurs</a></p>
 </details>
 <h2 id="4-parcours-de-decouverte">4. Parcours de découverte</h2>
@@ -2649,14 +2649,14 @@ Ce logiciel va permettre de saisir les programmes en python, de les vérifier et
 <p>Le parcours permet notamment de réaliser les deux programmes permettant à deux cartes micro:bit de communiquer par radio, pour servir de boitier de vote.</p>
 </div>
 <h3 id="exercice-1-afficher-un-texte-une-image">Exercice 1. Afficher un texte, une image</h3>
-<p><img alt="" src="../../images/mb_display_coeur.png" width="250" /></p>
+<p><img alt="" src="../../images/mb_display_coeur.png" width="250"/></p>
 <ol>
 <li>
 <p>(a) Recopier le code suivant et le <em>flasher</em> sur la carte :
 <div class="highlight"><pre><span></span><code><span class="kn">from</span> <span class="nn">microbit</span> <span class="kn">import</span> <span class="o">*</span>
-<span class="n">display</span><span class="o">.</span><span class="n">scroll</span><span class="p">(</span><span class="s2">&quot;Hello, World!&quot;</span><span class="p">)</span>
+<span class="n">display</span><span class="o">.</span><span class="n">scroll</span><span class="p">(</span><span class="s2">"Hello, World!"</span><span class="p">)</span>
 </code></pre></div>
-(b) Que réalise la fonction <code>display.scroll</code> ?<br />
+(b) Que réalise la fonction <code>display.scroll</code> ?<br/>
 (c) Modifier le message dans le programme et <em>flasher</em> à nouveau le programme sur la carte.</p>
 </li>
 <li>
@@ -2664,17 +2664,17 @@ Ce logiciel va permettre de saisir les programmes en python, de les vérifier et
 <div class="highlight"><pre><span></span><code><span class="kn">from</span> <span class="nn">microbit</span> <span class="kn">import</span> <span class="o">*</span>
 <span class="n">display</span><span class="o">.</span><span class="n">show</span><span class="p">(</span><span class="n">Image</span><span class="o">.</span><span class="n">HAPPY</span><span class="p">)</span>
 </code></pre></div>
-(b) Que réalise la fonction <code>display.show</code>?<br />
-(c) La liste des images disponibles se trouve sur ce site : <a href="https://microbit-micropython.readthedocs.io/fr/latest/tutorials/images.html">https://microbit-micropython.readthedocs.io/fr/latest/tutorials/images.html</a><br />
+(b) Que réalise la fonction <code>display.show</code>?<br/>
+(c) La liste des images disponibles se trouve sur ce site : <a href="https://microbit-micropython.readthedocs.io/fr/latest/tutorials/images.html">https://microbit-micropython.readthedocs.io/fr/latest/tutorials/images.html</a><br/>
 En choisir quelques-unes et les afficher sur la carte.</p>
 </li>
 </ol>
 <h3 id="exercice-2-utiliser-les-boutons-les-instructions-conditionnelles">Exercice 2. Utiliser les boutons, les instructions conditionnelles</h3>
-<p><img alt="" src="../../images/mb_display_yes.png" width="250" /></p>
+<p><img alt="" src="../../images/mb_display_yes.png" width="250"/></p>
 <ol>
 <li>La carte possède deux boutons A et B. Recopier le code ci-dessous. Anticiper le comportement de la carte lorsqu'on exécute ce programme, puis vérifier en l'exécutant.
 <div class="highlight"><pre><span></span><code><span class="kn">from</span> <span class="nn">microbit</span> <span class="kn">import</span> <span class="o">*</span>
-<span class="n">display</span><span class="o">.</span><span class="n">show</span><span class="p">(</span><span class="s2">&quot;?&quot;</span><span class="p">)</span>
+<span class="n">display</span><span class="o">.</span><span class="n">show</span><span class="p">(</span><span class="s2">"?"</span><span class="p">)</span>
 <span class="k">while</span> <span class="kc">True</span><span class="p">:</span>
     <span class="k">if</span> <span class="n">button_a</span><span class="o">.</span><span class="n">is_pressed</span><span class="p">():</span>
         <span class="n">display</span><span class="o">.</span><span class="n">show</span><span class="p">(</span><span class="n">Image</span><span class="o">.</span><span class="n">YES</span><span class="p">)</span>
@@ -2682,7 +2682,7 @@ En choisir quelques-unes et les afficher sur la carte.</p>
         <span class="n">display</span><span class="o">.</span><span class="n">show</span><span class="p">(</span><span class="n">Image</span><span class="o">.</span><span class="n">NO</span><span class="p">)</span>
 </code></pre></div>
 <strong>Remarque</strong> : La condition <code>while True</code> étant toujours vérifiée, la boucle s’exécute indéfiniment. Le programme est ainsi à l’écoute des événements, ici l’appui sur les boutons.  </li>
-<li>L’instruction <code>display.clear()</code> permet d’éteindre les pixels de l’écran. <br />
+<li>L’instruction <code>display.clear()</code> permet d’éteindre les pixels de l’écran. <br/>
 Utiliser les instructions vues précédemment pour que :<ul>
 <li>l’appui sur le bouton [A] affiche l’image <code>Image.YES</code>,</li>
 <li>l'appui sur le bouton [B] affiche l’image <code>Image.NO</code>,</li>
@@ -2694,7 +2694,7 @@ Utiliser les instructions vues précédemment pour que :<ul>
 <summary>Approfondissement : is_pressed() et was_pressed()</summary>
 <p>Comparer le programme réalisé avec celui ci-dessous ; quelles différences note-t-on lors de leur exécution ?
 <div class="highlight"><pre><span></span><code><span class="kn">from</span> <span class="nn">microbit</span> <span class="kn">import</span> <span class="o">*</span>
-<span class="n">display</span><span class="o">.</span><span class="n">show</span><span class="p">(</span><span class="s2">&quot;?&quot;</span><span class="p">)</span>
+<span class="n">display</span><span class="o">.</span><span class="n">show</span><span class="p">(</span><span class="s2">"?"</span><span class="p">)</span>
 <span class="k">while</span> <span class="kc">True</span><span class="p">:</span>
     <span class="k">if</span> <span class="n">button_a</span><span class="o">.</span><span class="n">was_pressed</span><span class="p">():</span>
         <span class="n">display</span><span class="o">.</span><span class="n">show</span><span class="p">(</span><span class="n">Image</span><span class="o">.</span><span class="n">YES</span><span class="p">)</span>
@@ -2736,17 +2736,17 @@ L’instruction <code>for k in range(n)</code> avec n entier, signifie que k pre
 </li>
 </ol>
 <h3 id="exercice-4-creation-dimages-choix-aleatoire-geste">Exercice 4. Création d'images - Choix aléatoire - Geste</h3>
-<p><img alt="" src="../../images/mb_display_eclat.png" /></p>
+<p><img alt="" src="../../images/mb_display_eclat.png"/></p>
 <ol>
-<li>On a vu qu’il existe des images à disposition, mais on peut aussi créer sa propre image en indiquant l’intensité de chaque pixel à l’aide d’un entier entre 0 (pixel éteint) et 9 (pixel d’intensité maximale). On peut préciser les valeurs soit ligne par ligne, soit en une seule ligne. <br />
+<li>On a vu qu’il existe des images à disposition, mais on peut aussi créer sa propre image en indiquant l’intensité de chaque pixel à l’aide d’un entier entre 0 (pixel éteint) et 9 (pixel d’intensité maximale). On peut préciser les valeurs soit ligne par ligne, soit en une seule ligne. <br/>
 Reproduire et exécuter ce programme :
 <div class="highlight"><pre><span></span><code><span class="kn">from</span> <span class="nn">microbit</span> <span class="kn">import</span> <span class="o">*</span>
-<span class="n">eclat1</span> <span class="o">=</span> <span class="n">Image</span><span class="p">(</span><span class="s2">&quot;00300:&quot;</span>
-               <span class="s2">&quot;03630:&quot;</span>
-               <span class="s2">&quot;36963:&quot;</span>
-               <span class="s2">&quot;03630:&quot;</span>
-               <span class="s2">&quot;00300&quot;</span><span class="p">)</span>
-<span class="n">eclat2</span> <span class="o">=</span> <span class="n">Image</span><span class="p">(</span><span class="s2">&quot;00300:03330:33333:03330:00300&quot;</span><span class="p">)</span>
+<span class="n">eclat1</span> <span class="o">=</span> <span class="n">Image</span><span class="p">(</span><span class="s2">"00300:"</span>
+               <span class="s2">"03630:"</span>
+               <span class="s2">"36963:"</span>
+               <span class="s2">"03630:"</span>
+               <span class="s2">"00300"</span><span class="p">)</span>
+<span class="n">eclat2</span> <span class="o">=</span> <span class="n">Image</span><span class="p">(</span><span class="s2">"00300:03330:33333:03330:00300"</span><span class="p">)</span>
 <span class="k">while</span> <span class="kc">True</span><span class="p">:</span>
     <span class="k">if</span> <span class="n">button_a</span><span class="o">.</span><span class="n">is_pressed</span><span class="p">():</span>
         <span class="n">display</span><span class="o">.</span><span class="n">show</span><span class="p">(</span><span class="n">eclat1</span><span class="p">)</span>
@@ -2755,23 +2755,23 @@ Reproduire et exécuter ce programme :
 </code></pre></div></li>
 <li>Créer les six images permettant de représenter les six faces du dé en complétant le code ci-dessous.
 <div class="highlight"><pre><span></span><code><span class="kn">from</span> <span class="nn">microbit</span> <span class="kn">import</span> <span class="o">*</span>
-<span class="n">un</span>  <span class="o">=</span> <span class="n">Image</span><span class="p">(</span><span class="s2">&quot;00000:00000:00900:00000:00000&quot;</span><span class="p">)</span>
-<span class="n">deux</span> <span class="o">=</span> <span class="n">Image</span><span class="p">(</span><span class="s2">&quot;.....&quot;</span><span class="p">)</span>
-<span class="n">trois</span>  <span class="o">=</span> <span class="n">Image</span><span class="p">(</span><span class="s2">&quot;.....&quot;</span><span class="p">)</span>
-<span class="n">quatre</span> <span class="o">=</span> <span class="n">Image</span><span class="p">(</span><span class="s2">&quot;.....&quot;</span><span class="p">)</span>
-<span class="n">cinq</span>  <span class="o">=</span> <span class="n">Image</span><span class="p">(</span><span class="s2">&quot;.....&quot;</span><span class="p">)</span>
-<span class="n">six</span> <span class="o">=</span> <span class="n">Image</span><span class="p">(</span><span class="s2">&quot;.....&quot;</span><span class="p">)</span>
+<span class="n">un</span>  <span class="o">=</span> <span class="n">Image</span><span class="p">(</span><span class="s2">"00000:00000:00900:00000:00000"</span><span class="p">)</span>
+<span class="n">deux</span> <span class="o">=</span> <span class="n">Image</span><span class="p">(</span><span class="s2">"....."</span><span class="p">)</span>
+<span class="n">trois</span>  <span class="o">=</span> <span class="n">Image</span><span class="p">(</span><span class="s2">"....."</span><span class="p">)</span>
+<span class="n">quatre</span> <span class="o">=</span> <span class="n">Image</span><span class="p">(</span><span class="s2">"....."</span><span class="p">)</span>
+<span class="n">cinq</span>  <span class="o">=</span> <span class="n">Image</span><span class="p">(</span><span class="s2">"....."</span><span class="p">)</span>
+<span class="n">six</span> <span class="o">=</span> <span class="n">Image</span><span class="p">(</span><span class="s2">"....."</span><span class="p">)</span>
 </code></pre></div></li>
 <li>Pour choisir une image parmi les six images représentant une face du dé, on utilise la fonction <code>choice</code> du module <code>random</code> qui permet de choisir au hasard un élément dans une liste :
 <div class="highlight"><pre><span></span><code><span class="kn">from</span> <span class="nn">microbit</span> <span class="kn">import</span> <span class="o">*</span>
 <span class="kn">from</span> <span class="nn">random</span> <span class="kn">import</span> <span class="n">choice</span>
-<span class="n">un</span>  <span class="o">=</span> <span class="n">Image</span><span class="p">(</span><span class="s2">&quot;00000:00000:00900:00000:00000&quot;</span><span class="p">)</span>
-<span class="n">deux</span> <span class="o">=</span> <span class="n">Image</span><span class="p">(</span><span class="s2">&quot;.....&quot;</span><span class="p">)</span>
-<span class="n">trois</span>  <span class="o">=</span> <span class="n">Image</span><span class="p">(</span><span class="s2">&quot;.....&quot;</span><span class="p">)</span>
-<span class="n">quatre</span> <span class="o">=</span> <span class="n">Image</span><span class="p">(</span><span class="s2">&quot;.....&quot;</span><span class="p">)</span>
-<span class="n">cinq</span>  <span class="o">=</span> <span class="n">Image</span><span class="p">(</span><span class="s2">&quot;.....&quot;</span><span class="p">)</span>
-<span class="n">six</span> <span class="o">=</span> <span class="n">Image</span><span class="p">(</span><span class="s2">&quot;.....&quot;</span><span class="p">)</span>
-<span class="c1"># on définit la liste contenant le nom des images que l&#39;on a définit précédemment</span>
+<span class="n">un</span>  <span class="o">=</span> <span class="n">Image</span><span class="p">(</span><span class="s2">"00000:00000:00900:00000:00000"</span><span class="p">)</span>
+<span class="n">deux</span> <span class="o">=</span> <span class="n">Image</span><span class="p">(</span><span class="s2">"....."</span><span class="p">)</span>
+<span class="n">trois</span>  <span class="o">=</span> <span class="n">Image</span><span class="p">(</span><span class="s2">"....."</span><span class="p">)</span>
+<span class="n">quatre</span> <span class="o">=</span> <span class="n">Image</span><span class="p">(</span><span class="s2">"....."</span><span class="p">)</span>
+<span class="n">cinq</span>  <span class="o">=</span> <span class="n">Image</span><span class="p">(</span><span class="s2">"....."</span><span class="p">)</span>
+<span class="n">six</span> <span class="o">=</span> <span class="n">Image</span><span class="p">(</span><span class="s2">"....."</span><span class="p">)</span>
+<span class="c1"># on définit la liste contenant le nom des images que l'on a définit précédemment</span>
 <span class="n">liste_faces</span> <span class="o">=</span> <span class="p">[</span><span class="n">un</span><span class="p">,</span> <span class="n">deux</span><span class="p">,</span> <span class="n">trois</span><span class="p">,</span> <span class="n">quatre</span><span class="p">,</span> <span class="n">cinq</span><span class="p">,</span> <span class="n">six</span><span class="p">]</span>
 <span class="n">face</span> <span class="o">=</span> <span class="n">choice</span><span class="p">(</span><span class="n">liste_faces</span><span class="p">)</span>
 <span class="n">display</span><span class="o">.</span><span class="n">show</span><span class="p">(</span><span class="n">face</span><span class="p">)</span>
@@ -2787,7 +2787,7 @@ On utilise la fonctionnalité radio sur plusieurs cartes de vote, et une nouvell
 <div class="highlight"><pre><span></span><code><span class="kn">from</span> <span class="nn">microbit</span> <span class="kn">import</span> <span class="o">*</span>
 <span class="kn">import</span> <span class="nn">radio</span>
 <span class="n">radio</span><span class="o">.</span><span class="n">on</span><span class="p">()</span>
-<span class="n">vote_ok</span> <span class="o">=</span> <span class="kc">True</span> <span class="c1"># cette variable vaut True tant qu&#39;aucun vote n&#39;a été envoyé</span>
+<span class="n">vote_ok</span> <span class="o">=</span> <span class="kc">True</span> <span class="c1"># cette variable vaut True tant qu'aucun vote n'a été envoyé</span>
 <span class="k">while</span> <span class="n">vote_ok</span><span class="p">:</span>
     <span class="n">display</span><span class="o">.</span><span class="n">show</span><span class="p">(</span><span class="n">Image</span><span class="o">.</span><span class="n">SQUARE_SMALL</span><span class="p">)</span>
     <span class="n">sleep</span><span class="p">(</span><span class="mi">100</span><span class="p">)</span>
@@ -2796,10 +2796,10 @@ On utilise la fonctionnalité radio sur plusieurs cartes de vote, et une nouvell
     <span class="k">elif</span> <span class="n">button_b</span><span class="o">.</span><span class="n">is_pressed</span><span class="p">():</span>
         <span class="n">display</span><span class="o">.</span><span class="n">show</span><span class="p">(</span><span class="n">Image</span><span class="o">.</span><span class="n">NO</span><span class="p">)</span>
     <span class="k">if</span> <span class="n">button_a</span><span class="o">.</span><span class="n">was_pressed</span><span class="p">():</span>
-        <span class="n">radio</span><span class="o">.</span><span class="n">send</span><span class="p">(</span><span class="s2">&quot;A&quot;</span><span class="p">)</span>
+        <span class="n">radio</span><span class="o">.</span><span class="n">send</span><span class="p">(</span><span class="s2">"A"</span><span class="p">)</span>
         <span class="n">vote_ok</span> <span class="o">=</span> <span class="kc">False</span>
     <span class="k">elif</span> <span class="n">button_b</span><span class="o">.</span><span class="n">was_pressed</span><span class="p">():</span>
-        <span class="n">radio</span><span class="o">.</span><span class="n">send</span><span class="p">(</span><span class="s2">&quot;B&quot;</span><span class="p">)</span>
+        <span class="n">radio</span><span class="o">.</span><span class="n">send</span><span class="p">(</span><span class="s2">"B"</span><span class="p">)</span>
         <span class="n">vote_ok</span> <span class="o">=</span> <span class="kc">False</span>
 </code></pre></div></p>
 <p>Sur la carte réceptrice :
@@ -2810,14 +2810,14 @@ On utilise la fonctionnalité radio sur plusieurs cartes de vote, et une nouvell
 <span class="n">voix_B</span> <span class="o">=</span> <span class="mi">0</span>
 <span class="k">while</span> <span class="kc">True</span><span class="p">:</span>
     <span class="n">message</span> <span class="o">=</span> <span class="n">radio</span><span class="o">.</span><span class="n">receive</span><span class="p">()</span>
-    <span class="k">if</span> <span class="n">message</span> <span class="o">==</span><span class="s1">&#39;A&#39;</span><span class="p">:</span>
+    <span class="k">if</span> <span class="n">message</span> <span class="o">==</span><span class="s1">'A'</span><span class="p">:</span>
         <span class="n">voix_A</span> <span class="o">=</span> <span class="n">voix_A</span> <span class="o">+</span> <span class="mi">1</span>
-    <span class="k">elif</span> <span class="n">message</span> <span class="o">==</span><span class="s1">&#39;B&#39;</span><span class="p">:</span>
+    <span class="k">elif</span> <span class="n">message</span> <span class="o">==</span><span class="s1">'B'</span><span class="p">:</span>
         <span class="n">voix_B</span> <span class="o">=</span> <span class="n">voix_B</span> <span class="o">+</span> <span class="mi">1</span>
 </code></pre></div></p>
 <p>Reproduire ces programmes et compléter le programme de la carte réceptrice pour que lors de l’appui sur le bouton A elle affiche le nombre de votes OUI, et lors de l’appui sur le bouton B elle affiche le nombre de votes NON.</p>
 <p>Ce programme a utilisé :</p>
-<p><code>import radio</code> pour importer le module radio<br />
+<p><code>import radio</code> pour importer le module radio<br/>
 <code>radio.on()</code>pour activer la fonctionnalité radio (émission et/ou réception)</p>
 <p><code>radio.send("A")</code> pour envoyer le message ’A’ à toutes les cartes qui écoutent</p>
 <p><code>radio.receive()</code> pour réceptionner les messages émis.</p>
@@ -2828,11 +2828,11 @@ On utilise la fonctionnalité radio sur plusieurs cartes de vote, et une nouvell
 <p><a href="../../snt/objets_connectes_seq1_parcours_cible/">Parcours : Atteindre une cible sur un plan incliné</a></p>
 </details>
 <h3 id="exercice-6-ruban-de-leds-neopixel">Exercice 6. Ruban de leds Neopixel</h3>
-<p><img alt="" src="../../images/grove/grove_shield_neopixel.png" /></p>
+<p><img alt="" src="../../images/grove/grove_shield_neopixel.png"/></p>
 <ol>
 <li>Placer la carte micro-bit sur le shield Grove et connecter le ruban de led NeoPixel sur le connecteur P0-P14.  </li>
 <li>
-<p>Lire le programme suivant et anticiper l'effet produit sur le ruban NeoPixel : quelles leds sont allumées, dans quel ordre, de quelle(s) couleurs(s) ?<br />
+<p>Lire le programme suivant et anticiper l'effet produit sur le ruban NeoPixel : quelles leds sont allumées, dans quel ordre, de quelle(s) couleurs(s) ?<br/>
 <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
 <span class="normal"> 2</span>
 <span class="normal"> 3</span>
@@ -2845,7 +2845,7 @@ On utilise la fonctionnalité radio sur plusieurs cartes de vote, et une nouvell
 <span class="normal">10</span>
 <span class="normal">11</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="kn">from</span> <span class="nn">microbit</span> <span class="kn">import</span> <span class="o">*</span>
 <span class="kn">import</span> <span class="nn">neopixel</span>
-<span class="c1"># pour une connexion d&#39;un ruban de 30 leds sur le connecteur P0/P14</span>
+<span class="c1"># pour une connexion d'un ruban de 30 leds sur le connecteur P0/P14</span>
 <span class="n">np</span> <span class="o">=</span> <span class="n">neopixel</span><span class="o">.</span><span class="n">NeoPixel</span><span class="p">(</span><span class="n">pin0</span><span class="p">,</span> <span class="mi">30</span><span class="p">)</span>
 
 <span class="k">while</span> <span class="kc">True</span><span class="p">:</span>

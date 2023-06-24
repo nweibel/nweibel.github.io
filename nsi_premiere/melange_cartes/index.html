@@ -2499,12 +2499,12 @@
 
 
 <h1 id="melanges-parfaits-dun-jeu-de-32-cartes">Mélanges parfaits d'un jeu de 32 cartes</h1>
-<p><img alt="" src="../../images/undraw_playing_cards_cywn.svg" width="400" /></p>
+<p><img alt="" src="../../images/undraw_playing_cards_cywn.svg" width="400"/></p>
 <p>Cette page présente les mélanges parfaits de type out-shuffle et in-shuffle d'un jeu de cartes et en explore quelques propriétés.</p>
 <h2 id="1-melange-parfait">1. Mélange parfait</h2>
 <div class="admonition question">
 <p class="admonition-title">Question 1</p>
-<p>Un jeu de 32 cartes peut être représenté par un tableau, où chaque carte est représentée par un entier.<br />
+<p>Un jeu de 32 cartes peut être représenté par un tableau, où chaque carte est représentée par un entier.<br/>
 Créer le tableau <code>jeu32</code>, contenant les 32 entiers entre 1 et 32.</p>
 <div class="highlight"><pre><span></span><code><span class="n">jeu32</span> <span class="o">=</span> <span class="p">[</span> <span class="err">…</span> <span class="p">]</span> <span class="c1"># à compléter</span>
 </code></pre></div>
@@ -2521,20 +2521,20 @@ Créer le tableau <code>jeu32</code>, contenant les 32 entiers entre 1 et 32.</p
 <p class="admonition-title">À réaliser</p>
 <p>Exécuter les appels <code>dessus(jeu32)</code> et <code>dessous(jeu32)</code> et observer le résultat produit.</p>
 </div>
-<p>Lors du mélange <strong>parfait</strong> d'un jeu de cartes, on le sépare en 2 paquets de même taille : le paquet A désigne la moitié du dessus et le paquet B désigne la moitié du dessous. Puis on alterne les cartes d'un paquet et de l'autre.<br />
-Le mélange peut se réaliser de 2 façons :<br />
-- soit c'est la carte du dessus du paquet A qui sera au-dessus du paquet mélangé : ce mélange est appelé <strong>out-shuffle</strong> ;<br />
+<p>Lors du mélange <strong>parfait</strong> d'un jeu de cartes, on le sépare en 2 paquets de même taille : le paquet A désigne la moitié du dessus et le paquet B désigne la moitié du dessous. Puis on alterne les cartes d'un paquet et de l'autre.<br/>
+Le mélange peut se réaliser de 2 façons :<br/>
+- soit c'est la carte du dessus du paquet A qui sera au-dessus du paquet mélangé : ce mélange est appelé <strong>out-shuffle</strong> ;<br/>
 - soit c'est la carte du dessus du paquet B qui sera au-dessus du paquet mélangé : ce mélange est appelé <strong>in-shuffle</strong>.</p>
 <p>Voici un exemple avec un jeu initial de 8 cartes : observer la position des cartes extrêmes (1 et 8) dans les manipulations suivantes.</p>
-<p><img alt="" src="../../images/melange_carte_1.png" /></p>
+<p><img alt="" src="../../images/melange_carte_1.png"/></p>
 <p>On sépare le jeu en 2 paquets de même taille : le paquet A est constitué des cartes 1 à 4, le paquet B des cartes 5 à 8.</p>
-<p><img alt="" src="../../images/melange_carte_2.png" /></p>
-<p>Voici le paquet obtenu après un mélange <strong>out-shuffle</strong> : les cartes du paquet A occupent les places 1, 3, 5 et 7.<br />
+<p><img alt="" src="../../images/melange_carte_2.png"/></p>
+<p>Voici le paquet obtenu après un mélange <strong>out-shuffle</strong> : les cartes du paquet A occupent les places 1, 3, 5 et 7.<br/>
 Les cartes extrêmes (1 et 8) ont conservé leur position initiale (à l'extérieur : <em>out</em>).</p>
-<p><img alt="" src="../../images/melange_carte_3.png" /></p>
-<p>Voici le paquet obtenu après un mélange <strong>in-shuffle</strong> : les cartes du paquet A occupent les places 2, 4, 6 et 8.<br />
+<p><img alt="" src="../../images/melange_carte_3.png"/></p>
+<p>Voici le paquet obtenu après un mélange <strong>in-shuffle</strong> : les cartes du paquet A occupent les places 2, 4, 6 et 8.<br/>
 Les cartes extrêmes (1 et 8) sont désormais à l'intérieur du paquet mélangé (à l'intérieur : <em>in</em>).</p>
-<p><img alt="" src="../../images/melange_carte_4.png" /></p>
+<p><img alt="" src="../../images/melange_carte_4.png"/></p>
 <h2 id="2-melange-out-shuffle">2. Mélange Out-shuffle</h2>
 <h3 id="21-fonction-outshuffle">2.1 Fonction  <code>outshuffle</code></h3>
 <p>Afin de pouvoir simuler des mélanges répétés, on programme une fonction qui agit sur un jeu de carte comme un mélange <em>out-shuffle</em>.</p>
@@ -2608,7 +2608,6 @@ Les cartes extrêmes (1 et 8) sont désormais à l'intérieur du paquet mélang�
 </code></pre></div>
 <div class="codehilite"><pre><span></span><code><span class="mf">1</span>
 </code></pre></div>
-
 <p>Il peut être intéressant de constater que cette valeur est le nombre de cartes "au-dessus" de la carte 2 dans le paquet.</p>
 </div>
 <div class="admonition question">
@@ -2651,12 +2650,12 @@ Les cartes extrêmes (1 et 8) sont désormais à l'intérieur du paquet mélang�
 </table>
 <div class="admonition question">
 <p class="admonition-title">Question 7</p>
-<p>On réalise des mélanges out-shuffle à partir du tableau <code>jeu32</code>.<br />
+<p>On réalise des mélanges out-shuffle à partir du tableau <code>jeu32</code>.<br/>
 <strong>Conjecturer</strong> une formule permettant d'obtenir l'indice de la carte 2 dans le tableau <code>jeu32</code> à l'issue du prochain mélange out-shuffle, en fonction de son indice actuel.</p>
 </div>
 <div class="admonition example">
 <p class="admonition-title">À réaliser</p>
-<p>Vérifier que la formule conjecturée permet de passer de chacun des indices du tableau de la question 6 à l'indice suivant, obtenu avec un nouveau mélange out-shuffle de <code>jeu32</code>.<br />
+<p>Vérifier que la formule conjecturée permet de passer de chacun des indices du tableau de la question 6 à l'indice suivant, obtenu avec un nouveau mélange out-shuffle de <code>jeu32</code>.<br/>
 En particulier, à partir de l'indice de la dernière ligne du tableau, la formule conjecturée doit donner 1, qui serait l'indice de la carte 2 après un nouveau mélange.</p>
 </div>
 <h3 id="24-trajectoire-dune-carte-quelconque">2.4 Trajectoire d'une carte quelconque</h3>
@@ -2670,7 +2669,7 @@ En particulier, à partir de l'indice de la dernière ligne du tableau, la formu
 </code></pre></div>
 <div class="admonition question">
 <p class="admonition-title">Question 8</p>
-<p>Utiliser la fonction précédente pour explorer les indices de quelques cartes du tableau <code>jeu32</code> lorsqu'on effectue des mélanges out-shuffle jusqu'à revenir à la configuration de départ.<br />
+<p>Utiliser la fonction précédente pour explorer les indices de quelques cartes du tableau <code>jeu32</code> lorsqu'on effectue des mélanges out-shuffle jusqu'à revenir à la configuration de départ.<br/>
 <strong>Conjecturer</strong> une formule permettant d'obtenir l'indice de la carte <code>valeur</code> dans le tableau <code>jeu32</code> à l'issue du prochain mélange out-shuffle, en fonction de son indice actuel.</p>
 </div>
 <div class="admonition question">
@@ -2762,7 +2761,7 @@ En particulier, à partir de l'indice de la dernière ligne du tableau, la formu
 </code></pre></div>
 <div class="admonition question">
 <p class="admonition-title">Question 16</p>
-<p>Utiliser la fonction précédente pour explorer les indices de quelques cartes du tableau <code>jeu32</code> lorsqu'on effectue des mélanges in-shuffle jusqu'à revenir à la configuration de départ.<br />
+<p>Utiliser la fonction précédente pour explorer les indices de quelques cartes du tableau <code>jeu32</code> lorsqu'on effectue des mélanges in-shuffle jusqu'à revenir à la configuration de départ.<br/>
 <strong>Conjecturer</strong> une formule permettant d'obtenir l'indice de la carte <code>valeur</code> dans le tableau <code>jeu32</code> à l'issue du prochain mélange in-shuffle, en fonction de son indice actuel.</p>
 </div>
 <div class="admonition question">

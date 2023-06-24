@@ -2250,14 +2250,14 @@
 <p>d'après <a href="https://dl.acm.org/doi/10.1145/2828959.2828963">The rainfall problem</a></p>
 <div class="admonition exo">
 <p class="admonition-title">Énoncé</p>
-<p>On dispose d'un tableau contenant des quantités de précipitations, recueillies quotidiennement sur un site de relevés météorologiques.<br />
-L'équipement de collecte de pluie rapporte parfois par erreur une valeur négative : ces valeurs sont à ignorer.<br />
+<p>On dispose d'un tableau contenant des quantités de précipitations, recueillies quotidiennement sur un site de relevés météorologiques.<br/>
+L'équipement de collecte de pluie rapporte parfois par erreur une valeur négative : ces valeurs sont à ignorer.<br/>
 On demande de calculer la valeur moyenne des quantités de précipitations.</p>
 </div>
 <div class="admonition abstract">
 <p class="admonition-title">À réaliser</p>
-<p>Écrire une fonction <code>moyenne_precipitations(valeurs_precipitations)</code> qui prend en paramètre un tableau de nombres entiers <code>valeurs_precipitations</code>, et qui renvoie :<br />
-- la moyenne des valeurs positives de ce tableau, <br />
+<p>Écrire une fonction <code>moyenne_precipitations(valeurs_precipitations)</code> qui prend en paramètre un tableau de nombres entiers <code>valeurs_precipitations</code>, et qui renvoie :<br/>
+- la moyenne des valeurs positives de ce tableau, <br/>
 - ou le message "Donnée(s) invalide(s)" si le tableau ne contient aucune donnée valide.</p>
 <p>Exemples :
 <div class="highlight"><pre><span></span><code><span class="n">moyenne_precipitations</span><span class="p">([</span><span class="mi">12</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">56</span><span class="p">,</span> <span class="mi">67</span><span class="p">,</span> <span class="mi">23</span><span class="p">,</span> <span class="mi">34</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">78</span><span class="p">,</span> <span class="mi">45</span><span class="p">,</span> <span class="mi">89</span><span class="p">])</span>
@@ -2274,7 +2274,7 @@ On demande de calculer la valeur moyenne des quantités de précipitations.</p>
 </code></pre></div>
 <div class="highlight"><pre><span></span><code><span class="n">moyenne_precipitations</span><span class="p">([</span><span class="o">-</span><span class="mi">3</span><span class="p">])</span>
 </code></pre></div>
-<div class="highlight"><pre><span></span><code>&quot;Donnée(s) invalide(s)&quot;
+<div class="highlight"><pre><span></span><code>"Donnée(s) invalide(s)"
 </code></pre></div></p>
 </div>
 <details class="info">

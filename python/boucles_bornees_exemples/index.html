@@ -2458,12 +2458,12 @@
 
 <h1 id="exemples-boucles-bornees">Exemples : boucles bornées</h1>
 <p>Les exemples détaillés sur cette page ont pour but d'expliciter quelques situations usuelles d'utilisation des boucles bornées.</p>
-<p>Les tracés suivants ont été réalisés à l'aide du module Turtle disponible dans <a href="https://basthon.fr">Basthon</a>.<br />
+<p>Les tracés suivants ont été réalisés à l'aide du module Turtle disponible dans <a href="https://basthon.fr">Basthon</a>.<br/>
 Pour exécuter ces programmes dans un notebook Jupyter de Basthon, le notebook doit contenir l'instruction   <code>from turtle import *</code> et chaque dessin doit se terminer avec l’instruction <code>done()</code>.</p>
 <h2 id="1-repeter-exactement-les-memes-instructions">1. Répéter exactement les mêmes instructions</h2>
 <p>Un exemple classique est le tracé de polygones avec <code>Turtle</code>. Voici le cas du carré.</p>
 <h3 id="11-trace-dun-carre-de-cote-100">1.1 Tracé d'un carré de côté 100</h3>
-<p><img align="right" alt="carre" src="../../images/turtle/carre.png" width="170" /></p>
+<p><img align="right" alt="carre" src="../../images/turtle/carre.png" width="170"/></p>
 <p><div class="highlight"><pre><span></span><code><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">4</span><span class="p">):</span>
     <span class="n">forward</span><span class="p">(</span><span class="mi">100</span><span class="p">)</span>
     <span class="n">left</span><span class="p">(</span><span class="mi">90</span><span class="p">)</span>
@@ -2484,9 +2484,9 @@ On dit que <code>parcouru</code> est une <em>variable de cumul</em>. Évidemment
 <code>parcouru = parcouru + 100</code>  est exécutée quatre fois de suite.</p>
 <h2 id="2-repeter-des-instructions-contenant-des-expressions-dont-la-valeur-est-explicitement-modifiee">2. Répéter des instructions contenant des expressions dont la valeur est explicitement modifiée</h2>
 <h3 id="21-trace-dune-spirale">2.1 Tracé d'une spirale</h3>
-<p>On souhaite réaliser une spirale composée de dix segments dont les longueurs sont successivement 10, 20, 30, ..., 100.<br />
+<p>On souhaite réaliser une spirale composée de dix segments dont les longueurs sont successivement 10, 20, 30, ..., 100.<br/>
 On peut utiliser une variable <code>pas</code> contenant à chaque étape la longueur du tracé à réaliser. À la fin de chaque étape, la valeur de la variable <code>pas</code> sera augmentée de 10.</p>
-<p><img align="right" alt="spirale" src="../../images/turtle/spirale.png" width="170" /></p>
+<p><img align="right" alt="spirale" src="../../images/turtle/spirale.png" width="170"/></p>
 <p><div class="highlight"><pre><span></span><code><span class="n">pas</span> <span class="o">=</span> <span class="mi">10</span>              <span class="c1"># initialisation à 10</span>
 <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">10</span><span class="p">):</span>
     <span class="n">forward</span><span class="p">(</span><span class="n">pas</span><span class="p">)</span>
@@ -2509,14 +2509,14 @@ dix fois de suite. Comme l'instruction <code>forward(pas)</code> dépend du para
 Le programme ci-dessus est un procédé classique de calcul d'une somme à l'aide d'une boucle. La valeur 550 correspond à la somme 10 + 20 + 30 + ... + 100.</p>
 <h2 id="3-repeter-des-instructions-contenant-lindice-de-boucle">3. Répéter des instructions contenant l'indice de boucle</h2>
 <h3 id="31-trace-dune-spirale">3.1 Tracé d'une spirale</h3>
-<p>Dans l'exemple précédent, introduire une variable <code>pas</code> contenant la longueur à tracer à chaque étape permettait de donner une interprétation à la valeur de cette variable. Pour modifier cette valeur entre deux étapes, il a fallu écrire une instruction spécifique dans la boucle : <br />
-<code class="highlight"><span class="n">pas</span> <span class="o">=</span> <span class="n">pas</span> <span class="o">+</span> <span class="mi">10</span></code>   </p>
+<p>Dans l'exemple précédent, introduire une variable <code>pas</code> contenant la longueur à tracer à chaque étape permettait de donner une interprétation à la valeur de cette variable. Pour modifier cette valeur entre deux étapes, il a fallu écrire une instruction spécifique dans la boucle : <br/>
+<code class="highlight"><span class="n">pas</span> <span class="o">=</span> <span class="n">pas</span> <span class="o">+</span> <span class="mi">10</span></code> </p>
 <p>Une autre variable était présente dans le code et n'a pas été exploitée.
-Il s'agit de l'indice de boucle, qui était nommé <code>i</code> dans les exemples précédents.<br />
+Il s'agit de l'indice de boucle, qui était nommé <code>i</code> dans les exemples précédents.<br/>
 Dans l'instruction <code class="highlight"><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">10</span><span class="p">)</span></code> l'indice <code>i</code>
- prend dix valeurs successives : les entiers de 0 à 9. On peut utiliser cette variable, qui est modifiée implicitement au cours de la boucle, pour réaliser le même tracé sans introduire de nouvelle variable.<br />
+ prend dix valeurs successives : les entiers de 0 à 9. On peut utiliser cette variable, qui est modifiée implicitement au cours de la boucle, pour réaliser le même tracé sans introduire de nouvelle variable.<br/>
  Par exemple le programme suivant permet d'obtenir le même tracé qu'au paragraphe 2.1.</p>
-<p><img align="right" alt="spirale" src="../../images/turtle/spirale.png" width="170" /></p>
+<p><img align="right" alt="spirale" src="../../images/turtle/spirale.png" width="170"/></p>
 <p><div class="highlight"><pre><span></span><code><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">10</span><span class="p">):</span>
     <span class="n">forward</span><span class="p">(</span><span class="mi">10</span> <span class="o">+</span> <span class="mi">10</span> <span class="o">*</span> <span class="n">i</span><span class="p">)</span>
     <span class="n">left</span><span class="p">(</span><span class="mi">90</span><span class="p">)</span>

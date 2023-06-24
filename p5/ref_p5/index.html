@@ -2670,7 +2670,7 @@
 
 
 
-<h1 id="p5-references"><img alt="" src="../../images/p5js.svg" width="32" /> p5 : références</h1>
+<h1 id="p5-references"><img alt="" src="../../images/p5js.svg" width="32"/> p5 : références</h1>
 <p><a href="https://basthon.fr">Basthon</a> propose la bibliothèque <strong>p5</strong>, qui permet de réaliser rapidement des <a href="https://notebook.basthon.fr/?from=examples/p5.ipynb">constructions graphiques et des animations</a>.
 La bibliothèque propose l'essentiel des fonctions de <a href="https://p5js.org">p5.js</a>, avec la syntaxe de python. En particulier, il ne s'agit pas de la bibliothèque <a href="https://p5.readthedocs.io/en/latest/">p5</a> disponible dans d'autres IDE.</p>
 <h2 id="structure-du-programme">Structure du programme</h2>
@@ -2679,10 +2679,10 @@ La bibliothèque propose l'essentiel des fonctions de <a href="https://p5js.org"
 <p>Lorsque l'on exécute l'instruction <code>run()</code>, la fonction <code>setup()</code> est exécutée une fois :
 <div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">setup</span><span class="p">():</span>
     <span class="n">createCanvas</span><span class="p">(</span><span class="mi">800</span><span class="p">,</span><span class="mi">600</span><span class="p">)</span>
-    <span class="c1"># instructions de paramétrage de l&#39;affichage</span>
+    <span class="c1"># instructions de paramétrage de l'affichage</span>
 </code></pre></div>
 Cette fonction permet de définir les dimensions de la fenêtre de tracé, et quelques paramètres initiaux.
-Les valeurs données aux paramètres de la fonction <code>createCanvas</code> sont affectées automatiquement à deux variables systèmes :  <code>width</code>  pour le premier paramètre et <code>height</code> pour le second.<br />
+Les valeurs données aux paramètres de la fonction <code>createCanvas</code> sont affectées automatiquement à deux variables systèmes :  <code>width</code>  pour le premier paramètre et <code>height</code> pour le second.<br/>
 La fonction <code>update_variables()</code> permet de forcer la mise à jour
 des variables <code>width</code> et <code>height</code>, par exemple pour utiliser leurs valeurs dans  la fonction <code>setup</code>.</p>
 <p>Puis la fonction <code>draw()</code> est ensuite exécutée en boucle, après l'exécution de <code>setup()</code>:
@@ -2746,11 +2746,11 @@ Elle contient des instructions qui seront exécutées avec une fréquence régla
 <td align="left">Nombre d'images affichées depuis le démarrage du programme.</td>
 </tr>
 <tr>
-<td align="left">frameRate() <br> getFrameRate()</td>
+<td align="left">frameRate() <br/> getFrameRate()</td>
 <td align="left">Renvoie le nombre d'images affichées chaque seconde.</td>
 </tr>
 <tr>
-<td align="left">frameRate(valeur) <br> setFrameRate(valeur)</td>
+<td align="left">frameRate(valeur) <br/> setFrameRate(valeur)</td>
 <td align="left">Spécifie le nombre d'images à afficher chaque seconde.</td>
 </tr>
 <tr>
@@ -2799,8 +2799,8 @@ Elle contient des instructions qui seront exécutées avec une fréquence régla
 </tr>
 </tbody>
 </table>
-<p>On peut égaler déterminer une couleur à l'aide de la fonction d'interpolation linéaire <code>lerpColor</code>:<br />
-<code>lerpColor(couleur1, couleur2, coefficient)</code>  détermine une couleur intermédiaire entre <code>couleur1</code> et <code>couleur2</code>. <code>coefficient</code>  est un nombre entre 0 et 1. Plus <code>coefficient</code> est proche de 0, plus la couleur obtenue est proche de <code>couleur1</code>, et plus <code>coefficient</code> est proche de 1, plus la couleur obtenue est proche de <code>couleur2</code>.</p>
+<p>On peut égaler déterminer une couleur à l'aide de la fonction d'interpolation linéaire <code>lerpColor</code>:<br>
+<code>lerpColor(couleur1, couleur2, coefficient)</code>  détermine une couleur intermédiaire entre <code>couleur1</code> et <code>couleur2</code>. <code>coefficient</code>  est un nombre entre 0 et 1. Plus <code>coefficient</code> est proche de 0, plus la couleur obtenue est proche de <code>couleur1</code>, et plus <code>coefficient</code> est proche de 1, plus la couleur obtenue est proche de <code>couleur2</code>.</br></p>
 <h3 id="dessiner-en-couleur">Dessiner en couleur</h3>
 <table>
 <thead>
@@ -2864,7 +2864,7 @@ Elle contient des instructions qui seront exécutées avec une fréquence régla
 <h3 id="primitives-2d">Primitives 2d</h3>
 <p>L'origine du repère est située en haut à gauche.
 Les abscisses augmentent de gauche à droite, les ordonnées augmentent de haut en bas.</p>
-<p><img alt="" src="../../images/p5_repere.png" width="200" /></p>
+<p><img alt="" src="../../images/p5_repere.png" width="200"/></p>
 <table>
 <thead>
 <tr>
@@ -2952,11 +2952,11 @@ Les abscisses augmentent de gauche à droite, les ordonnées augmentent de haut 
 <td align="left">Affiche la chaine à la position (x, y) dans une boite de dimensions largeur x hauteur</td>
 </tr>
 <tr>
-<td align="left">textAlign(alignement_horizontal) <br> textAlign(alignement_horizontal, alignement_vertical)</td>
+<td align="left">textAlign(alignement_horizontal) <br/> textAlign(alignement_horizontal, alignement_vertical)</td>
 <td align="left">Spécifie l'alignement horizontal parmi LEFT, CENTER, et RIGHT et l'alignement vertical parmi TOP, BOTTOM, CENTER, et BASELINE</td>
 </tr>
 <tr>
-<td align="left">textFont(police) <br> textFont(police, taille)</td>
+<td align="left">textFont(police) <br/> textFont(police, taille)</td>
 <td align="left">Spécifie la police de caractères et éventuellement sa taille</td>
 </tr>
 <tr>
@@ -3005,11 +3005,11 @@ Les abscisses augmentent de gauche à droite, les ordonnées augmentent de haut 
 <td align="left">Code de la dernière touche appuyée.</td>
 </tr>
 <tr>
-<td align="left">keyIsPressed <br>isKeyPressed</td>
+<td align="left">keyIsPressed <br/>isKeyPressed</td>
 <td align="left">Vaut <code>True</code> lorsqu'une touche du clavier est appuyée et <code>False</code> sinon.</td>
 </tr>
 <tr>
-<td align="left">keyIsDown(code)  <br> keyIsDown(touche)</td>
+<td align="left">keyIsDown(code)  <br/> keyIsDown(touche)</td>
 <td align="left">Vaut <code>True</code> si la touche concernée est appuyée et <code>False</code> sinon.</td>
 </tr>
 </tbody>
@@ -3064,7 +3064,7 @@ Les abscisses augmentent de gauche à droite, les ordonnées augmentent de haut 
 <td align="left">Fonctions trigonométriques usuelles</td>
 </tr>
 <tr>
-<td align="left">degrees(mesure)<br> radians(mesure)</td>
+<td align="left">degrees(mesure)<br/> radians(mesure)</td>
 <td align="left">Convertit une mesure d'angle en degrés ou en radians</td>
 </tr>
 <tr>
