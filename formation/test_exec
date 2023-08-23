@@ -1,0 +1,44 @@
+# Test markdown exec
+
+```python exec="true" source="above"
+print("I'm the result!")
+```
+
+```python exec="true" source="material-block"
+print("I'm the result!")
+```
+
+```python exec="true" source="tabbed-left"
+print("I'm the result!")
+```
+
+```pycon exec="true" source="console"
+>>> print("I'm the result!")
+I'm not the result...
+```
+
+```python exec="1" source="tabbed-left" tabs="Source code|Output"
+print("I'm the result!")
+```
+
+```python exec="1" source="above" title="source.py"
+print("I'm the result!")
+```
+
+```console exec="1" source="console"
+$ mkdocs --help
+```
+
+```tree
+root1
+    file1
+    dir1
+        file
+    dir2
+        file1
+        file2
+    file2
+    file3
+root2
+    file1
+```
